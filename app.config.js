@@ -18,6 +18,7 @@ module.exports = {
           apiKey: process.env.EXPO_PUBLIC_GOOGLE_MAPS_API_KEY ?? "",
         },
       },
+      package: "com.byunsejun.projectrn"
     },
     extra: {
       eas: {
