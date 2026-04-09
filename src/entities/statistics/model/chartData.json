@@ -1,0 +1,2108 @@
+[
+  {
+    "location": "중구",
+    "data": {
+      "male": [
+        {
+          "title": "명동난타극장",
+          "place": "cultural",
+          "gender": "male",
+          "age": 10
+        },
+        {
+          "title": "명동아트브리즈",
+          "place": "cultural",
+          "gender": "male",
+          "age": 20
+        },
+        {
+          "title": "충무아트센터",
+          "place": "cultural",
+          "gender": "male",
+          "age": 30
+        },
+        {
+          "title": "남산도시자연공원",
+          "place": "park",
+          "gender": "male",
+          "age": 40
+        },
+        {
+          "title": "정동1928 아트센터",
+          "place": "cultural",
+          "gender": "male",
+          "age": 50
+        },
+        {
+          "title": "동대문역사관",
+          "place": "cultural",
+          "gender": "male",
+          "age": 60
+        }
+      ],
+      "female": [
+        {
+          "title": "서울애니메이션센터",
+          "place": "cultural",
+          "gender": "female",
+          "age": 10
+        },
+        {
+          "title": "CKL스테이지",
+          "place": "cultural",
+          "gender": "female",
+          "age": 20
+        },
+        {
+          "title": "서울시립미술관 서소문본관",
+          "place": "cultural",
+          "gender": "female",
+          "age": 30
+        },
+        {
+          "title": "남산도시자연공원",
+          "place": "park",
+          "gender": "female",
+          "age": 40
+        },
+        {
+          "title": "문화역서울284",
+          "place": "cultural",
+          "gender": "female",
+          "age": 50
+        },
+        {
+          "title": "이화여고 100주년기념관",
+          "place": "cultural",
+          "gender": "female",
+          "age": 60
+        }
+      ]
+    }
+  },
+  {
+    "location": "강동구",
+    "data": {
+      "male": [
+        {
+          "title": "서울암사동유적",
+          "place": "cultural",
+          "gender": "male",
+          "age": 10
+        },
+        {
+          "title": "천호근린공원",
+          "place": "park",
+          "gender": "male",
+          "age": 20
+        },
+        {
+          "title": "강동구립천호도서관",
+          "place": "cultural",
+          "gender": "male",
+          "age": 30
+        },
+        {
+          "title": "명일근린공원",
+          "place": "park",
+          "gender": "male",
+          "age": 40
+        },
+        {
+          "title": "일자산도시자연공원",
+          "place": "cultural",
+          "gender": "male",
+          "age": 50
+        },
+        {
+          "title": "허브천문공원",
+          "place": "cultural",
+          "gender": "male",
+          "age": 60
+        }
+      ],
+      "female": [
+        {
+          "title": "서울암사동유적",
+          "place": "cultural",
+          "gender": "female",
+          "age": 10
+        },
+        {
+          "title": "강동구민회관",
+          "place": "cultural",
+          "gender": "female",
+          "age": 20
+        },
+        {
+          "title": "천호근린공원",
+          "place": "cultural",
+          "gender": "female",
+          "age": 30
+        },
+        {
+          "title": "일자산도시자연공원",
+          "place": "park",
+          "gender": "female",
+          "age": 40
+        },
+        {
+          "title": "강동도서관",
+          "place": "cultural",
+          "gender": "female",
+          "age": 50
+        },
+        {
+          "title": "명일근린공원",
+          "place": "park",
+          "gender": "female",
+          "age": 60
+        }
+      ]
+    }
+  },
+  {
+    "location": "성동구",
+    "data": {
+      "male": [
+        {
+          "title": "청계천박물관",
+          "place": "cultural",
+          "gender": "male",
+          "age": 10
+        },
+        {
+          "title": "서울숲",
+          "place": "park",
+          "gender": "male",
+          "age": 20
+        },
+        {
+          "title": "STUDIO301",
+          "place": "cultural",
+          "gender": "male",
+          "age": 30
+        },
+        {
+          "title": "성수근린공원",
+          "place": "park",
+          "gender": "male",
+          "age": 40
+        },
+        {
+          "title": "일자산도시자연공원",
+          "place": "cultural",
+          "gender": "male",
+          "age": 50
+        },
+        {
+          "title": "전래동화마을 생태문화길",
+          "place": "dodream",
+          "gender": "male",
+          "age": 60
+        }
+      ],
+      "female": [
+        {
+          "title": "청계천박물관",
+          "place": "cultural",
+          "gender": "female",
+          "age": 10
+        },
+        {
+          "title": "서울숲",
+          "place": "park",
+          "gender": "female",
+          "age": 20
+        },
+        {
+          "title": "성수근린공원",
+          "place": "park",
+          "gender": "female",
+          "age": 30
+        },
+        {
+          "title": "달맞이근린공원",
+          "place": "park",
+          "gender": "female",
+          "age": 40
+        },
+        {
+          "title": "성동문화재단",
+          "place": "cultural",
+          "gender": "female",
+          "age": 50
+        },
+        {
+          "title": "독서당공원 생태문화길",
+          "place": "dodream",
+          "gender": "female",
+          "age": 60
+        }
+      ]
+    }
+  },
+  {
+    "location": "마포구",
+    "data": {
+      "male": [
+        {
+          "title": "월드컵공원",
+          "place": "cultural",
+          "gender": "male",
+          "age": 10
+        },
+        {
+          "title": "KT&G 상상마당 갤러리",
+          "place": "cultural",
+          "gender": "male",
+          "age": 20
+        },
+        {
+          "title": "에스제이비보이즈",
+          "place": "cultural",
+          "gender": "male",
+          "age": 30
+        },
+        {
+          "title": "와우근린공원",
+          "place": "park",
+          "gender": "male",
+          "age": 40
+        },
+        {
+          "title": "외국인묘지공원",
+          "place": "park",
+          "gender": "male",
+          "age": 50
+        },
+        {
+          "title": "평화의공원 생태문화길",
+          "place": "dodream",
+          "gender": "male",
+          "age": 60
+        }
+      ],
+      "female": [
+        {
+          "title": "월드컵공원",
+          "place": "cultural",
+          "gender": "female",
+          "age": 10
+        },
+        {
+          "title": "KT&G 상상마당 갤러리",
+          "place": "cultural",
+          "gender": "female",
+          "age": 20
+        },
+        {
+          "title": "서울에너지드림센터",
+          "place": "cultural",
+          "gender": "female",
+          "age": 30
+        },
+        {
+          "title": "월드컵공원",
+          "place": "cultural",
+          "gender": "female",
+          "age": 40
+        },
+        {
+          "title": "외국인묘지공원",
+          "place": "park",
+          "gender": "female",
+          "age": 50
+        },
+        {
+          "title": "평화의공원 생태문화길",
+          "place": "dodream",
+          "gender": "female",
+          "age": 60
+        }
+      ]
+    }
+  },
+  {
+    "location": "종로구",
+    "data": {
+      "male": [
+        {
+          "title": "국립고궁박물관",
+          "place": "cultural",
+          "gender": "male",
+          "age": 10
+        },
+        {
+          "title": "국립민속박물관",
+          "place": "cultural",
+          "gender": "male",
+          "age": 20
+        },
+        {
+          "title": "창경궁",
+          "place": "cultural",
+          "gender": "male",
+          "age": 30
+        },
+        {
+          "title": "갤러리 도올",
+          "place": "cultural",
+          "gender": "male",
+          "age": 40
+        },
+        {
+          "title": "사직근린공원",
+          "place": "park",
+          "gender": "male",
+          "age": 50
+        },
+        {
+          "title": "광희문 한양도성길",
+          "place": "dodream",
+          "gender": "male",
+          "age": 60
+        }
+      ],
+      "female": [
+        {
+          "title": "국립고궁박물관",
+          "place": "cultural",
+          "gender": "female",
+          "age": 10
+        },
+        {
+          "title": "갤러리현대",
+          "place": "cultural",
+          "gender": "female",
+          "age": 20
+        },
+        {
+          "title": "아트코리아랩 6층 아고라",
+          "place": "cultural",
+          "gender": "female",
+          "age": 30
+        },
+        {
+          "title": "광화문라운지",
+          "place": "cultural",
+          "gender": "female",
+          "age": 40
+        },
+        {
+          "title": "사직근린공원",
+          "place": "park",
+          "gender": "female",
+          "age": 50
+        },
+        {
+          "title": "흥인지문 한양도성길",
+          "place": "dodream",
+          "gender": "female",
+          "age": 60
+        }
+      ]
+    }
+  },
+  {
+    "location": "은평구",
+    "data": {
+      "male": [
+        {
+          "title": "사비나미술관",
+          "place": "cultural",
+          "gender": "male",
+          "age": 10
+        },
+        {
+          "title": "다문화박물관",
+          "place": "cultural",
+          "gender": "male",
+          "age": 20
+        },
+        {
+          "title": "은평문화예술회관",
+          "place": "cultural",
+          "gender": "male",
+          "age": 30
+        },
+        {
+          "title": "향림근린공원",
+          "place": "park",
+          "gender": "male",
+          "age": 40
+        },
+        {
+          "title": "연신내물빛공원",
+          "place": "park",
+          "gender": "male",
+          "age": 50
+        },
+        {
+          "title": "봉산도시자연공원",
+          "place": "park",
+          "gender": "male",
+          "age": 60
+        }
+      ],
+      "female": [
+        {
+          "title": "사비나미술관",
+          "place": "cultural",
+          "gender": "female",
+          "age": 10
+        },
+        {
+          "title": "다문화박물관",
+          "place": "cultural",
+          "gender": "female",
+          "age": 20
+        },
+        {
+          "title": "아트숨비센터",
+          "place": "cultural",
+          "gender": "female",
+          "age": 30
+        },
+        {
+          "title": "연신내물빛공원",
+          "place": "park",
+          "gender": "female",
+          "age": 40
+        },
+        {
+          "title": "불광근린공원",
+          "place": "park",
+          "gender": "female",
+          "age": 50
+        },
+        {
+          "title": "신사근린공원",
+          "place": "park",
+          "gender": "female",
+          "age": 60
+        }
+      ]
+    }
+  },
+  {
+    "location": "영등포구",
+    "data": {
+      "male": [
+        {
+          "title": "KBS홀",
+          "place": "cultural",
+          "gender": "male",
+          "age": 10
+        },
+        {
+          "title": "구립영등포아트스퀘어",
+          "place": "cultural",
+          "gender": "male",
+          "age": 20
+        },
+        {
+          "title": "여의도한강공원물빛무대",
+          "place": "cultural",
+          "gender": "male",
+          "age": 30
+        },
+        {
+          "title": "향림근린공원",
+          "place": "park",
+          "gender": "male",
+          "age": 40
+        },
+        {
+          "title": "선유도근린공원",
+          "place": "park",
+          "gender": "male",
+          "age": 50
+        },
+        {
+          "title": "자매근린공원",
+          "place": "park",
+          "gender": "male",
+          "age": 60
+        }
+      ],
+      "female": [
+        {
+          "title": "KBS홀",
+          "place": "cultural",
+          "gender": "female",
+          "age": 10
+        },
+        {
+          "title": "영등포아트홀",
+          "place": "cultural",
+          "gender": "female",
+          "age": 20
+        },
+        {
+          "title": "여의도한강공원물빛무대",
+          "place": "cultural",
+          "gender": "female",
+          "age": 30
+        },
+        {
+          "title": "63스퀘어",
+          "place": "cultural",
+          "gender": "female",
+          "age": 40
+        },
+        {
+          "title": "여의도근린공원",
+          "place": "park",
+          "gender": "female",
+          "age": 50
+        },
+        {
+          "title": "중마루근린공원",
+          "place": "park",
+          "gender": "female",
+          "age": 60
+        }
+      ]
+    }
+  },
+  {
+    "location": "강서구",
+    "data": {
+      "male": [
+        {
+          "title": "스페이스K 서울",
+          "place": "cultural",
+          "gender": "male",
+          "age": 10
+        },
+        {
+          "title": "강서아트리움",
+          "place": "cultural",
+          "gender": "male",
+          "age": 20
+        },
+        {
+          "title": "LG아트센터 서울",
+          "place": "cultural",
+          "gender": "male",
+          "age": 30
+        },
+        {
+          "title": "궁산근린공원",
+          "place": "park",
+          "gender": "male",
+          "age": 40
+        },
+        {
+          "title": "허준공원",
+          "place": "park",
+          "gender": "male",
+          "age": 50
+        },
+        {
+          "title": "염창근린공원",
+          "place": "park",
+          "gender": "male",
+          "age": 60
+        }
+      ],
+      "female": [
+        {
+          "title": "강서구립길꽃어린이도서관",
+          "place": "cultural",
+          "gender": "female",
+          "age": 10
+        },
+        {
+          "title": "서울식물원",
+          "place": "cultural",
+          "gender": "female",
+          "age": 20
+        },
+        {
+          "title": "스카이아트홀",
+          "place": "cultural",
+          "gender": "female",
+          "age": 30
+        },
+        {
+          "title": "방화근린공원",
+          "place": "park",
+          "gender": "female",
+          "age": 40
+        },
+        {
+          "title": "우장산근린공원",
+          "place": "park",
+          "gender": "female",
+          "age": 50
+        },
+        {
+          "title": "봉제산공원",
+          "place": "park",
+          "gender": "female",
+          "age": 60
+        }
+      ]
+    }
+  },
+  {
+    "location": "동대문구",
+    "data": {
+      "male": [
+        {
+          "title": "경희대학교 중앙박물관",
+          "place": "cultural",
+          "gender": "male",
+          "age": 10
+        },
+        {
+          "title": "크리에이터스 스페이스",
+          "place": "cultural",
+          "gender": "male",
+          "age": 20
+        },
+        {
+          "title": "경동시장 청년몰",
+          "place": "cultural",
+          "gender": "male",
+          "age": 30
+        },
+        {
+          "title": "배봉산근린공원",
+          "place": "park",
+          "gender": "male",
+          "age": 40
+        },
+        {
+          "title": "답십리근린공원",
+          "place": "park",
+          "gender": "male",
+          "age": 50
+        },
+        {
+          "title": "조경인의 숲 생태문화길",
+          "place": "dodream",
+          "gender": "male",
+          "age": 60
+        }
+      ],
+      "female": [
+        {
+          "title": "이문어린이도서관",
+          "place": "cultural",
+          "gender": "female",
+          "age": 10
+        },
+        {
+          "title": "김희수아트센터",
+          "place": "cultural",
+          "gender": "female",
+          "age": 20
+        },
+        {
+          "title": "서울시창작공간",
+          "place": "cultural",
+          "gender": "female",
+          "age": 30
+        },
+        {
+          "title": "답십리근린공원",
+          "place": "park",
+          "gender": "female",
+          "age": 40
+        },
+        {
+          "title": "간데메근린공원",
+          "place": "park",
+          "gender": "female",
+          "age": 50
+        },
+        {
+          "title": "조경인의 숲 생태문화길",
+          "place": "dodream",
+          "gender": "female",
+          "age": 60
+        }
+      ]
+    }
+  },
+  {
+    "location": "동작구",
+    "data": {
+      "male": [
+        {
+          "title": "동작어린이도서관",
+          "place": "cultural",
+          "gender": "male",
+          "age": 10
+        },
+        {
+          "title": "동작아트갤러리",
+          "place": "cultural",
+          "gender": "male",
+          "age": 20
+        },
+        {
+          "title": "사육신역사관",
+          "place": "cultural",
+          "gender": "male",
+          "age": 30
+        },
+        {
+          "title": "사육신공원",
+          "place": "park",
+          "gender": "male",
+          "age": 40
+        },
+        {
+          "title": "국립현충원",
+          "place": "park",
+          "gender": "male",
+          "age": 50
+        },
+        {
+          "title": "효사정 생태문화길",
+          "place": "dodream",
+          "gender": "male",
+          "age": 60
+        }
+      ],
+      "female": [
+        {
+          "title": "동작어린이도서관",
+          "place": "cultural",
+          "gender": "female",
+          "age": 10
+        },
+        {
+          "title": "동작아트갤러리",
+          "place": "cultural",
+          "gender": "female",
+          "age": 20
+        },
+        {
+          "title": "서울시창작공간",
+          "place": "cultural",
+          "gender": "female",
+          "age": 30
+        },
+        {
+          "title": "상도근린공원",
+          "place": "park",
+          "gender": "female",
+          "age": 40
+        },
+        {
+          "title": "보라매근린공원",
+          "place": "park",
+          "gender": "female",
+          "age": 50
+        },
+        {
+          "title": "효사정 생태문화길",
+          "place": "dodream",
+          "gender": "female",
+          "age": 60
+        }
+      ]
+    }
+  },
+  {
+    "location": "광진구",
+    "data": {
+      "male": [
+        {
+          "title": "광진어린이공연장",
+          "place": "cultural",
+          "gender": "male",
+          "age": 10
+        },
+        {
+          "title": "뚝섬한강공원",
+          "place": "cultural",
+          "gender": "male",
+          "age": 20
+        },
+        {
+          "title": "뚝섬한강공원",
+          "place": "cultural",
+          "gender": "male",
+          "age": 30
+        },
+        {
+          "title": "어린이대공원",
+          "place": "park",
+          "gender": "male",
+          "age": 40
+        },
+        {
+          "title": "아차산생태공원",
+          "place": "park",
+          "gender": "male",
+          "age": 50
+        },
+        {
+          "title": "아차산성 생태문화길",
+          "place": "dodream",
+          "gender": "male",
+          "age": 60
+        }
+      ],
+      "female": [
+        {
+          "title": "광진어린이공연장",
+          "place": "cultural",
+          "gender": "female",
+          "age": 10
+        },
+        {
+          "title": "뚝섬한강공원",
+          "place": "cultural",
+          "gender": "female",
+          "age": 20
+        },
+        {
+          "title": "뚝섬한강공원",
+          "place": "cultural",
+          "gender": "female",
+          "age": 30
+        },
+        {
+          "title": "어린이대공원",
+          "place": "park",
+          "gender": "female",
+          "age": 40
+        },
+        {
+          "title": "아차산생태공원",
+          "place": "park",
+          "gender": "female",
+          "age": 50
+        },
+        {
+          "title": "소나무림 생태문화길",
+          "place": "dodream",
+          "gender": "female",
+          "age": 60
+        }
+      ]
+    }
+  },
+  {
+    "location": "용산구",
+    "data": {
+      "male": [
+        {
+          "title": "서울시립청소년미디어센터",
+          "place": "cultural",
+          "gender": "male",
+          "age": 10
+        },
+        {
+          "title": "국립중앙박물관 극장 용",
+          "place": "cultural",
+          "gender": "male",
+          "age": 20
+        },
+        {
+          "title": "필갤러리(Fill Gallery)",
+          "place": "cultural",
+          "gender": "male",
+          "age": 30
+        },
+        {
+          "title": "용산가족공원",
+          "place": "park",
+          "gender": "male",
+          "age": 40
+        },
+        {
+          "title": "효창근린공원",
+          "place": "park",
+          "gender": "male",
+          "age": 50
+        },
+        {
+          "title": "남산공원길 생태문화길",
+          "place": "dodream",
+          "gender": "male",
+          "age": 60
+        }
+      ],
+      "female": [
+        {
+          "title": "용산 백합어린이도서관",
+          "place": "cultural",
+          "gender": "female",
+          "age": 10
+        },
+        {
+          "title": "녹사평 용산공원 플랫폼",
+          "place": "cultural",
+          "gender": "female",
+          "age": 20
+        },
+        {
+          "title": "서울예술교육센터",
+          "place": "cultural",
+          "gender": "female",
+          "age": 30
+        },
+        {
+          "title": "갤러리 비선재",
+          "place": "cultural",
+          "gender": "female",
+          "age": 40
+        },
+        {
+          "title": "용산가족공원",
+          "place": "park",
+          "gender": "female",
+          "age": 50
+        },
+        {
+          "title": "거울못 생태문화길",
+          "place": "dodream",
+          "gender": "female",
+          "age": 60
+        }
+      ]
+    }
+  },
+  {
+    "location": "서대문구",
+    "data": {
+      "male": [
+        {
+          "title": "청년예술청 SAPY",
+          "place": "cultural",
+          "gender": "male",
+          "age": 10
+        },
+        {
+          "title": "연희예술극장",
+          "place": "cultural",
+          "gender": "male",
+          "age": 20
+        },
+        {
+          "title": "갤러리 히든플레이스",
+          "place": "cultural",
+          "gender": "male",
+          "age": 30
+        },
+        {
+          "title": "안산도시자연공원",
+          "place": "park",
+          "gender": "male",
+          "age": 40
+        },
+        {
+          "title": "독립근린공원",
+          "place": "park",
+          "gender": "male",
+          "age": 50
+        },
+        {
+          "title": "백련사 생태문화길",
+          "place": "dodream",
+          "gender": "male",
+          "age": 60
+        }
+      ],
+      "female": [
+        {
+          "title": "청년예술청 SAPY",
+          "place": "cultural",
+          "gender": "female",
+          "age": 10
+        },
+        {
+          "title": "연희예술극장",
+          "place": "cultural",
+          "gender": "female",
+          "age": 20
+        },
+        {
+          "title": "이진아기념도서관",
+          "place": "cultural",
+          "gender": "female",
+          "age": 30
+        },
+        {
+          "title": "ANDNEW GALLERY(앤드뉴 갤러리)",
+          "place": "cultural",
+          "gender": "female",
+          "age": 40
+        },
+        {
+          "title": "궁동근린공원",
+          "place": "park",
+          "gender": "female",
+          "age": 50
+        },
+        {
+          "title": "독립근린공원",
+          "place": "dodream",
+          "gender": "female",
+          "age": 60
+        }
+      ]
+    }
+  },
+  {
+    "location": "서초구",
+    "data": {
+      "male": [
+        {
+          "title": "국립국악원",
+          "place": "cultural",
+          "gender": "male",
+          "age": 10
+        },
+        {
+          "title": "반포한강공원",
+          "place": "cultural",
+          "gender": "male",
+          "age": 20
+        },
+        {
+          "title": "반포한강공원",
+          "place": "cultural",
+          "gender": "male",
+          "age": 30
+        },
+        {
+          "title": "우면산관문사",
+          "place": "cultural",
+          "gender": "male",
+          "age": 40
+        },
+        {
+          "title": "양재시민의숲",
+          "place": "park",
+          "gender": "male",
+          "age": 50
+        },
+        {
+          "title": "예술의전당 생태문화길",
+          "place": "dodream",
+          "gender": "male",
+          "age": 60
+        }
+      ],
+      "female": [
+        {
+          "title": "국립국악원",
+          "place": "cultural",
+          "gender": "female",
+          "age": 10
+        },
+        {
+          "title": "반포한강공원",
+          "place": "cultural",
+          "gender": "female",
+          "age": 20
+        },
+        {
+          "title": "반포한강공원",
+          "place": "cultural",
+          "gender": "female",
+          "age": 30
+        },
+        {
+          "title": "브랜뉴디지털아트갤러리",
+          "place": "cultural",
+          "gender": "female",
+          "age": 40
+        },
+        {
+          "title": "스페이스 이수",
+          "place": "cultural",
+          "gender": "female",
+          "age": 50
+        },
+        {
+          "title": "정효아트홀",
+          "place": "cultural",
+          "gender": "female",
+          "age": 60
+        }
+      ]
+    }
+  },
+  {
+    "location": "관악구",
+    "data": {
+      "male": [
+        {
+          "title": "싱글벙글교육센터",
+          "place": "cultural",
+          "gender": "male",
+          "age": 10
+        },
+        {
+          "title": "서울시립 남서울미술관",
+          "place": "cultural",
+          "gender": "male",
+          "age": 20
+        },
+        {
+          "title": "관천로 문화플랫폼 S1472",
+          "place": "cultural",
+          "gender": "male",
+          "age": 30
+        },
+        {
+          "title": "샘말공원(관악산)",
+          "place": "park",
+          "gender": "male",
+          "age": 40
+        },
+        {
+          "title": "신림다목적체육센터",
+          "place": "cultural",
+          "gender": "male",
+          "age": 50
+        },
+        {
+          "title": "관악중앙도서관",
+          "place": "cultural",
+          "gender": "male",
+          "age": 60
+        }
+      ],
+      "female": [
+        {
+          "title": "싱글벙글교육센터",
+          "place": "cultural",
+          "gender": "female",
+          "age": 10
+        },
+        {
+          "title": "서울시립 남서울미술관",
+          "place": "cultural",
+          "gender": "female",
+          "age": 20
+        },
+        {
+          "title": "서울시립 남서울미술관",
+          "place": "cultural",
+          "gender": "female",
+          "age": 30
+        },
+        {
+          "title": "샘말공원(관악산)",
+          "place": "park",
+          "gender": "female",
+          "age": 40
+        },
+        {
+          "title": "신림다목적체육센터",
+          "place": "cultural",
+          "gender": "female",
+          "age": 50
+        },
+        {
+          "title": "신림다목적체육센터",
+          "place": "cultural",
+          "gender": "female",
+          "age": 60
+        }
+      ]
+    }
+  },
+  {
+    "location": "금천구",
+    "data": {
+      "male": [
+        {
+          "title": "금빛공원 야외공연장",
+          "place": "cultural",
+          "gender": "male",
+          "age": 10
+        },
+        {
+          "title": "금나래아트홀",
+          "place": "cultural",
+          "gender": "male",
+          "age": 20
+        },
+        {
+          "title": "하라스튜디오",
+          "place": "cultural",
+          "gender": "male",
+          "age": 30
+        },
+        {
+          "title": "만수천공원(관악산)",
+          "place": "park",
+          "gender": "male",
+          "age": 40
+        },
+        {
+          "title": "감로천생태공원(관악산)",
+          "place": "park",
+          "gender": "male",
+          "age": 50
+        },
+        {
+          "title": "금천폭포근린공원",
+          "place": "park",
+          "gender": "male",
+          "age": 60
+        }
+      ],
+      "female": [
+        {
+          "title": "금빛공원 야외공연장",
+          "place": "cultural",
+          "gender": "female",
+          "age": 10
+        },
+        {
+          "title": "금천뮤지컬센터",
+          "place": "cultural",
+          "gender": "female",
+          "age": 20
+        },
+        {
+          "title": "금천예술공장",
+          "place": "cultural",
+          "gender": "female",
+          "age": 30
+        },
+        {
+          "title": "만수천공원(관악산)",
+          "place": "park",
+          "gender": "female",
+          "age": 40
+        },
+        {
+          "title": "금천체육공원(관악산)",
+          "place": "park",
+          "gender": "female",
+          "age": 50
+        },
+        {
+          "title": "금천폭포근린공원",
+          "place": "park",
+          "gender": "female",
+          "age": 60
+        }
+      ]
+    }
+  },
+  {
+    "location": "성북구",
+    "data": {
+      "male": [
+        {
+          "title": "월곡꿈그림도서관",
+          "place": "cultural",
+          "gender": "male",
+          "age": 10
+        },
+        {
+          "title": "성북선잠박물관",
+          "place": "cultural",
+          "gender": "male",
+          "age": 20
+        },
+        {
+          "title": "성북문화원",
+          "place": "cultural",
+          "gender": "male",
+          "age": 30
+        },
+        {
+          "title": "개운산근린공원",
+          "place": "park",
+          "gender": "male",
+          "age": 40
+        },
+        {
+          "title": "성북근린공원",
+          "place": "park",
+          "gender": "male",
+          "age": 50
+        },
+        {
+          "title": "하늘교 생태문화길",
+          "place": "dodream",
+          "gender": "male",
+          "age": 60
+        }
+      ],
+      "female": [
+        {
+          "title": "월곡꿈그림도서관",
+          "place": "cultural",
+          "gender": "female",
+          "age": 10
+        },
+        {
+          "title": "성북선잠박물관",
+          "place": "cultural",
+          "gender": "female",
+          "age": 20
+        },
+        {
+          "title": "성북문화원",
+          "place": "cultural",
+          "gender": "female",
+          "age": 30
+        },
+        {
+          "title": "천장산우화극장",
+          "place": "cultural",
+          "gender": "female",
+          "age": 40
+        },
+        {
+          "title": "청량공원",
+          "place": "park",
+          "gender": "female",
+          "age": 50
+        },
+        {
+          "title": "혜화문(홍화문) 한양도성길",
+          "place": "dodream",
+          "gender": "female",
+          "age": 60
+        }
+      ]
+    }
+  },
+  {
+    "location": "성북구",
+    "data": {
+      "male": [
+        {
+          "title": "월곡꿈그림도서관",
+          "place": "cultural",
+          "gender": "male",
+          "age": 10
+        },
+        {
+          "title": "성북선잠박물관",
+          "place": "cultural",
+          "gender": "male",
+          "age": 20
+        },
+        {
+          "title": "성북문화원",
+          "place": "cultural",
+          "gender": "male",
+          "age": 30
+        },
+        {
+          "title": "개운산근린공원",
+          "place": "park",
+          "gender": "male",
+          "age": 40
+        },
+        {
+          "title": "성북근린공원",
+          "place": "park",
+          "gender": "male",
+          "age": 50
+        },
+        {
+          "title": "하늘교 생태문화길",
+          "place": "dodream",
+          "gender": "male",
+          "age": 60
+        }
+      ],
+      "female": [
+        {
+          "title": "월곡꿈그림도서관",
+          "place": "cultural",
+          "gender": "female",
+          "age": 10
+        },
+        {
+          "title": "성북선잠박물관",
+          "place": "cultural",
+          "gender": "female",
+          "age": 20
+        },
+        {
+          "title": "성북문화원",
+          "place": "cultural",
+          "gender": "female",
+          "age": 30
+        },
+        {
+          "title": "천장산우화극장",
+          "place": "cultural",
+          "gender": "female",
+          "age": 40
+        },
+        {
+          "title": "청량공원",
+          "place": "park",
+          "gender": "female",
+          "age": 50
+        },
+        {
+          "title": "혜화문(홍화문) 한양도성길",
+          "place": "dodream",
+          "gender": "female",
+          "age": 60
+        }
+      ]
+    }
+  },
+  {
+    "location": "구로구",
+    "data": {
+      "male": [
+        {
+          "title": "구로구립궁동어린이도서관",
+          "place": "cultural",
+          "gender": "male",
+          "age": 10
+        },
+        {
+          "title": "서울아트책보고",
+          "place": "cultural",
+          "gender": "male",
+          "age": 20
+        },
+        {
+          "title": "신도림 오페라하우스",
+          "place": "cultural",
+          "gender": "male",
+          "age": 30
+        },
+        {
+          "title": "구로구민체육센터",
+          "place": "cultural",
+          "gender": "male",
+          "age": 40
+        },
+        {
+          "title": "고척근린공원",
+          "place": "park",
+          "gender": "male",
+          "age": 50
+        },
+        {
+          "title": "궁동생태공원 생태문화길",
+          "place": "dodream",
+          "gender": "male",
+          "age": 60
+        }
+      ],
+      "female": [
+        {
+          "title": "구로구립온누리도서관",
+          "place": "cultural",
+          "gender": "female",
+          "age": 10
+        },
+        {
+          "title": "오류아트홀",
+          "place": "cultural",
+          "gender": "female",
+          "age": 20
+        },
+        {
+          "title": "구캔갤러리",
+          "place": "cultural",
+          "gender": "female",
+          "age": 30
+        },
+        {
+          "title": "신도림 문화공간 다락",
+          "place": "cultural",
+          "gender": "female",
+          "age": 40
+        },
+        {
+          "title": "온수도시자연공원",
+          "place": "park",
+          "gender": "female",
+          "age": 50
+        },
+        {
+          "title": "개웅산근린공원",
+          "place": "dodream",
+          "gender": "female",
+          "age": 60
+        }
+      ]
+    }
+  },
+  {
+    "location": "양천구",
+    "data": {
+      "male": [
+        {
+          "title": "생명과학박물관",
+          "place": "cultural",
+          "gender": "male",
+          "age": 10
+        },
+        {
+          "title": "서서울호수공원",
+          "place": "cultural",
+          "gender": "male",
+          "age": 20
+        },
+        {
+          "title": "양천구 해누리타운 아트홀",
+          "place": "cultural",
+          "gender": "male",
+          "age": 30
+        },
+        {
+          "title": "파리공원 야외공연장",
+          "place": "cultural",
+          "gender": "male",
+          "age": 40
+        },
+        {
+          "title": "파리근린공원",
+          "place": "park",
+          "gender": "male",
+          "age": 50
+        },
+        {
+          "title": "계남근린공원 근교산자락길",
+          "place": "dodream",
+          "gender": "male",
+          "age": 60
+        }
+      ],
+      "female": [
+        {
+          "title": "생명과학박물관",
+          "place": "cultural",
+          "gender": "female",
+          "age": 10
+        },
+        {
+          "title": "서서울호수공원",
+          "place": "cultural",
+          "gender": "female",
+          "age": 20
+        },
+        {
+          "title": "파리공원 야외공연장",
+          "place": "cultural",
+          "gender": "female",
+          "age": 30
+        },
+        {
+          "title": "신월문화체육센터",
+          "place": "cultural",
+          "gender": "female",
+          "age": 40
+        },
+        {
+          "title": "계남근린공원",
+          "place": "park",
+          "gender": "female",
+          "age": 50
+        },
+        {
+          "title": "용왕산 진입로 생태문화길",
+          "place": "dodream",
+          "gender": "female",
+          "age": 60
+        }
+      ]
+    }
+  },
+  {
+    "location": "강남구",
+    "data": {
+      "male": [
+        {
+          "title": "강남구립논현도서관",
+          "place": "cultural",
+          "gender": "male",
+          "age": 10
+        },
+        {
+          "title": "코엑스 별마당 도서관",
+          "place": "cultural",
+          "gender": "male",
+          "age": 20
+        },
+        {
+          "title": "라움아트센터",
+          "place": "cultural",
+          "gender": "male",
+          "age": 30
+        },
+        {
+          "title": "코엑스 오디토리움",
+          "place": "cultural",
+          "gender": "male",
+          "age": 40
+        },
+        {
+          "title": "청화랑",
+          "place": "cultural",
+          "gender": "male",
+          "age": 50
+        },
+        {
+          "title": "김영섭사진화랑",
+          "place": "cultural",
+          "gender": "male",
+          "age": 60
+        }
+      ],
+      "female": [
+        {
+          "title": "강남구립논현도서관",
+          "place": "cultural",
+          "gender": "female",
+          "age": 10
+        },
+        {
+          "title": "코엑스 별마당 도서관",
+          "place": "cultural",
+          "gender": "female",
+          "age": 20
+        },
+        {
+          "title": "코엑스 오디토리움",
+          "place": "cultural",
+          "gender": "female",
+          "age": 30
+        },
+        {
+          "title": "백암아트홀",
+          "place": "cultural",
+          "gender": "female",
+          "age": 40
+        },
+        {
+          "title": "호리아트스페이스",
+          "place": "cultural",
+          "gender": "female",
+          "age": 50
+        },
+        {
+          "title": "청화랑",
+          "place": "cultural",
+          "gender": "female",
+          "age": 60
+        }
+      ]
+    }
+  },
+  {
+    "location": "송파구",
+    "data": {
+      "male": [
+        {
+          "title": "롯데월드 시네마",
+          "place": "cultural",
+          "gender": "male",
+          "age": 10
+        },
+        {
+          "title": "문화실험공간 호수",
+          "place": "cultural",
+          "gender": "male",
+          "age": 20
+        },
+        {
+          "title": "올림픽공원",
+          "place": "cultural",
+          "gender": "male",
+          "age": 30
+        },
+        {
+          "title": "서울놀이마당",
+          "place": "cultural",
+          "gender": "male",
+          "age": 40
+        },
+        {
+          "title": "송파나루근린공원(석촌호수)",
+          "place": "park",
+          "gender": "male",
+          "age": 50
+        },
+        {
+          "title": "몽촌토성 생태문화길",
+          "place": "dodream",
+          "gender": "male",
+          "age": 60
+        }
+      ],
+      "female": [
+        {
+          "title": "롯데월드 시네마",
+          "place": "cultural",
+          "gender": "female",
+          "age": 10
+        },
+        {
+          "title": "송파나루근린공원(석촌호수)",
+          "place": "park",
+          "gender": "female",
+          "age": 20
+        },
+        {
+          "title": "올림픽공원",
+          "place": "cultural",
+          "gender": "female",
+          "age": 30
+        },
+        {
+          "title": "서울놀이마당",
+          "place": "cultural",
+          "gender": "female",
+          "age": 40
+        },
+        {
+          "title": "아트잠실",
+          "place": "cultural",
+          "gender": "female",
+          "age": 50
+        },
+        {
+          "title": "장미광장 생태문화길",
+          "place": "dodream",
+          "gender": "female",
+          "age": 60
+        }
+      ]
+    }
+  },
+  {
+    "location": "도봉구",
+    "data": {
+      "male": [
+        {
+          "title": "도봉아이나라도서관",
+          "place": "cultural",
+          "gender": "male",
+          "age": 10
+        },
+        {
+          "title": "둘리뮤지엄",
+          "place": "cultural",
+          "gender": "male",
+          "age": 20
+        },
+        {
+          "title": "무중력지대 도봉",
+          "place": "cultural",
+          "gender": "male",
+          "age": 30
+        },
+        {
+          "title": "발바닥공원",
+          "place": "park",
+          "gender": "male",
+          "age": 40
+        },
+        {
+          "title": "쌍문근린공원",
+          "place": "park",
+          "gender": "male",
+          "age": 50
+        },
+        {
+          "title": "경수사 서울둘레길",
+          "place": "dodream",
+          "gender": "male",
+          "age": 60
+        }
+      ],
+      "female": [
+        {
+          "title": "도봉아이나라도서관",
+          "place": "cultural",
+          "gender": "female",
+          "age": 10
+        },
+        {
+          "title": "함석헌기념관",
+          "place": "park",
+          "gender": "female",
+          "age": 20
+        },
+        {
+          "title": "무중력지대 도봉",
+          "place": "cultural",
+          "gender": "female",
+          "age": 30
+        },
+        {
+          "title": "발바닥공원",
+          "place": "cultural",
+          "gender": "female",
+          "age": 40
+        },
+        {
+          "title": "쌍문근린공원",
+          "place": "park",
+          "gender": "female",
+          "age": 50
+        },
+        {
+          "title": "성관사 서울둘레길",
+          "place": "dodream",
+          "gender": "female",
+          "age": 60
+        }
+      ]
+    }
+  },
+  {
+    "location": "강북구",
+    "data": {
+      "male": [
+        {
+          "title": "강북청소년문화정보도서관",
+          "place": "cultural",
+          "gender": "male",
+          "age": 10
+        },
+        {
+          "title": "근현대사기념관",
+          "place": "cultural",
+          "gender": "male",
+          "age": 20
+        },
+        {
+          "title": "삼각산시민청 2동",
+          "place": "cultural",
+          "gender": "male",
+          "age": 30
+        },
+        {
+          "title": "솔밭근린공원",
+          "place": "park",
+          "gender": "male",
+          "age": 40
+        },
+        {
+          "title": "오동근린공원",
+          "place": "park",
+          "gender": "male",
+          "age": 50
+        },
+        {
+          "title": "창골축구장 한강지천길/계절길",
+          "place": "dodream",
+          "gender": "male",
+          "age": 60
+        }
+      ],
+      "female": [
+        {
+          "title": "강북청소년문화정보도서관",
+          "place": "cultural",
+          "gender": "female",
+          "age": 10
+        },
+        {
+          "title": "근현대사기념관",
+          "place": "park",
+          "gender": "female",
+          "age": 20
+        },
+        {
+          "title": "삼각산시민청 2동",
+          "place": "cultural",
+          "gender": "female",
+          "age": 30
+        },
+        {
+          "title": "강북웰빙스포츠센터",
+          "place": "cultural",
+          "gender": "female",
+          "age": 40
+        },
+        {
+          "title": "솔밭근린공원",
+          "place": "park",
+          "gender": "female",
+          "age": 50
+        },
+        {
+          "title": "장수천 생태문화길",
+          "place": "dodream",
+          "gender": "female",
+          "age": 60
+        }
+      ]
+    }
+  },
+  {
+    "location": "중랑구",
+    "data": {
+      "male": [
+        {
+          "title": "중랑구립정보도서관",
+          "place": "cultural",
+          "gender": "male",
+          "age": 10
+        },
+        {
+          "title": "중랑아트센터",
+          "place": "cultural",
+          "gender": "male",
+          "age": 20
+        },
+        {
+          "title": "중랑캠핑숲",
+          "place": "cultural",
+          "gender": "male",
+          "age": 30
+        },
+        {
+          "title": "중랑캠핑숲",
+          "place": "cultural",
+          "gender": "male",
+          "age": 40
+        },
+        {
+          "title": "서일대뒷산공원",
+          "place": "park",
+          "gender": "male",
+          "age": 50
+        },
+        {
+          "title": "망우산공원 입구 생태문화길",
+          "place": "dodream",
+          "gender": "male",
+          "age": 60
+        }
+      ],
+      "female": [
+        {
+          "title": "중랑구립정보도서관",
+          "place": "cultural",
+          "gender": "female",
+          "age": 10
+        },
+        {
+          "title": "중랑아트센터",
+          "place": "cultural",
+          "gender": "female",
+          "age": 20
+        },
+        {
+          "title": "옹기테마공원 체험장",
+          "place": "cultural",
+          "gender": "female",
+          "age": 30
+        },
+        {
+          "title": "중랑장미공원",
+          "place": "cultural",
+          "gender": "female",
+          "age": 40
+        },
+        {
+          "title": "나들이근린공원",
+          "place": "park",
+          "gender": "female",
+          "age": 50
+        },
+        {
+          "title": "둑방장미아치 생태문화길",
+          "place": "dodream",
+          "gender": "female",
+          "age": 60
+        }
+      ]
+    }
+  },
+  {
+    "location": "노원구",
+    "data": {
+      "male": [
+        {
+          "title": "노원어린이도서관",
+          "place": "cultural",
+          "gender": "male",
+          "age": 10
+        },
+        {
+          "title": "서울시립 북서울미술관",
+          "place": "cultural",
+          "gender": "male",
+          "age": 20
+        },
+        {
+          "title": "상계예술마당",
+          "place": "cultural",
+          "gender": "male",
+          "age": 30
+        },
+        {
+          "title": "생활문화지원센터(104예술창작소)",
+          "place": "cultural",
+          "gender": "male",
+          "age": 40
+        },
+        {
+          "title": "불암산도시자연공원",
+          "place": "park",
+          "gender": "male",
+          "age": 50
+        },
+        {
+          "title": "불암산성 한강지천길/계절길",
+          "place": "dodream",
+          "gender": "male",
+          "age": 60
+        }
+      ],
+      "female": [
+        {
+          "title": "노원어린이도서관",
+          "place": "cultural",
+          "gender": "female",
+          "age": 10
+        },
+        {
+          "title": "서울시립 북서울미술관",
+          "place": "cultural",
+          "gender": "female",
+          "age": 20
+        },
+        {
+          "title": "상계예술마당",
+          "place": "cultural",
+          "gender": "female",
+          "age": 30
+        },
+        {
+          "title": "체력장 생태문화길",
+          "place": "dodream",
+          "gender": "female",
+          "age": 40
+        },
+        {
+          "title": "불암산도시자연공원",
+          "place": "park",
+          "gender": "female",
+          "age": 50
+        },
+        {
+          "title": "북서울의꿈 한강지천길/계절길",
+          "place": "dodream",
+          "gender": "female",
+          "age": 60
+        }
+      ]
+    }
+  }
+]
