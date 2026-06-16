@@ -79,7 +79,7 @@
 - [x] ~~`core/stores/useLocationStore.ts`~~ → **`entities/location/model/store.ts`로 이동 완료**
 - [x] `core/stores/useMapStore.ts` — `showPoint`, `overMarker`, `selectedMarker`, `selectedType` (Phase 5에서 `entities/map/model/store.ts`로 이동 예정)
 - [x] ~~`core/stores/useRestaurantStore.ts`~~ → **`entities/restaurant/model/store.ts`로 이동 완료** (호환 리다이렉트는 `core/stores/useRestaurantStore.ts`)
-- [x] `core/stores/useSurveyStore.ts` — `surveyStep`, `userInfo` (Phase 9에서 `entities/survey/model/store.ts`로 이동 예정)
+- [ ] `core/stores/useSurveyStore.ts` — `surveyStep`, `userInfo` (미구현: 해당 파일 없음. Phase 9 미착수)
 
 ### 2-2. 프로바이더 (`core/providers/`)
 
@@ -146,14 +146,14 @@
 | model  | `store.ts`         | 통계 필터 상태 (성별/연령 선택 등)       | [x]  |
 | ui     | `ui/ChartCard.tsx` | 차트 패널 카드 래퍼                      | [x]  |
 
-### 3-6. Survey (`entities/survey/`)
+### 3-6. Survey (`entities/survey/`) — 미구현 (빈 디렉토리: `model/`, `ui/` 안에 파일 없음)
 
 | 레이어 | 파일                    | 원본 대응                                                 | 상태 |
 | ------ | ----------------------- | --------------------------------------------------------- | ---- |
-| model  | `model/types.ts`        | `LocationStore.jsx`의 `userInfo` 타입                     | [x]  |
-| model  | `model/store.ts`        | `surveyStep`, `userInfo` persist 스토어 (`core`에서 이동) | [x]  |
-| ui     | `ui/GenderSelector.tsx` | `SurveyModal.jsx` 성별 선택 카드                          | [x]  |
-| ui     | `ui/AgeSelector.tsx`    | `SurveyModal.jsx` 연령 선택 UI                            | [x]  |
+| model  | `model/types.ts`        | `LocationStore.jsx`의 `userInfo` 타입                     | [ ]  |
+| model  | `model/store.ts`        | `surveyStep`, `userInfo` persist 스토어 (`core`에서 이동) | [ ]  |
+| ui     | `ui/GenderSelector.tsx` | `SurveyModal.jsx` 성별 선택 카드                          | [ ]  |
+| ui     | `ui/AgeSelector.tsx`    | `SurveyModal.jsx` 연령 선택 UI                            | [ ]  |
 
 ---
 
@@ -210,14 +210,14 @@
 | `ui/RadarChart.tsx`  | `ui/RadarChart.jsx`                 | 레이더 대체(LineChart) 렌더              | [x]  |
 | `ui/BarChart.tsx`    | `ui/BarChart.jsx`                   | 바 차트 렌더                             | [x]  |
 
-### 4-6. 설문 (`features/survey/`) — 원본 미완성, 앱에서 완성 예정
+### 4-6. 설문 (`features/survey/`) — 미구현 (빈 디렉토리: `ui/` 안에 파일 없음)
 
 | 파일                 | 원본 대응                  | 설명                                              | 상태 |
 | -------------------- | -------------------------- | ------------------------------------------------- | ---- |
-| `useSurvey.ts`       | survey 로직                | 설문 비즈니스 로직 훅 (store 갱신 오케스트레이션) | [x]  |
-| `ui/SurveyModal.tsx` | `SurveyModal.jsx` (미연결) | 성별/연령 입력 모달 (**순수 UI — props only**)    | [x]  |
+| `useSurvey.ts`       | survey 로직                | 설문 비즈니스 로직 훅 (store 갱신 오케스트레이션) | [ ]  |
+| `ui/SurveyModal.tsx` | `SurveyModal.jsx` (미연결) | 성별/연령 입력 모달 (**순수 UI — props only**)    | [ ]  |
 
-> `useSurveyStore`는 `entities/survey/model/store.ts`로 이동 완료. `core/stores/useSurveyStore.ts`는 호환 리다이렉트만 유지.
+> 미구현: `entities/survey/model/store.ts`도 없고 `core/stores/useSurveyStore.ts`(리다이렉트)도 존재하지 않는다. src 어디에도 survey 참조 없음.
 
 ---
 
@@ -237,7 +237,7 @@
 ### 5-3. 공통 레이아웃 위젯
 
 - [x] `AppHeader.tsx` — 네비게이션 헤더 (원본: `Header.jsx` + `NavComponent.jsx`)
-- [x] `RootOverlays.tsx` — 위치 동의 모달 + 설문 모달 + 서울 한정 토스트 (원본: `layout.jsx` 전역 오버레이)
+- [x] `RootOverlays.tsx` — 위치 동의 모달 + 서울 한정 토스트 (원본: `layout.jsx` 전역 오버레이). 설문 모달은 미연결(survey 미구현)
 - [ ] `AppFooter.tsx` — 푸터 정보 (원본: `Footer.jsx`, 모바일에선 간소화)
 
 ---
@@ -300,7 +300,7 @@
 | **Phase 6** | `entities/restaurant` + `features/recommend` (맛집)  | ✅ Google Places 연동·`useRecommendFood`·`RestaurantCard` 완료. `useRestaurantStore` → `entities/restaurant/model/store.ts` |
 | **Phase 7** | `widgets/` + `app/` 라우팅                           | ✅ 위젯 조합·`expo-router` 연결. feature 간 교차 의존성은 widgets에서 조립으로 해소                                         |
 | **Phase 8** | `entities/statistics` + `features/statistics` + 차트 | 통계 화면 (별도 라이브러리 교체 필요)                                                                                       |
-| **Phase 9** | `entities/survey` + `features/survey`                | ✅ 설문 기능 완성. `useSurveyStore`를 `entities/survey/model/store.ts`로 이동하고 `RootOverlays`에 자동 트리거 연결         |
+| **Phase 9** | `entities/survey` + `features/survey`                | ❌ 미구현 (빈 디렉토리, 코드/마운트 없음). 계획: 설문 스토어·모달 작성 후 `RootOverlays`에 트리거 연결 예정                  |
 
 ---
 
@@ -317,7 +317,7 @@
 | Phase 6: restaurant                   | ✅ 완료 (useRestaurantStore → entities/restaurant, Places API, useRecommendFood) |
 | Phase 7: widgets + routing            | ✅ 완료 (HomeSidebar/HomeMap/AppHeader/RootOverlays, app 연결)                   |
 | Phase 8: statistics + charts          | ✅ 완료                                                                          |
-| Phase 9: survey 완성                  | ✅ 완료 (entities/survey + features/survey + RootOverlays 자동 노출)             |
+| Phase 9: survey 완성                  | ❌ 미구현 (entities/survey · features/survey 빈 디렉토리, src 내 참조 없음)      |
 
 ### 최근 안정화 메모
 
