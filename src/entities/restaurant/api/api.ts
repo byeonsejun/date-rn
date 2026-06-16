@@ -1,110 +1,65 @@
 /**
- * Google Places API — 맛집(Text Search) 조회 및 앱용 `Restaurant` 정규화.
+ * 맛집 — 웹 BFF 프록시(`POST /api/restaurants`) 조회 및 앱용 `Restaurant` 정규화.
  *
  * 1. 원본 출처
- *    - 웹: `portfolio-next/src/app/api/restaurants/route.js`
- *      - Text Search: `query=맛집`, `location=lat,lon`, `radius=1000`, `language=ko`, `types=restaurant`
- *      - 사진: Place Photo (maxwidth=250) — 웹은 base64 data URL, RN은 `imageUri`에 Photo API URL을 넣어 `expo-image`로 로드
+ *    - 웹: `portfolio-next/src/app/api/restaurants/route.ts`
+ *      - 서버가 Google Places(Text Search `query=맛집`, `radius=1000`, top5) + Place Photo를 처리하고
+ *        `NormalizedRestaurant[]`(camelCase)로 반환한다. 외부 키는 서버에만 존재한다.
  *
  * 2. 담당 역할
- *    - `entities/restaurant/api`: 네트워크 호출 + 응답 검증·매핑만 수행 (스토어/훅 없음).
+ *    - `entities/restaurant/api`: 프록시 호출 + 응답 매핑만 수행한다 (스토어/훅 없음).
+ *      필터·정렬·top5·사진 프록시는 모두 웹 서버가 담당하므로 RN은 매핑만 한다.
  *
  * 3. 작동 원리 요약
- *    - `shared/api/client`의 `get`으로 절대 URL 호출
- *    - `results` 중 `photos`가 있는 항목만 남기고 `rating` 내림차순 정렬 후 상위 5개
- *    - 각 항목의 첫 `photo_reference`로 Place Photo 요청 URL을 만들어 `Restaurant.imageUri`에 설정
+ *    - `shared/api/client`의 `post`가 기본 헤더로 `X-Client: rn`을 보낸다.
+ *      그 결과 웹이 `imgSrc`를 자체 사진 프록시의 **절대 URL**로 내려주어 `expo-image`가 바로 로드한다.
+ *    - 혹시 상대경로가 오면 `API_BASE_URL`을 붙여 방어적으로 절대화한다.
  */
 
-import { get } from "@shared/api/client";
-import { API_ENDPOINTS } from "@shared/api/endpoints";
+import { post } from "@shared/api/client";
+import { API_BASE_URL, API_ENDPOINTS } from "@shared/api/endpoints";
 
 import type {
-  GooglePlaceTextSearchResult,
-  GooglePlacesTextSearchResponse,
   Restaurant,
+  RestaurantProxyItem,
 } from "@entities/restaurant/model/types";
 
-const MAX_RESULTS = 5;
-const PHOTO_MAX_WIDTH = 250;
-
-const getGoogleMapsApiKey = (): string => {
-  return process.env.EXPO_PUBLIC_GOOGLE_MAPS_API_KEY ?? "";
-};
-
-const buildTextSearchUrl = (lat: number, lon: number): string => {
-  const key = getGoogleMapsApiKey();
-  const q = encodeURIComponent("맛집");
-  return `${API_ENDPOINTS.googlePlacesTextSearchBase}?query=${q}&location=${lat},${lon}&radius=1000&language=ko&key=${key}&types=restaurant`;
-};
-
-const buildPhotoUrl = (photoReference: string): string => {
-  const key = getGoogleMapsApiKey();
-  return `${API_ENDPOINTS.googlePlacePhotoBase}?photoreference=${encodeURIComponent(
-    photoReference,
-  )}&maxwidth=${PHOTO_MAX_WIDTH}&key=${key}`;
-};
-
-const mapResultToRestaurant = (
-  item: GooglePlaceTextSearchResult,
-): Restaurant | null => {
-  const placeId = item.place_id;
-  const name = item.name;
-  const lat = item.geometry?.location.lat;
-  const lng = item.geometry?.location.lng;
-  const firstPhoto = item.photos?.[0];
-
-  if (
-    !placeId ||
-    !name ||
-    lat === undefined ||
-    lng === undefined ||
-    !firstPhoto?.photo_reference
-  ) {
-    return null;
-  }
-
-  return {
-    placeId,
-    name,
-    rating: item.rating ?? 0,
-    userRatingsTotal: item.user_ratings_total ?? 0,
-    lat,
-    lon: lng,
-    imageUri: buildPhotoUrl(firstPhoto.photo_reference),
-    openNow: item.opening_hours?.open_now ?? null,
-  };
-};
+interface RestaurantsProxyBody {
+  lat: number;
+  lon: number;
+}
 
 /**
- * 주어진 좌표 주변 맛집을 Text Search로 조회하고, 상위 5개를 `Restaurant[]`로 반환한다.
+ * 절대 URL이면 그대로, 상대경로면 `API_BASE_URL`을 붙여 절대화한다. (방어용)
+ */
+const toAbsoluteImageUri = (imgSrc: string): string => {
+  if (!imgSrc) return "";
+  return /^https?:\/\//i.test(imgSrc) ? imgSrc : `${API_BASE_URL}${imgSrc}`;
+};
+
+const mapProxyItemToRestaurant = (item: RestaurantProxyItem): Restaurant => ({
+  placeId: item.placeId,
+  name: item.name,
+  rating: item.rating ?? 0,
+  userRatingsTotal: item.userRatingsTotal ?? 0,
+  lat: item.lat,
+  lon: item.lon,
+  imageUri: toAbsoluteImageUri(item.imgSrc),
+  openNow: item.openNow ?? null,
+});
+
+/**
+ * 주어진 좌표 주변 맛집을 웹 프록시로 조회해 `Restaurant[]`로 반환한다.
+ * 웹 서버가 이미 top5까지 처리하므로 RN은 응답을 매핑만 한다.
  */
 export const fetchRestaurantsNearCoordinate = async (
   lat: number,
   lon: number,
 ): Promise<Restaurant[]> => {
-  const key = getGoogleMapsApiKey();
-  if (!key) {
-    throw new Error("EXPO_PUBLIC_GOOGLE_MAPS_API_KEY is not set");
-  }
+  const data = await post<RestaurantProxyItem[], RestaurantsProxyBody>(
+    API_ENDPOINTS.restaurantsProxy,
+    { lat, lon },
+  );
 
-  const url = buildTextSearchUrl(lat, lon);
-  const data = await get<GooglePlacesTextSearchResponse>(url);
-
-  if (data.status !== "OK" && data.status !== "ZERO_RESULTS") {
-    const msg = data.error_message ?? data.status;
-    throw new Error(`Google Places Text Search failed: ${msg}`);
-  }
-
-  const raw = data.results ?? [];
-  const filtered = raw
-    .filter((r) => r.photos && r.photos.length > 0)
-    .sort((a, b) => (b.rating ?? 0) - (a.rating ?? 0))
-    .slice(0, MAX_RESULTS);
-
-  const mapped: Restaurant[] = [];
-  for (const item of filtered) {
-    const row = mapResultToRestaurant(item);
-    if (row) mapped.push(row);
-  }
-  return mapped;
+  return (data ?? []).map(mapProxyItemToRestaurant);
 };

@@ -1,72 +1,29 @@
 import { format } from "date-fns";
-import { API_BASE_URL, API_ENDPOINTS } from "@shared/api/endpoints";
-import { env } from "@core/config/env";
-import { get, post } from "@shared/api/client";
+import { API_ENDPOINTS } from "@shared/api/endpoints";
+import { post } from "@shared/api/client";
 import { fromUnixTimeToG } from "@shared/lib/date";
-import type {
-  WeatherCurrent,
-  WeatherForecast,
-  WeatherForecastItem,
-} from "@shared/types/weather";
+import type { WeatherCurrent, WeatherForecast, WeatherForecastItem } from "@shared/types/weather";
 import type { EnrichedForecastItem } from "@entities/weather/model/types";
 
 interface WeatherProxyBody {
-  pro: "http" | "https";
   type: "weather" | "forecast";
   lat: number;
   lon: number;
 }
 
-const fetchRealTimeWeatherDirect = (lat: number, lon: number) => {
-  return get<WeatherCurrent>(`${API_ENDPOINTS.openWeatherBase}/weather`, {
-    params: {
-      lat,
-      lon,
-      appid: env.weatherApiKey,
-      lang: "kr",
-      units: "metric",
-    },
-  });
-};
-
-const fetchForecastWeatherDirect = (lat: number, lon: number) => {
-  return get<WeatherForecast>(`${API_ENDPOINTS.openWeatherBase}/forecast`, {
-    params: {
-      lat,
-      lon,
-      appid: env.weatherApiKey,
-      lang: "kr",
-      units: "metric",
-    },
-  });
-};
-
 /**
  * 기존 웹 `service/weather.js#getRealTimeWeather`를 대체한다.
- * API_BASE_URL이 있으면 기존 프록시(`/api/weather`)를, 없으면 OpenWeather 직접 호출을 사용한다.
+ * 외부 직접 호출 없이 웹 BFF 프록시(`POST /api/weather`)로만 조회한다. (계약: `{ type, lat, lon }`)
  */
-export const fetchRealTimeWeather = async (
+export const fetchRealTimeWeather = (
   lat: number,
   lon: number,
 ): Promise<WeatherCurrent> => {
-  if (API_BASE_URL) {
-    try {
-      return await post<WeatherCurrent, WeatherProxyBody>(
-        API_ENDPOINTS.weatherProxy,
-        {
-          pro: "https",
-          type: "weather",
-          lat,
-          lon,
-        },
-      );
-    } catch {
-      // 모바일 환경에서 프록시 라우트 실패 시 직접 OpenWeather를 사용한다.
-      return fetchRealTimeWeatherDirect(lat, lon);
-    }
-  }
-
-  return fetchRealTimeWeatherDirect(lat, lon);
+  return post<WeatherCurrent, WeatherProxyBody>(API_ENDPOINTS.weatherProxy, {
+    type: "weather",
+    lat,
+    lon,
+  });
 };
 
 /**
@@ -95,29 +52,20 @@ const enrichForecastItem = (
 
 /**
  * 기존 웹 `service/weather.js#getForecastWeather`를 대체한다.
- * 프록시 호출 결과/직접 호출 결과를 동일한 예보 모델로 정규화한다.
+ * 웹 BFF 프록시(`POST /api/weather`, `{ type: "forecast" }`) 결과를 예보 모델로 정규화한다.
  */
 export const fetchForecastWeather = async (
   lat: number,
   lon: number,
 ): Promise<EnrichedForecastItem[]> => {
-  const forecastResponse = API_BASE_URL
-    ? await (async () => {
-        try {
-          return await post<WeatherForecast, WeatherProxyBody>(
-            API_ENDPOINTS.weatherProxy,
-            {
-              pro: "https",
-              type: "forecast",
-              lat,
-              lon,
-            },
-          );
-        } catch {
-          return fetchForecastWeatherDirect(lat, lon);
-        }
-      })()
-    : await fetchForecastWeatherDirect(lat, lon);
+  const forecastResponse = await post<WeatherForecast, WeatherProxyBody>(
+    API_ENDPOINTS.weatherProxy,
+    {
+      type: "forecast",
+      lat,
+      lon,
+    },
+  );
 
   return forecastResponse.list.map((item) => enrichForecastItem(item.dt, item));
 };

@@ -1,5 +1,5 @@
-import { API_BASE_URL, API_ENDPOINTS } from "@shared/api/endpoints";
-import { get, post } from "@shared/api/client";
+import { API_ENDPOINTS } from "@shared/api/endpoints";
+import { post } from "@shared/api/client";
 import type { GeoCoord } from "@shared/types/location";
 import type {
   AddressComponent,
@@ -13,25 +13,18 @@ interface LocationProxyBody extends GeoCoord {}
 /**
  * 기존 웹 `app/api/location/route.js` + `service/weather.js#getUserGeoInfo`의
  * 역지오코딩 호출부를 엔티티 API로 분리한 함수.
+ *
+ * 외부 Google Geocode 직접 호출 없이 웹 BFF 프록시(`POST /api/location`)로만 조회한다.
+ * (계약: `{ lat, lon }`)
  */
-export const fetchReverseGeocode = async (
+export const fetchReverseGeocode = (
   lat: number,
   lon: number,
 ): Promise<ReverseGeocodeResponse> => {
-  if (API_BASE_URL) {
-    return post<ReverseGeocodeResponse, LocationProxyBody>(
-      API_ENDPOINTS.locationProxy,
-      { lat, lon },
-    );
-  }
-
-  return get<ReverseGeocodeResponse>(API_ENDPOINTS.googleGeocodeBase, {
-    params: {
-      latlng: `${lat},${lon}`,
-      language: "ko",
-      key: process.env.EXPO_PUBLIC_GOOGLE_MAPS_API_KEY,
-    },
-  });
+  return post<ReverseGeocodeResponse, LocationProxyBody>(
+    API_ENDPOINTS.locationProxy,
+    { lat, lon },
+  );
 };
 
 /**

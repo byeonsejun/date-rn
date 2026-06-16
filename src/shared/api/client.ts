@@ -45,10 +45,19 @@ const buildQueryString = (params?: QueryParams): string => {
 };
 
 /**
- * 상대 경로면 API_BASE_URL을 붙이고, 절대 URL이면 그대로 반환한다.
+ * 상대 경로(`/api/*` 프록시)면 API_BASE_URL을 붙인다.
+ *
+ * 프록시 전용 구조이므로 상대 경로인데 API_BASE_URL이 비어 있으면
+ * 잘못된 요청 URL이 되어 원인 파악이 어렵다. 이 경우 즉시 명확한 에러를 던진다.
  */
 const resolveUrl = (path: string, params?: QueryParams): string => {
   const isAbsolute = /^https?:\/\//i.test(path);
+  if (!isAbsolute && !API_BASE_URL) {
+    throw new ApiError(
+      "EXPO_PUBLIC_API_BASE_URL is not set — proxy(/api/*) 요청을 보낼 수 없습니다.",
+      0,
+    );
+  }
   const base = isAbsolute ? path : `${API_BASE_URL}${path}`;
   return `${base}${buildQueryString(params)}`;
 };
@@ -85,6 +94,9 @@ export const request = async <T>(
       ...rest,
       headers: {
         Accept: "application/json",
+        // 웹 BFF(`/api/restaurants` 등)가 이미지 등 리소스를 절대 URL로 내려주도록
+        // RN 클라이언트임을 알린다. (웹 라우트의 `X-Client: rn` 옵트인 계약)
+        "X-Client": "rn",
         ...(body !== undefined ? { "Content-Type": "application/json" } : {}),
         ...headers,
       },

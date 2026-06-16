@@ -47,7 +47,7 @@ export const WeatherPanel = () => {
       >
         <View className="h-full w-full items-center justify-center bg-neutral-900/40 px-4">
           <Text className="text-center text-sm text-white/90">
-            날씨 정보를 불러오지 못했습니다. EXPO_PUBLIC_WEATHER_API_KEY와 네트워크를 확인해 주세요.
+            날씨 정보를 불러오지 못했습니다. 네트워크 상태와 서버(EXPO_PUBLIC_API_BASE_URL) 연결을 확인해 주세요.
           </Text>
         </View>
       </ImageBackground>

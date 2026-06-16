@@ -1,54 +1,35 @@
 /**
- * 맛집(레스토랑) 도메인 — Google Places API 응답·앱 내부 정규화 모델.
+ * 맛집(레스토랑) 도메인 — 웹 BFF 프록시 응답·앱 내부 정규화 모델.
  *
  * 1. 원본 출처
- *    - 웹 Next.js `app/api/restaurants/route.js` (Text Search + Place Photo)
- *    - Google Places API Text Search / Place Photo JSON 스키마
+ *    - 웹 Next.js `app/api/restaurants/route.ts` 가 Google Places(Text Search + Place Photo)를
+ *      서버에서 호출·필터·정렬·top5 처리 후 정규화(`NormalizedRestaurant`) 배열로 반환한다.
+ *    - RN은 외부 Google API를 직접 호출하지 않고 이 프록시 응답만 소비한다.
  *
  * 2. 담당 역할
- *    - `entities/restaurant/model`: 외부 API 계약과 앱에서 쓰는 최소 필드만 타입으로 고정한다.
- *
- * 3. 작동 원리 요약
- *    - Text Search `results[]` 항목에서 `place_id`, `name`, `rating`, `geometry`, `photos`, `opening_hours` 등을 읽고,
- *      사진은 Photo API URL(또는 별도 fetch)로 연결 가능한 `photo_reference`를 보관한다.
- *    - 앱 전용 `Restaurant` 타입은 리스트·카드 UI에 필요한 필드만 담은 정규화 결과다.
+ *    - `entities/restaurant/model`: 프록시 응답 계약과 앱에서 쓰는 최소 필드만 타입으로 고정한다.
  */
 
 /**
- * Google Places Photo 리소스 (Text Search / Place Details `photos[]` 항목).
- * @see https://developers.google.com/maps/documentation/places/web-service/place-details
+ * 웹 BFF(`/api/restaurants`)가 내려주는 정규화 식당 1건.
+ * 웹의 `NormalizedRestaurant` 스키마와 동일하다.
+ * `imgSrc`는 `X-Client: rn` 헤더가 있을 때 자체 사진 프록시의 절대 URL로 내려온다.
  */
-export interface PlacePhoto {
-  photo_reference: string;
-  height: number;
-  width: number;
-  html_attributions?: string[];
-}
-
-/**
- * Google Places Text Search `results[]` 단일 항목 (앱에서 쓰는 필드만).
- */
-export interface GooglePlaceTextSearchResult {
-  place_id: string;
+export interface RestaurantProxyItem {
+  placeId: string;
   name: string;
   rating?: number;
-  user_ratings_total?: number;
-  geometry?: {
-    location: { lat: number; lng: number };
-  };
-  photos?: PlacePhoto[];
-  opening_hours?: { open_now?: boolean };
-}
-
-export interface GooglePlacesTextSearchResponse {
-  status: string;
-  error_message?: string;
-  results?: GooglePlaceTextSearchResult[];
+  userRatingsTotal?: number;
+  formattedAddress?: string;
+  openNow?: boolean;
+  lat: number;
+  lon: number;
+  imgSrc: string;
 }
 
 /**
  * 맛집 패널·카드에 표시하기 위해 정규화한 식당 1건.
- * (웹 라우트가 붙이던 `img_src` 대신 RN에서는 `imageUri`로 통일한다.)
+ * (웹 응답의 `imgSrc`를 RN에서는 `imageUri`로 통일한다.)
  */
 export interface Restaurant {
   placeId: string;
