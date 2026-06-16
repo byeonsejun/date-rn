@@ -3,6 +3,7 @@ import { useCallback, useEffect, useRef } from "react";
 import { useLocationStore } from "@entities/location/model/store";
 
 import { LocationConsentModal } from "@features/location/ui/LocationConsentModal";
+import { useAutoGeolocation } from "@features/location/useAutoGeolocation";
 import { useLocationConsent } from "@features/location/useLocationConsent";
 
 import { Toast } from "@shared/ui/Toast";
@@ -27,6 +28,10 @@ const SEOUL_TOAST_AUTO_DISMISS_MS = 5000;
  *      앱 전역에 한 번만 마운트되도록 한다 (FSD: widgets가 feature 조립 담당).
  */
 export const RootOverlays = () => {
+  // 권한이 이미 허용된 사용자는 콜드 스타트 시 1회 자동으로 현재 위치를 측정한다.
+  // (미허용 사용자는 조용히 스킵되고 아래 동의 모달 흐름이 첫 사용자를 담당)
+  useAutoGeolocation();
+
   const { visible, handleAgree, handleDecline } = useLocationConsent();
   const seoulOnlyToastVisible = useLocationStore((s) => s.seoulOnlyToastVisible);
   const setSeoulOnlyToastVisible = useLocationStore(

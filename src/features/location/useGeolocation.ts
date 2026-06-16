@@ -22,6 +22,16 @@ import {
 } from "@core/dev/devLocationMock";
 
 /**
+ * 인스턴스 경계를 넘는 공유 in-flight 가드.
+ *
+ * `useGeolocation`은 `useAutoGeolocation`·`useLocationConsent`·`useDistrictSelect`가
+ * 각각 별도 인스턴스를 만든다(로컬 `loading`은 인스턴스별로 분리됨). 첫 실행에서 자동 훅과
+ * 동의 모달이 동시에 `requestLocation`을 호출하면 GPS+역지오+날씨 요청이 중첩될 수 있으므로,
+ * 모듈 레벨 플래그로 동시 측정을 1건으로 직렬화한다.
+ */
+let measurementInFlight = false;
+
+/**
  * 기존 웹 `service/weather.js#getUserGeoInfo` + `navigator.geolocation`을 대체한다.
  * expo-location으로 GPS 퍼미션 → 좌표 → 역지오코딩 → 서울 판별 → 스토어 갱신 흐름을 수행한다.
  * 개발 중 `USE_DEV_FIXED_GPS_FOR_EXPO_GO`가 켜지면 실제 GPS 대신 강동구 고정 좌표를 쓴다.
@@ -37,6 +47,9 @@ export const useGeolocation = () => {
   const setShowWeather = useWeatherStore((s) => s.setShowWeather);
 
   const requestLocation = useCallback(async () => {
+    // 이미 다른 인스턴스가 측정 중이면 중복 호출을 막는다.
+    if (measurementInFlight) return;
+    measurementInFlight = true;
     setLoading(true);
     try {
       const { status } = await Location.requestForegroundPermissionsAsync();
@@ -84,6 +97,7 @@ export const useGeolocation = () => {
     } catch {
       setLocation(DEFAULT_DISTRICT);
     } finally {
+      measurementInFlight = false;
       setLoading(false);
     }
   }, [
