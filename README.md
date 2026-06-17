@@ -1,6 +1,10 @@
 # Seoul Date Platform — React Native (Expo) App
 
-서울 자치구 기반 데이트 장소·날씨·맛집 추천 서비스의 **네이티브 앱 구현체**입니다.
+<p align="center">
+  <img src="assets/images/icon.png" width="96" alt="서울, 너와 함께 앱 아이콘" />
+</p>
+
+서울 자치구 기반 데이트 장소·날씨·맛집 추천 서비스의 **네이티브 앱 구현체**입니다. 앱 표시 이름은 **“서울, 너와 함께”**입니다.
 
 > 이 저장소는 웹(Next.js) 버전의 **네이티브 앱 버전**입니다.
 > 서비스 전체 설명과 라이브 데모는 메인(웹) 저장소를 참고하세요.
@@ -9,6 +13,16 @@
 > - 라이브 데모(웹): https://date-eight-navy.vercel.app/
 >
 > 이 README는 RN 고유의 스택·구조·실행/빌드 방법에 집중한 간결 버전입니다.
+
+웹과 이 앱은 **소스를 공유하지 않습니다.** 둘 다 TypeScript이지만(언어 차이 때문이 아니라) 프레임워크·런타임·아키텍처(Next.js ↔ Expo/RN)가 달라 UI는 각각 새로 구현했습니다. 다만 도메인 로직·상태 모델·BFF(`/api/*`) 계약을 UI와 분리해 둔 덕분에 네이티브 재구현 비용은 낮았습니다.
+
+## 설치 / 다운로드 (Android)
+
+내부 테스트용 APK를 GitHub Releases에 올려둡니다(앱 스토어 미배포 단계).
+
+- **최신 APK 다운로드**: https://github.com/byeonsejun/date-rn/releases/latest
+- 안드로이드 기기에서 위 릴리스의 `.apk` 파일을 내려받아 설치합니다. 설치 시 **“알 수 없는 출처(앱) 허용”**이 필요할 수 있습니다.
+- iOS는 사이드로딩 제약으로 직접 설치를 제공하지 않습니다 — 웹 버전(위 라이브 데모)을 이용해 주세요.
 
 ## 기술 스택
 
@@ -37,11 +51,12 @@ src/
 ├── shared/     # 공통 인프라·UI (api 클라이언트, 타입, lib, ui 프리미티브)
 ├── entities/   # 도메인 모델 (model/store · api · ui 세그먼트)
 ├── features/   # 사용자 시나리오 단위 로직 (훅 + ui)
-└── widgets/    # feature 조합 화면 (home, layout, statistics)
+└── widgets/    # feature 조합 화면 (home, layout)
 ```
 
 - 라우트 진입점은 저장소 루트의 `app/`(expo-router)이며, 화면 조립/로직은 `widgets` 이하 레이어에 둡니다.
 - 도메인 상태(Zustand store)는 각 entity의 `model/store.ts`에 위치합니다.
+- `widgets/statistics`(통계 화면) 코드는 보존되어 있으나 **현재 비활성**입니다: 데모 데이터라 입구(헤더 탭)를 제거했고, `/statistics`로 진입하면 `app/statistics.tsx`가 홈으로 redirect합니다.
 
 ## 외부 API · 키 처리
 
@@ -82,6 +97,8 @@ npm run lint      # expo lint
 # EAS CLI 필요 (eas.json cli.version: ">= 18.5.0")
 eas build --profile preview --platform android
 ```
+
+> 앱 표시 이름은 `app.json`의 `name`(**“서울, 너와 함께”**)입니다. 기술 식별자(`slug=portfolio-rn`, `scheme=portfoliorn`, Android `package=com.byunsejun.projectrn`)는 빌드·스토어·딥링크·서명 식별용으로 고정하며, 사용자에게 보이는 이름과는 별개입니다.
 
 ## 환경변수
 
