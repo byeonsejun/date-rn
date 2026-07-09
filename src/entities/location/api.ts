@@ -8,7 +8,7 @@ import type {
   UserGeoContext,
 } from "@entities/location/model/types";
 
-interface LocationProxyBody extends GeoCoord {}
+type LocationProxyBody = GeoCoord;
 
 /**
  * 기존 웹 `app/api/location/route.js` + `service/weather.js#getUserGeoInfo`의
