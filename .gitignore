@@ -56,6 +56,11 @@ firebase-admin*.json
 # typescript
 *.tsbuildinfo
 
+# translation script artifacts
+scripts/.translation-cache.json
+src/entities/poi/model/data/*.translated.json
+src/entities/poi/model/data/*.bak
+
 app-example
 
 # generated native folders
