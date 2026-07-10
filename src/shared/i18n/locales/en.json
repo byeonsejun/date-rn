@@ -35,6 +35,7 @@
   "map": {
     "closePanel": "Close panel",
     "currentLocationDescription": "Shows your current location on the map.",
+    "currentLocationTitle": "Current Location",
     "restaurantLabel": "Restaurant",
     "ratingLabel": "Rating {{rating}} ({{count}})",
     "noDetailInfo": "No details available.",

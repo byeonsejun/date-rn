@@ -35,6 +35,7 @@
   "map": {
     "closePanel": "패널 닫기",
     "currentLocationDescription": "지도에서 현재 위치를 표시합니다.",
+    "currentLocationTitle": "현재 위치",
     "restaurantLabel": "식당",
     "ratingLabel": "평점 {{rating}} ({{count}})",
     "noDetailInfo": "상세 정보가 없습니다.",

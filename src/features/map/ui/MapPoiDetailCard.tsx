@@ -2,6 +2,9 @@ import { Image, Pressable, ScrollView, Text, View } from 'react-native';
 import { useTranslation } from 'react-i18next';
 
 import type { MapMarkerData } from '@entities/map/model/types';
+import { getCategoryLabel } from '@entities/map/lib/label';
+import { getPoiDisplayTitle } from '@entities/poi/lib/label';
+import type { SupportedLanguage } from '@shared/i18n';
 
 interface MapPoiDetailCardProps {
   marker: MapMarkerData;
@@ -23,13 +26,14 @@ interface MapPoiDetailCardProps {
  *    - `MapView`가 props로만 조립한다 (절대 규칙 5).
  */
 export const MapPoiDetailCard = ({ marker, onClose, onOpenMaps, onOpenDirections }: MapPoiDetailCardProps) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const language = i18n.language as SupportedLanguage;
 
   if (marker.source === 'currentLocation') {
     return (
       <View className="min-h-[120px] max-h-full overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-md">
         <View className="mb-2 flex-row items-center justify-between border-b border-neutral-100 p-3">
-          <Text className="text-base font-semibold text-neutral-900">현재 위치</Text>
+          <Text className="text-base font-semibold text-neutral-900">{t('map.currentLocationTitle')}</Text>
           <Pressable onPress={onClose} accessibilityLabel={t('map.closePanel')} className="rounded-lg bg-neutral-100 px-2 py-1">
             <Text className="text-xs font-medium text-neutral-700">{t('common.close')}</Text>
           </Pressable>
@@ -75,16 +79,18 @@ export const MapPoiDetailCard = ({ marker, onClose, onOpenMaps, onOpenDirections
   }
 
   const bodyParts: string[] = [];
-  if (marker.description) {
+  if (marker.description && language !== 'en') {
     bodyParts.push(marker.description);
   }
-  if (marker.category === 'dodreamgil' && marker.detailCourse?.trim()) {
+  if (marker.category === 'dodreamgil' && marker.detailCourse?.trim() && language !== 'en') {
     bodyParts.push(marker.detailCourse.trim());
   }
   if (marker.address) {
     bodyParts.push(marker.address);
   }
   const bodyText = bodyParts.length > 0 ? bodyParts.join('\n\n') : t('map.noDetailInfo');
+  const displayTitle = getPoiDisplayTitle(marker, language);
+  const kindLabel = getCategoryLabel(marker.kind, language);
 
   return (
     <View className="min-h-[120px] max-h-full overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-md">
@@ -93,14 +99,14 @@ export const MapPoiDetailCard = ({ marker, onClose, onOpenMaps, onOpenDirections
           <Image source={{ uri: marker.imageUrl }} className="h-16 w-16 rounded-xl bg-neutral-100" resizeMode="cover" />
         ) : (
           <View className="h-16 w-16 items-center justify-center rounded-xl bg-neutral-100">
-            <Text className="text-xs text-neutral-500">{marker.kind}</Text>
+            <Text className="text-xs text-neutral-500">{kindLabel}</Text>
           </View>
         )}
         <View className="flex-1">
           <Text className="text-base font-semibold text-neutral-900" numberOfLines={2}>
-            {marker.title}
+            {displayTitle}
           </Text>
-          <Text className="mt-1 text-xs text-neutral-500">{marker.kind}</Text>
+          <Text className="mt-1 text-xs text-neutral-500">{kindLabel}</Text>
           {marker.phne ? <Text className="mt-1 text-xs text-neutral-600">{marker.phne}</Text> : null}
         </View>
         <Pressable onPress={onClose} accessibilityLabel={t('map.closePanel')} className="rounded-lg bg-neutral-100 px-2 py-1">
