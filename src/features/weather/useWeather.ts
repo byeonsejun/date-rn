@@ -89,6 +89,7 @@ export const useWeather = () => {
     selectWeather,
     setSelectWeather,
     location,
+    allDistrictInfo,
     loading,
     needsGps,
   };

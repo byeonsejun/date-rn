@@ -5,6 +5,9 @@ import { Loading } from '@shared/ui/Loading';
 import { ImageBackground, Pressable, Text, View } from 'react-native';
 import { useTranslation } from 'react-i18next';
 
+import { getDistrictLabel } from '@entities/location/lib/label';
+import type { SupportedLanguage } from '@shared/i18n';
+
 const DAY_TABS = [
   { titleKey: 'weather.today', value: 0 },
   { titleKey: 'weather.tomorrow', value: 1 },
@@ -18,10 +21,15 @@ const DAY_TABS = [
  * Feature 훅(useWeather)에서 상태를 읽어 렌더링한다.
  */
 export const WeatherPanel = () => {
-  const { t } = useTranslation();
-  const { showWeather, selectWeather, setSelectWeather, location, loading } = useWeather();
+  const { t, i18n } = useTranslation();
+  const language = i18n.language as SupportedLanguage;
+  const { showWeather, selectWeather, setSelectWeather, location, allDistrictInfo, loading } = useWeather();
   const todayWeather = showWeather.today;
   const forecastWeather = showWeather.forecast;
+
+  // 표시 시점에만 라벨 변환 — `location`(로직용 원본값)은 그대로 유지
+  const district = allDistrictInfo.find((item) => item.location === location);
+  const locationLabel = district ? getDistrictLabel(district, language) : location;
 
   // 웹 `Weather.jsx`와 동일: wbg.jpg 배경 + 반투명 어두운 오버레이
   const wbg = require('../../../../assets/images/wbg.jpg') as number;
@@ -60,7 +68,7 @@ export const WeatherPanel = () => {
     <ImageBackground source={wbg} resizeMode="cover" style={{ borderRadius: 12, overflow: 'hidden', marginBottom: 16 }}>
       {/* 웹의 bg-neutral-900/20 backdrop-blur 역할 */}
       <View className="w-full bg-neutral-900/30 px-3 py-3">
-        <WeatherCard locationName={location} weather={todayWeather} />
+        <WeatherCard locationName={locationLabel} weather={todayWeather} />
 
         <View style={{ marginTop: 12, marginBottom: 8 }}>
           <View
