@@ -4,6 +4,8 @@ import { useTranslation } from 'react-i18next';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import type { MapMarkerData, MapType } from '@entities/map/model/types';
+import { getPoiDisplayTitle } from '@entities/poi/lib/label';
+import type { SupportedLanguage } from '@shared/i18n';
 
 import { MapPoiDetailCard } from '@features/map/ui/MapPoiDetailCard';
 import { MapTypeSelector } from '@features/map/ui/MapTypeSelector';
@@ -43,7 +45,8 @@ export const MapView = (props: {
     onClosePoiDetail,
   } = props;
 
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const language = i18n.language as SupportedLanguage;
   const insets = useSafeAreaInsets();
   const { width: viewportWidth } = useWindowDimensions();
   const detailBottomPad = Math.max(insets.bottom, 8);
@@ -97,7 +100,9 @@ export const MapView = (props: {
                 onPress={() => onMarkerPress(marker.id)}
                 className="rounded-lg border border-neutral-200 bg-white px-3 py-2"
               >
-                <Text className="text-xs font-semibold text-neutral-800">{marker.title}</Text>
+                <Text className="text-xs font-semibold text-neutral-800">
+                  {marker.source === 'poi' ? getPoiDisplayTitle(marker, language) : marker.title}
+                </Text>
               </Pressable>
             ))}
             {markers.length > 8 ? (
