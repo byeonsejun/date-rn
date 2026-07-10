@@ -39,6 +39,7 @@ export type MapMarkerData =
       id: string;
       source: "poi";
       title: string;
+      titleEn?: string;
       category: MapPoiCategory;
       kind: MapPoiKind;
       lat: number;

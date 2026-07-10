@@ -141,6 +141,7 @@ export const buildMapMarkers = (
       id: makePoiMarkerId(poi.lat, poi.lon, index),
       source: "poi",
       title: poi.title,
+      titleEn: poi.titleEn,
       category,
       kind: poi.kind,
       lat: poi.lat,

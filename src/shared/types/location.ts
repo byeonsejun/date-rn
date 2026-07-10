@@ -5,6 +5,7 @@ export interface GeoCoord {
 
 export interface District extends GeoCoord {
   location: string;
+  location_en?: string;
 }
 
 export interface GeoInfo extends GeoCoord {

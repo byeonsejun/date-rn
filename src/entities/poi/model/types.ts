@@ -12,6 +12,11 @@ export interface PoiSuggestion extends GeoCoord {
   category: PoiCategory;
   kind: PoiKind;
   title: string;
+
+  /**
+   * 영어 모드 표시용 title 번역. (원본 JSON에 번역이 없으면 undefined -> 한국어 title로 폴백)
+   */
+  titleEn?: string;
   address?: string;
   imageUrl?: string;
   phne?: string;
