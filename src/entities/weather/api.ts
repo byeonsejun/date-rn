@@ -2,6 +2,7 @@ import { format } from "date-fns";
 import { API_ENDPOINTS } from "@shared/api/endpoints";
 import { post } from "@shared/api/client";
 import { fromUnixTimeToG } from "@shared/lib/date";
+import type { SupportedLanguage } from "@shared/i18n";
 import type { WeatherCurrent, WeatherForecast, WeatherForecastItem } from "@shared/types/weather";
 import type { EnrichedForecastItem } from "@entities/weather/model/types";
 
@@ -9,20 +10,24 @@ interface WeatherProxyBody {
   type: "weather" | "forecast";
   lat: number;
   lon: number;
+  lang: SupportedLanguage;
 }
 
 /**
  * 기존 웹 `service/weather.js#getRealTimeWeather`를 대체한다.
- * 외부 직접 호출 없이 웹 BFF 프록시(`POST /api/weather`)로만 조회한다. (계약: `{ type, lat, lon }`)
+ * 외부 직접 호출 없이 웹 BFF 프록시(`POST /api/weather`)로만 조회한다. (계약: `{ type, lat, lon, lang }`)
+ * `lang`은 BFF가 OpenWeather `lang` 파라미터로 매핑해 `description`만 해당 언어로 내려준다.
  */
 export const fetchRealTimeWeather = (
   lat: number,
   lon: number,
+  lang: SupportedLanguage,
 ): Promise<WeatherCurrent> => {
   return post<WeatherCurrent, WeatherProxyBody>(API_ENDPOINTS.weatherProxy, {
     type: "weather",
     lat,
     lon,
+    lang,
   });
 };
 
@@ -57,6 +62,7 @@ const enrichForecastItem = (
 export const fetchForecastWeather = async (
   lat: number,
   lon: number,
+  lang: SupportedLanguage,
 ): Promise<EnrichedForecastItem[]> => {
   const forecastResponse = await post<WeatherForecast, WeatherProxyBody>(
     API_ENDPOINTS.weatherProxy,
@@ -64,6 +70,7 @@ export const fetchForecastWeather = async (
       type: "forecast",
       lat,
       lon,
+      lang,
     },
   );
 

@@ -1,4 +1,5 @@
 import { useCallback, useState } from "react";
+import { useTranslation } from "react-i18next";
 import * as Location from "expo-location";
 import {
   fetchReverseGeocode,
@@ -11,6 +12,7 @@ import {
   fetchRealTimeWeather,
   fetchForecastWeather,
 } from "@entities/weather/api";
+import type { SupportedLanguage } from "@shared/i18n";
 import {
   markOutsideSeoul,
   markLocationAgreed,
@@ -38,6 +40,8 @@ let measurementInFlight = false;
  */
 export const useGeolocation = () => {
   const [loading, setLoading] = useState(false);
+  const { i18n } = useTranslation();
+  const language = i18n.language as SupportedLanguage;
 
   const setLocation = useLocationStore((s) => s.setLocation);
   const setMyGeoInfo = useLocationStore((s) => s.setMyGeoInfo);
@@ -87,8 +91,8 @@ export const useGeolocation = () => {
       await markLocationAgreed();
 
       const [today, forecast] = await Promise.all([
-        fetchRealTimeWeather(latitude, longitude),
-        fetchForecastWeather(latitude, longitude),
+        fetchRealTimeWeather(latitude, longitude, language),
+        fetchForecastWeather(latitude, longitude, language),
       ]);
 
       setMyLocalWeather({ today, forecast });
@@ -106,6 +110,7 @@ export const useGeolocation = () => {
     showSeoulOnlyToast,
     setMyLocalWeather,
     setShowWeather,
+    language,
   ]);
 
   return { requestLocation, loading };
