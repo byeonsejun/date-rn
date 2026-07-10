@@ -1,5 +1,6 @@
 import { useCallback } from 'react';
 import { Linking, Pressable, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
+import { useTranslation } from 'react-i18next';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import type { MapMarkerData, MapType } from '@entities/map/model/types';
@@ -42,6 +43,7 @@ export const MapView = (props: {
     onClosePoiDetail,
   } = props;
 
+  const { t } = useTranslation();
   const insets = useSafeAreaInsets();
   const { width: viewportWidth } = useWindowDimensions();
   const detailBottomPad = Math.max(insets.bottom, 8);
@@ -75,17 +77,17 @@ export const MapView = (props: {
     <View className="relative h-full w-full rounded-2xl bg-neutral-100">
       <View style={styles.mapPlaceholder} className="items-center justify-center px-6">
         <Text className="mb-2 text-center text-sm font-semibold text-neutral-800">
-          웹 미리보기에서는 네이티브 지도를 사용할 수 없습니다
+          {t('map.webPreviewUnavailable')}
         </Text>
         <Text className="mb-4 text-center text-xs text-neutral-600">
-          iOS 시뮬레이터, Android 에뮬레이터, 또는 Expo Go 앱에서 실행하면 지도가 표시됩니다.
+          {t('map.webPreviewHint')}
         </Text>
         <Pressable
           onPress={() => { void openMapInBrowser(); }}
           className="rounded-xl bg-sky-500 px-4 py-2"
-          accessibilityLabel="현재 영역을 브라우저 Google 지도에서 열기"
+          accessibilityLabel={t('map.openCurrentAreaInBrowser')}
         >
-          <Text className="text-sm font-semibold text-white">Google 지도에서 보기</Text>
+          <Text className="text-sm font-semibold text-white">{t('map.openInGoogleMapsBrowser')}</Text>
         </Pressable>
         {markers && markers.length > 0 ? (
           <View className="mt-4 w-full max-w-md gap-2">
@@ -100,7 +102,7 @@ export const MapView = (props: {
             ))}
             {markers.length > 8 ? (
               <Text className="text-center text-[11px] text-neutral-500">
-                외 {markers.length - 8}개 마커 (네이티브에서 확인)
+                {t('map.moreMarkersHint', { count: markers.length - 8 })}
               </Text>
             ) : null}
           </View>
@@ -109,11 +111,11 @@ export const MapView = (props: {
 
       {markers === undefined ? (
         <View className="absolute inset-0 z-[5] items-center justify-center bg-neutral-100/70">
-          <Text className="text-xs font-semibold text-neutral-700">지도 데이터를 불러오는 중입니다.</Text>
+          <Text className="text-xs font-semibold text-neutral-700">{t('map.loadingMarkers')}</Text>
         </View>
       ) : markers.length === 0 ? (
         <View className="absolute inset-0 z-[5] items-center justify-center bg-neutral-100/70">
-          <Text className="text-xs font-semibold text-neutral-700">선택한 조건에 해당하는 마커가 없습니다.</Text>
+          <Text className="text-xs font-semibold text-neutral-700">{t('map.noMarkers')}</Text>
         </View>
       ) : null}
 
@@ -140,13 +142,13 @@ export const MapView = (props: {
             onPress={() => { void openInGoogleMaps(); }}
             className="rounded-xl bg-neutral-700 px-4 py-3 shadow-md"
           >
-            <Text className="text-sm font-semibold text-white">지도</Text>
+            <Text className="text-sm font-semibold text-white">{t('map.viewMap')}</Text>
           </Pressable>
           <Pressable
             onPress={() => { void openDirections(); }}
             className="rounded-xl bg-sky-500 px-4 py-3 shadow-md"
           >
-            <Text className="text-sm font-semibold text-white">길찾기</Text>
+            <Text className="text-sm font-semibold text-white">{t('map.directions')}</Text>
           </Pressable>
         </View>
       ) : null}

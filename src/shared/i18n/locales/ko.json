@@ -1,5 +1,66 @@
 {
   "common": {
-    "appName": "서울, 너와 함께"
+    "appName": "서울, 너와 함께",
+    "close": "닫기",
+    "loading": "불러오는 중...",
+    "loadingMore": "더 불러오는 중...",
+    "noData": "표시할 데이터가 없습니다.",
+    "initializing": "설정 불러오는 중...",
+    "noInfo": "정보 없음",
+    "openNow": "영업중",
+    "closed": "영업 종료"
+  },
+  "location": {
+    "consentMessage": "서울, 너와 함께는 현재 계신 곳을 중심으로 맞춤형 날씨와 데이트 장소를 추천해 드려요!\n(본 서비스는 서울 지역 한정으로 제공됩니다.)",
+    "agree": "동의",
+    "decline": "거부",
+    "seoulOnlyToast": "서울 지역만 서비스되고 있습니다. 원하시는 지역을 선택해 주세요."
+  },
+  "weather": {
+    "today": "오늘",
+    "tomorrow": "내일",
+    "dayAfterTomorrow": "모레",
+    "threeDaysLater": "글피",
+    "loading": "날씨 불러오는 중...",
+    "loadError": "날씨 정보를 불러오지 못했습니다. 네트워크 상태와 서버(EXPO_PUBLIC_API_BASE_URL) 연결을 확인해 주세요."
+  },
+  "recommend": {
+    "foodListTitle": "추천식당 리스트 Top 5",
+    "viewFoodButton": "추천 식당 보기",
+    "foodFetchError": "맛집 정보를 불러오지 못했습니다.",
+    "locationNeeded": "위치 필요",
+    "loadingPlaces": "추천 데이터를 불러오는 중입니다.",
+    "todayPlacesTitle": "오늘 추천 데이트 장소"
+  },
+  "map": {
+    "closePanel": "패널 닫기",
+    "currentLocationDescription": "지도에서 현재 위치를 표시합니다.",
+    "restaurantLabel": "식당",
+    "ratingLabel": "평점 {{rating}} ({{count}})",
+    "noDetailInfo": "상세 정보가 없습니다.",
+    "viewOnGoogleMaps": "구글맵에서 보기",
+    "viewMap": "지도",
+    "directions": "길찾기",
+    "loadingMarkers": "지도 데이터를 불러오는 중입니다.",
+    "noMarkers": "선택한 조건에 해당하는 마커가 없습니다.",
+    "viewSelectedRestaurantOnMaps": "선택한 식당을 구글맵에서 보기",
+    "directionsToSelectedRestaurant": "선택한 식당 길찾기",
+    "webPreviewUnavailable": "웹 미리보기에서는 네이티브 지도를 사용할 수 없습니다",
+    "webPreviewHint": "iOS 시뮬레이터, Android 에뮬레이터, 또는 Expo Go 앱에서 실행하면 지도가 표시됩니다.",
+    "openCurrentAreaInBrowser": "현재 영역을 브라우저 Google 지도에서 열기",
+    "openInGoogleMapsBrowser": "Google 지도에서 보기",
+    "moreMarkersHint": "외 {{count}}개 마커 (네이티브에서 확인)",
+    "currentMarkerLabel": "현재"
+  },
+  "restaurant": {
+    "noImage": "이미지 없음"
+  },
+  "poi": {
+    "viewOnMapLabel": "{{title}} 위치 지도에서 보기",
+    "contactLabel": "문의: {{phone}}"
+  },
+  "home": {
+    "districtSelectTitle": "지역 선택",
+    "weatherSectionTitle": "선택하신 지역의 날씨 정보입니다."
   }
 }

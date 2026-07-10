@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { Text, View } from 'react-native';
 
 /**
@@ -15,9 +16,10 @@ import { Text, View } from 'react-native';
  *    - 홈은 `HomeSidebar`의 `ScrollView` 맨 위에 두어 헤더가 화면 스크롤과 함께 움직인다.
  */
 export const AppHeader = () => {
+  const { t } = useTranslation();
   return (
     <View className="border-b border-pink-200 bg-white px-4 py-3">
-      <Text className="text-xl font-bold text-neutral-900">서울, 너와 함께</Text>
+      <Text className="text-xl font-bold text-neutral-900">{t('common.appName')}</Text>
     </View>
   );
 };

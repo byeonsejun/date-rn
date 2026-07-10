@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 
 import { useLocationStore } from "@entities/location/model/store";
 
@@ -8,8 +9,6 @@ import { useLocationConsent } from "@features/location/useLocationConsent";
 
 import { Toast } from "@shared/ui/Toast";
 
-const SEOUL_TOAST_MESSAGE =
-  "서울 지역만 서비스되고 있습니다. 원하시는 지역을 선택해 주세요.";
 const SEOUL_TOAST_AUTO_DISMISS_MS = 5000;
 
 /**
@@ -28,6 +27,8 @@ const SEOUL_TOAST_AUTO_DISMISS_MS = 5000;
  *      앱 전역에 한 번만 마운트되도록 한다 (FSD: widgets가 feature 조립 담당).
  */
 export const RootOverlays = () => {
+  const { t } = useTranslation();
+
   // 권한이 이미 허용된 사용자는 콜드 스타트 시 1회 자동으로 현재 위치를 측정한다.
   // (미허용 사용자는 조용히 스킵되고 아래 동의 모달 흐름이 첫 사용자를 담당)
   useAutoGeolocation();
@@ -63,7 +64,7 @@ export const RootOverlays = () => {
       />
       <Toast
         visible={seoulOnlyToastVisible}
-        message={SEOUL_TOAST_MESSAGE}
+        message={t('location.seoulOnlyToast')}
         onClose={closeToast}
       />
     </>

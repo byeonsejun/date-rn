@@ -1,5 +1,6 @@
 import { type ReactNode, useEffect, useState } from "react";
 import { View } from "react-native";
+import { useTranslation } from "react-i18next";
 import {
   RESET_LOCATION_STATE_ON_EACH_LAUNCH,
   clearAllLocationPersistenceForDevTest,
@@ -19,6 +20,7 @@ interface AppProviderProps {
  * 원본 웹의 동기 `localStorage`와 달리 RN은 비동기 복원이 필수다.
  */
 export const AppProvider = ({ children }: AppProviderProps) => {
+  const { t } = useTranslation();
   const [hydrated, setHydrated] = useState(false);
 
   useEffect(() => {
@@ -39,7 +41,7 @@ export const AppProvider = ({ children }: AppProviderProps) => {
   if (!hydrated) {
     return (
       <View className="flex-1 bg-white">
-        <Loading fullscreen message="설정 불러오는 중..." />
+        <Loading fullscreen message={t("common.initializing")} />
       </View>
     );
   }

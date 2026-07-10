@@ -1,4 +1,5 @@
 import { ScrollView, Text, View } from 'react-native';
+import { useTranslation } from 'react-i18next';
 
 import { PoiCard } from '@entities/poi/ui/PoiCard';
 import { useRecommend } from '@features/recommend/useRecommend';
@@ -14,12 +15,13 @@ import { useRecommend } from '@features/recommend/useRecommend';
  * - 각 항목은 PoiCard에 위임
  */
 export const RecommendPlace = () => {
+  const { t } = useTranslation();
   const { district, pois, onPoiCardPress } = useRecommend();
 
   const headerNode = district ? (
     <Text className="text-xs font-medium text-neutral-500">{district}</Text>
   ) : (
-    <Text className="text-xs font-medium text-neutral-400">위치 필요</Text>
+    <Text className="text-xs font-medium text-neutral-400">{t('recommend.locationNeeded')}</Text>
   );
 
   const listNode =
@@ -32,13 +34,13 @@ export const RecommendPlace = () => {
         />
       ))
     ) : (
-      <Text className="text-xs text-neutral-500">추천 데이터를 불러오는 중입니다.</Text>
+      <Text className="text-xs text-neutral-500">{t('recommend.loadingPlaces')}</Text>
     );
 
   return (
     <View className="w-full h-[345px] overflow-hidden rounded-2xl border border-pink-100 bg-white shadow-sm flex flex-col gap-2 p-3">
       <View className="flex-row items-center justify-between">
-        <Text className="text-base font-bold text-neutral-900">오늘 추천 데이트 장소</Text>
+        <Text className="text-base font-bold text-neutral-900">{t('recommend.todayPlacesTitle')}</Text>
         {headerNode}
       </View>
 

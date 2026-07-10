@@ -1,4 +1,5 @@
 import { ScrollView, Text, View } from "react-native";
+import { useTranslation } from "react-i18next";
 
 import { DistrictPicker } from "@features/location/ui/DistrictPicker";
 import { useDistrictSelect } from "@features/location/useDistrictSelect";
@@ -23,6 +24,7 @@ import { AppHeader } from "@widgets/layout/ui/AppHeader";
  *    - 서로 다른 Feature 슬라이스를 **widgets에서만** 한 화면에 묶는다 (feature 간 직접 import 없음).
  */
 export const HomeSidebar = () => {
+  const { t } = useTranslation();
   const { allDistrictInfo, location, handleSelect } = useDistrictSelect();
 
   return (
@@ -37,7 +39,7 @@ export const HomeSidebar = () => {
 
       <View className="mb-4">
         <Text className="mb-2 text-sm font-semibold text-neutral-700">
-          지역 선택
+          {t('home.districtSelectTitle')}
         </Text>
         <DistrictPicker
           districts={allDistrictInfo}
@@ -48,7 +50,7 @@ export const HomeSidebar = () => {
 
       <View className="mb-0">
         <Text className="mb-2 text-sm font-semibold text-neutral-700">
-          선택하신 지역의 날씨 정보입니다.
+          {t('home.weatherSectionTitle')}
         </Text>
         <WeatherPanel />
       </View>

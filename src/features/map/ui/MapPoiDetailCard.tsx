@@ -1,4 +1,5 @@
 import { Image, Pressable, ScrollView, Text, View } from 'react-native';
+import { useTranslation } from 'react-i18next';
 
 import type { MapMarkerData } from '@entities/map/model/types';
 
@@ -22,13 +23,15 @@ interface MapPoiDetailCardProps {
  *    - `MapView`가 props로만 조립한다 (절대 규칙 5).
  */
 export const MapPoiDetailCard = ({ marker, onClose, onOpenMaps, onOpenDirections }: MapPoiDetailCardProps) => {
+  const { t } = useTranslation();
+
   if (marker.source === 'currentLocation') {
     return (
       <View className="min-h-[120px] max-h-full overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-md">
         <View className="mb-2 flex-row items-center justify-between border-b border-neutral-100 p-3">
           <Text className="text-base font-semibold text-neutral-900">현재 위치</Text>
-          <Pressable onPress={onClose} accessibilityLabel="패널 닫기" className="rounded-lg bg-neutral-100 px-2 py-1">
-            <Text className="text-xs font-medium text-neutral-700">닫기</Text>
+          <Pressable onPress={onClose} accessibilityLabel={t('map.closePanel')} className="rounded-lg bg-neutral-100 px-2 py-1">
+            <Text className="text-xs font-medium text-neutral-700">{t('common.close')}</Text>
           </Pressable>
         </View>
         <ScrollView
@@ -37,13 +40,13 @@ export const MapPoiDetailCard = ({ marker, onClose, onOpenMaps, onOpenDirections
           nestedScrollEnabled
           showsVerticalScrollIndicator={false}
         >
-          <Text className="text-sm text-neutral-600">지도에서 현재 위치를 표시합니다.</Text>
+          <Text className="text-sm text-neutral-600">{t('map.currentLocationDescription')}</Text>
         </ScrollView>
       </View>
     );
   }
   if (marker.source === 'restaurant') {
-    const openStatusText = marker.openNow === null ? '정보 없음' : marker.openNow ? '영업중' : '영업 종료';
+    const openStatusText = marker.openNow === null ? t('common.noInfo') : marker.openNow ? t('common.openNow') : t('common.closed');
     return (
       <View className="min-h-[120px] max-h-full overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-md">
         <View className="flex-row items-start gap-3 border-b border-neutral-100 p-3">
@@ -51,7 +54,7 @@ export const MapPoiDetailCard = ({ marker, onClose, onOpenMaps, onOpenDirections
             <Image source={{ uri: marker.imageUrl }} className="h-16 w-16 rounded-xl bg-neutral-100" resizeMode="cover" />
           ) : (
             <View className="h-16 w-16 items-center justify-center rounded-xl bg-neutral-100">
-              <Text className="text-xs text-neutral-500">식당</Text>
+              <Text className="text-xs text-neutral-500">{t('map.restaurantLabel')}</Text>
             </View>
           )}
           <View className="flex-1">
@@ -59,12 +62,12 @@ export const MapPoiDetailCard = ({ marker, onClose, onOpenMaps, onOpenDirections
               {marker.title}
             </Text>
             <Text className="mt-1 text-xs text-neutral-500">
-              {`평점 ${marker.rating.toFixed(1)} (${marker.userRatingsTotal})`}
+              {t('map.ratingLabel', { rating: marker.rating.toFixed(1), count: marker.userRatingsTotal })}
             </Text>
             <Text className="mt-1 text-xs text-neutral-600">{openStatusText}</Text>
           </View>
-          <Pressable onPress={onClose} accessibilityLabel="패널 닫기" className="rounded-lg bg-neutral-100 px-2 py-1">
-            <Text className="text-xs font-medium text-neutral-700">닫기</Text>
+          <Pressable onPress={onClose} accessibilityLabel={t('map.closePanel')} className="rounded-lg bg-neutral-100 px-2 py-1">
+            <Text className="text-xs font-medium text-neutral-700">{t('common.close')}</Text>
           </Pressable>
         </View>
       </View>
@@ -81,7 +84,7 @@ export const MapPoiDetailCard = ({ marker, onClose, onOpenMaps, onOpenDirections
   if (marker.address) {
     bodyParts.push(marker.address);
   }
-  const bodyText = bodyParts.length > 0 ? bodyParts.join('\n\n') : '상세 정보가 없습니다.';
+  const bodyText = bodyParts.length > 0 ? bodyParts.join('\n\n') : t('map.noDetailInfo');
 
   return (
     <View className="min-h-[120px] max-h-full overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-md">
@@ -100,8 +103,8 @@ export const MapPoiDetailCard = ({ marker, onClose, onOpenMaps, onOpenDirections
           <Text className="mt-1 text-xs text-neutral-500">{marker.kind}</Text>
           {marker.phne ? <Text className="mt-1 text-xs text-neutral-600">{marker.phne}</Text> : null}
         </View>
-        <Pressable onPress={onClose} accessibilityLabel="패널 닫기" className="rounded-lg bg-neutral-100 px-2 py-1">
-          <Text className="text-xs font-medium text-neutral-700">닫기</Text>
+        <Pressable onPress={onClose} accessibilityLabel={t('map.closePanel')} className="rounded-lg bg-neutral-100 px-2 py-1">
+          <Text className="text-xs font-medium text-neutral-700">{t('common.close')}</Text>
         </Pressable>
       </View>
       <ScrollView
@@ -118,18 +121,18 @@ export const MapPoiDetailCard = ({ marker, onClose, onOpenMaps, onOpenDirections
             <Pressable
               onPress={onOpenMaps}
               className="flex-1 items-center rounded-xl bg-neutral-700 py-2"
-              accessibilityLabel="구글맵에서 보기"
+              accessibilityLabel={t('map.viewOnGoogleMaps')}
             >
-              <Text className="text-sm font-semibold text-white">지도</Text>
+              <Text className="text-sm font-semibold text-white">{t('map.viewMap')}</Text>
             </Pressable>
           ) : null}
           {onOpenDirections ? (
             <Pressable
               onPress={onOpenDirections}
               className="flex-1 items-center rounded-xl bg-sky-500 py-2"
-              accessibilityLabel="길찾기"
+              accessibilityLabel={t('map.directions')}
             >
-              <Text className="text-sm font-semibold text-white">길찾기</Text>
+              <Text className="text-sm font-semibold text-white">{t('map.directions')}</Text>
             </Pressable>
           ) : null}
         </View>

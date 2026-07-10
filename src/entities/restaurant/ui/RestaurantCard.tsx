@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Image, Pressable, Text, View } from "react-native";
+import { useTranslation } from "react-i18next";
 
 import { StarRating } from "@shared/ui/StarRating";
 
@@ -28,14 +29,15 @@ export const RestaurantCard = (props: {
   isActive?: boolean;
 }) => {
   const { name, rating, userRatingsTotal, openNow, imageUri, onPressPhoto, isActive } = props;
+  const { t } = useTranslation();
   const [imageError, setImageError] = useState(false);
 
   const openStatusText =
     openNow === null
-      ? "정보 없음"
+      ? t("common.noInfo")
       : openNow
-        ? "영업중"
-        : "영업 종료";
+        ? t("common.openNow")
+        : t("common.closed");
 
   const rowClassName = isActive
     ? "w-full min-h-[80px] flex-row justify-between py-2 pl-2 bg-sky-50"
@@ -81,7 +83,7 @@ export const RestaurantCard = (props: {
             />
           ) : (
             <View className="h-full w-full items-center justify-center">
-              <Text className="text-[10px] text-neutral-400">이미지 없음</Text>
+              <Text className="text-[10px] text-neutral-400">{t("restaurant.noImage")}</Text>
             </View>
           )}
         </Pressable>

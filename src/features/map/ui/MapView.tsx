@@ -1,5 +1,6 @@
 import { useCallback, useRef } from 'react';
 import { Linking, Platform, Pressable, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
+import { useTranslation } from 'react-i18next';
 import RNMapView from 'react-native-maps';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
@@ -63,6 +64,7 @@ export const MapView = (props: {
     onRegionChangeComplete,
   } = props;
 
+  const { t } = useTranslation();
   const insets = useSafeAreaInsets();
   const { width: viewportWidth } = useWindowDimensions();
   const mapRef = useRef<RNMapView | null>(null);
@@ -149,11 +151,11 @@ export const MapView = (props: {
 
       {markers === undefined ? (
         <View className="absolute inset-0 z-[5] items-center justify-center bg-neutral-100/70">
-          <Text className="text-xs font-semibold text-neutral-700">지도 데이터를 불러오는 중입니다.</Text>
+          <Text className="text-xs font-semibold text-neutral-700">{t('map.loadingMarkers')}</Text>
         </View>
       ) : markers.length === 0 ? (
         <View className="absolute inset-0 z-[5] items-center justify-center bg-neutral-100/70">
-          <Text className="text-xs font-semibold text-neutral-700">선택한 조건에 해당하는 마커가 없습니다.</Text>
+          <Text className="text-xs font-semibold text-neutral-700">{t('map.noMarkers')}</Text>
         </View>
       ) : null}
 
@@ -179,16 +181,16 @@ export const MapView = (props: {
           <Pressable
             onPress={() => { void openInGoogleMaps(); }}
             className="rounded-xl bg-neutral-700 px-4 py-3 shadow-md"
-            accessibilityLabel="선택한 식당을 구글맵에서 보기"
+            accessibilityLabel={t('map.viewSelectedRestaurantOnMaps')}
           >
-            <Text className="text-sm font-semibold text-white">지도</Text>
+            <Text className="text-sm font-semibold text-white">{t('map.viewMap')}</Text>
           </Pressable>
           <Pressable
             onPress={() => { void openDirections(); }}
             className="rounded-xl bg-sky-500 px-4 py-3 shadow-md"
-            accessibilityLabel="선택한 식당 길찾기"
+            accessibilityLabel={t('map.directionsToSelectedRestaurant')}
           >
-            <Text className="text-sm font-semibold text-white">길찾기</Text>
+            <Text className="text-sm font-semibold text-white">{t('map.directions')}</Text>
           </Pressable>
         </View>
       ) : null}

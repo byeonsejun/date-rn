@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { Modal as RNModal, Pressable, Text, View } from "react-native";
+import { useTranslation } from "react-i18next";
 
 interface ModalProps {
   visible: boolean;
@@ -18,10 +19,13 @@ export const Modal = ({
   visible,
   title,
   children,
-  closeText = "닫기",
+  closeText,
   onClose,
   closeOnBackdrop = true,
 }: ModalProps) => {
+  const { t } = useTranslation();
+  const resolvedCloseText = closeText ?? t("common.close");
+
   return (
     <RNModal
       animationType="fade"
@@ -43,14 +47,14 @@ export const Modal = ({
             </Text>
           ) : null}
           {children}
-          {closeText ? (
+          {resolvedCloseText ? (
             <View className="mt-4 items-end">
               <Pressable
                 className="rounded-lg bg-neutral-900 px-3 py-2"
                 onPress={onClose}
               >
                 <Text className="text-sm font-medium text-white">
-                  {closeText}
+                  {resolvedCloseText}
                 </Text>
               </Pressable>
             </View>

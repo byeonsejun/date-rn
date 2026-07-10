@@ -1,4 +1,5 @@
 import { Pressable, Text, View } from "react-native";
+import { useTranslation } from "react-i18next";
 
 interface ToastProps {
   visible: boolean;
@@ -10,6 +11,8 @@ interface ToastProps {
  * 전역 정책 알림(예: 서울 외 지역 안내)을 간단히 보여주는 토스트 컴포넌트.
  */
 export const Toast = ({ visible, message, onClose }: ToastProps) => {
+  const { t } = useTranslation();
+
   if (!visible) return null;
 
   return (
@@ -18,7 +21,7 @@ export const Toast = ({ visible, message, onClose }: ToastProps) => {
         <Text className="flex-1 text-sm text-white">{message}</Text>
         {onClose ? (
           <Pressable onPress={onClose} className="rounded-md bg-white/15 px-2 py-1">
-            <Text className="text-xs font-medium text-white">닫기</Text>
+            <Text className="text-xs font-medium text-white">{t("common.close")}</Text>
           </Pressable>
         ) : null}
       </View>

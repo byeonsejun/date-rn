@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Dimensions } from "react-native";
+import { useTranslation } from "react-i18next";
 
 import { useLocationStore } from "@entities/location/model/store";
 import { useMapStore } from "@entities/map/model/store";
@@ -33,6 +34,7 @@ import { findStorageItem } from "@shared/lib/storage";
 
 /** `RecommendFood`가 `measureInWindow`로 잡은 패널 우측 끝(x+w). 없으면 과거 기본값(272dp) 사용 */
 export const useRecommendFood = (panelRightEdgePx: number | null) => {
+  const { t } = useTranslation();
   const location = useLocationStore((s) => s.location);
   const myGeoInfo = useLocationStore((s) => s.myGeoInfo);
   const allDistrictInfo = useLocationStore((s) => s.allDistrictInfo);
@@ -122,7 +124,7 @@ export const useRecommendFood = (panelRightEdgePx: number | null) => {
         lastSuccessKeyRef.current = keyAgain;
       } catch (e) {
         if (cancelled) return;
-        setFetchError(e instanceof Error ? e.message : "맛집 정보를 불러오지 못했습니다.");
+        setFetchError(e instanceof Error ? e.message : t('recommend.foodFetchError'));
         setRecommendData(undefined);
       } finally {
         if (!cancelled) setLoading(false);

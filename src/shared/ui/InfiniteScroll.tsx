@@ -1,4 +1,5 @@
 import { FlatList, Text, type ListRenderItem, View } from "react-native";
+import { useTranslation } from "react-i18next";
 import { Loading } from "@shared/ui/Loading";
 
 interface InfiniteScrollProps<TItem> {
@@ -20,14 +21,17 @@ export const InfiniteScroll = <TItem,>({
   keyExtractor,
   onEndReached,
   isLoading = false,
-  emptyText = "표시할 데이터가 없습니다.",
+  emptyText,
 }: InfiniteScrollProps<TItem>) => {
+  const { t } = useTranslation();
+  const resolvedEmptyText = emptyText ?? t("common.noData");
+
   /**
    * 리스트 하단 로딩 표시를 렌더링한다.
    */
   const renderFooter = () => {
     if (!isLoading) return null;
-    return <Loading size="small" message="더 불러오는 중..." />;
+    return <Loading size="small" message={t("common.loadingMore")} />;
   };
 
   /**
@@ -36,7 +40,7 @@ export const InfiniteScroll = <TItem,>({
   const renderEmpty = () => {
     return (
       <View className="items-center justify-center py-6">
-        <Text className="text-sm text-neutral-500">{emptyText}</Text>
+        <Text className="text-sm text-neutral-500">{resolvedEmptyText}</Text>
       </View>
     );
   };

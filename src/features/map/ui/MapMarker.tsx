@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Text, View } from 'react-native';
+import { useTranslation } from 'react-i18next';
 import { MapMarker as NativeMapMarker } from 'react-native-maps';
 
 import type { MapMarkerData } from '@entities/map/model/types';
@@ -38,6 +39,7 @@ export const MapMarker = (props: {
   onPress: (markerId: string) => void;
 }) => {
   const { marker, isSelected, isOver, onPress } = props;
+  const { t } = useTranslation();
   const [tracksViewChanges, setTracksViewChanges] = useState(true);
 
   const bgColor = getBackgroundColor(marker);
@@ -78,7 +80,7 @@ export const MapMarker = (props: {
         }}
       >
         <Text className="text-[10px] font-bold text-white" numberOfLines={1} adjustsFontSizeToFit>
-          {marker.source === 'currentLocation' ? '현재' : marker.source === 'restaurant' ? '식당' : marker.kind}
+          {marker.source === 'currentLocation' ? t('map.currentMarkerLabel') : marker.source === 'restaurant' ? t('map.restaurantLabel') : marker.kind}
         </Text>
       </View>
     </NativeMapMarker>

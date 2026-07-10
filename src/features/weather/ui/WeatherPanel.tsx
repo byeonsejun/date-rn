@@ -3,12 +3,13 @@ import { WeatherCard } from '@entities/weather/ui/WeatherCard';
 import { useWeather } from '@features/weather/useWeather';
 import { Loading } from '@shared/ui/Loading';
 import { ImageBackground, Pressable, Text, View } from 'react-native';
+import { useTranslation } from 'react-i18next';
 
 const DAY_TABS = [
-  { title: '오늘', value: 0 },
-  { title: '내일', value: 1 },
-  { title: '모레', value: 2 },
-  { title: '글피', value: 3 },
+  { titleKey: 'weather.today', value: 0 },
+  { titleKey: 'weather.tomorrow', value: 1 },
+  { titleKey: 'weather.dayAfterTomorrow', value: 2 },
+  { titleKey: 'weather.threeDaysLater', value: 3 },
 ] as const;
 
 /**
@@ -17,6 +18,7 @@ const DAY_TABS = [
  * Feature 훅(useWeather)에서 상태를 읽어 렌더링한다.
  */
 export const WeatherPanel = () => {
+  const { t } = useTranslation();
   const { showWeather, selectWeather, setSelectWeather, location, loading } = useWeather();
   const todayWeather = showWeather.today;
   const forecastWeather = showWeather.forecast;
@@ -32,7 +34,7 @@ export const WeatherPanel = () => {
         style={{ height: 280, borderRadius: 12, overflow: 'hidden', marginBottom: 16 }}
       >
         <View className="h-full w-full items-center justify-center bg-neutral-900/40">
-          <Loading fullscreen={false} color="#f3eaf2" message="날씨 불러오는 중..." />
+          <Loading fullscreen={false} color="#f3eaf2" message={t('weather.loading')} />
         </View>
       </ImageBackground>
     );
@@ -47,7 +49,7 @@ export const WeatherPanel = () => {
       >
         <View className="h-full w-full items-center justify-center bg-neutral-900/40 px-4">
           <Text className="text-center text-sm text-white/90">
-            날씨 정보를 불러오지 못했습니다. 네트워크 상태와 서버(EXPO_PUBLIC_API_BASE_URL) 연결을 확인해 주세요.
+            {t('weather.loadError')}
           </Text>
         </View>
       </ImageBackground>
@@ -71,7 +73,7 @@ export const WeatherPanel = () => {
             }}
           >
             {DAY_TABS.map((tab) => (
-              <Pressable key={tab.title} onPress={() => setSelectWeather(tab.value)}>
+              <Pressable key={tab.value} onPress={() => setSelectWeather(tab.value)}>
                 <Text
                   style={{
                     color: '#fff',
@@ -83,7 +85,7 @@ export const WeatherPanel = () => {
                     paddingBottom: 4,
                   }}
                 >
-                  {tab.title}
+                  {t(tab.titleKey)}
                 </Text>
               </Pressable>
             ))}

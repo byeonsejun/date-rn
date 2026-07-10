@@ -1,4 +1,5 @@
 import { Image, Pressable, Text, View } from "react-native";
+import { useTranslation } from "react-i18next";
 
 import type { PoiSuggestion, PoiCategory } from "@entities/poi/model/types";
 import { MAP_TYPE_COLOR } from "@features/map/ui/MapTypeSelector";
@@ -28,6 +29,7 @@ const categoryAccentColor: Record<PoiCategory, string> = {
  * - 탭은 썸네일 영역만 (`onPressThumbnail`)
  */
 export const PoiCard = ({ poi, onPressThumbnail }: PoiCardProps) => {
+  const { t } = useTranslation();
   const accentColor = categoryAccentColor[poi.category];
 
   const secondaryText =
@@ -44,7 +46,7 @@ export const PoiCard = ({ poi, onPressThumbnail }: PoiCardProps) => {
         <Pressable
           onPress={onPressThumbnail}
           disabled={!onPressThumbnail}
-          accessibilityLabel={`${poi.title} 위치 지도에서 보기`}
+          accessibilityLabel={t('poi.viewOnMapLabel', { title: poi.title })}
           accessibilityRole="button"
           className={thumbClassName}
         >
@@ -85,7 +87,7 @@ export const PoiCard = ({ poi, onPressThumbnail }: PoiCardProps) => {
 
           {poi.category !== "dodreamgil" && poi.phne ? (
             <Text className="mt-1.5 text-[11px] font-medium text-neutral-400">
-              문의: {poi.phne}
+              {t('poi.contactLabel', { phone: poi.phne })}
             </Text>
           ) : null}
         </View>

@@ -2,6 +2,7 @@ import { MaterialIcons } from '@expo/vector-icons';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import type { LayoutChangeEvent } from 'react-native';
 import { Pressable, ScrollView, Text, View } from 'react-native';
+import { useTranslation } from 'react-i18next';
 
 import { useMapStore } from '@entities/map/model/store';
 
@@ -26,6 +27,7 @@ import { Loading } from '@shared/ui/Loading';
  */
 
 export const RecommendFood = () => {
+  const { t } = useTranslation();
   const panelRef = useRef<View>(null);
   const scrollRef = useRef<ScrollView>(null);
   const scrollViewportHRef = useRef(0);
@@ -104,15 +106,15 @@ export const RecommendFood = () => {
       {expansion ? (
         <View className={expandedOuterClassName}>
           <View className="mb-2 flex-row items-center justify-between pr-1">
-            <Text className="text-base font-bold text-neutral-900">추천식당 리스트 Top 5</Text>
+            <Text className="text-base font-bold text-neutral-900">{t('recommend.foodListTitle')}</Text>
             <Pressable onPress={() => setExpansion(false)} className="rounded-lg border border-neutral-200 px-2 py-1">
-              <Text className="text-xs font-semibold text-neutral-700">닫기</Text>
+              <Text className="text-xs font-semibold text-neutral-700">{t('common.close')}</Text>
             </Pressable>
           </View>
 
           <View className="mt-1 flex-1 border-t border-neutral-200">
             {loading ? (
-              <Loading message="불러오는 중..." size="large" color="#0ea5e9" />
+              <Loading message={t('common.loading')} size="large" color="#0ea5e9" />
             ) : fetchError ? (
               <Text className="py-4 text-center text-xs text-red-600">{fetchError}</Text>
             ) : (
@@ -159,7 +161,7 @@ export const RecommendFood = () => {
       ) : (
         <Pressable
           onPress={() => setExpansion(true)}
-          accessibilityLabel="추천 식당 보기"
+          accessibilityLabel={t('recommend.viewFoodButton')}
           className={collapsedFabClassName}
         >
           <MaterialIcons name="restaurant" size={22} color="#fff" />

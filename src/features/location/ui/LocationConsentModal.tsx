@@ -1,4 +1,5 @@
 import { Pressable, Text, View } from "react-native";
+import { useTranslation } from "react-i18next";
 import { Modal } from "@shared/ui/Modal";
 
 interface LocationConsentModalProps {
@@ -17,6 +18,8 @@ export const LocationConsentModal = ({
   onAgree,
   onDecline,
 }: LocationConsentModalProps) => {
+  const { t } = useTranslation();
+
   return (
     <Modal
       visible={visible}
@@ -25,22 +28,20 @@ export const LocationConsentModal = ({
       closeText=""
     >
       <Text className="mb-4 text-center text-base leading-6 text-neutral-900">
-        서울, 너와 함께는 현재 계신 곳을 중심으로 맞춤형 날씨와 데이트 장소를
-        추천해 드려요!{"\n"}
-        (본 서비스는 서울 지역 한정으로 제공됩니다.)
+        {t("location.consentMessage")}
       </Text>
       <View className="flex-row gap-3">
         <Pressable
           className="flex-1 items-center rounded-lg border border-neutral-300 py-2.5"
           onPress={onDecline}
         >
-          <Text className="text-sm text-neutral-700">거부</Text>
+          <Text className="text-sm text-neutral-700">{t("location.decline")}</Text>
         </Pressable>
         <Pressable
           className="flex-1 items-center rounded-lg bg-pink-400 py-2.5"
           onPress={onAgree}
         >
-          <Text className="text-sm font-semibold text-white">동의</Text>
+          <Text className="text-sm font-semibold text-white">{t("location.agree")}</Text>
         </Pressable>
       </View>
     </Modal>

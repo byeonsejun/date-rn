@@ -1,5 +1,66 @@
 {
   "common": {
-    "appName": "Seoul, With You"
+    "appName": "Seoul, With You",
+    "close": "Close",
+    "loading": "Loading...",
+    "loadingMore": "Loading more...",
+    "noData": "No data to display.",
+    "initializing": "Loading settings...",
+    "noInfo": "No info",
+    "openNow": "Open now",
+    "closed": "Closed"
+  },
+  "location": {
+    "consentMessage": "Seoul, With You recommends personalized weather and date spots based on your current location!\n(This service is currently limited to Seoul.)",
+    "agree": "Agree",
+    "decline": "Decline",
+    "seoulOnlyToast": "This service is only available in Seoul. Please select a different area."
+  },
+  "weather": {
+    "today": "Today",
+    "tomorrow": "Tomorrow",
+    "dayAfterTomorrow": "Day after tomorrow",
+    "threeDaysLater": "In 3 days",
+    "loading": "Loading weather...",
+    "loadError": "Couldn't load weather info. Please check your network and server (EXPO_PUBLIC_API_BASE_URL) connection."
+  },
+  "recommend": {
+    "foodListTitle": "Top 5 Recommended Restaurants",
+    "viewFoodButton": "View recommended restaurants",
+    "foodFetchError": "Couldn't load restaurant info.",
+    "locationNeeded": "Location needed",
+    "loadingPlaces": "Loading recommendations...",
+    "todayPlacesTitle": "Today's Recommended Date Spots"
+  },
+  "map": {
+    "closePanel": "Close panel",
+    "currentLocationDescription": "Shows your current location on the map.",
+    "restaurantLabel": "Restaurant",
+    "ratingLabel": "Rating {{rating}} ({{count}})",
+    "noDetailInfo": "No details available.",
+    "viewOnGoogleMaps": "View on Google Maps",
+    "viewMap": "Map",
+    "directions": "Directions",
+    "loadingMarkers": "Loading map data...",
+    "noMarkers": "No markers match the selected filter.",
+    "viewSelectedRestaurantOnMaps": "View selected restaurant on Google Maps",
+    "directionsToSelectedRestaurant": "Directions to selected restaurant",
+    "webPreviewUnavailable": "Native maps aren't available in the web preview",
+    "webPreviewHint": "Run this on an iOS simulator, Android emulator, or the Expo Go app to see the map.",
+    "openCurrentAreaInBrowser": "Open the current area in Google Maps in your browser",
+    "openInGoogleMapsBrowser": "View on Google Maps",
+    "moreMarkersHint": "{{count}} more markers (check on native app)",
+    "currentMarkerLabel": "Now"
+  },
+  "restaurant": {
+    "noImage": "No image"
+  },
+  "poi": {
+    "viewOnMapLabel": "View {{title}} on the map",
+    "contactLabel": "Contact: {{phone}}"
+  },
+  "home": {
+    "districtSelectTitle": "Select an area",
+    "weatherSectionTitle": "Weather for your selected area"
   }
 }
