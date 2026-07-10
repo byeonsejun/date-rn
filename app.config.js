@@ -13,6 +13,7 @@ const appJson = require("./app.json");
 module.exports = {
   expo: {
     ...appJson.expo,
+    plugins: [...appJson.expo.plugins, "expo-localization"],
     android: {
       ...appJson.expo.android,
       config: {

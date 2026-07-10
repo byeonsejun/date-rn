@@ -5,6 +5,8 @@ import {
   clearAllLocationPersistenceForDevTest,
 } from "@core/dev/locationTestReset";
 import { useLocationStore } from "@entities/location/model/store";
+import "@shared/i18n";
+import { useLanguageStore } from "@shared/i18n/languageStore";
 import { Loading } from "@shared/ui/Loading";
 
 interface AppProviderProps {
@@ -24,7 +26,10 @@ export const AppProvider = ({ children }: AppProviderProps) => {
       if (RESET_LOCATION_STATE_ON_EACH_LAUNCH) {
         await clearAllLocationPersistenceForDevTest();
       }
-      await Promise.all([useLocationStore.persist.rehydrate()]);
+      await Promise.all([
+        useLocationStore.persist.rehydrate(),
+        useLanguageStore.persist.rehydrate(),
+      ]);
       setHydrated(true);
     };
 
