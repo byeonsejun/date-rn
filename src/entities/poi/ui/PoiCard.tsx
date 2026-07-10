@@ -2,7 +2,10 @@ import { Image, Pressable, Text, View } from "react-native";
 import { useTranslation } from "react-i18next";
 
 import type { PoiSuggestion, PoiCategory } from "@entities/poi/model/types";
+import { getPoiDisplayTitle } from "@entities/poi/lib/label";
+import { getCategoryLabel } from "@entities/map/lib/label";
 import { MAP_TYPE_COLOR } from "@features/map/ui/MapTypeSelector";
+import type { SupportedLanguage } from "@shared/i18n";
 
 interface PoiCardProps {
   poi: PoiSuggestion;
@@ -29,11 +32,18 @@ const categoryAccentColor: Record<PoiCategory, string> = {
  * - 탭은 썸네일 영역만 (`onPressThumbnail`)
  */
 export const PoiCard = ({ poi, onPressThumbnail }: PoiCardProps) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const language = i18n.language as SupportedLanguage;
   const accentColor = categoryAccentColor[poi.category];
+  const displayTitle = getPoiDisplayTitle(poi, language);
+  const kindLabel = getCategoryLabel(poi.kind, language);
 
   const secondaryText =
-    poi.category === "dodreamgil" ? poi.detailCourse : poi.address;
+    poi.category === "dodreamgil"
+      ? language === "en"
+        ? undefined
+        : poi.detailCourse
+      : poi.address;
 
   const thumbClassName = "h-[72px] w-[72px] overflow-hidden rounded-xl bg-neutral-100";
 
@@ -46,7 +56,7 @@ export const PoiCard = ({ poi, onPressThumbnail }: PoiCardProps) => {
         <Pressable
           onPress={onPressThumbnail}
           disabled={!onPressThumbnail}
-          accessibilityLabel={t('poi.viewOnMapLabel', { title: poi.title })}
+          accessibilityLabel={t('poi.viewOnMapLabel', { title: displayTitle })}
           accessibilityRole="button"
           className={thumbClassName}
         >
@@ -59,7 +69,7 @@ export const PoiCard = ({ poi, onPressThumbnail }: PoiCardProps) => {
           ) : (
             <View className="h-full w-full items-center justify-center">
               <Text className="text-[10px] font-semibold text-neutral-500">
-                {poi.kind}
+                {kindLabel}
               </Text>
             </View>
           )}
@@ -68,13 +78,13 @@ export const PoiCard = ({ poi, onPressThumbnail }: PoiCardProps) => {
         <View className="flex-1">
           <View className="flex-row items-center justify-between gap-2">
             <Text className="flex-1 text-sm font-bold text-neutral-900" numberOfLines={1}>
-              {poi.title}
+              {displayTitle}
             </Text>
             <View
               style={{ backgroundColor: accentColor + '20', borderRadius: 99, paddingHorizontal: 8, paddingVertical: 2 }}
             >
               <Text style={{ fontSize: 11, fontWeight: '600', color: accentColor }}>
-                {poi.kind}
+                {kindLabel}
               </Text>
             </View>
           </View>
