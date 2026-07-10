@@ -1,5 +1,9 @@
 import type { District } from '@shared/types/location';
 import { Pressable, ScrollView, Text, View } from 'react-native';
+import { useTranslation } from 'react-i18next';
+
+import { getDistrictLabel } from '@entities/location/lib/label';
+import type { SupportedLanguage } from '@shared/i18n';
 
 interface DistrictPickerProps {
   districts: District[];
@@ -12,6 +16,9 @@ interface DistrictPickerProps {
  * 스토어·정책 로직 없이 전달받은 props만으로 렌더링하는 순수 UI.
  */
 export const DistrictPicker = ({ districts, selected, onSelect }: DistrictPickerProps) => {
+  const { i18n } = useTranslation();
+  const language = i18n.language as SupportedLanguage;
+
   return (
     <View className="mb-3">
       <ScrollView horizontal showsHorizontalScrollIndicator={false}>
@@ -25,7 +32,7 @@ export const DistrictPicker = ({ districts, selected, onSelect }: DistrictPicker
                 className={`rounded-full px-3 py-1.5 ${active ? 'bg-[#f986bd]' : 'bg-neutral-100'}`}
               >
                 <Text className={`text-sm ${active ? 'font-semibold text-white' : 'text-neutral-700'}`}>
-                  {district.location}
+                  {getDistrictLabel(district, language)}
                 </Text>
               </Pressable>
             );
