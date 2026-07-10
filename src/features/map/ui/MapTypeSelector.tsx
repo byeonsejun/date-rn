@@ -1,6 +1,9 @@
 import { Pressable, Text, View } from 'react-native';
+import { useTranslation } from 'react-i18next';
 
 import type { MapType } from '@entities/map/model/types';
+import { getCategoryLabel } from '@entities/map/lib/label';
+import type { SupportedLanguage } from '@shared/i18n';
 
 const MAP_TYPES: MapType[] = ['전체', '문화공간', '공원', '두드림길'];
 
@@ -24,6 +27,8 @@ export const MAP_TYPE_COLOR: Record<MapType, string> = {
  */
 export const MapTypeSelector = (props: { selectedType: MapType; onSelectType: (type: MapType) => void }) => {
   const { selectedType, onSelectType } = props;
+  const { i18n } = useTranslation();
+  const language = i18n.language as SupportedLanguage;
 
   return (
     <View className="absolute z-10 top-2 left-2 right-2 flex flex-row items-center justify-center">
@@ -41,7 +46,7 @@ export const MapTypeSelector = (props: { selectedType: MapType; onSelectType: (t
                 className="text-xs font-semibold"
                 style={isSelected ? { color: '#fff' } : { color: '#404040' }}
               >
-                {type}
+                {getCategoryLabel(type, language)}
               </Text>
             </Pressable>
           );
