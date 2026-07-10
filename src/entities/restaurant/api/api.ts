@@ -18,6 +18,7 @@
 
 import { post } from "@shared/api/client";
 import { API_BASE_URL, API_ENDPOINTS } from "@shared/api/endpoints";
+import type { SupportedLanguage } from "@shared/i18n";
 
 import type {
   Restaurant,
@@ -27,6 +28,7 @@ import type {
 interface RestaurantsProxyBody {
   lat: number;
   lon: number;
+  lang: SupportedLanguage;
 }
 
 /**
@@ -55,10 +57,11 @@ const mapProxyItemToRestaurant = (item: RestaurantProxyItem): Restaurant => ({
 export const fetchRestaurantsNearCoordinate = async (
   lat: number,
   lon: number,
+  lang: SupportedLanguage,
 ): Promise<Restaurant[]> => {
   const data = await post<RestaurantProxyItem[], RestaurantsProxyBody>(
     API_ENDPOINTS.restaurantsProxy,
-    { lat, lon },
+    { lat, lon, lang },
   );
 
   return (data ?? []).map(mapProxyItemToRestaurant);

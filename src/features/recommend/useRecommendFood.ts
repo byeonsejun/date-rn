@@ -9,6 +9,7 @@ import type { Restaurant } from "@entities/restaurant/model/types";
 import { useRestaurantStore } from "@entities/restaurant/model/store";
 
 import { findStorageItem } from "@shared/lib/storage";
+import type { SupportedLanguage } from "@shared/i18n";
 
 /**
  * 맛집 추천 패널 오케스트레이션 훅.
@@ -28,13 +29,15 @@ import { findStorageItem } from "@shared/lib/storage";
  * 3. 작동 원리 요약
  *    - `expansion`이 true일 때만 네트워크 요청을 시도한다.
  *    - 웹과 동일한 가드(동의·현재 위치·구 정보 준비)를 `AsyncStorage` + 스토어 필드로 판단한다.
- *    - 동일 `(location, lat, lon)` 키로 이미 성공한 적이 있으면 재요청하지 않는다.
+ *    - 동일 `(language, location, lat, lon)` 키로 이미 성공한 적이 있으면 재요청하지 않는다.
+ *      `language`가 키에 포함되어 있어, 구는 그대로 두고 언어만 토글해도 재요청된다.
  *    - 썸네일 탭 시 해당 추천식당 마커를 선택 상태로 만든다.
  */
 
 /** `RecommendFood`가 `measureInWindow`로 잡은 패널 우측 끝(x+w). 없으면 과거 기본값(272dp) 사용 */
 export const useRecommendFood = (panelRightEdgePx: number | null) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const language = i18n.language as SupportedLanguage;
   const location = useLocationStore((s) => s.location);
   const myGeoInfo = useLocationStore((s) => s.myGeoInfo);
   const allDistrictInfo = useLocationStore((s) => s.allDistrictInfo);
@@ -92,7 +95,7 @@ export const useRecommendFood = (panelRightEdgePx: number | null) => {
     const coord = resolveCoordinate();
     if (!coord) return;
 
-    const key = `${location}:${coord.lat.toFixed(6)},${coord.lon.toFixed(6)}`;
+    const key = `${language}:${location}:${coord.lat.toFixed(6)},${coord.lon.toFixed(6)}`;
     const cached = useRestaurantStore.getState().recommendData;
     if (lastSuccessKeyRef.current === key && cached !== undefined) {
       return;
@@ -109,7 +112,7 @@ export const useRecommendFood = (panelRightEdgePx: number | null) => {
 
       const coordAgain = resolveCoordinate();
       if (!coordAgain) return;
-      const keyAgain = `${location}:${coordAgain.lat.toFixed(6)},${coordAgain.lon.toFixed(6)}`;
+      const keyAgain = `${language}:${location}:${coordAgain.lat.toFixed(6)},${coordAgain.lon.toFixed(6)}`;
       if (lastSuccessKeyRef.current === keyAgain && useRestaurantStore.getState().recommendData !== undefined) {
         return;
       }
@@ -118,7 +121,7 @@ export const useRecommendFood = (panelRightEdgePx: number | null) => {
       setFetchError(null);
 
       try {
-        const data = await fetchRestaurantsNearCoordinate(coordAgain.lat, coordAgain.lon);
+        const data = await fetchRestaurantsNearCoordinate(coordAgain.lat, coordAgain.lon, language);
         if (cancelled) return;
         setRecommendData(data);
         lastSuccessKeyRef.current = keyAgain;
@@ -139,6 +142,7 @@ export const useRecommendFood = (panelRightEdgePx: number | null) => {
   }, [
     allDistrictInfo.length,
     expansion,
+    language,
     location,
     myGeoInfo,
     resolveCoordinate,
