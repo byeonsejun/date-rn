@@ -50,7 +50,13 @@
     "openCurrentAreaInBrowser": "현재 영역을 브라우저 Google 지도에서 열기",
     "openInGoogleMapsBrowser": "Google 지도에서 보기",
     "moreMarkersHint": "외 {{count}}개 마커 (네이티브에서 확인)",
-    "currentMarkerLabel": "현재"
+    "currentMarkerLabel": "현재",
+    "category": {
+      "all": "전체",
+      "park": "공원",
+      "culturalSpace": "문화공간",
+      "dodreamgil": "두드림길"
+    }
   },
   "restaurant": {
     "noImage": "이미지 없음"

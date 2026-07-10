@@ -50,7 +50,13 @@
     "openCurrentAreaInBrowser": "Open the current area in Google Maps in your browser",
     "openInGoogleMapsBrowser": "View on Google Maps",
     "moreMarkersHint": "{{count}} more markers (check on native app)",
-    "currentMarkerLabel": "Now"
+    "currentMarkerLabel": "Now",
+    "category": {
+      "all": "All",
+      "park": "Parks",
+      "culturalSpace": "Cultural Spaces",
+      "dodreamgil": "Dodreamgil Trails"
+    }
   },
   "restaurant": {
     "noImage": "No image"
