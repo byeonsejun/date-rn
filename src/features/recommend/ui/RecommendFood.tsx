@@ -105,9 +105,9 @@ export const RecommendFood = () => {
     >
       {expansion ? (
         <View className={expandedOuterClassName}>
-          <View className="mb-2 flex-row items-center justify-between pr-1">
-            <Text className="text-base font-bold text-neutral-900">{t('recommend.foodListTitle')}</Text>
-            <Pressable onPress={() => setExpansion(false)} className="rounded-lg border border-neutral-200 px-2 py-1">
+          <View className="mb-2 flex-row items-center justify-between gap-2 pr-1">
+            <Text className="flex-1 text-base font-bold text-neutral-900">{t('recommend.foodListTitle')}</Text>
+            <Pressable onPress={() => setExpansion(false)} className="shrink-0 rounded-lg border border-neutral-200 px-2 py-1">
               <Text className="text-xs font-semibold text-neutral-700">{t('common.close')}</Text>
             </Pressable>
           </View>

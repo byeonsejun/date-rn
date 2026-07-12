@@ -39,8 +39,8 @@ export const RecommendPlace = () => {
 
   return (
     <View className="w-full h-[345px] overflow-hidden rounded-2xl border border-pink-100 bg-white shadow-sm flex flex-col gap-2 p-3">
-      <View className="flex-row items-center justify-between">
-        <Text className="text-base font-bold text-neutral-900">{t('recommend.todayPlacesTitle')}</Text>
+      <View className="flex-row items-center justify-between gap-2">
+        <Text className="flex-1 text-base font-bold text-neutral-900">{t('recommend.todayPlacesTitle')}</Text>
         {headerNode}
       </View>
 

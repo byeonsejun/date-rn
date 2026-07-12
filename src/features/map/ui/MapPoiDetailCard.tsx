@@ -32,9 +32,9 @@ export const MapPoiDetailCard = ({ marker, onClose, onOpenMaps, onOpenDirections
   if (marker.source === 'currentLocation') {
     return (
       <View className="min-h-[120px] max-h-full overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-md">
-        <View className="mb-2 flex-row items-center justify-between border-b border-neutral-100 p-3">
-          <Text className="text-base font-semibold text-neutral-900">{t('map.currentLocationTitle')}</Text>
-          <Pressable onPress={onClose} accessibilityLabel={t('map.closePanel')} className="rounded-lg bg-neutral-100 px-2 py-1">
+        <View className="mb-2 flex-row items-center justify-between gap-2 border-b border-neutral-100 p-3">
+          <Text className="flex-1 text-base font-semibold text-neutral-900">{t('map.currentLocationTitle')}</Text>
+          <Pressable onPress={onClose} accessibilityLabel={t('map.closePanel')} className="shrink-0 rounded-lg bg-neutral-100 px-2 py-1">
             <Text className="text-xs font-medium text-neutral-700">{t('common.close')}</Text>
           </Pressable>
         </View>
