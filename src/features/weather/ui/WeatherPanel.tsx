@@ -2,7 +2,7 @@ import { ForecastList } from '@entities/weather/ui/ForecastList';
 import { WeatherCard } from '@entities/weather/ui/WeatherCard';
 import { useWeather } from '@features/weather/useWeather';
 import { Loading } from '@shared/ui/Loading';
-import { ImageBackground, Pressable, Text, View } from 'react-native';
+import { ImageBackground, Pressable, ScrollView, Text, View } from 'react-native';
 import { useTranslation } from 'react-i18next';
 
 import { getDistrictLabel } from '@entities/location/lib/label';
@@ -71,9 +71,12 @@ export const WeatherPanel = () => {
         <WeatherCard locationName={locationLabel} weather={todayWeather} />
 
         <View style={{ marginTop: 12, marginBottom: 8 }}>
-          <View
-            style={{
+          <ScrollView
+            horizontal
+            showsHorizontalScrollIndicator={false}
+            contentContainerStyle={{
               flexDirection: 'row',
+              flexGrow: 1,
               gap: 20,
               borderBottomWidth: 1,
               borderBottomColor: 'rgba(0,0,0,0.2)',
@@ -97,7 +100,7 @@ export const WeatherPanel = () => {
                 </Text>
               </Pressable>
             ))}
-          </View>
+          </ScrollView>
         </View>
 
         {forecastWeather ? (
