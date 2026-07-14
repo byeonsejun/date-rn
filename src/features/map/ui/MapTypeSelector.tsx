@@ -39,11 +39,11 @@ export const MapTypeSelector = (props: { selectedType: MapType; onSelectType: (t
             <Pressable
               key={type}
               onPress={() => onSelectType(type)}
-              className="px-3 py-1.5 rounded-lg"
+              className="px-3 py-1.5 rounded-lg items-center justify-center"
               style={isSelected ? { backgroundColor: MAP_TYPE_COLOR[type] } : { backgroundColor: 'rgba(255,255,255,0.9)' }}
             >
               <Text
-                className="text-xs font-semibold"
+                className="text-xs font-semibold text-center"
                 style={isSelected ? { color: '#fff' } : { color: '#404040' }}
               >
                 {getCategoryLabel(type, language)}
