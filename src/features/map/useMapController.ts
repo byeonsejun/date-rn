@@ -9,7 +9,6 @@ import type { MapMarkerData, MapRegion, MapType } from '@entities/map/model/type
 
 import { buildMapMarkers } from '@features/map/lib/markers';
 import { computePoiMarkerRegionFocus } from '@features/map/lib/poiMarkerCamera';
-import { logCamera } from '@shared/lib/cameraDebugLog';
 
 /**
  * 지도 오케스트레이션 훅 (Orchestrator).
@@ -144,8 +143,6 @@ export const useMapController = () => {
     const center = computeCenter();
     if (!center) return;
     const next = makeRegion(center);
-    // [진단용 임시 로그]
-    logCamera('districtEffect(programmatic)', next, 'selectedMarkerId→null');
     setSelectedMarkerId(null);
     setRegionProgrammatic(next);
   }, [computeCenter, makeRegion, setRegionProgrammatic, setSelectedMarkerId]);
@@ -221,8 +218,6 @@ export const useMapController = () => {
         useMapStore.getState().region,
         Dimensions.get('window').height,
       );
-      // [진단용 임시 로그]
-      logCamera('markerPress(programmatic)', next, `markerId=${markerId}`);
       setRegionProgrammatic(next);
     },
     [mergedMarkers, setRegionProgrammatic, setSelectedMarkerId],
@@ -245,19 +240,13 @@ export const useMapController = () => {
       // 들어오는 onRegionChangeComplete는 무시한다. (직전 pan 감속·mapPadding 변경으로 인한
       // SDK 재조정 이벤트가 이동을 덮어쓰는 레이스 컨디션 방지)
       // 잠금 시각은 store(`regionProgrammaticAt`)에 있어 훅 밖 호출 경로도 함께 커버된다.
-      const elapsedMs = Date.now() - useMapStore.getState().regionProgrammaticAt;
-      const blocked = elapsedMs < PROGRAMMATIC_REGION_LOCK_MS;
-      // [진단용 임시 로그]
-      logCamera('onRegionChangeComplete(SDK)', next, `${blocked ? 'BLOCKED' : 'PASS'} +${elapsedMs}ms since programmatic`);
-      if (blocked) {
+      if (Date.now() - useMapStore.getState().regionProgrammaticAt < PROGRAMMATIC_REGION_LOCK_MS) {
         return;
       }
       // bounds 보정: 서울 경계 밖으로 드래그하거나 과도하게 줌아웃 했을 때
       // programmatic 보정으로 처리해 재귀 이벤트를 차단한다.
       const { clamped, changed } = clampToSeoulBounds(next);
       if (changed) {
-        // [진단용 임시 로그]
-        logCamera('boundsClamp(programmatic)', clamped);
         setRegionProgrammatic(clamped);
         return;
       }

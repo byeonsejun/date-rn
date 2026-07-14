@@ -10,7 +10,6 @@ import {
   mapTypeIncludingPoiCategory,
 } from "@features/map/lib/markers";
 import { pickRandomPoiSet } from "@features/recommend/lib/recommend";
-import { logCamera } from "@shared/lib/cameraDebugLog";
 
 /**
  * POI 추천 훅 (Orchestrator).
@@ -62,8 +61,6 @@ export const useRecommend = () => {
           mapType: mt,
           poi,
         });
-        // [진단용 임시 로그] 의도한 포커스 시작점 (markerId=null이면 카메라 이동 자체가 없어야 정상)
-        logCamera("sidebarTap(applyFocus)", poi, `title=${poi.title} markerId=${markerId ?? "NULL"} mapType=${mt}`);
         if (!markerId) return;
         focusPoiMarkerFromSidebar(markerId, poi);
         const found = useMapStore.getState().showPoint?.find((m) => m.id === markerId && m.source === "poi");

@@ -4,7 +4,6 @@ import { useTranslation } from "react-i18next";
 
 import { useLocationStore } from "@entities/location/model/store";
 import { useMapStore } from "@entities/map/model/store";
-import { logCamera } from "@shared/lib/cameraDebugLog";
 import { fetchRestaurantsNearCoordinate } from "@entities/restaurant/api/api";
 import type { Restaurant } from "@entities/restaurant/model/types";
 import { useRestaurantStore } from "@entities/restaurant/model/store";
@@ -87,8 +86,6 @@ export const useRecommendFood = (panelRightEdgePx: number | null) => {
       longitudeDelta,
     };
 
-    // [진단용 임시 로그]
-    logCamera("restaurantPhotoPress(programmatic)", nextRegion, `place=${item.placeId}`);
     // programmatic 이동으로 기록해 늦은 onRegionChangeComplete가 덮어쓰지 못하게 한다.
     mapStore.setRegionProgrammatic(nextRegion);
   }, [panelRightEdgePx]);

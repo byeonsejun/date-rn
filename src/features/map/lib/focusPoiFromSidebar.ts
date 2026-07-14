@@ -4,7 +4,6 @@ import { useMapStore } from "@entities/map/model/store";
 import type { PoiSuggestion } from "@entities/poi/model/types";
 import type { MapMarkerData, MapRegion } from "@entities/map/model/types";
 import { computePoiMarkerRegionFocus } from "@features/map/lib/poiMarkerCamera";
-import { logCamera } from "@shared/lib/cameraDebugLog";
 
 /**
  * 사이드바「오늘 추천 데이트 장소」에서 썸네일을 탭했을 때,
@@ -56,8 +55,6 @@ export const focusPoiMarkerFromSidebar = (
     map.region,
     Dimensions.get("window").height,
   );
-  // [진단용 임시 로그]
-  logCamera("focusPoiFromSidebar(programmatic)", next, `markerId=${markerId} foundInShowPoint=${Boolean(found)}`);
   // programmatic 이동으로 기록해, 직후의 늦은 onRegionChangeComplete
   // (직전 pan 감속)가 이 이동을 덮어쓰지 못하게 한다.
   map.setRegionProgrammatic(next);
