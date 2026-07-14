@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useRef } from 'react';
+import { useCallback, useEffect, useMemo } from 'react';
 
 import { useLocationStore } from '@entities/location/model/store';
 import { useMapStore } from '@entities/map/model/store';
@@ -27,7 +27,7 @@ import { buildMapMarkers } from '@features/map/lib/markers';
  * - `features/map/ui/*`는 props-only 순수 UI여야 하며,
  *   이 훅은 비즈니스/상태 변경 책임을 진다.
  */
-/** programmatic setRegion 호출 이후 onRegionChangeComplete 무시 기간 (ms) */
+/** programmatic 카메라 이동(`setRegionProgrammatic`) 이후 onRegionChangeComplete 무시 기간 (ms) */
 const PROGRAMMATIC_REGION_LOCK_MS = 1200;
 
 /**
@@ -63,12 +63,6 @@ function clampToSeoulBounds(region: MapRegion): { clamped: MapRegion; changed: b
 }
 
 export const useMapController = () => {
-  /**
-   * 지역구 전환 등 programmatic한 setRegion 호출 시각.
-   * onRegionChangeComplete가 직전 pan 감속을 덮어쓰는 레이스 컨디션을 방지한다.
-   */
-  const programmaticRegionSetAt = useRef<number>(0);
-
   const location = useLocationStore((s) => s.location);
   const myGeoInfo = useLocationStore((s) => s.myGeoInfo);
   const allDistrictInfo = useLocationStore((s) => s.allDistrictInfo);
@@ -86,6 +80,7 @@ export const useMapController = () => {
   const setSelectedMarkerId = useMapStore((s) => s.setSelectedMarkerId);
   const setSelectedType = useMapStore((s) => s.setSelectedType);
   const setRegion = useMapStore((s) => s.setRegion);
+  const setRegionProgrammatic = useMapStore((s) => s.setRegionProgrammatic);
 
   const filteredDistrict = useMemo(() => {
     if (location === '현재 위치') return myGeoInfo?.gu ?? myGeoInfo?.district ?? '';
@@ -146,11 +141,9 @@ export const useMapController = () => {
     const center = computeCenter();
     if (!center) return;
     const next = makeRegion(center);
-    // programmatic 변경 시각을 기록해 onRegionChangeComplete 덮어쓰기를 방지한다.
-    programmaticRegionSetAt.current = Date.now();
     setSelectedMarkerId(null);
-    setRegion(next);
-  }, [computeCenter, makeRegion, setRegion, setSelectedMarkerId]);
+    setRegionProgrammatic(next);
+  }, [computeCenter, makeRegion, setRegionProgrammatic, setSelectedMarkerId]);
 
   // 웹의 `SelectShowMapType` useEffect(필터/selectedType 변경에 따른 showPoint 재계산) 이식.
   useEffect(() => {
@@ -231,22 +224,23 @@ export const useMapController = () => {
 
   const handleRegionChangeComplete = useCallback(
     (next: MapRegion) => {
-      // programmatic setRegion 직후에 들어오는 onRegionChangeComplete는 무시한다.
-      // (지역구 전환 직후 pan 감속이 완료되며 발생하는 레이스 컨디션 방지)
-      if (Date.now() - programmaticRegionSetAt.current < PROGRAMMATIC_REGION_LOCK_MS) {
+      // programmatic 카메라 이동(구 전환/사이드바 POI 포커스/맛집 포커스/bounds 보정) 직후에
+      // 들어오는 onRegionChangeComplete는 무시한다. (직전 pan 감속·mapPadding 변경으로 인한
+      // SDK 재조정 이벤트가 이동을 덮어쓰는 레이스 컨디션 방지)
+      // 잠금 시각은 store(`regionProgrammaticAt`)에 있어 훅 밖 호출 경로도 함께 커버된다.
+      if (Date.now() - useMapStore.getState().regionProgrammaticAt < PROGRAMMATIC_REGION_LOCK_MS) {
         return;
       }
       // bounds 보정: 서울 경계 밖으로 드래그하거나 과도하게 줌아웃 했을 때
       // programmatic 보정으로 처리해 재귀 이벤트를 차단한다.
       const { clamped, changed } = clampToSeoulBounds(next);
       if (changed) {
-        programmaticRegionSetAt.current = Date.now();
-        setRegion(clamped);
+        setRegionProgrammatic(clamped);
         return;
       }
       setRegion(next);
     },
-    [setRegion],
+    [setRegion, setRegionProgrammatic],
   );
 
   const handleClosePoiDetail = useCallback(() => {

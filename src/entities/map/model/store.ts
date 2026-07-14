@@ -30,6 +30,8 @@ const DEFAULT_REGION: MapRegion = {
  * - `selectedMarkerId`: 클릭(선택)된 마커 id
  * - `selectedType`: 공원/문화공간/두드림길 필터
  * - `region`: MapView의 현재 카메라(영역) 상태
+ * - `regionProgrammaticAt`: 코드 주도 카메라 이동(setRegionProgrammatic) 시각(ms).
+ *   직후에 들어오는 늦은 onRegionChangeComplete가 카메라를 덮어쓰는 경합 판정에 쓴다.
  */
 export const useMapStore = create<{
   showPoint: MapMarkerData[] | undefined;
@@ -37,11 +39,18 @@ export const useMapStore = create<{
   selectedMarkerId: string | null;
   selectedType: MapType;
   region: MapRegion;
+  regionProgrammaticAt: number;
   setShowPoint: (value: MapMarkerData[] | undefined) => void;
   setOverMarkerId: (value: string | null) => void;
   setSelectedMarkerId: (value: string | null) => void;
   setSelectedType: (value: MapType) => void;
   setRegion: (value: MapRegion) => void;
+  /**
+   * 코드 주도 카메라 이동 (구 전환/사이드바 POI 포커스/맛집 포커스/bounds 보정).
+   * region 갱신과 호출 시각 기록을 한 번에 수행해, 이후 잠금 기간 내
+   * onRegionChangeComplete가 이 이동을 덮어쓰지 못하게 한다.
+   */
+  setRegionProgrammatic: (value: MapRegion) => void;
   /**
    * 웹 로직의 `handleMarker(type, lat)`를 타입 안정화해 이식.
    * - `in`: 마커 hover 진입
@@ -63,12 +72,14 @@ export const useMapStore = create<{
   selectedMarkerId: null,
   selectedType: "전체",
   region: DEFAULT_REGION,
+  regionProgrammaticAt: 0,
 
   setShowPoint: (value) => set({ showPoint: value }),
   setOverMarkerId: (value) => set({ overMarkerId: value }),
   setSelectedMarkerId: (value) => set({ selectedMarkerId: value }),
   setSelectedType: (value) => set({ selectedType: value }),
   setRegion: (value) => set({ region: value }),
+  setRegionProgrammatic: (value) => set({ region: value, regionProgrammaticAt: Date.now() }),
 
   handleMarker: (type, markerId) => {
     switch (type) {

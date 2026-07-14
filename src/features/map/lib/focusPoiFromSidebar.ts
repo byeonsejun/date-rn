@@ -47,5 +47,7 @@ export const focusPoiMarkerFromSidebar = (
 
   const { latitudeDelta, longitudeDelta } = map.region;
   const next: MapRegion = { lat, lon, latitudeDelta, longitudeDelta };
-  map.setRegion(next);
+  // programmatic 이동으로 기록해, 직후의 늦은 onRegionChangeComplete
+  // (직전 pan 감속·상세 카드 오픈에 따른 mapPadding 재조정)가 이 이동을 덮어쓰지 못하게 한다.
+  map.setRegionProgrammatic(next);
 };

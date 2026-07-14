@@ -86,7 +86,8 @@ export const useRecommendFood = (panelRightEdgePx: number | null) => {
       longitudeDelta,
     };
 
-    mapStore.setRegion(nextRegion);
+    // programmatic 이동으로 기록해 늦은 onRegionChangeComplete가 덮어쓰지 못하게 한다.
+    mapStore.setRegionProgrammatic(nextRegion);
   }, [panelRightEdgePx]);
 
   useEffect(() => {
