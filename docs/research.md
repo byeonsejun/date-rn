@@ -1338,3 +1338,70 @@ React.createContext({
 - `src/entities/poi/model/data/park.json`, `culturalSpace.json`, `dodreamgil.json`
 
 이 섹션은 **해당 시점 코드 기준**으로 작성했으며, 이후 리팩터 시 파일 경로·플래그명은 실제 코드와 함께 갱신하는 것이 좋다.
+
+## 지도 카메라 아키텍처 개선 제안: controlled region → animateToRegion 명령형 전환 (미착수)
+
+### 배경 — 하루에 잡은 카메라 버그 3개가 전부 같은 뿌리
+
+2026-07-14 사이드바 POI 포커스 간헐 버그를 추적하며 아래 3개를 순차 수정했는데,
+셋 다 "controlled `region` prop + onRegionChangeComplete 피드백" 관리에서 발생했다:
+
+1. **늦은 이벤트 에코 덮어쓰기** (`4e678ae`): 포커스 경로의 setRegion이 programmatic
+   잠금 밖이라, 직전 플링 감속의 완료 이벤트가 store region을 덮어씀.
+2. **동적 mapPadding 카메라 경합** (`b78fee0`): 카드 오픈 시 mapPadding.bottom 0→220
+   변경이 region prop 변경과 같은 프레임에 겹치면 SDK가 카메라를 남쪽 경계 클램프
+   값(lat 37.480636 고정)으로 밀어냄. 동적 패딩 제거 + `computePoiMarkerRegionFocus`
+   사전 보정으로 복원.
+3. **deepDiffer 값비교로 인한 카메라 명령 스킵** (`f09a2d8`): 잠금이 플링 정착 이벤트를
+   차단해 store↔실제 카메라가 어긋난 상태에서, store와 동일 값의 programmatic 이동을
+   재요청하면 RN의 네이티브 prop 값비교(deepDiffer)에 걸려 카메라 명령이 발행되지 않음.
+   위도 +1e-7 오프셋으로 우회 중 — 임시방편이며 탈동기화 자체는 남아 있음.
+
+controlled region 구조에서는 "store 갱신 = 카메라 명령"이라서, (a) SDK 이벤트를
+store에 반영하면 에코 루프가 생기고, (b) 잠금으로 이벤트를 막으면 store가 카메라
+위치를 거짓말하게 되는 딜레마가 구조적으로 반복된다. 4번째 버그를 예방하려면
+카메라 명령과 카메라 상태 추적을 분리해야 한다.
+
+### 설계 요지
+
+- **`region` prop 제거 → `initialRegion`으로 전환** (react-native-maps 1.20.1의
+  `animateToRegion` 커맨드 존재 확인됨. `MapView.js:98`).
+- **programmatic 이동은 명령형으로**: map store에 `cameraRequest: { region: MapRegion; seq: number } | null`
+  추가. 구 전환 effect / focusPoiFromSidebar / handleMarkerPress / bounds 보정 /
+  useRecommendFood 사진 탭이 seq를 증가시키며 요청을 넣는다. MapView(또는 HomeMap)
+  쪽 effect가 `seq` 변화를 감지해 `mapRef.current.animateToRegion(region)` 실행.
+  seq 덕분에 같은 좌표 연속 요청도 항상 실행된다(deepDiffer 문제 원천 해소).
+- **`onRegionChangeComplete`는 전부 PASS**: store.region은 "실제 카메라의 거울"로만
+  갱신한다. prop이 카메라를 제어하지 않으므로 에코 루프가 없고, 따라서
+  **`regionProgrammaticAt` 잠금(PROGRAMMATIC_REGION_LOCK_MS)을 통째로 삭제**할 수 있다.
+- bounds 보정은 이벤트 PASS 후 경계 밖이면 cameraRequest로 clamped 좌표를 요청
+  (controlled prop이 아니므로 재귀 이벤트 걱정 없음. 단 animateToRegion 완료 이벤트로
+  1회 추가 이벤트는 발생 — 무한 루프는 clamp 결과가 경계 안이므로 없음).
+- `computePoiMarkerRegionFocus` 사전 보정은 그대로 유지(동적 mapPadding 재도입 금지).
+- `details.isGesture`(Google provider 전용, 1.20.1 지원 확인)는 이 구조에서는 불필요.
+
+### 변경 반경 (~4파일)
+
+- `entities/map/model/store.ts`: cameraRequest 추가, regionProgrammaticAt·
+  setRegionProgrammatic(+1e-7 우회 포함) 삭제, requestCamera(region) 액션 추가.
+- `features/map/useMapController.ts`: 잠금 판정 삭제, 구 전환 effect·bounds 보정·
+  handleMarkerPress를 requestCamera로 전환.
+- `features/map/lib/focusPoiFromSidebar.ts`, `features/recommend/useRecommendFood.ts`:
+  setRegionProgrammatic → requestCamera.
+- `features/map/ui/MapView.tsx` (+`HomeMap.tsx` prop 배선): region → initialRegion,
+  cameraRequest 소비 effect + ref 실행. `MapView.web.tsx`도 prop 시그니처 맞춤.
+
+### 검증 항목 (착수 시 전부 실기기)
+
+- 사이드바 카드 탭(같은 카드 반복 탭 + 플링 직후 탭 10회 이상), 지도 마커 직접 탭.
+- 구 전환 이동 / "현재 위치" 모드 전환.
+- 팬·줌 자유 조작(이제 이벤트가 항상 store에 반영되므로 되돌아가기·스냅백이 없어야 함).
+- 서울 경계 밖 드래그 복귀, 과도 줌아웃 보정.
+- 맛집 패널 사진 탭(경도 오프셋 사전 보정 경로) — 참고: 이 경로는 mapPadding.left(12↔272)와
+  lonOffset 사전 보정이 공존하는 이중 보정 의심이 있어 착수 시 함께 정리 권장.
+- 카드 닫기 후 카메라 정지 유지.
+
+### 진행 프로세스
+
+변경 반경이 커서 "설계안 검토 → 단계 적용" 프로세스로 별도 진행하기로 함(2026-07-14 결정).
+착수 전 이 섹션 기준으로 설계 리뷰부터.
