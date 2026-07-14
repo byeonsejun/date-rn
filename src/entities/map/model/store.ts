@@ -13,6 +13,12 @@ const DEFAULT_REGION: MapRegion = {
   longitudeDelta: 0.08,
 };
 
+const regionsExactlyEqual = (a: MapRegion, b: MapRegion): boolean =>
+  a.lat === b.lat &&
+  a.lon === b.lon &&
+  a.latitudeDelta === b.latitudeDelta &&
+  a.longitudeDelta === b.longitudeDelta;
+
 /**
  * 지도 도메인 스토어 (Zustand).
  *
@@ -79,7 +85,17 @@ export const useMapStore = create<{
   setSelectedMarkerId: (value) => set({ selectedMarkerId: value }),
   setSelectedType: (value) => set({ selectedType: value }),
   setRegion: (value) => set({ region: value }),
-  setRegionProgrammatic: (value) => set({ region: value, regionProgrammaticAt: Date.now() }),
+  setRegionProgrammatic: (value) =>
+    set((state) => {
+      // RN의 네이티브 prop 전달은 deepDiffer 값 비교라, store의 region과 완전히 같은 값을
+      // 다시 넣으면 실제 카메라가 딴 곳에 있어도 네이티브 카메라 명령이 발행되지 않는다.
+      // (예: 카드 A 포커스 → 플링(정착 이벤트는 잠금에 차단되어 store는 A 유지) → 카드 A 재탭)
+      // 위도에 1e-7(약 1cm, 시각적으로 무의미)을 더해 항상 네이티브 업데이트가 나가게 한다.
+      const next = regionsExactlyEqual(value, state.region)
+        ? { ...value, lat: value.lat + 1e-7 }
+        : value;
+      return { region: next, regionProgrammaticAt: Date.now() };
+    }),
 
   handleMarker: (type, markerId) => {
     switch (type) {
