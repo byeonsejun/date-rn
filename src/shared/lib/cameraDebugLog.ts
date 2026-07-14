@@ -7,11 +7,15 @@
  */
 export const logCamera = (
   caller: string,
-  region: { lat: number; lon: number },
+  region: { lat: number; lon: number; latitudeDelta?: number; longitudeDelta?: number },
   extra = "",
 ): void => {
   const ts = new Date().toISOString().slice(11, 23);
+  const delta =
+    typeof region.latitudeDelta === "number"
+      ? ` Δlat=${region.latitudeDelta.toFixed(6)}`
+      : "";
   console.log(
-    `[CAMERA] ${ts} ${caller} → ${region.lat.toFixed(6)},${region.lon.toFixed(6)}${extra ? ` | ${extra}` : ""}`,
+    `[CAMERA] ${ts} ${caller} → ${region.lat.toFixed(6)},${region.lon.toFixed(6)}${delta}${extra ? ` | ${extra}` : ""}`,
   );
 };
