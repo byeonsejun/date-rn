@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useMemo } from 'react';
+import { Dimensions } from 'react-native';
 
 import { useLocationStore } from '@entities/location/model/store';
 import { useMapStore } from '@entities/map/model/store';
@@ -7,6 +8,7 @@ import { useRestaurantStore } from '@entities/restaurant/model/store';
 import type { MapMarkerData, MapRegion, MapType } from '@entities/map/model/types';
 
 import { buildMapMarkers } from '@features/map/lib/markers';
+import { computePoiMarkerRegionFocus } from '@features/map/lib/poiMarkerCamera';
 import { logCamera } from '@shared/lib/cameraDebugLog';
 
 /**
@@ -204,14 +206,26 @@ export const useMapController = () => {
    * NOTE: RN에서는 모바일 hover가 없어, 웹의 `onMouseOver/onMouseOut`에 대응되는
    * `overMarkerId`는 현재 구현에서 직접 사용하지 않는다.
    *
-   * POI 마커 상세는 Callout(마커 좌표 위 말풍선)으로 표시하므로
-   * 더 이상 하단 모달과의 겹침을 피하기 위한 카메라 오프셋이 필요 없다.
+   * POI/현재위치 마커는 하단 오버레이 카드가 열리므로, 마커가 카드에 가리지 않도록
+   * `computePoiMarkerRegionFocus`로 중심 위도를 보정해 카메라를 이동한다.
+   * (과거의 동적 mapPadding 방식은 SDK 카메라 경합 때문에 제거됨)
+   * 추천식당 마커는 하단 우측 소형 버튼만 표시되므로 카메라를 움직이지 않는다.
    */
   const handleMarkerPress = useCallback(
     (markerId: string) => {
       setSelectedMarkerId(markerId);
+      const marker = mergedMarkers?.find((m) => m.id === markerId);
+      if (!marker || marker.source === 'restaurant') return;
+      const next = computePoiMarkerRegionFocus(
+        marker,
+        useMapStore.getState().region,
+        Dimensions.get('window').height,
+      );
+      // [진단용 임시 로그]
+      logCamera('markerPress(programmatic)', next, `markerId=${markerId}`);
+      setRegionProgrammatic(next);
     },
-    [setSelectedMarkerId],
+    [mergedMarkers, setRegionProgrammatic, setSelectedMarkerId],
   );
 
   const handleMarkerIn = useCallback((markerId: string) => setOverMarkerId(markerId), [setOverMarkerId]);

@@ -1,15 +1,19 @@
+import { Dimensions } from "react-native";
+
 import { useMapStore } from "@entities/map/model/store";
 import type { PoiSuggestion } from "@entities/poi/model/types";
 import type { MapMarkerData, MapRegion } from "@entities/map/model/types";
+import { computePoiMarkerRegionFocus } from "@features/map/lib/poiMarkerCamera";
 import { logCamera } from "@shared/lib/cameraDebugLog";
 
 /**
  * 사이드바「오늘 추천 데이트 장소」에서 썸네일을 탭했을 때,
- * 해당 마커를 선택하고 지도를 마커 좌표로 단순 중앙 정렬한다.
+ * 해당 마커를 선택하고 지도를 마커 좌표로 이동한다.
  *
- * POI 상세는 Callout(마커 좌표 위 말풍선)으로 표시하므로
- * 하단 모달 회피를 위한 세로 오프셋이 더 이상 필요 없다.
- * `showPoint` 갱신 전이면 임시 마커를 주입해 Callout이 즉시 렌더되도록 한다.
+ * POI 상세는 화면 하단 오버레이 카드로 표시되므로,
+ * 마커가 카드에 가리지 않도록 `computePoiMarkerRegionFocus`로
+ * region 중심 위도를 미리 보정한다. (동적 mapPadding은 SDK 카메라 경합 때문에 사용하지 않는다)
+ * `showPoint` 갱신 전이면 임시 마커를 주입해 상세 카드가 즉시 렌더되도록 한다.
  */
 export const focusPoiMarkerFromSidebar = (
   markerId: string,
@@ -46,11 +50,15 @@ export const focusPoiMarkerFromSidebar = (
     map.setShowPoint(nextShowPoint.length > 0 ? nextShowPoint : undefined);
   }
 
-  const { latitudeDelta, longitudeDelta } = map.region;
-  const next: MapRegion = { lat, lon, latitudeDelta, longitudeDelta };
+  // 마커가 하단 상세 카드에 가리지 않도록 카드 높이를 고려해 중심 위도를 보정한다.
+  const next: MapRegion = computePoiMarkerRegionFocus(
+    { lat, lon },
+    map.region,
+    Dimensions.get("window").height,
+  );
   // [진단용 임시 로그]
   logCamera("focusPoiFromSidebar(programmatic)", next, `markerId=${markerId} foundInShowPoint=${Boolean(found)}`);
   // programmatic 이동으로 기록해, 직후의 늦은 onRegionChangeComplete
-  // (직전 pan 감속·상세 카드 오픈에 따른 mapPadding 재조정)가 이 이동을 덮어쓰지 못하게 한다.
+  // (직전 pan 감속)가 이 이동을 덮어쓰지 못하게 한다.
   map.setRegionProgrammatic(next);
 };

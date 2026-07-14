@@ -72,10 +72,11 @@ export const MapView = (props: {
   const mapControlBottomPad = Math.max(insets.bottom + 4, 28);
   // 상세 패널 / 액션 버튼은 홈 인디케이터(시스템 바) 바로 위를 기준으로 배치한다.
   const detailBottomPad = Math.max(insets.bottom, 8);
-  // POI 모달이 열려 있으면 그 높이만큼 mapPadding.bottom을 늘려
-  // Google Maps SDK가 마커를 모달 위 가시 영역 중앙에 배치하도록 한다.
-  const poiModalHeight = selectedMarker && selectedMarker.source !== 'restaurant' ? 220 : 0;
-  const mapBottomPad = mapControlBottomPad + poiModalHeight;
+  // NOTE: 과거에는 POI 카드가 열릴 때 mapPadding.bottom을 220 늘려 SDK가 카메라를
+  // 재배치하게 했으나, region prop 변경과 패딩 변경이 같은 프레임에 겹치면 SDK가
+  // 카메라를 남쪽 경계로 밀어내는 경합이 있어 제거했다. 카드 회피는 이동 시점에
+  // `computePoiMarkerRegionFocus`로 region 중심을 미리 보정하는 방식으로 처리한다.
+  const mapBottomPad = mapControlBottomPad;
   // POI 카드 너비: 구글 SDK 우측 버튼 영역(~90px + 여백 35px)을 피한다.
   const googleActionButtonsWidth = 90;
   const poiCardWidth = Math.max(viewportWidth - (googleActionButtonsWidth + 35), 220);
