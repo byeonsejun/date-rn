@@ -62,7 +62,8 @@ const kindByCategory: Record<PoiCategory, PoiKind> = {
  * (순수 함수)
  *
  * - 공원/문화공간: `location === district` 매칭
- * - 두드림길: `location.includes(district)` 매칭 (원본 웹 로직 재현)
+ * - 두드림길: `location`을 콤마 분리해 정확 매칭되는 모든 그룹 수집 + dedupe
+ *   (원본 웹의 `.find(includes)`는 첫 그룹만 취해 대량 누락 → RN에서 바로잡음)
  */
 export const filterPoisByDistrict = (
   district: string,
@@ -186,28 +187,51 @@ const filterCulturalSpaceByDistrict = (district: string): PoiSuggestion[] => {
 
 const filterDodreamgilByDistrict = (district: string): PoiSuggestion[] => {
   const groups = dodreamgilJson as PoiGroup<DodreamgilRaw>[];
-  const group = groups.find((g) => g.location.includes(district));
-  if (!group) return [];
+
+  /**
+   * `location`은 `"종로구"`처럼 단일 구인 경우도 있고
+   * `"강북구,도봉구,성북구,은평구,종로구"`처럼 콤마로 여러 구를 묶기도 한다.
+   * 과거 `groups.find((g) => g.location.includes(district))`는 배열에서 가장 먼저
+   * 매치되는 그룹 하나만 반환해, 뒤에 있는 단일 구 전용 그룹이 통째로 누락됐다
+   * (예: `"종로구,중구"`가 먼저 매치돼 `"종로구"` 전용 그룹 111건이 숨겨짐).
+   * 콤마 분리 후 정확 매칭으로 매치되는 **모든** 그룹을 수집한다.
+   */
+  const matchedGroups = groups.filter((g) =>
+    g.location.split(",").some((name) => name.trim() === district),
+  );
+  if (matchedGroups.length === 0) return [];
 
   /**
    * `dodreamgil.json` -> `PoiSuggestion` 형태로 변환한다.
-   * (두드림길은 원본 웹과 동일하게 `includes` 매칭을 사용한다.)
+   *
+   * 한 구가 여러 그룹에 매치될 때(단일 구 그룹 + 콤마 다중 그룹) 같은 트레일
+   * POI가 그룹 사이에 겹칠 수 있고, 원본 그룹 내부에도 중복 레코드가 있어
+   * `이름 + 좌표(toFixed(6))` 기준으로 dedupe한다. 키는 `poisEqualForMarker`
+   * (features/map/lib/markers.ts)와 같은 정밀도를 써서 마커 id 인덱싱과 어긋나지 않게 한다.
+   * 그룹 JSON 순서 -> data 순서 -> 첫 등장 우선으로, 두 마커 계산 경로가 동일 순서를 얻는다.
    */
-  return group.data.reduce<PoiSuggestion[]>((acc, d) => {
-    const lat = toNumber(d.latitude);
-    const lon = toNumber(d.longitude);
-    if (lat === undefined || lon === undefined) return acc;
+  const seen = new Set<string>();
+  return matchedGroups.reduce<PoiSuggestion[]>((acc, group) => {
+    for (const d of group.data) {
+      const lat = toNumber(d.latitude);
+      const lon = toNumber(d.longitude);
+      if (lat === undefined || lon === undefined) continue;
 
-    acc.push({
-      category: "dodreamgil",
-      kind: kindByCategory.dodreamgil,
-      title: d.CPI_NAME,
-      titleEn: d.CPI_NAME_en,
-      lat,
-      lon,
-      detailCourse: d.DETAIL_COURSE,
-      description: htmlDescriptionToPlain(d.CONTENT),
-    });
+      const dedupeKey = `${d.CPI_NAME}@${lat.toFixed(6)},${lon.toFixed(6)}`;
+      if (seen.has(dedupeKey)) continue;
+      seen.add(dedupeKey);
+
+      acc.push({
+        category: "dodreamgil",
+        kind: kindByCategory.dodreamgil,
+        title: d.CPI_NAME,
+        titleEn: d.CPI_NAME_en,
+        lat,
+        lon,
+        detailCourse: d.DETAIL_COURSE,
+        description: htmlDescriptionToPlain(d.CONTENT),
+      });
+    }
     return acc;
   }, []);
 };
