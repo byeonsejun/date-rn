@@ -30,6 +30,7 @@ RN(portfolio-rn)에서 완성한 한/영 i18n을 웹(`../portfolio-next`, 원격
 | 0단계 | POI JSON에 영어 번역 필드(`_en`) 이식(RN 번역 데이터 복사) | `fbaf35e` |
 | 1단계 | i18n 인프라: i18next + react-i18next, `useLanguageStore`(zustand persist), `I18nProvider`, `AppTitle`, `LanguageToggle`, KO 기본 | `7600a3d`, `9fa0a50`(브라우저 감지 제거) |
 | 2단계 | 정적 UI 카피 t() 교체 — 4그룹 + 레이아웃 픽스 3건 | 아래 |
+| 3단계 | 값 겸용 문자열 값→라벨 매핑 (표시만 변환, 값은 KO 유지) | `97a0b3a` |
 
 **2단계 상세** (그룹별):
 - 그룹1 모달/토스트: `2392ee9`
@@ -37,7 +38,17 @@ RN(portfolio-rn)에서 완성한 한/영 i18n을 웹(`../portfolio-next`, 원격
 - 그룹3 날씨: `b13288e` (+ 요일 탭 EN 레이아웃: `ff2cefb` 가로 스크롤 시도 → `fb5f7ca` 라벨 축소+text-sm로 확정. RN 라벨 파리티는 이 레포 `fa9df76`)
 - 그룹4 지도 UI: `51b479d` (+ 레이아웃 픽스 `285bd0c` 맛집 리스트 EN 마지막 항목 잘림 — flex-col)
 
-→ **2단계까지 로컬 KO/EN 검증 완료(2026-07-22)**: 맛집 리스트 잘림 해결, 모든 그룹 KO/EN 정상.
+**3단계 상세** (`97a0b3a`): RN `entities/*/lib/label.ts` 3헬퍼를 웹 `src/utils/label.ts`로 이식 —
+`getCategoryLabel`(카테고리 switch→`map.category.*`), `getDistrictLabel`(`location_en` 폴백),
+`getPoiDisplayTitle`(`titleEn` 폴백). `i18n.getFixedT`로 훅 밖(마커 title prop)에서도 호출.
+데이터 배선: `service/location.ts` `localInfoData` 26개 구에 `location_en` 추가(RN `data.ts` 값),
+`getFilterInfoData` 표시객체에 `titleEn` 실어나름(`FAC_NAME_en`/`p_park_en`/`CPI_NAME_en`),
+`useWeather` 반환에 `allDistrictInfo` 추가(Weather 구 lookup용). 적용 지점(값은 KO 유지):
+카테고리 버튼·구 드롭다운(`value`는 KO)·날씨 패널 구명·지도 마커 title/호버 툴팁·상세카드 POI 제목·
+현재위치(`map.currentLocationTitle`).
+
+→ **3단계까지 로컬 KO/EN 검증 완료(2026-07-22)**: 2단계(맛집 리스트 잘림 해결) + 3단계(카테고리/구/
+POI 제목/현재위치 EN 전환, 필터·구 선택·마커 클릭 값 무손상) 모두 정상. 화면에서 한국어 사라짐 확인.
 
 ### 확정 결정들
 
@@ -53,13 +64,11 @@ RN(portfolio-rn)에서 완성한 한/영 i18n을 웹(`../portfolio-next`, 원격
 
 ### 다음 할 일 (웹 i18n, 우선순위 순)
 
-1. **3단계 — 값→라벨 매핑**: RN의 `getCategoryLabel`/`getDistrictLabel`/`getPoiDisplayTitle` 이식.
-   값(한국어 정본)은 그대로 두고 표시 시점에만 언어별 라벨로 변환. 대상: 카테고리 버튼, 구 선택,
-   POI 제목(`_en` 활용), "현재 위치".
-2. **4단계 — 프론트 API lang 전달**: weather/restaurants fetch에 `&lang=` 붙이기(BFF는 이미 lang
-   수용, 프론트가 미전달). weather.ts 2곳·RecommendFood 1곳. 날씨 description(온흐림 등) API 원문
-   변환도 여기서 처리.
-3. **main 머지**: 3·4단계 완료·프리뷰 검증 후 `feat/web-i18n` → main PR 머지.
+1. **4단계 — 프론트 API lang 전달**: weather/restaurants fetch에 `&lang=` 붙이기(BFF는 이미 lang
+   수용, 프론트가 미전달). weather fetch 2곳·RecommendFood 1곳. 언어 토글 시 재요청 트리거되게
+   (weather는 훅 deps, RecommendFood는 캐시 키에 lang 포함 여부 확인). 날씨 description(온흐림 등)
+   API 원문 변환 `translatorToKor`이 en 응답에서 어떻게 되는지도 확인.
+2. **main 머지**: 4단계 완료·프리뷰 검증 후 `feat/web-i18n` → main PR 머지.
 
 ### 환경 메모
 
