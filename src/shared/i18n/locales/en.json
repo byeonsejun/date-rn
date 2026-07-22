@@ -19,7 +19,7 @@
   "weather": {
     "today": "Today",
     "tomorrow": "Tomorrow",
-    "dayAfterTomorrow": "Day after tomorrow",
+    "dayAfterTomorrow": "In 2 days",
     "threeDaysLater": "In 3 days",
     "loading": "Loading weather...",
     "loadError": "Couldn't load weather info. Please check your network and server (EXPO_PUBLIC_API_BASE_URL) connection."
