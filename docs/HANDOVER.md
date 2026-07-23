@@ -1,4 +1,4 @@
-# 인수인계 (2026-07-22 세션 종료 기준)
+# 인수인계 (2026-07-23 세션 종료 기준)
 
 > 다음 세션이 이 문서만 읽고 이어서 작업할 수 있도록 정리한 스냅샷.
 > 상세 배경·설계는 `docs/research.md`, 아키텍처 규칙은 `docs/AI_CONVENTION.md` 참조.
@@ -8,10 +8,11 @@
 
 ---
 
-## 0. 웹(portfolio-next) i18n 이식 — 현재 진행 중 (2026-07-22)
+## 0. 웹(portfolio-next) i18n 이식 — ✅ 0~4단계 전부 완료, main 머지만 남음 (2026-07-23)
 
 RN(portfolio-rn)에서 완성한 한/영 i18n을 웹(`../portfolio-next`, 원격 `github.com/byeonsejun/date`)에
 이식하는 다중 세션 작업. **작업 브랜치 `feat/web-i18n` (아직 main 미머지).**
+**2026-07-23 로컬 최종 검증 완료 — 남은 건 `feat/web-i18n` → main PR 머지뿐(사용자 승인 대기).**
 
 ### 진행 방식 (중요)
 
@@ -31,6 +32,10 @@ RN(portfolio-rn)에서 완성한 한/영 i18n을 웹(`../portfolio-next`, 원격
 | 1단계 | i18n 인프라: i18next + react-i18next, `useLanguageStore`(zustand persist), `I18nProvider`, `AppTitle`, `LanguageToggle`, KO 기본 | `7600a3d`, `9fa0a50`(브라우저 감지 제거) |
 | 2단계 | 정적 UI 카피 t() 교체 — 4그룹 + 레이아웃 픽스 3건 | 아래 |
 | 3단계 | 값 겸용 문자열 값→라벨 매핑 (표시만 변환, 값은 KO 유지) | `97a0b3a` |
+| 4단계 | 프론트 API `&lang=` 전달 — 날씨/맛집 | `fbb14bd` |
+| 잔여 | 하드코딩 한국어 alert i18n (`location.dataRequestError`) | `da12c6b` |
+| 레이아웃 | EN 텍스트 길이로 드러난 원작 하드코딩 치수 파열 6건 픽스 | 아래 |
+| QA 갭 | 추천 패널 EN 미번역 3건(POI 제목·타입·추천/인기 탭) — 3단계 RN 패리티 누락분 | `71e9a24` |
 
 **2단계 상세** (그룹별):
 - 그룹1 모달/토스트: `2392ee9`
@@ -50,6 +55,45 @@ RN(portfolio-rn)에서 완성한 한/영 i18n을 웹(`../portfolio-next`, 원격
 → **3단계까지 로컬 KO/EN 검증 완료(2026-07-22)**: 2단계(맛집 리스트 잘림 해결) + 3단계(카테고리/구/
 POI 제목/현재위치 EN 전환, 필터·구 선택·마커 클릭 값 무손상) 모두 정상. 화면에서 한국어 사라짐 확인.
 
+**4단계 상세** (`fbb14bd`): 프론트가 BFF에 `&lang=` 미전달하던 것 배선 —
+- `service/weather.ts` fetch **2곳**에 `&lang=${language}` 추가.
+- `useWeather` 재요청 트리거: deps에 `language` 추가(언어 토글 시 날씨 재요청).
+- `RecommendFood`: 캐시 키를 `${language}:${location}`으로(언어만 토글해도 재요청).
+- `translatorToKor`(온흐림→흐림 등)는 **KO 응답 전용 보정**이라 그대로 유지 — EN 응답엔 해당
+  한국어 원문이 없어 no-op(무해). API description 자체는 `&lang=`로 언어별 원문이 옴.
+
+**잔여 alert i18n** (`da12c6b`): `service/weather.ts` 위치 조회 실패 alert의 하드코딩 한국어를
+`i18n.getFixedT` 패턴(`utils/label.ts`와 동일, 훅 밖 서비스 모듈용)으로 `location.dataRequestError`
+키 처리. 전체 스캔 결과 다른 노출용 하드코딩 한국어 없음(값 겸용 정본·서버 metadata·dead code 제외).
+
+### 레이아웃 픽스 6건 — 공통 원인: "한국어 기준 하드코딩 치수 → 영어 길이에서 파열"
+
+원작 웹은 한국어 텍스트 길이에 맞춘 **고정 높이/폭·flex 미제약**이 곳곳에 있어, EN(더 긴 로마자
+구명·장문 라벨)이 들어오자 겹침·잘림·오버플로우로 드러났다. **일/중 확장 시에도 같은 계열 문제가
+재발할 수 있으니** 새 언어 붙이기 전 이 목록을 참고할 것. (RN은 대응이 끝나 있어 대조 기준으로 사용)
+
+| 커밋 | 증상(EN에서) | 수정 |
+| --- | --- | --- |
+| `5538f81` | 맛집 패널 헤더 제목-닫기 버튼 겹침 | 제목 `flex-1` + 닫기 `shrink-0` |
+| `fb5f7ca` | 요일 탭 4개가 288px 사이드바 오버플로우 | 라벨 축소("In 2 days")+`text-sm` (Jua 폰트 폭 실측 근거; 가로 스크롤안 `ff2cefb` 폐기) |
+| `285bd0c` | 맛집 리스트 EN 마지막 항목 잘림 | 스크롤 영역 `flex-col`(+`flex-1 min-h-0`)로 정확화 |
+| `28dbcc4` | 날씨 카드 고정높이(`h-[280px]`)로 2줄 구명 시 탭·예보 잘림 | 카드 `min-h`+`shrink-0`+오버레이 stretch, **aside를 스크롤 컨테이너화**(`lg:overflow-y-auto`+`lg:[&>*]:shrink-0`) = **RN `HomeSidebar` ScrollView 패리티** |
+| `a5b82d0`→`d4cfe0d` | 추천 패널 고정높이 잘림 → (min-h 과다로) 불필요 스크롤 | `h-[410px]`→`min-h-[200px]`(내용 구동, 실제 넘칠 때만 스크롤, 빈 상태 floor) |
+| `a9573f5`→`d039aa1` | 긴 구명 2줄 시 온도 잘림 → (shrink 방지 후) 구명 글리프↔온도 겹침 | 구명 `flex-1 min-w-0`+온도 `shrink-0`, 구명 영역 `overflow-hidden`+`break-words`(글리프 침범 원천 차단, Range 박스 교차 실측 overlap=0) |
+
+> 검증 방식: 레이아웃 픽스는 dev 서버 + Playwright(headless)로 **박스 좌표/교차·scrollHeight 실측**으로
+> 증명(구 이름 오버라이드, 뷰포트 높이 스윕 등). "폭 불변"류 반쪽 측정으로 겹침을 놓친 이력이 있어,
+> 이후 "구조적으로 문제 불가"한 방식 + 실측 증명을 기준으로 잡음.
+
+### 머지 전 최종 QA (2026-07-23, Playwright headless + 로컬)
+
+전수 점검 통과: 콘솔 앱에러/하이드레이션 0(Google Maps/WebGL 헤드리스 노이즈만), 언어 persist,
+요일 탭·카테고리 4종·구 26개·날씨 desc(구 선택 시, `overcast clouds`·`lang=en` 확인)·동의 모달 EN,
+기능 동작(카테고리 필터·구 선택·추천/인기·요일 탭 값 무손상). **QA 중 발견한 추천 패널 미번역 3건은
+`71e9a24`로 수정 후 재검증 통과.** EN 잔존 한국어는 주소·두드림길 코스명(데이터 한계)뿐 —
+`현재 위치` 모드 날씨 미갱신은 문서화된 의도.
+자동 미검증(헤드리스 지도 마커 클릭 불가): 맛집 패널 상호명 EN(Places `&lang` 배선됨) — 로컬 수동 확인 권장.
+
 ### 확정 결정들
 
 - **metadata 한국어 유지**(ADR 0005): 서버 컴포넌트 metadata/Header h1은 react-i18next 훅을 못 써서
@@ -62,13 +106,12 @@ POI 제목/현재위치 EN 전환, 필터·구 선택·마커 클릭 값 무손�
   "현재 위치", 추천·인기 등은 로직 비교·필터 키·데이터 타입으로도 쓰여 한국어 정본을 유지하고
   표시만 매핑해야 한다. 2단계에서 건드리지 않았고 3단계에서 값→라벨 매핑으로 처리.
 
-### 다음 할 일 (웹 i18n, 우선순위 순)
+### 다음 할 일 (웹 i18n)
 
-1. **4단계 — 프론트 API lang 전달**: weather/restaurants fetch에 `&lang=` 붙이기(BFF는 이미 lang
-   수용, 프론트가 미전달). weather fetch 2곳·RecommendFood 1곳. 언어 토글 시 재요청 트리거되게
-   (weather는 훅 deps, RecommendFood는 캐시 키에 lang 포함 여부 확인). 날씨 description(온흐림 등)
-   API 원문 변환 `translatorToKor`이 en 응답에서 어떻게 되는지도 확인.
-2. **main 머지**: 4단계 완료·프리뷰 검증 후 `feat/web-i18n` → main PR 머지.
+1. **main 머지만 남음**: 0~4단계 + alert + 레이아웃 픽스 6건 전부 완료, 2026-07-23 로컬 최종 QA 통과.
+   `feat/web-i18n` → main PR 생성/머지(**사용자 승인 후**). **main push = Vercel 프로덕션 자동배포**라
+   프리뷰 확인 후 신중히. (지도는 프리뷰에서 안 뜸 — 키 리퍼러 이슈, 로컬에서만 검증됨.)
+2. (이후) 일/중 언어 확장 시 위 "레이아웃 픽스 6건" 공통 원인 참고.
 
 ### 환경 메모
 
