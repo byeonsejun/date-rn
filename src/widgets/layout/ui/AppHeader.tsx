@@ -12,6 +12,7 @@ const LANGUAGE_TOGGLE_UNSELECTED_TEXT = '#404040';
 const LANGUAGE_ACCESSIBILITY_LABEL: Record<SupportedLanguage, string> = {
   ko: 'Switch to Korean',
   en: 'Switch to English',
+  ja: 'Switch to Japanese',
 };
 
 /**

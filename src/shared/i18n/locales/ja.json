@@ -1,0 +1,73 @@
+{
+  "common": {
+    "appName": "ソウル、きみと一緒に",
+    "close": "閉じる",
+    "loading": "読み込み中...",
+    "loadingMore": "さらに読み込み中...",
+    "noData": "表示するデータがありません。",
+    "initializing": "設定を読み込み中...",
+    "noInfo": "情報なし",
+    "openNow": "営業中",
+    "closed": "営業終了"
+  },
+  "location": {
+    "consentMessage": "「ソウル、きみと一緒に」は、現在地を中心にあなたに合った天気とデートスポットをご提案します！\n（本サービスはソウル地域限定でご利用いただけます。）",
+    "agree": "同意する",
+    "decline": "拒否する",
+    "seoulOnlyToast": "ソウル地域のみのサービスです。ご希望の地域を選択してください。"
+  },
+  "weather": {
+    "today": "今日",
+    "tomorrow": "明日",
+    "dayAfterTomorrow": "明後日",
+    "threeDaysLater": "明々後日",
+    "loading": "天気を読み込み中...",
+    "loadError": "天気情報を読み込めませんでした。ネットワーク状態とサーバー（EXPO_PUBLIC_API_BASE_URL）の接続をご確認ください。"
+  },
+  "recommend": {
+    "foodListTitle": "おすすめレストラン Top 5",
+    "viewFoodButton": "おすすめレストランを見る",
+    "foodFetchError": "レストラン情報を読み込めませんでした。",
+    "locationNeeded": "位置情報が必要",
+    "loadingPlaces": "おすすめデータを読み込み中です。",
+    "todayPlacesTitle": "今日のおすすめデートスポット"
+  },
+  "map": {
+    "closePanel": "パネルを閉じる",
+    "currentLocationDescription": "地図に現在地を表示します。",
+    "currentLocationTitle": "現在地",
+    "restaurantLabel": "レストラン",
+    "ratingLabel": "評価 {{rating}}（{{count}}件）",
+    "noDetailInfo": "詳細情報がありません。",
+    "viewOnGoogleMaps": "Googleマップで見る",
+    "viewMap": "地図",
+    "directions": "経路案内",
+    "loadingMarkers": "地図データを読み込み中です。",
+    "noMarkers": "選択した条件に該当するマーカーがありません。",
+    "viewSelectedRestaurantOnMaps": "選択したレストランをGoogleマップで見る",
+    "directionsToSelectedRestaurant": "選択したレストランの経路案内",
+    "webPreviewUnavailable": "Webプレビューではネイティブ地図を利用できません",
+    "webPreviewHint": "iOSシミュレーター、Androidエミュレーター、またはExpo Goアプリで実行すると地図が表示されます。",
+    "openCurrentAreaInBrowser": "現在のエリアをブラウザのGoogleマップで開く",
+    "openInGoogleMapsBrowser": "Googleマップで見る",
+    "moreMarkersHint": "他 {{count}}件のマーカー（ネイティブで確認）",
+    "currentMarkerLabel": "現在",
+    "category": {
+      "all": "すべて",
+      "park": "公園",
+      "culturalSpace": "文化空間",
+      "dodreamgil": "トゥドゥリムキル"
+    }
+  },
+  "restaurant": {
+    "noImage": "画像なし"
+  },
+  "poi": {
+    "viewOnMapLabel": "{{title}}の位置を地図で見る",
+    "contactLabel": "お問い合わせ: {{phone}}"
+  },
+  "home": {
+    "districtSelectTitle": "地域を選択",
+    "weatherSectionTitle": "選択した地域の天気情報です。"
+  }
+}

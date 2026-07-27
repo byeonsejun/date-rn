@@ -3,15 +3,16 @@ import i18next from "i18next";
 import { initReactI18next } from "react-i18next";
 
 import en from "./locales/en.json";
+import ja from "./locales/ja.json";
 import ko from "./locales/ko.json";
 
 /**
- * 지원 언어 목록. 새 언어(예: ja, zh) 추가 시:
+ * 지원 언어 목록. 새 언어(예: zh) 추가 시:
  * 1) locales/xx.json 생성
  * 2) 아래 `resources`와 `SUPPORTED_LANGUAGES`에 한 줄씩 등록
  * (Metro는 런타임 디렉터리 스캔을 지원하지 않아 정적 등록이 필요하다.)
  */
-export const SUPPORTED_LANGUAGES = ["ko", "en"] as const;
+export const SUPPORTED_LANGUAGES = ["ko", "en", "ja"] as const;
 export type SupportedLanguage = (typeof SUPPORTED_LANGUAGES)[number];
 
 export const DEFAULT_LANGUAGE: SupportedLanguage = "ko";
@@ -30,6 +31,7 @@ if (!i18next.isInitialized) {
     resources: {
       ko: { translation: ko },
       en: { translation: en },
+      ja: { translation: ja },
     },
     lng: detectDeviceLanguage(),
     fallbackLng: DEFAULT_LANGUAGE,
