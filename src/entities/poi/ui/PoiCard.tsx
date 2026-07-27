@@ -40,7 +40,9 @@ export const PoiCard = ({ poi, onPressThumbnail }: PoiCardProps) => {
 
   const secondaryText =
     poi.category === "dodreamgil"
-      ? language === "en"
+      ? // 두드림길 경유지 상세(detailCourse)는 한국어 원문만 있어 번역이 없다.
+        // 한국어가 아닌 언어(en/ja)에서는 표기하지 않는다.
+        language !== "ko"
         ? undefined
         : poi.detailCourse
       : poi.address;

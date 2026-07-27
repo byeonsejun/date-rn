@@ -33,6 +33,7 @@ export const focusPoiMarkerFromSidebar = (
       source: "poi",
       title: fallbackPoi.title,
       titleEn: fallbackPoi.titleEn,
+      titleJa: fallbackPoi.titleJa,
       category: fallbackPoi.category,
       kind: fallbackPoi.kind,
       lat: fallbackPoi.lat,
