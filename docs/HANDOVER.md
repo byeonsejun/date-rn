@@ -1,14 +1,96 @@
-# 인수인계 (2026-07-23 세션 종료 기준)
+# 인수인계 (2026-07-27 세션 종료 기준)
 
 > 다음 세션이 이 문서만 읽고 이어서 작업할 수 있도록 정리한 스냅샷.
 > 상세 배경·설계는 `docs/research.md`, 아키텍처 규칙은 `docs/AI_CONVENTION.md` 참조.
 >
-> **현재 메인 작업은 웹(portfolio-next) i18n 이식.** 아래 "웹 i18n 이식" 섹션이 최신 상태이며,
-> RN 관련 섹션(맛집 언어 파라미터 / 지도 카메라 / 두드림길 등)은 2026-07-14 기준 그대로 유지한다.
+> **최신 작업은 일본어(ja) 확장 — 골격 완료(아래 섹션 0).** 한/영 웹 i18n(구 섹션, 이제 "0-B")은
+> 완료·배포된 상태 그대로 참고용 보존. RN 관련 섹션(맛집 언어 파라미터 / 지도 카메라 / 두드림길
+> 등)은 2026-07-14 기준 그대로 유지한다.
 
 ---
 
-## 0. 웹(portfolio-next) i18n 이식 — ✅✅ 완료·main 머지·프로덕션 배포 확인 (2026-07-23, 종료)
+## 0. 일본어(ja) 확장 — 🦴 골격 완료·작동 상태 (2026-07-27, 이번 세션)
+
+한/영 인프라 위에 **일본어를 추가**한 작업. RN·웹 양쪽 + BFF까지 **"골격"이 전부 완료·검증**됐고,
+**대량 데이터(POI 이름 `_ja` 2,608건)만 남았다**(현재 en 폴백으로 동작). 지금 상태로도 **일본어
+사용자가 앱/웹을 쓰면 UI·날씨·맛집이 일본어**로 나오고, **POI/구 이름만 영어 폴백**이다(깨지지 않음).
+
+### 완료 항목 + 커밋
+
+**RN (`portfolio-rn`, main)**
+| 항목 | 커밋 |
+| --- | --- |
+| CJK 표기 기준 문서(`docs/i18n-cjk-naming.md`) 신규 | `ed40e3f` |
+| ja 인프라 등록(`SUPPORTED_LANGUAGES`+resources) + `locales/ja.json`(52키) + 토글 JA | `8ea99fa` |
+| 라벨 헬퍼·타입 ja 골격 배선(`titleJa`/`location_ja`, `getDistrictLabel`/`getPoiDisplayTitle` ja 분기, filter/markers 배선, PoiCard 두드림길 상세 숨김 일반화) | `870301f` |
+| **버그픽스+리팩터**: 지원 언어를 `LANGUAGES` 단일 소스로 통합(코드+라벨+a11y) | `27d6dd3` |
+
+**웹 (`portfolio-next`)**
+| 항목 | 커밋 | 위치 |
+| --- | --- | --- |
+| ja 인프라 등록 + `locales/ja.json`(75키) + 토글 JA + label ja 분기 | `90d1ba7` | `feat/web-i18n-ja` |
+| **Noto Sans JP 폰트** 전환(`html[lang='ja']`, I18nProvider가 `<html lang>` 반영) | `2846166` | `feat/web-i18n-ja` |
+| BFF ja 통과(스키마+매핑) *(→ 아래 main에 별도 반영됨)* | `28d444b` | `feat/web-i18n-ja` |
+| 지원 언어 `LANGUAGES` 단일 소스 통합(이번 JA 미표시 버그의 근본 수정) | `3a64a11` | `feat/web-i18n-ja` |
+| **BFF `lang=ja` 허용 — 프로덕션 배포됨** (스키마 ja + `OPENWEATHER_LANG_BY_APP_LANG` ja:'ja') | `5833063` | **main (배포 완료)** |
+
+### ⚠️ "SUPPORTED_LANGUAGES 하드코딩" 버그 — 발견·수정
+
+웹에서 JA 토글이 안 뜬 원인: `LanguageToggle`은 이미 `SUPPORTED_LANGUAGES.map()`이었지만
+**config의 `SUPPORTED_LANGUAGES` 배열 자체가 `['ko','en']`** 이었고, 웹은 별도 `LABELS` 맵,
+RN은 별도 `LANGUAGE_ACCESSIBILITY_LABEL` 맵에 언어가 하드코딩돼 **추가 시 누락되기 쉬웠다**.
+→ 양쪽 모두 `LANGUAGES = [{code,label,(a11yLabel)}]` **단일 소스**로 통합, `SUPPORTED_LANGUAGES`·
+`SupportedLanguage` 타입·토글을 전부 여기서 파생(RN `27d6dd3` / 웹 `3a64a11`). 이후 언어 추가 시
+이 배열 한 곳 + `locales/xx.json` + resources만 손대면 된다.
+
+### 폰트 (실측 결론)
+
+- **RN**: 시스템 폰트라 일본어 정상(커스텀 폰트 로드 0건). 조치 불필요.
+- **웹**: 전역 Jua는 한국어 디스플레이 폰트로 **区/園/々 등 일본어 글리프 상당수 미포함**
+  (`.next` unicode-range 실측: `ja.json` 158자 중 48자, 구/시설 한자 71자 중 43자 미커버).
+  → `html[lang='ja']`일 때 본문을 **Noto Sans JP**로 통째 전환(`next/font`, `preload:false`).
+  로컬 확인 결과 **폰트 완벽**(사용자 확인).
+
+### API (배포+검증 완료)
+
+- RN은 `EXPO_PUBLIC_API_BASE_URL=https://date-eight-navy.vercel.app`(프로덕션 BFF) 호출.
+  BFF가 `z.enum(['ko','en'])`라 `lang=ja`를 **400 거부** → RN JA에서 날씨/맛집 에러였음.
+- **원인 구조**: 웹 로컬은 상대경로 `/api/*`로 자기 로컬 dev(ja 스키마 있는 브랜치)를 쳐서 안 터졌고,
+  RN은 절대경로 프로덕션(main, ja 없음)이라 터졌다. = 배포본 차이.
+- **수정·배포**: BFF 스키마 2파일에 ja 추가(`external-api.ts` Weather/RestaurantLangSchema,
+  `weather/route.ts` `OPENWEATHER_LANG_BY_APP_LANG` ja:'ja')를 **main에 커밋·push(`5833063`) → Vercel
+  프로덕션 자동배포**. OpenWeather ja는 특수매핑 아님(ko만 `kr` 예외), Places는 `language=ja` 그대로.
+- **프로덕션 curl 검증 통과**: weather ja `曇りがち`, ko `튼구름`(kr매핑), en `broken clouds`,
+  restaurants ja 200(5건), **weather lang=fr → 여전히 400**(잘못된 값 거부 유지).
+
+### 표기 기준 문서 — `docs/i18n-cjk-naming.md` (RN 레포)
+
+대량 번역(2,608건)+향후 중국어(`_zh`)의 일관성 기준. 요지:
+- **구(자치구)**: 정식 한자 표기 — `중구→中区`, `강남구→江南区`, `종로구→鍾路区`(25구 표 수록).
+- **시설명**: 「고유명사부 + 한자어 접미사」 → 접미사는 한자 고정(공원→公園, 도서관→図書館,
+  미술관→美術館, 박물관→博物館 …대응표), 고유명사부는 한자 환원 우선 → 순우리말은 가타카나 음차.
+- **두드림길**(브랜드) → `トゥドゥリムキル`. **폴백 정책**: `ja → en → ko`(일본 사용자에겐 한국어보다
+  영어가 유용). 애매 케이스는 문서 §5 결정 로그에 누적.
+
+### 남은 일 (별도 세션 예정)
+
+1. **POI 이름 `_ja` 대량 번역 2,608건** — `park.json` `p_park_ja` 132, `culturalSpace.json`
+   `FAC_NAME_ja` 1,033, `dodreamgil.json` `CPI_NAME_ja` 1,443. **골격 배선은 끝나 있어 데이터만
+   채우면 자동 노출**(현재 en 폴백). 표기 기준 문서대로, 파일·구 단위 배치로 나눠 진행.
+2. **구 이름 `location_ja` 26개**(`entities/location/model/data.ts`, `service/location.ts` 웹) — 위 표기 기준의 한자표 그대로.
+3. **웹 JA UI 배포**: `feat/web-i18n-ja` 브랜치(토글·ja.json·폰트)를 1차 웹 때처럼 PR→프리뷰→main 머지.
+   ⚠️ 브랜치의 `28d444b`(BFF ja)는 이미 main `5833063`으로 반영됨 → **머지 전 리베이스**로 중복 커밋 정리.
+4. **`translatorToKor`(웹) ja 처리 확인**: en처럼 매칭 실패 시 원문 통과(=일본어 그대로) 예상. 웹 재테스트 시 검증.
+
+### 확정 결정
+
+- **두드림길 `detailCourse`(경유지 상세, 한국어 원문)는 ja에서도 숨김** — en과 동일(`PoiCard` 조건을
+  `language==='en'` → `!== 'ko'`로 일반화). 번역 없는 한국어 노출 방지.
+- **ja 폴백은 en 우선**(`ja → en → ko`). 데이터 `_ja` 미완 구간은 영어로 표시.
+
+---
+
+## 0-B. 웹(portfolio-next) 한/영 i18n 이식 — ✅✅ 완료·main 머지·프로덕션 배포 확인 (2026-07-23, 참고용 보존)
 
 RN(portfolio-rn)에서 완성한 한/영 i18n을 웹(`../portfolio-next`, 원격 `github.com/byeonsejun/date`)에
 이식한 다중 세션 작업. **완료 종료됨.**
@@ -184,14 +266,16 @@ POI 제목/현재위치 EN 전환, 필터·구 선택·마커 클릭 값 무손�
 
 ## 3. 다음 할 일 (우선순위 순)
 
-> **현재 메인 작업은 웹 i18n 이식(위 "0. 웹 i18n 이식" 섹션 참조).** 아래 목록은 RN 쪽 잔여 과제.
+> **최신 작업은 일본어(ja) 확장 — 골격 완료(위 섹션 0).** 한/영 웹 i18n은 완료·배포(섹션 0-B).
 
-1. **실기기 전체 훑기** — EN 모드로 남은 화면들(통계, 설문, 설정 등) 레이아웃/번역 확인.
-2. **웹(portfolio-next 레포) UI 다국어** — ✅ 진행 중. 2단계까지 완료, 3·4단계 남음. → 섹션 0.
-3. **카메라 아키텍처 개선 (d)** — research.md 설계안 검토부터.
-4. **두드림길 필터 수정** — research.md의 설계(그룹 분리 인덱싱 or `.filter()` 수집,
+1. **일본어 데이터 `_ja` 대량 번역** — POI 이름 2,608건 + 구 이름 26건. **섹션 0 "남은 일" 참조**(최우선).
+2. **웹 JA UI 배포** — `feat/web-i18n-ja` 브랜치 리베이스 후 PR→main 머지(섹션 0 "남은 일" 3번).
+3. **중국어(`_zh`) 확장** — 골격은 일본어와 동형(`LANGUAGES`에 zh 추가 + locales + `_zh` 데이터).
+   표기 기준 문서 §7에 지침 있음.
+4. **실기기 전체 훑기** — EN/JA 모드로 남은 화면들(통계, 설문, 설정 등) 레이아웃/번역 확인.
+5. **카메라 아키텍처 개선 (d)** — research.md 설계안 검토부터.
+6. **두드림길 필터 수정** — research.md의 설계(그룹 분리 인덱싱 or `.filter()` 수집,
    중복 노출 정책 결정) 기준으로.
-5. **일/중 언어 확장** — i18n 키 구조는 준비됨. POI titleEn처럼 데이터 필드 확장 필요.
 
 ---
 
