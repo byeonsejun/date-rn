@@ -1,19 +1,13 @@
 import { useTranslation } from 'react-i18next';
 import { Pressable, Text, View } from 'react-native';
 
-import { SUPPORTED_LANGUAGES, type SupportedLanguage } from '@shared/i18n';
+import { LANGUAGES, type SupportedLanguage } from '@shared/i18n';
 import { useLanguageStore } from '@shared/i18n/languageStore';
 
 /** 세그먼트 강조색 — `MapTypeSelector`의 선택 상태 배색을 그대로 재사용 */
 const LANGUAGE_TOGGLE_SELECTED_BG = '#f986bd';
 const LANGUAGE_TOGGLE_SELECTED_TEXT = '#fff';
 const LANGUAGE_TOGGLE_UNSELECTED_TEXT = '#404040';
-
-const LANGUAGE_ACCESSIBILITY_LABEL: Record<SupportedLanguage, string> = {
-  ko: 'Switch to Korean',
-  en: 'Switch to English',
-  ja: 'Switch to Japanese',
-};
 
 /**
  * 앱 상단 헤더 (타이틀 + 언어 토글).
@@ -41,15 +35,15 @@ export const AppHeader = () => {
     <View className="flex-row items-center justify-between border-b border-pink-200 bg-white px-4 py-3">
       <Text className="text-xl font-bold text-neutral-900">{t('common.appName')}</Text>
       <View className="flex-row items-center gap-1 rounded-xl bg-neutral-100 p-1">
-        {SUPPORTED_LANGUAGES.map((lang) => {
-          const isSelected = lang === language;
+        {LANGUAGES.map(({ code, label, a11yLabel }) => {
+          const isSelected = code === language;
           return (
             <Pressable
-              key={lang}
-              onPress={() => setLanguage(lang)}
+              key={code}
+              onPress={() => setLanguage(code)}
               accessibilityRole="button"
               accessibilityState={{ selected: isSelected }}
-              accessibilityLabel={LANGUAGE_ACCESSIBILITY_LABEL[lang]}
+              accessibilityLabel={a11yLabel}
               className="rounded-lg px-3 py-1.5"
               style={{ backgroundColor: isSelected ? LANGUAGE_TOGGLE_SELECTED_BG : 'transparent' }}
             >
@@ -57,7 +51,7 @@ export const AppHeader = () => {
                 className="text-xs font-semibold"
                 style={{ color: isSelected ? LANGUAGE_TOGGLE_SELECTED_TEXT : LANGUAGE_TOGGLE_UNSELECTED_TEXT }}
               >
-                {lang.toUpperCase()}
+                {label}
               </Text>
             </Pressable>
           );

@@ -7,13 +7,20 @@ import ja from "./locales/ja.json";
 import ko from "./locales/ko.json";
 
 /**
- * 지원 언어 목록. 새 언어(예: zh) 추가 시:
- * 1) locales/xx.json 생성
- * 2) 아래 `resources`와 `SUPPORTED_LANGUAGES`에 한 줄씩 등록
- * (Metro는 런타임 디렉터리 스캔을 지원하지 않아 정적 등록이 필요하다.)
+ * 지원 언어 단일 소스(코드 + 토글 표기/접근성 라벨). 새 언어(예: zh) 추가 시
+ * 이 배열에 한 항목만 추가하면 `SUPPORTED_LANGUAGES`·`SupportedLanguage` 타입·
+ * 토글 세그먼트가 모두 자동 반영된다. (별도로 locales/xx.json 생성 + 아래 `resources`
+ * 등록은 필요 — Metro는 런타임 디렉터리 스캔을 지원하지 않아 정적 등록이 필요하다.)
  */
-export const SUPPORTED_LANGUAGES = ["ko", "en", "ja"] as const;
-export type SupportedLanguage = (typeof SUPPORTED_LANGUAGES)[number];
+export const LANGUAGES = [
+  { code: "ko", label: "KO", a11yLabel: "Switch to Korean" },
+  { code: "en", label: "EN", a11yLabel: "Switch to English" },
+  { code: "ja", label: "JA", a11yLabel: "Switch to Japanese" },
+] as const;
+
+export type SupportedLanguage = (typeof LANGUAGES)[number]["code"];
+
+export const SUPPORTED_LANGUAGES = LANGUAGES.map((l) => l.code) as readonly SupportedLanguage[];
 
 export const DEFAULT_LANGUAGE: SupportedLanguage = "ko";
 
