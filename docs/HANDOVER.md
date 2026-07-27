@@ -1,4 +1,4 @@
-# 인수인계 (2026-07-27 세션 종료 기준)
+# 인수인계 (2026-07-28 세션 종료 기준)
 
 > 다음 세션이 이 문서만 읽고 이어서 작업할 수 있도록 정리한 스냅샷.
 > 상세 배경·설계는 `docs/research.md`, 아키텍처 규칙은 `docs/AI_CONVENTION.md` 참조.
@@ -9,11 +9,17 @@
 
 ---
 
-## 0. 일본어(ja) 확장 — 🦴 골격 완료·작동 상태 (2026-07-27, 이번 세션)
+## 0. 일본어(ja) 확장 — 🦴 골격 완료·작동 상태 (2026-07-27~28)
 
 한/영 인프라 위에 **일본어를 추가**한 작업. RN·웹 양쪽 + BFF까지 **"골격"이 전부 완료·검증**됐고,
 **대량 데이터(POI 이름 `_ja` 2,608건)만 남았다**(현재 en 폴백으로 동작). 지금 상태로도 **일본어
-사용자가 앱/웹을 쓰면 UI·날씨·맛집이 일본어**로 나오고, **POI/구 이름만 영어 폴백**이다(깨지지 않음).
+사용자가 앱/웹을 쓰면 UI·날씨·맛집·카테고리·구 이름이 전부 일본어**로 나오고, **POI 이름만 영어
+폴백**이다(깨지지 않음). = **일본어는 POI 이름 제외 전부 완성.**
+
+> **2026-07-28 추가분**: ① 구 이름 `location_ja` 26개(한자 표기) RN·웹 양쪽 완료 → 구 이름도 일본어화
+> 완료(아래 표). ② 웹 시간별 예보 자정 라벨 JA `午前0時`(4자) 오버플로우 수정 — `正午`와 짝인 2자
+> 네이티브 표기 `深夜`로 축소(`cdbc222`). `weather.midnight`은 12AM/0:00 **예보 슬롯**(자정)이며
+> 별도 하드코딩 "NOW" 셀과 다름 — '현재 시각(今)'이 아니라 KO `자정`/EN `Midnight`과 동일 의미.
 
 ### 완료 항목 + 커밋
 
@@ -24,6 +30,7 @@
 | ja 인프라 등록(`SUPPORTED_LANGUAGES`+resources) + `locales/ja.json`(52키) + 토글 JA | `8ea99fa` |
 | 라벨 헬퍼·타입 ja 골격 배선(`titleJa`/`location_ja`, `getDistrictLabel`/`getPoiDisplayTitle` ja 분기, filter/markers 배선, PoiCard 두드림길 상세 숨김 일반화) | `870301f` |
 | **버그픽스+리팩터**: 지원 언어를 `LANGUAGES` 단일 소스로 통합(코드+라벨+a11y) | `27d6dd3` |
+| 구 이름 `location_ja` 26개 추가(한자 표기, `entities/location` 데이터) | `3778b1b` |
 
 **웹 (`portfolio-next`)**
 | 항목 | 커밋 | 위치 |
@@ -32,6 +39,8 @@
 | **Noto Sans JP 폰트** 전환(`html[lang='ja']`, I18nProvider가 `<html lang>` 반영) | `2846166` | `feat/web-i18n-ja` |
 | BFF ja 통과(스키마+매핑) *(→ 아래 main에 별도 반영됨)* | `28d444b` | `feat/web-i18n-ja` |
 | 지원 언어 `LANGUAGES` 단일 소스 통합(이번 JA 미표시 버그의 근본 수정) | `3a64a11` | `feat/web-i18n-ja` |
+| 구 이름 `location_ja` 26개 추가(한자 표기, `service/location.ts`) | `5cf8b15` | `feat/web-i18n-ja` |
+| **자정 라벨 오버플로우 픽스** JA `午前0時`(4자)→`深夜`(2자, `正午`와 폭·등록 일치) | `cdbc222` | `feat/web-i18n-ja` |
 | **BFF `lang=ja` 허용 — 프로덕션 배포됨** (스키마 ja + `OPENWEATHER_LANG_BY_APP_LANG` ja:'ja') | `5833063` | **main (배포 완료)** |
 
 ### ⚠️ "SUPPORTED_LANGUAGES 하드코딩" 버그 — 발견·수정
@@ -74,13 +83,17 @@ RN은 별도 `LANGUAGE_ACCESSIBILITY_LABEL` 맵에 언어가 하드코딩돼 **�
 
 ### 남은 일 (별도 세션 예정)
 
-1. **POI 이름 `_ja` 대량 번역 2,608건** — `park.json` `p_park_ja` 132, `culturalSpace.json`
-   `FAC_NAME_ja` 1,033, `dodreamgil.json` `CPI_NAME_ja` 1,443. **골격 배선은 끝나 있어 데이터만
-   채우면 자동 노출**(현재 en 폴백). 표기 기준 문서대로, 파일·구 단위 배치로 나눠 진행.
-2. **구 이름 `location_ja` 26개**(`entities/location/model/data.ts`, `service/location.ts` 웹) — 위 표기 기준의 한자표 그대로.
-3. **웹 JA UI 배포**: `feat/web-i18n-ja` 브랜치(토글·ja.json·폰트)를 1차 웹 때처럼 PR→프리뷰→main 머지.
-   ⚠️ 브랜치의 `28d444b`(BFF ja)는 이미 main `5833063`으로 반영됨 → **머지 전 리베이스**로 중복 커밋 정리.
+1. **POI 이름 `_ja` 대량 번역 2,608건** *(유일한 대형 잔여 작업 — 별도 세션에서 CC 직접)* —
+   `park.json` `p_park_ja` 132, `culturalSpace.json` `FAC_NAME_ja` 1,033, `dodreamgil.json`
+   `CPI_NAME_ja` 1,443. **골격 배선은 끝나 있어 데이터만 채우면 자동 노출**(현재 en 폴백).
+   `docs/i18n-cjk-naming.md` 표기 기준대로, 파일·구 단위 배치로 나눠 진행.
+2. ~~구 이름 `location_ja` 26개~~ ✅ **완료**(RN `3778b1b` / 웹 `5cf8b15`, 2026-07-28).
+3. **웹 JA UI 배포**: `feat/web-i18n-ja` 브랜치(토글·ja.json·폰트·구이름·자정라벨)를 1차 웹 때처럼
+   PR→프리뷰→main 머지. ⚠️ 브랜치의 `28d444b`(BFF ja)는 이미 main `5833063`으로 반영됨 →
+   **머지 전 리베이스**로 중복 커밋 정리.
 4. **`translatorToKor`(웹) ja 처리 확인**: en처럼 매칭 실패 시 원문 통과(=일본어 그대로) 예상. 웹 재테스트 시 검증.
+5. **중국어(`_zh`) 확장**은 POI `_ja` 이후. `LANGUAGES` 단일 소스 구조라 토글·타입은 배열 한 줄
+   추가로 확장되고, 나머지는 `locales/zh.json` + 데이터 `_zh` + 폰트만. 표기 기준 문서 동형 적용.
 
 ### 확정 결정
 
