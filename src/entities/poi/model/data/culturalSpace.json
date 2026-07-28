@@ -12,7 +12,8 @@
         "HOMEPAGE": "http://www.ddp.or.kr",
         "PHNE": "02-2153-0000",
         "address": "서울특별시 중구 을지로 281",
-        "FAC_NAME_en": "Dongdaemun Design Plaza (DDP)"
+        "FAC_NAME_en": "Dongdaemun Design Plaza (DDP)",
+        "FAC_NAME_ja": "DDP（東大門デザインプラザ）"
       },
       {
         "X_COORD": "37.5637878280982",
@@ -24,7 +25,8 @@
         "HOMEPAGE": "https://www.britishcouncil.kr/",
         "PHNE": "02-3702-0601",
         "address": "서울특별시 중구 서소문로11길 19",
-        "FAC_NAME_en": "British Council Korea"
+        "FAC_NAME_en": "British Council Korea",
+        "FAC_NAME_ja": "駐韓英国文化院"
       },
       {
         "X_COORD": "37.5659336365406",
@@ -36,7 +38,8 @@
         "HOMEPAGE": "https://jeongdong.or.kr/portal/main/main.do",
         "PHNE": "02-751-1500",
         "address": "서울특별시 중구 정동길 43",
-        "FAC_NAME_en": "National Jeongdong Theater"
+        "FAC_NAME_en": "National Jeongdong Theater",
+        "FAC_NAME_ja": "国立貞洞劇場"
       },
       {
         "X_COORD": "37.559304933707146",
@@ -48,7 +51,8 @@
         "HOMEPAGE": "http://www.hanokmaeul.or.kr",
         "PHNE": "02-6358-5533",
         "address": "서울특별시 중구 퇴계로34길 28",
-        "FAC_NAME_en": "Namsangol Hanok Village"
+        "FAC_NAME_en": "Namsangol Hanok Village",
+        "FAC_NAME_ja": "南山コル韓屋村"
       },
       {
         "X_COORD": "37.555139463911",
@@ -60,7 +64,8 @@
         "HOMEPAGE": "http://www.gallery2ndave.com/gallery/about",
         "PHNE": "02-593-1140",
         "address": "서울특별시 중구 필동로8길 22",
-        "FAC_NAME_en": "2nd Avenue Gallery"
+        "FAC_NAME_en": "2nd Avenue Gallery",
+        "FAC_NAME_ja": "2ND AVENUE GALLERY"
       },
       {
         "X_COORD": "37.5591300607013",
@@ -72,7 +77,8 @@
         "HOMEPAGE": "https://www.seoularts.ac.kr/web/content.do?proFn=9992321",
         "PHNE": "02-778-0260",
         "address": "서울특별시 중구 소파로 138",
-        "FAC_NAME_en": "Drama Center"
+        "FAC_NAME_en": "Drama Center",
+        "FAC_NAME_ja": "ドラマセンター"
       },
       {
         "X_COORD": "37.5596804372304",
@@ -84,7 +90,8 @@
         "HOMEPAGE": "https://cafe.naver.com/papermuseum",
         "PHNE": "02-2279-7901",
         "address": "서울특별시 중구 장충단로 166",
-        "FAC_NAME_en": "Jongie Nara Paper Museum"
+        "FAC_NAME_en": "Jongie Nara Paper Museum",
+        "FAC_NAME_ja": "紙の国博物館"
       },
       {
         "X_COORD": "37.5634574532023",
@@ -96,7 +103,8 @@
         "HOMEPAGE": "http://www.nanta.co.kr/",
         "PHNE": "02-739-8288",
         "address": "서울특별시 중구 명동길 26",
-        "FAC_NAME_en": "Myeongdong Nanta Theater"
+        "FAC_NAME_en": "Myeongdong Nanta Theater",
+        "FAC_NAME_ja": "明洞ナンタ劇場"
       },
       {
         "X_COORD": "37.5580841736",
@@ -108,7 +116,8 @@
         "HOMEPAGE": "http://www.imhs.co.kr",
         "PHNE": "02-778-1026~7",
         "address": "서울특별시 중구 퇴계로26길 65",
-        "FAC_NAME_en": "Seoul House of Literature"
+        "FAC_NAME_en": "Seoul House of Literature",
+        "FAC_NAME_ja": "文学の家ソウル"
       },
       {
         "X_COORD": "37.5583499463987",
@@ -120,7 +129,8 @@
         "HOMEPAGE": "https://www.hanokmaeul.or.kr/",
         "PHNE": "02-6358-5500",
         "address": "서울특별시 중구 퇴계로34길 28 서울남산국악당",
-        "FAC_NAME_en": "Seoul Namsan Gugak Center"
+        "FAC_NAME_en": "Seoul Namsan Gugak Center",
+        "FAC_NAME_ja": "ソウル南山国楽堂"
       },
       {
         "X_COORD": "37.5663174209601",
@@ -132,7 +142,8 @@
         "HOMEPAGE": "https://lib.seoul.go.kr/",
         "PHNE": "02-2133-0300",
         "address": "서울특별시 중구 세종대로 110",
-        "FAC_NAME_en": "Seoul Library"
+        "FAC_NAME_en": "Seoul Library",
+        "FAC_NAME_ja": "ソウル図書館"
       },
       {
         "X_COORD": "37.566738542645766",
@@ -144,7 +155,8 @@
         "HOMEPAGE": "https://www.agrimuseum.or.kr:472/",
         "PHNE": "02-2080-5727",
         "address": "서울특별시 중구 새문안로 16",
-        "FAC_NAME_en": "Agricultural Museum"
+        "FAC_NAME_en": "Agricultural Museum",
+        "FAC_NAME_ja": "農業博物館"
       },
       {
         "X_COORD": "37.5681732680976",
@@ -156,7 +168,8 @@
         "HOMEPAGE": "없음",
         "PHNE": "없음",
         "address": "서울 중구 정동길 3 경향신문사건물",
-        "FAC_NAME_en": "Kyunghyang Art Hill"
+        "FAC_NAME_en": "Kyunghyang Art Hill",
+        "FAC_NAME_ja": "京郷アートヒル"
       },
       {
         "X_COORD": "37.5685952282764",
@@ -168,7 +181,8 @@
         "HOMEPAGE": "https://www.beautifulshinhan.co.kr/servShcaInqy2010.do?mappingId=%2FservShcaInqy2010.do&genActiontypeCd=2ACT1010&genDoctreattypeCd=&genMenuId=menu_serv_serv_lawt_3020",
         "PHNE": "02-2151-7677",
         "address": "서울특별시 중구 세종대로 135-5",
-        "FAC_NAME_en": "Korea Financial History Museum"
+        "FAC_NAME_en": "Korea Financial History Museum",
+        "FAC_NAME_ja": "韓国金融史博物館"
       },
       {
         "X_COORD": "37.5641060692766",
@@ -180,7 +194,8 @@
         "HOMEPAGE": "https://sema.seoul.go.kr/kr/visit/seosomun",
         "PHNE": "02-2124-8800",
         "address": "서울특별시 중구 덕수궁길 61",
-        "FAC_NAME_en": "Seoul Museum of Art Seosomun Main Building"
+        "FAC_NAME_en": "Seoul Museum of Art Seosomun Main Building",
+        "FAC_NAME_ja": "ソウル市立美術館 西小門本館"
       },
       {
         "X_COORD": "37.56204024128875",
@@ -192,7 +207,8 @@
         "HOMEPAGE": "http://www.bok.or.kr/museum/main/main.do",
         "PHNE": "02-759-4881",
         "address": "서울특별시 중구 남대문로 39",
-        "FAC_NAME_en": "Bank of Korea Money Museum"
+        "FAC_NAME_en": "Bank of Korea Money Museum",
+        "FAC_NAME_ja": "韓国銀行 貨幣博物館"
       },
       {
         "X_COORD": "37.5534684886426",
@@ -204,7 +220,8 @@
         "HOMEPAGE": "http://www.ahnjunggeun.or.kr/index.html",
         "PHNE": "02-3789-1016",
         "address": "서울특별시 중구 소월로 91",
-        "FAC_NAME_en": "Ahn Jung-geun Memorial Hall"
+        "FAC_NAME_en": "Ahn Jung-geun Memorial Hall",
+        "FAC_NAME_ja": "安重根義士記念館"
       },
       {
         "X_COORD": "37.5660868250943",
@@ -216,7 +233,8 @@
         "HOMEPAGE": "https://www.mmca.go.kr/visitingInfo/deoksugungInfo.do",
         "PHNE": "02-2022-0600",
         "address": "서울특별시 중구 세종대로 99",
-        "FAC_NAME_en": "National Museum of Modern and Contemporary Art, Deoksugung"
+        "FAC_NAME_en": "National Museum of Modern and Contemporary Art, Deoksugung",
+        "FAC_NAME_ja": "国立現代美術館 徳寿宮"
       },
       {
         "X_COORD": "37.5612890978954",
@@ -228,7 +246,8 @@
         "HOMEPAGE": "https://www.ohzemidong.co.kr/main.php",
         "PHNE": "02-777-0421",
         "address": "서울특별시 중구 퇴계로 지하 214 (충무로역 지하1층 개찰구 안) ",
-        "FAC_NAME_en": "Chungmuro Media Center Oh! Jaemidong"
+        "FAC_NAME_en": "Chungmuro Media Center Oh! Jaemidong",
+        "FAC_NAME_ja": "忠武路映像センター オ!ジェミドン"
       },
       {
         "X_COORD": "37.5673552",
@@ -240,7 +259,8 @@
         "HOMEPAGE": "https://www.sfac.or.kr/artspace/artspace/sindang_main.do",
         "PHNE": "02-2232-8833",
         "address": "서울 중구 마장로 87 (서울중앙시장 지하)",
-        "FAC_NAME_en": "Sindang Creative Arcade"
+        "FAC_NAME_en": "Sindang Creative Arcade",
+        "FAC_NAME_ja": "新堂創作アーケード"
       },
       {
         "X_COORD": "37.5685285762171",
@@ -252,7 +272,8 @@
         "HOMEPAGE": "https://venture.ckl.or.kr/event/cklStageEvent.do",
         "PHNE": "02-6441-3951",
         "address": "서울특별시 중구 청계천로 40 CKL기업지원센터 지하 1층 (한국관광공사 건물)",
-        "FAC_NAME_en": "CKL Stage"
+        "FAC_NAME_en": "CKL Stage",
+        "FAC_NAME_ja": "CKLステージ"
       },
       {
         "X_COORD": "37.567895444475",
@@ -264,7 +285,8 @@
         "HOMEPAGE": "없음",
         "PHNE": "02-724-6322",
         "address": "서울특별시 중구 세종대로21길 33",
-        "FAC_NAME_en": "Chosun Ilbo Art Museum"
+        "FAC_NAME_en": "Chosun Ilbo Art Museum",
+        "FAC_NAME_ja": "朝鮮日報美術館"
       },
       {
         "X_COORD": "37.5653936",
@@ -276,7 +298,8 @@
         "HOMEPAGE": "",
         "PHNE": "02-726-4428-9",
         "address": "서울  중구 소공동 1 )",
-        "FAC_NAME_en": "Lotte Gallery (Main Branch)"
+        "FAC_NAME_en": "Lotte Gallery (Main Branch)",
+        "FAC_NAME_ja": "ロッテ画廊（本店）"
       },
       {
         "X_COORD": "37.5581456932929",
@@ -288,7 +311,8 @@
         "HOMEPAGE": "http://www.jculture.co.kr/museum/index1.htm",
         "PHNE": "02-753-4075",
         "address": "서울특별시 중구 퇴계로18길 66",
-        "FAC_NAME_en": "Chojeon Textile Quilt Museum"
+        "FAC_NAME_en": "Chojeon Textile Quilt Museum",
+        "FAC_NAME_ja": "草田繊維 キルト博物館"
       },
       {
         "X_COORD": "37.5634690",
@@ -300,7 +324,8 @@
         "HOMEPAGE": "http://samilro.com/",
         "PHNE": "02-3789-9640",
         "address": "서울시 중구 삼일대로9길 12",
-        "FAC_NAME_en": "Samil-ro Changgo Theater"
+        "FAC_NAME_en": "Samil-ro Changgo Theater",
+        "FAC_NAME_ja": "三一路倉庫劇場"
       },
       {
         "X_COORD": "37.5668837502225",
@@ -312,7 +337,8 @@
         "HOMEPAGE": "https://sca.seoul.go.kr/seoulhour/site/urbanArch/home",
         "PHNE": "027368050",
         "address": "서울특별시 중구 세종대로 119",
-        "FAC_NAME_en": "Seoul Urbanism & Architecture Exhibition Hall"
+        "FAC_NAME_en": "Seoul Urbanism & Architecture Exhibition Hall",
+        "FAC_NAME_ja": "ソウル都市建築展示館"
       },
       {
         "X_COORD": "37.5550484830696",
@@ -324,7 +350,8 @@
         "HOMEPAGE": "http://parks.seoul.go.kr/",
         "PHNE": "02-3783-5995",
         "address": "서울 중구 회현동1가 산 1-44",
-        "FAC_NAME_en": "Namsan Park Hohyeondang"
+        "FAC_NAME_en": "Namsan Park Hohyeondang",
+        "FAC_NAME_ja": "南山公園 好賢堂"
       },
       {
         "X_COORD": "37.5659409687669",
@@ -336,7 +363,8 @@
         "HOMEPAGE": "http://www.caci.or.kr",
         "PHNE": "02-2230-6601",
         "address": "서울특별시 중구 퇴계로 387",
-        "FAC_NAME_en": "Chungmu Art Center"
+        "FAC_NAME_en": "Chungmu Art Center",
+        "FAC_NAME_ja": "忠武アートセンター"
       },
       {
         "X_COORD": "37.56672958991572",
@@ -348,7 +376,8 @@
         "HOMEPAGE": "http://skyplazagallery.com/",
         "PHNE": "02-2133-5641",
         "address": "서울특별시 중구 세종대로 110",
-        "FAC_NAME_en": "Seoul City Hall Sky Plaza Gallery"
+        "FAC_NAME_en": "Seoul City Hall Sky Plaza Gallery",
+        "FAC_NAME_ja": "ソウル市庁 ハヌル広場 ギャラリー"
       },
       {
         "X_COORD": "37.5519949082942",
@@ -360,7 +389,8 @@
         "HOMEPAGE": "https://www.ntok.go.kr",
         "PHNE": "02-2280-4114",
         "address": "서울특별시 중구 장충단로 59",
-        "FAC_NAME_en": "National Theater of Korea"
+        "FAC_NAME_en": "National Theater of Korea",
+        "FAC_NAME_ja": "国立劇場"
       },
       {
         "X_COORD": "37.5668979260337",
@@ -372,7 +402,8 @@
         "HOMEPAGE": "http://www.ykpresents.com",
         "PHNE": "홈페이지 참고",
         "address": "서울특별시 중구 을지로43길 13",
-        "FAC_NAME_en": "YK Presents"
+        "FAC_NAME_en": "YK Presents",
+        "FAC_NAME_ja": "YK Presents"
       },
       {
         "X_COORD": "37.5512817057142",
@@ -384,7 +415,8 @@
         "HOMEPAGE": "https://linktr.ee/neuty_lib",
         "PHNE": "02-3298-0918",
         "address": "서울특별시 중구 다산로 75",
-        "FAC_NAME_en": "Neutinamu Children's Library"
+        "FAC_NAME_en": "Neutinamu Children's Library",
+        "FAC_NAME_ja": "ヌティナム児童図書館"
       },
       {
         "X_COORD": "37.5665858405333",
@@ -396,7 +428,8 @@
         "HOMEPAGE": "https://www.nnews-museum.com/euljiro",
         "PHNE": "070-7717-6623",
         "address": "서울특별시 중구 을지로 127",
-        "FAC_NAME_en": "News Museum Euljiro Branch"
+        "FAC_NAME_en": "News Museum Euljiro Branch",
+        "FAC_NAME_ja": "ニュースミュージアム 乙支路店"
       },
       {
         "X_COORD": "37.5619920911407",
@@ -408,7 +441,8 @@
         "HOMEPAGE": "http://www.myeongdongbreeze.com",
         "PHNE": "02-3789-2226",
         "address": "서울특별시 중구 남대문로 52-20",
-        "FAC_NAME_en": "Myeongdong Art Breeze"
+        "FAC_NAME_en": "Myeongdong Art Breeze",
+        "FAC_NAME_ja": "明洞アートブリーズ"
       },
       {
         "X_COORD": "37.56781670060353",
@@ -420,7 +454,8 @@
         "HOMEPAGE": "https://museum.seoul.go.kr/scwm/ddmGround/ddmGWatchInfo.jsp",
         "PHNE": "02-2153-0201",
         "address": "서울특별시 중구 을지로 281",
-        "FAC_NAME_en": "Dongdaemun Stadium Memorial Hall"
+        "FAC_NAME_en": "Dongdaemun Stadium Memorial Hall",
+        "FAC_NAME_ja": "東大門運動場記念館"
       },
       {
         "X_COORD": "37.5651113032546",
@@ -432,7 +467,8 @@
         "HOMEPAGE": "https://www.instagram.com/ilsang_center/",
         "PHNE": "070-7767-6733",
         "address": "서울특별시 중구 퇴계로 408",
-        "FAC_NAME_en": "Sindang Life Culture & Arts Space Ilsang"
+        "FAC_NAME_en": "Sindang Life Culture & Arts Space Ilsang",
+        "FAC_NAME_ja": "新堂生活文化芸術の場 日常"
       },
       {
         "X_COORD": "37.5659409687669",
@@ -444,7 +480,8 @@
         "HOMEPAGE": "https://www.caci.or.kr/rent/space/JSVFazRqak55NFVRWFAzenFtMWJPa2hQMFNQcWdDdEc0U1dJVXpES1B4bFFpbUZ6NXYrRVBFajE3WGdWTlgzQmxSYQ==",
         "PHNE": "02-2230-6600",
         "address": "서울 중구 퇴계로 387 충무아트센터",
-        "FAC_NAME_en": "Gallery Sindang"
+        "FAC_NAME_en": "Gallery Sindang",
+        "FAC_NAME_ja": "ギャラリー新堂"
       },
       {
         "X_COORD": "37.5679960866099",
@@ -456,7 +493,8 @@
         "HOMEPAGE": "https://www.jeongdong1928.com/",
         "PHNE": "02-722-1928",
         "address": "서울특별시 중구 덕수궁길 130",
-        "FAC_NAME_en": "Jeongdong 1928 Art Center"
+        "FAC_NAME_en": "Jeongdong 1928 Art Center",
+        "FAC_NAME_ja": "貞洞1928 アートセンター"
       },
       {
         "X_COORD": "37.5578385325826",
@@ -468,7 +506,8 @@
         "HOMEPAGE": "https://meplex.co.kr/",
         "PHNE": "02-317-6192",
         "address": "서울 중구 세종대로 14 GRAND CENTRAL A동 5F",
-        "FAC_NAME_en": "One-Person Media Complex"
+        "FAC_NAME_en": "One-Person Media Complex",
+        "FAC_NAME_ja": "1人メディアコンプレックス"
       },
       {
         "X_COORD": "37.5661766361549",
@@ -480,7 +519,8 @@
         "HOMEPAGE": "http://www.ewhamuseum.com",
         "PHNE": "02-2175-1964",
         "address": "서울특별시 중구 정동길 26",
-        "FAC_NAME_en": "Ihwa Museum"
+        "FAC_NAME_en": "Ihwa Museum",
+        "FAC_NAME_ja": "梨花博物館"
       },
       {
         "X_COORD": "37.5631948764436",
@@ -492,7 +532,8 @@
         "HOMEPAGE": "https://vo.la/QdZNx",
         "PHNE": "02-2230-6724",
         "address": "서울특별시 중구 퇴계로41길 30  인현문화마루 3층",
-        "FAC_NAME_en": "Inhyeon I-eum"
+        "FAC_NAME_en": "Inhyeon I-eum",
+        "FAC_NAME_ja": "仁峴イウム"
       },
       {
         "X_COORD": "37.5589366401553",
@@ -504,7 +545,8 @@
         "HOMEPAGE": "https://larts.dongguk.edu/main",
         "PHNE": "02-2260-8563",
         "address": "서울특별시 중구 필동로1길 30",
-        "FAC_NAME_en": "Dongguk University Seoul Campus Lee Hae-rang Arts Theater"
+        "FAC_NAME_en": "Dongguk University Seoul Campus Lee Hae-rang Arts Theater",
+        "FAC_NAME_ja": "東国大学ソウルキャンパス 李海浪芸術劇場"
       },
       {
         "X_COORD": "37.55659103776328",
@@ -516,7 +558,8 @@
         "HOMEPAGE": "http://www.instagram.com/mediaartseoul",
         "PHNE": "02-2133-1938",
         "address": "서울특별시 중구 만리재로 215",
-        "FAC_NAME_en": "Seoullo Media Canvas"
+        "FAC_NAME_en": "Seoullo Media Canvas",
+        "FAC_NAME_ja": "ソウルロメディアキャンバス"
       },
       {
         "X_COORD": "37.564007341132",
@@ -528,7 +571,8 @@
         "HOMEPAGE": "https://appenzeller.pcu.ac.kr/appenzeller",
         "PHNE": "02-319-5578",
         "address": "서울특별시 중구 서소문로11길 19 배재학당역사박물관",
-        "FAC_NAME_en": "Paichai Hakdang History Museum"
+        "FAC_NAME_en": "Paichai Hakdang History Museum",
+        "FAC_NAME_ja": "培材学堂歴史博物館"
       },
       {
         "X_COORD": "37.561469121354",
@@ -540,7 +584,8 @@
         "HOMEPAGE": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S231222144218843893",
         "PHNE": "02-2231-5143",
         "address": "서울특별시 중구 다산로36가길 25",
-        "FAC_NAME_en": "Park Chung-hee House"
+        "FAC_NAME_en": "Park Chung-hee House",
+        "FAC_NAME_ja": "朴正熙 家屋"
       },
       {
         "X_COORD": "37.5634574532023",
@@ -552,7 +597,8 @@
         "HOMEPAGE": "https://culture.hu/kor/seoul/aboutus-kor",
         "PHNE": "02-3789-2106",
         "address": "서울 중구 명동길 26 유네스코 회관 8층 801호",
-        "FAC_NAME_en": "Liszt Institute Hungarian Cultural Center in Korea"
+        "FAC_NAME_en": "Liszt Institute Hungarian Cultural Center in Korea",
+        "FAC_NAME_ja": "駐韓リスト・ハンガリー文化院"
       },
       {
         "X_COORD": "37.56682861183312",
@@ -564,7 +610,8 @@
         "HOMEPAGE": "https://museum.seoul.go.kr/www/intro/annexIntro/annex_gun/annex_gun_01.jsp?sso=ok",
         "PHNE": "02-739-9922",
         "address": "서울특별시 중구 세종대로 110 시민청 지하 1층",
-        "FAC_NAME_en": "Gungisi Site Exhibition Hall"
+        "FAC_NAME_en": "Gungisi Site Exhibition Hall",
+        "FAC_NAME_ja": "軍器寺遺跡展示室"
       },
       {
         "X_COORD": "37.5640414482615",
@@ -576,7 +623,8 @@
         "HOMEPAGE": "http://www.ntck.or.kr/ko",
         "PHNE": "1644-2003",
         "address": "서울특별시 중구 명동길 35",
-        "FAC_NAME_en": "National Theater Company Myeongdong Arts Theater"
+        "FAC_NAME_en": "National Theater Company Myeongdong Arts Theater",
+        "FAC_NAME_ja": "国立劇団 明洞芸術劇場"
       },
       {
         "X_COORD": "37.5602982972447",
@@ -588,7 +636,8 @@
         "HOMEPAGE": "https://www.kh.or.kr/cms/content/view/556",
         "PHNE": "02-2270-1131~2",
         "address": "서울특별시 중구 퇴계로36길 10",
-        "FAC_NAME_en": "Korea House Folk Theater"
+        "FAC_NAME_en": "Korea House Folk Theater",
+        "FAC_NAME_ja": "韓国の家 民俗劇場"
       },
       {
         "X_COORD": "37.56244218046588",
@@ -600,7 +649,8 @@
         "HOMEPAGE": "http://www.spcseoul.or.kr",
         "PHNE": "02-3706-3255",
         "address": "서울특별시 중구 명동길 74-2",
-        "FAC_NAME_en": "Sisters of St. Paul of Chartres History Museum"
+        "FAC_NAME_en": "Sisters of St. Paul of Chartres History Museum",
+        "FAC_NAME_ja": "シャルトル聖パウロ修道女会 歴史博物館"
       },
       {
         "X_COORD": "37.5560581817344",
@@ -612,7 +662,8 @@
         "HOMEPAGE": "https://www.seoul284.org/main",
         "PHNE": "02-3407-3500",
         "address": "서울 중구 통일로 1 문화역서울284",
-        "FAC_NAME_en": "Culture Station Seoul 284"
+        "FAC_NAME_en": "Culture Station Seoul 284",
+        "FAC_NAME_ja": "文化駅ソウル284"
       },
       {
         "X_COORD": "37.5647056236712",
@@ -624,7 +675,8 @@
         "HOMEPAGE": "https://www.mbah.co.kr/",
         "PHNE": "02-2274-2121",
         "address": "서울특별시 중구 마른내로 47",
-        "FAC_NAME_en": "Myeongbo Art Hall"
+        "FAC_NAME_en": "Myeongbo Art Hall",
+        "FAC_NAME_ja": "明宝アートホール"
       },
       {
         "X_COORD": "37.56710262553757",
@@ -636,7 +688,8 @@
         "HOMEPAGE": "https://museum.seoul.go.kr/scwm/ddmHistory/ddmWatchInfo.jsp",
         "PHNE": "02-2153-0200",
         "address": "서울특별시 중구 을지로 281",
-        "FAC_NAME_en": "Dongdaemun History Hall"
+        "FAC_NAME_en": "Dongdaemun History Hall",
+        "FAC_NAME_ja": "東大門歴史館"
       },
       {
         "X_COORD": "37.5576096402862",
@@ -648,7 +701,8 @@
         "HOMEPAGE": "http://namsanxr.or.kr/",
         "PHNE": "02-779-9877 ",
         "address": "서울특별시 중구 퇴계로26가길 82",
-        "FAC_NAME_en": "Namsan XR Studio"
+        "FAC_NAME_en": "Namsan XR Studio",
+        "FAC_NAME_ja": "南山XRスタジオ"
       },
       {
         "X_COORD": "37.5595492748546",
@@ -660,7 +714,8 @@
         "HOMEPAGE": "https://mindfulartforum.modoo.at/",
         "PHNE": "02-3444-7178",
         "address": "서울 중구 서애로 33 5F",
-        "FAC_NAME_en": "MAF"
+        "FAC_NAME_en": "MAF",
+        "FAC_NAME_ja": "マフMAF"
       },
       {
         "X_COORD": "37.5605678517575",
@@ -672,7 +727,8 @@
         "HOMEPAGE": "https://www.seosomun.org/",
         "PHNE": "02-3147-2401",
         "address": "서울특별시 중구 칠패로 5",
-        "FAC_NAME_en": "Seosomun Shrine History Museum"
+        "FAC_NAME_en": "Seosomun Shrine History Museum",
+        "FAC_NAME_ja": "西小門聖地 歴史博物館"
       },
       {
         "X_COORD": "37.5661391831606",
@@ -684,7 +740,8 @@
         "HOMEPAGE": "http://prugioarthall.daewooenc.com",
         "PHNE": "02-2288-2864",
         "address": "서울특별시 중구 을지로 170 을지트윈타워 서관 3층",
-        "FAC_NAME_en": "Prugio Art Hall"
+        "FAC_NAME_en": "Prugio Art Hall",
+        "FAC_NAME_ja": "プルジオ アートホール"
       },
       {
         "X_COORD": "37.5680445876689",
@@ -696,7 +753,8 @@
         "HOMEPAGE": "https://btheb.sba.kr/",
         "PHNE": "02-2153-0770",
         "address": "서울시 중구 을지로 281, DDP 지하2층 DDP마켓 BtheB",
-        "FAC_NAME_en": "B the B"
+        "FAC_NAME_en": "B the B",
+        "FAC_NAME_ja": "ビーザビー（B the B） "
       },
       {
         "X_COORD": "37.5577104175282",
@@ -708,7 +766,8 @@
         "HOMEPAGE": "https://alt9.xyz/",
         "PHNE": "0507-1410-0246",
         "address": "서울특별시 중구 퇴계로18길 77",
-        "FAC_NAME_en": "ALT SPACE"
+        "FAC_NAME_en": "ALT SPACE",
+        "FAC_NAME_ja": "ALT SPACE"
       },
       {
         "X_COORD": "37.5687746427352",
@@ -720,7 +779,8 @@
         "HOMEPAGE": "https://www.sisul.or.kr/open_content/cheonggye/application/gwanggyo.jsp",
         "PHNE": "02-2290-6803",
         "address": "서울 중구 남대문로1가 9",
-        "FAC_NAME_en": "Cheonggyecheon Gwanggyo Gallery"
+        "FAC_NAME_en": "Cheonggyecheon Gwanggyo Gallery",
+        "FAC_NAME_ja": "清渓川 広橋ギャラリー"
       },
       {
         "X_COORD": "37.55821033013079",
@@ -732,7 +792,8 @@
         "HOMEPAGE": "http://dgumuseum.dongguk.edu",
         "PHNE": "02-2260-3722~3",
         "address": "서울특별시 중구 필동로1길 30",
-        "FAC_NAME_en": "Dongguk University Museum"
+        "FAC_NAME_en": "Dongguk University Museum",
+        "FAC_NAME_ja": "東国大学 博物館"
       },
       {
         "X_COORD": "37.561326262637",
@@ -744,7 +805,8 @@
         "HOMEPAGE": "https://www.chaebi.life",
         "PHNE": "02-739-9517",
         "address": "서울 중구 서애로1길 11 충무로 헤센스마트 상가201호",
-        "FAC_NAME_en": "Space Chaebi"
+        "FAC_NAME_en": "Space Chaebi",
+        "FAC_NAME_ja": "空間チェビ"
       },
       {
         "X_COORD": " 37.56787",
@@ -756,7 +818,8 @@
         "HOMEPAGE": "https://www.instagram.com/p.s.center",
         "PHNE": "02-6956-3501",
         "address": "서울 중구 창경궁로5다길 18, 3층 ",
-        "FAC_NAME_en": "PS Center"
+        "FAC_NAME_en": "PS Center",
+        "FAC_NAME_ja": "PS CENTER"
       },
       {
         "X_COORD": "37.5657793622516",
@@ -768,7 +831,8 @@
         "HOMEPAGE": "https://www.instagram.com/museum_mut/",
         "PHNE": "정보없음",
         "address": "서울특별시 중구 퇴계로 411 뮤지엄멋 m1, m2",
-        "FAC_NAME_en": "Museum Mut"
+        "FAC_NAME_en": "Museum Mut",
+        "FAC_NAME_ja": "ミュージアムモッ（museum mut）"
       },
       {
         "X_COORD": "37.553904433191235",
@@ -780,7 +844,8 @@
         "HOMEPAGE": "https://seoulcitywall.seoul.go.kr/content/129.do",
         "PHNE": "02-779-9870",
         "address": "서울 중구 회현동1가 100-267",
-        "FAC_NAME_en": "Hanyangdoseong Relics Exhibition Hall"
+        "FAC_NAME_en": "Hanyangdoseong Relics Exhibition Hall",
+        "FAC_NAME_ja": "漢陽都城 遺跡展示館"
       },
       {
         "X_COORD": "37.5598688323642",
@@ -792,7 +857,8 @@
         "HOMEPAGE": "https://company.hankyung.com/ked/",
         "PHNE": "02-360-4114",
         "address": "서울특별시 중구 청파로 463",
-        "FAC_NAME_en": "Korea Economic Daily Building"
+        "FAC_NAME_en": "Korea Economic Daily Building",
+        "FAC_NAME_ja": "韓国経済新聞ビル"
       },
       {
         "X_COORD": "37.5681732680976",
@@ -804,7 +870,8 @@
         "HOMEPAGE": "http://www.cinematheque.seoul.kr/",
         "PHNE": "02-741-9782",
         "address": "서울특별시 중구 정동길 3 경향아트힐 2층",
-        "FAC_NAME_en": "Seoul Art Cinema"
+        "FAC_NAME_en": "Seoul Art Cinema",
+        "FAC_NAME_ja": "ソウルアートシネマ"
       },
       {
         "X_COORD": "37.5685159133492",
@@ -816,7 +883,8 @@
         "HOMEPAGE": "https://www.thecave.me/",
         "PHNE": "02-6250-5352",
         "address": "서울 중구 청계천로 24 케이스퀘어빌딩 지하 1층",
-        "FAC_NAME_en": "The Cave Seoul"
+        "FAC_NAME_en": "The Cave Seoul",
+        "FAC_NAME_ja": "ザ・ケイブ ソウル"
       },
       {
         "X_COORD": "37.5671088579851",
@@ -828,7 +896,8 @@
         "HOMEPAGE": "https://cafe.naver.com/seoulsilvercinema",
         "PHNE": "02-739-5422~4",
         "address": "서울특별시 중구 새문안로 22 문화일보홀",
-        "FAC_NAME_en": "Cheongchun Theater"
+        "FAC_NAME_en": "Cheongchun Theater",
+        "FAC_NAME_ja": "青春劇場"
       },
       {
         "X_COORD": "37.5668837502225",
@@ -840,7 +909,8 @@
         "HOMEPAGE": "https://www.instagram.com/antennashop_seoul/",
         "PHNE": "0507-1371-0664",
         "address": "서울특별시 중구 세종대로 119",
-        "FAC_NAME_en": "Regional Tourism Antenna Shop"
+        "FAC_NAME_en": "Regional Tourism Antenna Shop",
+        "FAC_NAME_ja": "地域観光 アンテナショップ"
       },
       {
         "X_COORD": "37.5560473866483",
@@ -852,7 +922,8 @@
         "HOMEPAGE": "https://www.rosenlime.com/RNL_exhibitions",
         "PHNE": "02-2236-6247",
         "address": "서울 중구 다산로 138 B1",
-        "FAC_NAME_en": "RNL Rose & Lime Gallery"
+        "FAC_NAME_en": "RNL Rose & Lime Gallery",
+        "FAC_NAME_ja": "RNL ローズアンドライム ギャラリー"
       },
       {
         "X_COORD": "37.566234595888545",
@@ -864,7 +935,8 @@
         "HOMEPAGE": "https://ewha.hs.kr/bbs/board.php?bo_table=0108",
         "PHNE": "02-777-4258",
         "address": "서울특별시 중구 정동길 26",
-        "FAC_NAME_en": "Ewha Girls' High School Centennial Memorial Hall"
+        "FAC_NAME_en": "Ewha Girls' High School Centennial Memorial Hall",
+        "FAC_NAME_ja": "梨花女子高 100周年記念館"
       },
       {
         "X_COORD": "37.5587419129145",
@@ -876,7 +948,8 @@
         "HOMEPAGE": "https://www.instagram.com/moryham_",
         "PHNE": "02-790-1888",
         "address": "서울특별시 중구 소공로 36",
-        "FAC_NAME_en": "Moriham"
+        "FAC_NAME_en": "Moriham",
+        "FAC_NAME_ja": "モリハム"
       },
       {
         "X_COORD": "37.566806928366",
@@ -888,7 +961,8 @@
         "HOMEPAGE": "https://www.jeongdong.or.kr/portal/main/main.do",
         "PHNE": "02-751-1500",
         "address": "서울특별시 중구 세종대로19길 16",
-        "FAC_NAME_en": "National Jeongdong Theater Cecil"
+        "FAC_NAME_en": "National Jeongdong Theater Cecil",
+        "FAC_NAME_ja": "国立貞洞劇場 セシル"
       },
       {
         "X_COORD": "37.5664621449086",
@@ -900,7 +974,8 @@
         "HOMEPAGE": "https://cadalogs.com/",
         "PHNE": "없음",
         "address": "서울특별시 중구 을지로3가 수표로 58-1 3F",
-        "FAC_NAME_en": "Space Catalog"
+        "FAC_NAME_en": "Space Catalog",
+        "FAC_NAME_ja": "スペース カタログ"
       }
     ]
   },
@@ -917,7 +992,8 @@
         "HOMEPAGE": "https://riverview8.co.kr",
         "PHNE": "02-476-0722",
         "address": "서울 강동구 천호동 527-2",
-        "FAC_NAME_en": "Gwangjingyo 8th Street"
+        "FAC_NAME_en": "Gwangjingyo 8th Street",
+        "FAC_NAME_ja": "広津橋 8番街"
       },
       {
         "X_COORD": "37.5328454696729",
@@ -929,7 +1005,8 @@
         "HOMEPAGE": "https://www.gdlibrary.or.kr/web/menu/10006/program/30002/dataStatus.do?siteCd=snlib",
         "PHNE": "02-471-0044",
         "address": "서울특별시 강동구 성안로 106-1",
-        "FAC_NAME_en": "Gangdong Seongnae Library"
+        "FAC_NAME_en": "Gangdong Seongnae Library",
+        "FAC_NAME_ja": "江東区立城内図書館"
       },
       {
         "X_COORD": "37.5458583",
@@ -941,7 +1018,8 @@
         "HOMEPAGE": "https://www.igangdong.or.kr/page/ce/ce_0101.asp",
         "PHNE": "02-488-5542",
         "address": "서울특별시 강동구 상암로 168",
-        "FAC_NAME_en": "Gangdong Community Center"
+        "FAC_NAME_en": "Gangdong Community Center",
+        "FAC_NAME_ja": "江東区民会館"
       },
       {
         "X_COORD": "37.5528330245657",
@@ -953,7 +1031,8 @@
         "HOMEPAGE": "http://www.gdlibrary.or.kr/aslib/",
         "PHNE": "02-429-0476",
         "address": "서울특별시 강동구 고덕로20길 42",
-        "FAC_NAME_en": "Gangdong Amsa Library"
+        "FAC_NAME_en": "Gangdong Amsa Library",
+        "FAC_NAME_ja": "江東区立岩寺図書館"
       },
       {
         "X_COORD": "37.5405232247297",
@@ -965,7 +1044,8 @@
         "HOMEPAGE": "https://www.gdlibrary.or.kr/web/menu/10022/program/30002/dataStatus.do?siteCd=chlib",
         "PHNE": "02-488-7223",
         "address": "서울특별시 강동구 성안로31마길 1, 2층",
-        "FAC_NAME_en": "Gangdong Cheonho Library"
+        "FAC_NAME_en": "Gangdong Cheonho Library",
+        "FAC_NAME_ja": "江東区立千戸図書館"
       },
       {
         "X_COORD": "37.5598538144",
@@ -977,7 +1057,8 @@
         "HOMEPAGE": "http://sunsa.gangdong.go.kr/site/main/home",
         "PHNE": "02-3425-6520",
         "address": "서울특별시 강동구 올림픽로 875",
-        "FAC_NAME_en": "Amsa-dong Prehistoric Settlement Museum"
+        "FAC_NAME_en": "Amsa-dong Prehistoric Settlement Museum",
+        "FAC_NAME_ja": "岩寺洞先史遺跡博物館"
       },
       {
         "X_COORD": "37.538082969509",
@@ -989,7 +1070,8 @@
         "HOMEPAGE": "http://gdlib.sen.go.kr/",
         "PHNE": "02-2225-9800",
         "address": "서울특별시 강동구 양재대로116길 57",
-        "FAC_NAME_en": "Seoul Metropolitan Office of Education Gangdong Library"
+        "FAC_NAME_en": "Seoul Metropolitan Office of Education Gangdong Library",
+        "FAC_NAME_ja": "ソウル特別市教育庁 江東図書館"
       },
       {
         "X_COORD": "37.5291630",
@@ -1001,7 +1083,8 @@
         "HOMEPAGE": "https://www.gdkids.or.kr:8443/front/user/main.do",
         "PHNE": "02-486-3516~8",
         "address": "서울특별시 강동구 성내로6길 16 (성내동)",
-        "FAC_NAME_en": "Gangdong Children's Hall Ainuri Hall"
+        "FAC_NAME_en": "Gangdong Children's Hall Ainuri Hall",
+        "FAC_NAME_ja": "江東児童会館アイヌリホール"
       },
       {
         "X_COORD": "37.5507339924066",
@@ -1013,7 +1096,8 @@
         "HOMEPAGE": "http://infor.kbll.or.kr/",
         "PHNE": "02-3426-7411~4",
         "address": "서울특별시 강동구 상암로4가길 32",
-        "FAC_NAME_en": "Korea Braille Library"
+        "FAC_NAME_en": "Korea Braille Library",
+        "FAC_NAME_ja": "韓国点字図書館"
       },
       {
         "X_COORD": "37.5512204558342",
@@ -1025,7 +1109,8 @@
         "HOMEPAGE": "https://www.gdfac.or.kr/",
         "PHNE": "02-440-0500",
         "address": "서울 강동구 동남로 870 강동아트센터",
-        "FAC_NAME_en": "Gangdong Art Center"
+        "FAC_NAME_en": "Gangdong Art Center",
+        "FAC_NAME_ja": "江東アートセンター"
       },
       {
         "X_COORD": "37.5439476727563",
@@ -1037,7 +1122,8 @@
         "HOMEPAGE": "https://www.gdlibrary.or.kr/web/menu/10010/program/30002/dataStatus.do?siteCd=hglib",
         "PHNE": "02-478-9656",
         "address": "서울특별시 강동구 올림픽로 702",
-        "FAC_NAME_en": "Gangdong Haegong Library"
+        "FAC_NAME_en": "Gangdong Haegong Library",
+        "FAC_NAME_ja": "江東区立海公図書館"
       },
       {
         "X_COORD": "37.5561204084687",
@@ -1049,7 +1135,8 @@
         "HOMEPAGE": "http://gdllc.sen.go.kr/",
         "PHNE": "02-6902-2600",
         "address": "서울특별시 강동구 고덕로 295",
-        "FAC_NAME_en": "Seoul Metropolitan Office of Education Godeok Lifelong Learning Center"
+        "FAC_NAME_en": "Seoul Metropolitan Office of Education Godeok Lifelong Learning Center",
+        "FAC_NAME_ja": "ソウル特別市教育庁 高徳生涯学習館"
       },
       {
         "X_COORD": "37.5262902042304",
@@ -1061,7 +1148,8 @@
         "HOMEPAGE": "https://blog.naver.com/enter_pf",
         "PHNE": "02-482-8794",
         "address": "서울특별시 강동구 성안로 30",
-        "FAC_NAME_en": "Howon Art Hall"
+        "FAC_NAME_en": "Howon Art Hall",
+        "FAC_NAME_ja": "ホウォンアートホール"
       },
       {
         "X_COORD": "37.5567272009253",
@@ -1073,7 +1161,8 @@
         "HOMEPAGE": "https://www.igangdong.or.kr/page/ch/ch_0101.asp",
         "PHNE": "02-2045-7800",
         "address": "서울특별시 강동구 고덕로 285",
-        "FAC_NAME_en": "King Onjo Culture & Sports Center"
+        "FAC_NAME_en": "King Onjo Culture & Sports Center",
+        "FAC_NAME_ja": "温祚大王文化体育館"
       }
     ]
   },
@@ -1090,7 +1179,8 @@
         "HOMEPAGE": "https://www.wooranfdn.org/about/space.jsp",
         "PHNE": "070-4244-3812",
         "address": "서울특별시 성동구 연무장7길 11 2층",
-        "FAC_NAME_en": "Wooran 2-gyeong"
+        "FAC_NAME_en": "Wooran 2-gyeong",
+        "FAC_NAME_ja": "ウラン2景"
       },
       {
         "X_COORD": "37.5591798757923",
@@ -1102,7 +1192,8 @@
         "HOMEPAGE": "https://www.sdlib.or.kr/SD/main.do",
         "PHNE": "02-2204-6420",
         "address": "서울 성동구 고산자로10길 9 성동문화정보센터",
-        "FAC_NAME_en": "Seongdong Public Library"
+        "FAC_NAME_en": "Seongdong Public Library",
+        "FAC_NAME_ja": "城東区立図書館"
       },
       {
         "X_COORD": "37.5454288300956",
@@ -1114,7 +1205,8 @@
         "HOMEPAGE": "https://www.sdfac.or.kr/kor/sdfac/sub/contents.do?gotoMenuNo=01020100",
         "PHNE": "02-2204-7571~6",
         "address": "서울특별시 성동구 뚝섬로1길 43",
-        "FAC_NAME_en": "Seongsu Art Hall"
+        "FAC_NAME_en": "Seongsu Art Hall",
+        "FAC_NAME_ja": "聖水アートホール"
       },
       {
         "X_COORD": "37.5441547484979",
@@ -1126,7 +1218,8 @@
         "HOMEPAGE": "https://daelimmuseum.org/",
         "PHNE": "02-6233-7200",
         "address": "서울특별시 성동구 왕십리로 83-21",
-        "FAC_NAME_en": "D Museum"
+        "FAC_NAME_en": "D Museum",
+        "FAC_NAME_ja": "Dミュージアム"
       },
       {
         "X_COORD": "37.5604666954517",
@@ -1138,7 +1231,8 @@
         "HOMEPAGE": "http://sssmuseum.org",
         "PHNE": "02-2211-2540",
         "address": "서울특별시 성동구 자동차시장3길 64",
-        "FAC_NAME_en": "Seoul Sewage Science Museum"
+        "FAC_NAME_en": "Seoul Sewage Science Museum",
+        "FAC_NAME_ja": "ソウル下水道科学館"
       },
       {
         "X_COORD": "37.5545035492027",
@@ -1150,7 +1244,8 @@
         "HOMEPAGE": "https://museumuf.hanyang.ac.kr/",
         "PHNE": "02-2220-1394",
         "address": "서울특별시 성동구 왕십리로 222",
-        "FAC_NAME_en": "Hanyang University Museum"
+        "FAC_NAME_en": "Hanyang University Museum",
+        "FAC_NAME_ja": "漢陽大学 博物館"
       },
       {
         "X_COORD": "37.5436228045917",
@@ -1162,7 +1257,8 @@
         "HOMEPAGE": "http://www.understandavenue.com",
         "PHNE": "02-725-5526",
         "address": "서울특별시 성동구 왕십리로 63",
-        "FAC_NAME_en": "Understand Avenue"
+        "FAC_NAME_en": "Understand Avenue",
+        "FAC_NAME_ja": "アンダースタンドアベニュー"
       },
       {
         "X_COORD": "37.5593072327953",
@@ -1174,7 +1270,8 @@
         "HOMEPAGE": "https://www.sdfac.or.kr/kor/sdfac/sub/contents.do?gotoMenuNo=01010100",
         "PHNE": "02-2204-6400",
         "address": "서울 성동구 왕십리로 281 소월아트홀",
-        "FAC_NAME_en": "Sowol Art Hall"
+        "FAC_NAME_en": "Sowol Art Hall",
+        "FAC_NAME_ja": "素月アートホール"
       },
       {
         "X_COORD": "37.5712661734969",
@@ -1186,7 +1283,8 @@
         "HOMEPAGE": "https://museum.seoul.go.kr/cgcm/index.do",
         "PHNE": "02-2286-3410",
         "address": "서울특별시 성동구 청계천로 530",
-        "FAC_NAME_en": "Cheonggyecheon Museum"
+        "FAC_NAME_en": "Cheonggyecheon Museum",
+        "FAC_NAME_ja": "清渓川博物館 "
       },
       {
         "X_COORD": "37.5478626400492",
@@ -1198,7 +1296,8 @@
         "HOMEPAGE": "https://m.booking.naver.com/booking/5/bizes/601161",
         "PHNE": "0507-1407-7473",
         "address": "서울특별시 성동구 서울숲길 36, 3F Studio301",
-        "FAC_NAME_en": "Seoul Forest Studio 301"
+        "FAC_NAME_en": "Seoul Forest Studio 301",
+        "FAC_NAME_ja": "ソウルの森 スタジオ301"
       },
       {
         "X_COORD": "37.5586850612677",
@@ -1210,7 +1309,8 @@
         "HOMEPAGE": "http://www.seoulup.or.kr/",
         "PHNE": "02-2153-0400",
         "address": "서울특별시 성동구 자동차시장길 49",
-        "FAC_NAME_en": "Seoul Upcycling Plaza"
+        "FAC_NAME_en": "Seoul Upcycling Plaza",
+        "FAC_NAME_ja": "ソウルセファリョンプラザ"
       },
       {
         "X_COORD": "37.5512780720536",
@@ -1222,7 +1322,8 @@
         "HOMEPAGE": "https://www.instagram.com/studio_thelight/",
         "PHNE": "홈페이지 참고",
         "address": "서울특별시 성동구 송정12가길 38",
-        "FAC_NAME_en": "The Light Studio"
+        "FAC_NAME_en": "The Light Studio",
+        "FAC_NAME_ja": "ザ・ライトスタジオ"
       },
       {
         "X_COORD": "37.5579175887117",
@@ -1234,7 +1335,8 @@
         "HOMEPAGE": "https://www.hywoman.ac.kr/ko/cms/FrCon/index.do?MENU_ID=1120",
         "PHNE": "02-2290-2741",
         "address": "서울특별시 성동구 살곶이길 200",
-        "FAC_NAME_en": "Hanyang Women's University Art Museum"
+        "FAC_NAME_en": "Hanyang Women's University Art Museum",
+        "FAC_NAME_ja": "漢陽女子大学 美術館"
       },
       {
         "X_COORD": "37.5398270134134",
@@ -1246,7 +1348,8 @@
         "HOMEPAGE": "https://arisu.seoul.go.kr/arisumuseum/intrcn/sub1.jsp",
         "PHNE": "02-3146-5921",
         "address": "서울 성동구 성수동1가 642-1",
-        "FAC_NAME_en": "Waterworks Museum"
+        "FAC_NAME_en": "Waterworks Museum",
+        "FAC_NAME_ja": "水道博物館"
       },
       {
         "X_COORD": "37.5614417528647",
@@ -1258,7 +1361,8 @@
         "HOMEPAGE": "https://www.sdfac.or.kr/kor/sdfac/sub/contents.do?gotoMenuNo=04030000",
         "PHNE": "02-2204-7552",
         "address": "서울 성동구 왕십리광장로 17 비트플렉스 4층 갤러리허브",
-        "FAC_NAME_en": "Gallery Hub"
+        "FAC_NAME_en": "Gallery Hub",
+        "FAC_NAME_ja": "ギャラリー ハブ"
       },
       {
         "X_COORD": "37.5476765284371",
@@ -1270,7 +1374,8 @@
         "HOMEPAGE": "https://instagram.com/arby_label?igshid=MzRIODBiNWFIZA==",
         "PHNE": "홈페이지 참고",
         "address": "서울 성동구 서울숲6길 8-1 3층",
-        "FAC_NAME_en": "Albi"
+        "FAC_NAME_en": "Albi",
+        "FAC_NAME_ja": "アルビ"
       },
       {
         "X_COORD": "37.5429326268813",
@@ -1282,7 +1387,8 @@
         "HOMEPAGE": "https://blog.naver.com/darakoksu7541",
         "PHNE": "02-2204-7542",
         "address": "서울특별시 성동구 한림말5길 20",
-        "FAC_NAME_en": "Darak Oksu"
+        "FAC_NAME_en": "Darak Oksu",
+        "FAC_NAME_ja": "タラク玉水"
       },
       {
         "X_COORD": "37.549600601651",
@@ -1294,7 +1400,8 @@
         "HOMEPAGE": "https://www.sdfac.or.kr/kor/sdy/main.do",
         "PHNE": "02-2236-2678",
         "address": "서울 성동구 금호동3가 1266",
-        "FAC_NAME_en": "Seongdong Youth Culture House"
+        "FAC_NAME_en": "Seongdong Youth Culture House",
+        "FAC_NAME_ja": "城東青少年文化の家"
       },
       {
         "X_COORD": "37.5460256232685",
@@ -1306,7 +1413,8 @@
         "HOMEPAGE": "https://www.instagram.com/eaglerockspace",
         "PHNE": "0507-1472-1634",
         "address": "서울특별시 성동구 뚝섬로1길 53-1",
-        "FAC_NAME_en": "Eaglrock Art Space"
+        "FAC_NAME_en": "Eaglrock Art Space",
+        "FAC_NAME_ja": "イグラクアートスペース"
       },
       {
         "X_COORD": "37.536989665314",
@@ -1318,7 +1426,8 @@
         "HOMEPAGE": "https://www.instagram.com/osisun.ch/",
         "PHNE": "정보없음",
         "address": "서울특별시 성동구 성덕정길 112",
-        "FAC_NAME_en": "Osiseon"
+        "FAC_NAME_en": "Osiseon",
+        "FAC_NAME_ja": "オシソン"
       },
       {
         "X_COORD": "37.5437897702564",
@@ -1330,7 +1439,8 @@
         "HOMEPAGE": "https://www.wooranfdn.org/main.jsp",
         "PHNE": "02-465-1418",
         "address": "서울특별시 성동구 연무장7길 11",
-        "FAC_NAME_en": "Wooran Foundation"
+        "FAC_NAME_en": "Wooran Foundation",
+        "FAC_NAME_ja": "ウラン文化財団"
       },
       {
         "X_COORD": "37.545827113547",
@@ -1342,7 +1452,8 @@
         "HOMEPAGE": "https://spacerora.imweb.me/",
         "PHNE": "070-4144-5954",
         "address": "서울특별시 성동구 성수이로26길 25",
-        "FAC_NAME_en": "Space Lora"
+        "FAC_NAME_en": "Space Lora",
+        "FAC_NAME_ja": "スペースロラ"
       },
       {
         "X_COORD": "37.5389167719081",
@@ -1354,7 +1465,8 @@
         "HOMEPAGE": "https://leongallery.co.kr/",
         "PHNE": "0507-1337-6917",
         "address": "서울 성동구 성덕정9가길 26-1 1층",
-        "FAC_NAME_en": "Leon Gallery Seongsu Street"
+        "FAC_NAME_en": "Leon Gallery Seongsu Street",
+        "FAC_NAME_ja": "レオンギャラリー 聖水ストリート"
       },
       {
         "X_COORD": "37.5458942051663",
@@ -1366,7 +1478,8 @@
         "HOMEPAGE": "https://www.sdlib.or.kr/fore/main.do",
         "PHNE": "02-2204-6485",
         "address": "서울특별시 성동구 매봉길 49-29",
-        "FAC_NAME_en": "Seongdong Maebongsan Forest Library"
+        "FAC_NAME_en": "Seongdong Maebongsan Forest Library",
+        "FAC_NAME_ja": "城東区立メボン山森の中図書館"
       },
       {
         "X_COORD": "37.5666999281866",
@@ -1378,7 +1491,8 @@
         "HOMEPAGE": "https://www.sdlib.or.kr/yd/",
         "PHNE": "02-2204-6470",
         "address": "서울특별시 성동구 용답중앙3길 10",
-        "FAC_NAME_en": "Seongdong Yongdap Library"
+        "FAC_NAME_en": "Seongdong Yongdap Library",
+        "FAC_NAME_ja": "城東区立龍畓図書館"
       },
       {
         "X_COORD": "37.5456773286722",
@@ -1390,7 +1504,8 @@
         "HOMEPAGE": "https://www.seouliteum.com/",
         "PHNE": "02-516-2513",
         "address": "서울 성동구 서울숲2길 32-14 갤러리아포레 지2층",
-        "FAC_NAME_en": "The Seoul Lightium"
+        "FAC_NAME_en": "The Seoul Lightium",
+        "FAC_NAME_ja": "ザ・ソウルライティウム"
       }
     ]
   },
@@ -1407,7 +1522,8 @@
         "HOMEPAGE": "https://www.mfac.or.kr/",
         "PHNE": "02-3274-8600",
         "address": "서울 마포구 대흥로20길 28 마포아트센터",
-        "FAC_NAME_en": "Mapo Art Center"
+        "FAC_NAME_en": "Mapo Art Center",
+        "FAC_NAME_ja": "麻浦アートセンター"
       },
       {
         "X_COORD": "37.5541249044242",
@@ -1419,7 +1535,8 @@
         "HOMEPAGE": "https://changmuartcenter.com/",
         "PHNE": "02-337-5961",
         "address": "서울특별시 마포구 와우산로 148",
-        "FAC_NAME_en": "Post Theater"
+        "FAC_NAME_en": "Post Theater",
+        "FAC_NAME_ja": "ポスト劇場"
       },
       {
         "X_COORD": "37.5569823830529",
@@ -1431,7 +1548,8 @@
         "HOMEPAGE": "https://www.kdjlibrary.org/",
         "PHNE": "02-2123-6890",
         "address": "서울특별시 마포구 신촌로4길 5-26",
-        "FAC_NAME_en": "Yonsei University Kim Dae-jung Library"
+        "FAC_NAME_en": "Yonsei University Kim Dae-jung Library",
+        "FAC_NAME_ja": "延世大学 金大中図書館"
       },
       {
         "X_COORD": "37.5484975164949",
@@ -1443,7 +1561,8 @@
         "HOMEPAGE": "https://www.rollinghall.co.kr/default/index.php",
         "PHNE": "02-325-6071",
         "address": "서울특별시 마포구 어울마당로 35 지하 1층, 2층",
-        "FAC_NAME_en": "Hongdae Rolling Hall"
+        "FAC_NAME_en": "Hongdae Rolling Hall",
+        "FAC_NAME_ja": "弘大 ローリングホール"
       },
       {
         "X_COORD": "37.56907059409881",
@@ -1455,7 +1574,8 @@
         "HOMEPAGE": "https://sema.seoul.go.kr/kr/visit/nanji_residency",
         "PHNE": "02-2124-8800",
         "address": "서울특별시 마포구 하늘공원로 108-1",
-        "FAC_NAME_en": "Seoul Nanji Art Studio"
+        "FAC_NAME_en": "Seoul Nanji Art Studio",
+        "FAC_NAME_ja": "ソウル市立 蘭芝美術創作スタジオ"
       },
       {
         "X_COORD": "37.5506957017413",
@@ -1467,7 +1587,8 @@
         "HOMEPAGE": "http://www.workshall.co.kr/",
         "PHNE": "0507-1402-3644",
         "address": "서울특별시 마포구 잔다리로3길 34",
-        "FAC_NAME_en": "Formtec Works Hall"
+        "FAC_NAME_en": "Formtec Works Hall",
+        "FAC_NAME_ja": "フォムテックワークスホール"
       },
       {
         "X_COORD": "37.5441354407025",
@@ -1479,7 +1600,8 @@
         "HOMEPAGE": "http://www.jeoldusan.or.kr/renew/museum1.php",
         "PHNE": "02-3142-4504",
         "address": "서울특별시 마포구 토정로 6",
-        "FAC_NAME_en": "Korean Catholic Martyrs' Museum"
+        "FAC_NAME_en": "Korean Catholic Martyrs' Museum",
+        "FAC_NAME_ja": "韓国天主教殉教者博物館"
       },
       {
         "X_COORD": "37.5794283422818",
@@ -1491,7 +1613,8 @@
         "HOMEPAGE": "https://kovac.modoo.at/",
         "PHNE": "02-2132-0501",
         "address": "서울특별시 마포구 월드컵북로 396",
-        "FAC_NAME_en": "Digital Pavilion"
+        "FAC_NAME_en": "Digital Pavilion",
+        "FAC_NAME_ja": "デジタルパビリオン"
       },
       {
         "X_COORD": "37.5422338474855",
@@ -1503,7 +1626,8 @@
         "HOMEPAGE": "http://www.mapocc.or.kr/",
         "PHNE": "02-312-1100",
         "address": "서울 마포구 백범로 227 공덕동자치회관",
-        "FAC_NAME_en": "Mapo Cultural Center"
+        "FAC_NAME_en": "Mapo Cultural Center",
+        "FAC_NAME_ja": "麻浦文化院"
       },
       {
         "X_COORD": "37.5514693075541",
@@ -1515,7 +1639,8 @@
         "HOMEPAGE": "없음",
         "PHNE": "02-705-8215",
         "address": "서울특별시 마포구 백범로 35",
-        "FAC_NAME_en": "Sogang University Museum"
+        "FAC_NAME_en": "Sogang University Museum",
+        "FAC_NAME_ja": "西江大学 博物館"
       },
       {
         "X_COORD": "37.5806561786855",
@@ -1527,7 +1652,8 @@
         "HOMEPAGE": "https://www.koreafilm.or.kr/museum/main",
         "PHNE": "02-3153-2072",
         "address": "서울특별시 마포구 월드컵북로 400",
-        "FAC_NAME_en": "Korean Film Museum"
+        "FAC_NAME_en": "Korean Film Museum",
+        "FAC_NAME_ja": "韓国映画博物館"
       },
       {
         "X_COORD": "37.5550435661865",
@@ -1539,7 +1665,8 @@
         "HOMEPAGE": "http://www.leememorial.or.kr/",
         "PHNE": "02-325-7216 ",
         "address": "서울특별시 마포구 신촌로12나길 26",
-        "FAC_NAME_en": "Lee Han-yeol Memorial Hall"
+        "FAC_NAME_en": "Lee Han-yeol Memorial Hall",
+        "FAC_NAME_ja": "李韓烈記念館"
       },
       {
         "X_COORD": "37.5804510730532",
@@ -1551,7 +1678,8 @@
         "HOMEPAGE": "http://www.koreafilm.or.kr",
         "PHNE": "02-3153-2001",
         "address": "서울특별시 마포구 월드컵북로 400 한국영상자료원",
-        "FAC_NAME_en": "Korean Film Archive"
+        "FAC_NAME_en": "Korean Film Archive",
+        "FAC_NAME_ja": "韓国映像資料院"
       },
       {
         "X_COORD": "37.5617369167278",
@@ -1563,7 +1691,8 @@
         "HOMEPAGE": "https://www.instagram.com/ooooon.kr/",
         "PHNE": "0507-1367-2519",
         "address": "서울 마포구 성미산로11길 25 1F, B1",
-        "FAC_NAME_en": "Oon"
+        "FAC_NAME_en": "Oon",
+        "FAC_NAME_ja": "オオン"
       },
       {
         "X_COORD": "37.5508138163956",
@@ -1575,7 +1704,8 @@
         "HOMEPAGE": "https://seogyocenter.or.kr/",
         "PHNE": "02-336-7531",
         "address": "서울 마포구 양화로 72 효성해링턴타워 지하1층, 지하2층",
-        "FAC_NAME_en": "Seoul Culture & Life Center Seogyo"
+        "FAC_NAME_en": "Seoul Culture & Life Center Seogyo",
+        "FAC_NAME_ja": "ソウル生活文化センター 西橋"
       },
       {
         "X_COORD": "37.5543219169157",
@@ -1587,7 +1717,8 @@
         "HOMEPAGE": "https://mpllc.sen.go.kr/",
         "PHNE": "02-2137-0071",
         "address": "서울 마포구 홍익로2길 16 마포평생학습관",
-        "FAC_NAME_en": "Seoul Metropolitan Office of Education Mapo Lifelong Learning Center"
+        "FAC_NAME_en": "Seoul Metropolitan Office of Education Mapo Lifelong Learning Center",
+        "FAC_NAME_ja": "ソウル特別市教育庁 麻浦生涯学習館"
       },
       {
         "X_COORD": "37.5600976273155",
@@ -1599,7 +1730,8 @@
         "HOMEPAGE": "https://womenandwarmuseum.net/",
         "PHNE": "02-392-5252",
         "address": "서울특별시 마포구 월드컵북로11길 20",
-        "FAC_NAME_en": "War and Women's Human Rights Museum"
+        "FAC_NAME_en": "War and Women's Human Rights Museum",
+        "FAC_NAME_ja": "戦争と女性人権博物館"
       },
       {
         "X_COORD": "37.5516642144107",
@@ -1611,7 +1743,8 @@
         "HOMEPAGE": "https://www.underdogmuseum.com",
         "PHNE": "02-336-0423",
         "address": "서울 마포구 양화로12길 8-7 B1",
-        "FAC_NAME_en": "Media Art Gallery Underdog Museum"
+        "FAC_NAME_en": "Media Art Gallery Underdog Museum",
+        "FAC_NAME_ja": "メディアアートギャラリー アンダードッグミュージアム"
       },
       {
         "X_COORD": "37.5553406594108",
@@ -1623,7 +1756,8 @@
         "HOMEPAGE": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S231222143146007849",
         "PHNE": "02-3144-2038",
         "address": "서울특별시 마포구 동교로15길 10",
-        "FAC_NAME_en": "Choi Kyu-hah House"
+        "FAC_NAME_en": "Choi Kyu-hah House",
+        "FAC_NAME_ja": "崔圭夏 家屋"
       },
       {
         "X_COORD": "37.5486522177452",
@@ -1635,7 +1769,8 @@
         "HOMEPAGE": "http://www.mapocc.or.kr/page/page5",
         "PHNE": "02-322-4450",
         "address": "서울특별시 마포구 독막로21길 15",
-        "FAC_NAME_en": "Gwangheungdang"
+        "FAC_NAME_en": "Gwangheungdang",
+        "FAC_NAME_ja": "広興堂"
       },
       {
         "X_COORD": "37.5483662558053",
@@ -1647,7 +1782,8 @@
         "HOMEPAGE": "https://www.frottagegallery.com/",
         "PHNE": "02-365-2038",
         "address": "서울특별시 마포구 독막로15길 12",
-        "FAC_NAME_en": "Frottage Gallery"
+        "FAC_NAME_en": "Frottage Gallery",
+        "FAC_NAME_ja": "フロッタージュ ギャラリー"
       },
       {
         "X_COORD": "37.5484676511038",
@@ -1659,7 +1795,8 @@
         "HOMEPAGE": "https://www.bezzang-e.com/",
         "PHNE": "02-322-4241",
         "address": "서울특별시 마포구 독막로15길 3-12 NJ빌딩 지하 1층",
-        "FAC_NAME_en": "Grasshopper Hall"
+        "FAC_NAME_en": "Grasshopper Hall",
+        "FAC_NAME_ja": "ベッチャンイホール"
       },
       {
         "X_COORD": "37.5525192523979",
@@ -1671,7 +1808,8 @@
         "HOMEPAGE": "https://museum.hongik.ac.kr/html/",
         "PHNE": "02-320-1323",
         "address": "서울특별시 마포구 와우산로 94",
-        "FAC_NAME_en": "Hongik University Museum"
+        "FAC_NAME_en": "Hongik University Museum",
+        "FAC_NAME_ja": "弘益大学 博物館"
       },
       {
         "X_COORD": "37.5545446275941",
@@ -1683,7 +1821,8 @@
         "HOMEPAGE": "https://hongdaespacem.modoo.at/",
         "PHNE": "02-6080-4587",
         "address": "서울특별시 마포구 양화로15길 17 4층",
-        "FAC_NAME_en": "Hongdae Space M Complex Culture Center"
+        "FAC_NAME_en": "Hongdae Space M Complex Culture Center",
+        "FAC_NAME_ja": "複合文化空間 弘大スペースM "
       },
       {
         "X_COORD": "37.5637954434775",
@@ -1695,7 +1834,8 @@
         "HOMEPAGE": "https://mplib.mapo.go.kr/mcl/index.do",
         "PHNE": "02-3153-5800",
         "address": "서울특별시 마포구 성산로 128",
-        "FAC_NAME_en": "Mapo Central Library"
+        "FAC_NAME_en": "Mapo Central Library",
+        "FAC_NAME_ja": "麻浦中央図書館"
       },
       {
         "X_COORD": "37.571364837277535",
@@ -1707,7 +1847,8 @@
         "HOMEPAGE": "https://parks.seoul.go.kr/template/sub/culturetank.do",
         "PHNE": "02-376-8410",
         "address": "서울특별시 마포구 증산로 87",
-        "FAC_NAME_en": "Culture Reserve Base (Oil Tank Culture Park)"
+        "FAC_NAME_en": "Culture Reserve Base (Oil Tank Culture Park)",
+        "FAC_NAME_ja": "文化備蓄基地"
       },
       {
         "X_COORD": "37.5550704891351",
@@ -1719,7 +1860,8 @@
         "HOMEPAGE": "https://mapoindie.or.kr/index.asp",
         "PHNE": "02-3148-6071",
         "address": "서울특별시 마포구 마포대로 지하 238",
-        "FAC_NAME_en": "Seoul Mapo Music Creation Center"
+        "FAC_NAME_en": "Seoul Mapo Music Creation Center",
+        "FAC_NAME_ja": "ソウル麻浦音楽創作所"
       },
       {
         "X_COORD": "37.5495786624964",
@@ -1731,7 +1873,8 @@
         "HOMEPAGE": "https://mplib.mapo.go.kr/naru/index.do",
         "PHNE": "02-3153-1600",
         "address": "서울특별시 마포구 숭문길 72",
-        "FAC_NAME_en": "Mapo Sogeumnaru Library"
+        "FAC_NAME_en": "Mapo Sogeumnaru Library",
+        "FAC_NAME_ja": "麻浦ソグムナル図書館"
       },
       {
         "X_COORD": "37.5475481644542",
@@ -1743,7 +1886,8 @@
         "HOMEPAGE": "https://www.wumuji.com/",
         "PHNE": "070-7618-0321",
         "address": "서울 마포구 독막로8길 7 지하1층",
-        "FAC_NAME_en": "Umuji"
+        "FAC_NAME_en": "Umuji",
+        "FAC_NAME_ja": "ウムジ"
       },
       {
         "X_COORD": "37.5531134735776",
@@ -1755,7 +1899,8 @@
         "HOMEPAGE": "https://www.instagram.com/gallery99_official/",
         "PHNE": "02-322-0199",
         "address": "서울특별시 마포구 홍익로 5-1",
-        "FAC_NAME_en": "Gallery 99"
+        "FAC_NAME_en": "Gallery 99",
+        "FAC_NAME_ja": "ギャラリー99"
       },
       {
         "X_COORD": "37.5544389044835",
@@ -1767,7 +1912,8 @@
         "HOMEPAGE": "https://www.instagram.com/kirkjufell333",
         "PHNE": "없음",
         "address": "서울 마포구 와우산로25길 26 1층, 2층 홍대갤러리 키르큐펠",
-        "FAC_NAME_en": "Hongdae Gallery Kirkupel"
+        "FAC_NAME_en": "Hongdae Gallery Kirkupel",
+        "FAC_NAME_ja": "弘大ギャラリー キルキュペル"
       },
       {
         "X_COORD": "37.5515008030203",
@@ -1779,7 +1925,8 @@
         "HOMEPAGE": "http://www.solpay-square.com/",
         "PHNE": "1644-2961",
         "address": "서울특별시 마포구 양화로 45 메세나폴리스 2층 신한카드 SOL페이 스퀘어",
-        "FAC_NAME_en": "Shinhan Card SOL Pay Square"
+        "FAC_NAME_en": "Shinhan Card SOL Pay Square",
+        "FAC_NAME_ja": "新韓カード SOLペイ スクエア"
       },
       {
         "X_COORD": "37.5493590071323",
@@ -1791,7 +1938,8 @@
         "HOMEPAGE": "https://www.instagram.com/crisp_wedge/ ",
         "PHNE": "없음",
         "address": "서울 마포구 양화로8길 32-17 지하 1층 크리스프 웨지",
-        "FAC_NAME_en": "Crisp Wedge"
+        "FAC_NAME_en": "Crisp Wedge",
+        "FAC_NAME_ja": "クリスプ ウェッジ"
       },
       {
         "X_COORD": "37.5477347268018",
@@ -1803,7 +1951,8 @@
         "HOMEPAGE": "https://mplib.mapo.go.kr/sglib/",
         "PHNE": "02-3141-7053",
         "address": "서울특별시 마포구 독막로 165",
-        "FAC_NAME_en": "Mapo Seogang Library"
+        "FAC_NAME_en": "Mapo Seogang Library",
+        "FAC_NAME_ja": "麻浦区立西江図書館"
       },
       {
         "X_COORD": "37.5757269662412",
@@ -1815,7 +1964,8 @@
         "HOMEPAGE": "https://news.seoul.go.kr/gov/archives/530214",
         "PHNE": " 02-3470-1531",
         "address": "서울특별시 마포구 매봉산로 31",
-        "FAC_NAME_en": "S-Plex Center"
+        "FAC_NAME_en": "S-Plex Center",
+        "FAC_NAME_ja": "エスプレックスセンター "
       },
       {
         "X_COORD": "37.5578258360317",
@@ -1827,7 +1977,8 @@
         "HOMEPAGE": "없음",
         "PHNE": "없음",
         "address": "서울 마포구 동교로19길 56 102호",
-        "FAC_NAME_en": "Art Space Gongjak"
+        "FAC_NAME_en": "Art Space Gongjak",
+        "FAC_NAME_ja": "アートスペース工作"
       },
       {
         "X_COORD": "37.580322292061",
@@ -1839,7 +1990,8 @@
         "HOMEPAGE": "http://www.mycc.or.kr",
         "PHNE": "02-303-1380~1",
         "address": "서울시 마포구 상암산로 1길 67 마포청소년문화의집",
-        "FAC_NAME_en": "Mapo Youth Culture House"
+        "FAC_NAME_en": "Mapo Youth Culture House",
+        "FAC_NAME_ja": "区立麻浦青少年文化の家"
       },
       {
         "X_COORD": "37.5564381192339",
@@ -1851,7 +2003,8 @@
         "HOMEPAGE": "https://www.mapo.go.kr/site/main/home",
         "PHNE": "02-3153-1633",
         "address": "서울특별시 마포구 와우산로37길 35",
-        "FAC_NAME_en": "Red Road Power Plant"
+        "FAC_NAME_en": "Red Road Power Plant",
+        "FAC_NAME_ja": "レッドロード発電所"
       },
       {
         "X_COORD": "37.555283006064",
@@ -1863,7 +2016,8 @@
         "HOMEPAGE": "https://www.wwwspace.kr/",
         "PHNE": "0507-1410-7241",
         "address": "서울특별시 마포구 망원로6길 37 지하1층",
-        "FAC_NAME_en": "WWW Space"
+        "FAC_NAME_en": "WWW Space",
+        "FAC_NAME_ja": "WWW SPACE"
       },
       {
         "X_COORD": "37.5550832990905",
@@ -1875,7 +2029,8 @@
         "HOMEPAGE": "http://www.sanwoollim.kr/",
         "PHNE": "02-334-5915",
         "address": "서울 마포구 와우산로 157 지층 소극장 산울림",
-        "FAC_NAME_en": "Sanullim Theater"
+        "FAC_NAME_en": "Sanullim Theater",
+        "FAC_NAME_ja": "小劇場 サヌルリム"
       },
       {
         "X_COORD": "37.5469505567011",
@@ -1887,7 +2042,8 @@
         "HOMEPAGE": "http://ujeongguk.com/",
         "PHNE": "02-336-8553",
         "address": "서울특별시 마포구 독막로20길 42",
-        "FAC_NAME_en": "Post Territory Ujeongguk"
+        "FAC_NAME_en": "Post Territory Ujeongguk",
+        "FAC_NAME_ja": "脱領域郵政局"
       },
       {
         "X_COORD": "37.5572258907747",
@@ -1899,7 +2055,8 @@
         "HOMEPAGE": "https://outhouse.kr/",
         "PHNE": "0507-1305-1459",
         "address": "서울 마포구 망원로 74 2층",
-        "FAC_NAME_en": "Byeolgwan Annex"
+        "FAC_NAME_en": "Byeolgwan Annex",
+        "FAC_NAME_ja": "別館"
       },
       {
         "X_COORD": "37.5442465888293",
@@ -1911,7 +2068,8 @@
         "HOMEPAGE": "https://www.cjazit.org/cjazit/",
         "PHNE": "02-3272-2616",
         "address": "서울특별시 마포구 창전로 14",
-        "FAC_NAME_en": "CJ Azit Gwangheungchang"
+        "FAC_NAME_en": "CJ Azit Gwangheungchang",
+        "FAC_NAME_ja": "CJアジト 広興倉"
       },
       {
         "X_COORD": "37.5509576951977",
@@ -1923,7 +2081,8 @@
         "HOMEPAGE": "https://www.sangsangmadang.com/main/HD",
         "PHNE": "02-330-6229",
         "address": "서울특별시 마포구 어울마당로 65",
-        "FAC_NAME_en": "KT&G Sangsangmadang Hongdae Gallery"
+        "FAC_NAME_en": "KT&G Sangsangmadang Hongdae Gallery",
+        "FAC_NAME_ja": "KT&G 想像マダン 弘大 ギャラリー"
       },
       {
         "X_COORD": "37.5534884539757",
@@ -1935,7 +2094,8 @@
         "HOMEPAGE": "https://www.onsu-gonggan.com/",
         "PHNE": "070-7543-3767",
         "address": "서울특별시 마포구 월드컵북로1길 74",
-        "FAC_NAME_en": "Onsu Space"
+        "FAC_NAME_en": "Onsu Space",
+        "FAC_NAME_ja": "温水空間"
       },
       {
         "X_COORD": "37.5456545675167",
@@ -1947,7 +2107,8 @@
         "HOMEPAGE": "https://spacetone.org/",
         "PHNE": "0507-1305-8663",
         "address": "서울특별시 마포구 토정로 43-2",
-        "FAC_NAME_en": "Space Tone"
+        "FAC_NAME_en": "Space Tone",
+        "FAC_NAME_ja": "スペース トーン"
       },
       {
         "X_COORD": "37.5570633622985",
@@ -1959,7 +2120,8 @@
         "HOMEPAGE": "https://m.blog.naver.com/cocnert_nanu",
         "PHNE": "없음",
         "address": "서울특별시 마포구 망원로 66 지하1층",
-        "FAC_NAME_en": "Concert Hall Nanu"
+        "FAC_NAME_en": "Concert Hall Nanu",
+        "FAC_NAME_ja": "コンサートホール ナヌ"
       }
     ]
   },
