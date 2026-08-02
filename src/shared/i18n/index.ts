@@ -5,6 +5,7 @@ import { initReactI18next } from "react-i18next";
 import en from "./locales/en.json";
 import ja from "./locales/ja.json";
 import ko from "./locales/ko.json";
+import zh from "./locales/zh.json";
 
 /**
  * 지원 언어 단일 소스(코드 + 토글 표기/접근성 라벨). 새 언어(예: zh) 추가 시
@@ -16,6 +17,7 @@ export const LANGUAGES = [
   { code: "ko", label: "KO", a11yLabel: "Switch to Korean" },
   { code: "en", label: "EN", a11yLabel: "Switch to English" },
   { code: "ja", label: "JA", a11yLabel: "Switch to Japanese" },
+  { code: "zh", label: "ZH", a11yLabel: "Switch to Chinese" },
 ] as const;
 
 export type SupportedLanguage = (typeof LANGUAGES)[number]["code"];
@@ -39,6 +41,7 @@ if (!i18next.isInitialized) {
       ko: { translation: ko },
       en: { translation: en },
       ja: { translation: ja },
+      zh: { translation: zh },
     },
     lng: detectDeviceLanguage(),
     fallbackLng: DEFAULT_LANGUAGE,

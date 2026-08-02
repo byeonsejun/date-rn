@@ -97,6 +97,7 @@ type ParkRaw = {
   p_name?: string;
   p_park_en?: string;
   p_park_ja?: string;
+  p_park_zh?: string;
 };
 
 type CulturalSpaceRaw = {
@@ -111,6 +112,7 @@ type CulturalSpaceRaw = {
   HOMEPAGE?: string;
   FAC_NAME_en?: string;
   FAC_NAME_ja?: string;
+  FAC_NAME_zh?: string;
 };
 
 type DodreamgilRaw = {
@@ -126,6 +128,7 @@ type DodreamgilRaw = {
   COURSE_NAME?: string;
   CPI_NAME_en?: string;
   CPI_NAME_ja?: string;
+  CPI_NAME_zh?: string;
 };
 
 const filterParkByDistrict = (district: string): PoiSuggestion[] => {
@@ -148,6 +151,7 @@ const filterParkByDistrict = (district: string): PoiSuggestion[] => {
       title: p.p_park,
       titleEn: p.p_park_en,
       titleJa: p.p_park_ja,
+      titleZh: p.p_park_zh,
       lat,
       lon,
       address: p.p_addr,
@@ -179,6 +183,7 @@ const filterCulturalSpaceByDistrict = (district: string): PoiSuggestion[] => {
       title: c.FAC_NAME,
       titleEn: c.FAC_NAME_en,
       titleJa: c.FAC_NAME_ja,
+      titleZh: c.FAC_NAME_zh,
       lat,
       lon,
       address: c.address,
@@ -232,6 +237,7 @@ const filterDodreamgilByDistrict = (district: string): PoiSuggestion[] => {
         title: d.CPI_NAME,
         titleEn: d.CPI_NAME_en,
         titleJa: d.CPI_NAME_ja,
+        titleZh: d.CPI_NAME_zh,
         lat,
         lon,
         detailCourse: d.DETAIL_COURSE,

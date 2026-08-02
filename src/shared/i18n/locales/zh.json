@@ -1,0 +1,73 @@
+{
+  "common": {
+    "appName": "首尔，与你同行",
+    "close": "关闭",
+    "loading": "加载中...",
+    "loadingMore": "加载更多...",
+    "noData": "没有可显示的数据。",
+    "initializing": "正在加载设置...",
+    "noInfo": "无信息",
+    "openNow": "营业中",
+    "closed": "已打烊"
+  },
+  "location": {
+    "consentMessage": "「首尔，与你同行」将以您的当前位置为中心，为您推荐合适的天气与约会地点！\n（本服务仅限首尔地区使用。）",
+    "agree": "同意",
+    "decline": "拒绝",
+    "seoulOnlyToast": "本服务仅限首尔地区。请选择您想要的地区。"
+  },
+  "weather": {
+    "today": "今天",
+    "tomorrow": "明天",
+    "dayAfterTomorrow": "后天",
+    "threeDaysLater": "大后天",
+    "loading": "正在加载天气...",
+    "loadError": "无法加载天气信息。请检查网络状态与服务器（EXPO_PUBLIC_API_BASE_URL）的连接。"
+  },
+  "recommend": {
+    "foodListTitle": "推荐餐厅 Top 5",
+    "viewFoodButton": "查看推荐餐厅",
+    "foodFetchError": "无法加载餐厅信息。",
+    "locationNeeded": "需要位置信息",
+    "loadingPlaces": "正在加载推荐数据。",
+    "todayPlacesTitle": "今日推荐约会地点"
+  },
+  "map": {
+    "closePanel": "关闭面板",
+    "currentLocationDescription": "在地图上显示当前位置。",
+    "currentLocationTitle": "当前位置",
+    "restaurantLabel": "餐厅",
+    "ratingLabel": "评分 {{rating}}（{{count}}条）",
+    "noDetailInfo": "没有详细信息。",
+    "viewOnGoogleMaps": "在 Google 地图中查看",
+    "viewMap": "地图",
+    "directions": "路线导航",
+    "loadingMarkers": "正在加载地图数据。",
+    "noMarkers": "没有符合所选条件的标记。",
+    "viewSelectedRestaurantOnMaps": "在 Google 地图中查看所选餐厅",
+    "directionsToSelectedRestaurant": "所选餐厅的路线导航",
+    "webPreviewUnavailable": "Web 预览中无法使用原生地图",
+    "webPreviewHint": "在 iOS 模拟器、Android 模拟器或 Expo Go 应用中运行即可显示地图。",
+    "openCurrentAreaInBrowser": "在浏览器的 Google 地图中打开当前区域",
+    "openInGoogleMapsBrowser": "在 Google 地图中查看",
+    "moreMarkersHint": "另有 {{count}} 个标记（请在原生环境查看）",
+    "currentMarkerLabel": "当前",
+    "category": {
+      "all": "全部",
+      "park": "公园",
+      "culturalSpace": "文化空间",
+      "dodreamgil": "无障碍步道"
+    }
+  },
+  "restaurant": {
+    "noImage": "无图片"
+  },
+  "poi": {
+    "viewOnMapLabel": "在地图上查看 {{title}} 的位置",
+    "contactLabel": "联系电话：{{phone}}"
+  },
+  "home": {
+    "districtSelectTitle": "选择地区",
+    "weatherSectionTitle": "所选地区的天气信息。"
+  }
+}

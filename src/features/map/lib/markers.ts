@@ -143,6 +143,7 @@ export const buildMapMarkers = (
       title: poi.title,
       titleEn: poi.titleEn,
       titleJa: poi.titleJa,
+      titleZh: poi.titleZh,
       category,
       kind: poi.kind,
       lat: poi.lat,

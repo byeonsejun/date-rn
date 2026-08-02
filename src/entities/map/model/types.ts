@@ -41,6 +41,7 @@ export type MapMarkerData =
       title: string;
       titleEn?: string;
       titleJa?: string;
+      titleZh?: string;
       category: MapPoiCategory;
       kind: MapPoiKind;
       lat: number;

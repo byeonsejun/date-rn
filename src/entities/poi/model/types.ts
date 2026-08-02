@@ -21,6 +21,10 @@ export interface PoiSuggestion extends GeoCoord {
    * 일본어 모드 표시용 title 번역. (없으면 titleEn -> 한국어 title 순으로 폴백)
    */
   titleJa?: string;
+  /**
+   * 중국어(간체) 모드 표시용 title 번역. (없으면 titleEn -> 한국어 title 순으로 폴백)
+   */
+  titleZh?: string;
   address?: string;
   imageUrl?: string;
   phne?: string;
