@@ -13,7 +13,8 @@
         "PHNE": "02-2153-0000",
         "address": "서울특별시 중구 을지로 281",
         "FAC_NAME_en": "Dongdaemun Design Plaza (DDP)",
-        "FAC_NAME_ja": "DDP（東大門デザインプラザ）"
+        "FAC_NAME_ja": "DDP（東大門デザインプラザ）",
+        "FAC_NAME_zh": "DDP（东大门设计广场）"
       },
       {
         "X_COORD": "37.5637878280982",
@@ -26,7 +27,8 @@
         "PHNE": "02-3702-0601",
         "address": "서울특별시 중구 서소문로11길 19",
         "FAC_NAME_en": "British Council Korea",
-        "FAC_NAME_ja": "駐韓英国文化院"
+        "FAC_NAME_ja": "駐韓英国文化院",
+        "FAC_NAME_zh": "驻韩英国文化院"
       },
       {
         "X_COORD": "37.5659336365406",
@@ -39,7 +41,8 @@
         "PHNE": "02-751-1500",
         "address": "서울특별시 중구 정동길 43",
         "FAC_NAME_en": "National Jeongdong Theater",
-        "FAC_NAME_ja": "国立貞洞劇場"
+        "FAC_NAME_ja": "国立貞洞劇場",
+        "FAC_NAME_zh": "国立贞洞剧场"
       },
       {
         "X_COORD": "37.559304933707146",
@@ -52,7 +55,8 @@
         "PHNE": "02-6358-5533",
         "address": "서울특별시 중구 퇴계로34길 28",
         "FAC_NAME_en": "Namsangol Hanok Village",
-        "FAC_NAME_ja": "南山コル韓屋村"
+        "FAC_NAME_ja": "南山コル韓屋村",
+        "FAC_NAME_zh": "南山谷韩屋村"
       },
       {
         "X_COORD": "37.555139463911",
@@ -65,7 +69,8 @@
         "PHNE": "02-593-1140",
         "address": "서울특별시 중구 필동로8길 22",
         "FAC_NAME_en": "2nd Avenue Gallery",
-        "FAC_NAME_ja": "2ND AVENUE GALLERY"
+        "FAC_NAME_ja": "2ND AVENUE GALLERY",
+        "FAC_NAME_zh": "2ND AVENUE GALLERY"
       },
       {
         "X_COORD": "37.5591300607013",
@@ -78,7 +83,8 @@
         "PHNE": "02-778-0260",
         "address": "서울특별시 중구 소파로 138",
         "FAC_NAME_en": "Drama Center",
-        "FAC_NAME_ja": "ドラマセンター"
+        "FAC_NAME_ja": "ドラマセンター",
+        "FAC_NAME_zh": "戏剧中心"
       },
       {
         "X_COORD": "37.5596804372304",
@@ -91,7 +97,8 @@
         "PHNE": "02-2279-7901",
         "address": "서울특별시 중구 장충단로 166",
         "FAC_NAME_en": "Jongie Nara Paper Museum",
-        "FAC_NAME_ja": "紙の国博物館"
+        "FAC_NAME_ja": "紙の国博物館",
+        "FAC_NAME_zh": "纸之国博物馆"
       },
       {
         "X_COORD": "37.5634574532023",
@@ -104,7 +111,8 @@
         "PHNE": "02-739-8288",
         "address": "서울특별시 중구 명동길 26",
         "FAC_NAME_en": "Myeongdong Nanta Theater",
-        "FAC_NAME_ja": "明洞ナンタ劇場"
+        "FAC_NAME_ja": "明洞ナンタ劇場",
+        "FAC_NAME_zh": "明洞乱打剧场"
       },
       {
         "X_COORD": "37.5580841736",
@@ -117,7 +125,8 @@
         "PHNE": "02-778-1026~7",
         "address": "서울특별시 중구 퇴계로26길 65",
         "FAC_NAME_en": "Seoul House of Literature",
-        "FAC_NAME_ja": "文学の家ソウル"
+        "FAC_NAME_ja": "文学の家ソウル",
+        "FAC_NAME_zh": "文学之家首尔"
       },
       {
         "X_COORD": "37.5583499463987",
@@ -130,7 +139,8 @@
         "PHNE": "02-6358-5500",
         "address": "서울특별시 중구 퇴계로34길 28 서울남산국악당",
         "FAC_NAME_en": "Seoul Namsan Gugak Center",
-        "FAC_NAME_ja": "ソウル南山国楽堂"
+        "FAC_NAME_ja": "ソウル南山国楽堂",
+        "FAC_NAME_zh": "首尔南山国乐堂"
       },
       {
         "X_COORD": "37.5663174209601",
@@ -143,7 +153,8 @@
         "PHNE": "02-2133-0300",
         "address": "서울특별시 중구 세종대로 110",
         "FAC_NAME_en": "Seoul Library",
-        "FAC_NAME_ja": "ソウル図書館"
+        "FAC_NAME_ja": "ソウル図書館",
+        "FAC_NAME_zh": "首尔图书馆"
       },
       {
         "X_COORD": "37.566738542645766",
@@ -156,7 +167,8 @@
         "PHNE": "02-2080-5727",
         "address": "서울특별시 중구 새문안로 16",
         "FAC_NAME_en": "Agricultural Museum",
-        "FAC_NAME_ja": "農業博物館"
+        "FAC_NAME_ja": "農業博物館",
+        "FAC_NAME_zh": "农业博物馆"
       },
       {
         "X_COORD": "37.5681732680976",
@@ -169,7 +181,8 @@
         "PHNE": "없음",
         "address": "서울 중구 정동길 3 경향신문사건물",
         "FAC_NAME_en": "Kyunghyang Art Hill",
-        "FAC_NAME_ja": "京郷アートヒル"
+        "FAC_NAME_ja": "京郷アートヒル",
+        "FAC_NAME_zh": "京乡艺术山庄"
       },
       {
         "X_COORD": "37.5685952282764",
@@ -182,7 +195,8 @@
         "PHNE": "02-2151-7677",
         "address": "서울특별시 중구 세종대로 135-5",
         "FAC_NAME_en": "Korea Financial History Museum",
-        "FAC_NAME_ja": "韓国金融史博物館"
+        "FAC_NAME_ja": "韓国金融史博物館",
+        "FAC_NAME_zh": "韩国金融史博物馆"
       },
       {
         "X_COORD": "37.5641060692766",
@@ -195,7 +209,8 @@
         "PHNE": "02-2124-8800",
         "address": "서울특별시 중구 덕수궁길 61",
         "FAC_NAME_en": "Seoul Museum of Art Seosomun Main Building",
-        "FAC_NAME_ja": "ソウル市立美術館 西小門本館"
+        "FAC_NAME_ja": "ソウル市立美術館 西小門本館",
+        "FAC_NAME_zh": "首尔市立美术馆 西小门本馆"
       },
       {
         "X_COORD": "37.56204024128875",
@@ -208,7 +223,8 @@
         "PHNE": "02-759-4881",
         "address": "서울특별시 중구 남대문로 39",
         "FAC_NAME_en": "Bank of Korea Money Museum",
-        "FAC_NAME_ja": "韓国銀行 貨幣博物館"
+        "FAC_NAME_ja": "韓国銀行 貨幣博物館",
+        "FAC_NAME_zh": "韩国银行 货币博物馆"
       },
       {
         "X_COORD": "37.5534684886426",
@@ -221,7 +237,8 @@
         "PHNE": "02-3789-1016",
         "address": "서울특별시 중구 소월로 91",
         "FAC_NAME_en": "Ahn Jung-geun Memorial Hall",
-        "FAC_NAME_ja": "安重根義士記念館"
+        "FAC_NAME_ja": "安重根義士記念館",
+        "FAC_NAME_zh": "安重根义士纪念馆"
       },
       {
         "X_COORD": "37.5660868250943",
@@ -234,7 +251,8 @@
         "PHNE": "02-2022-0600",
         "address": "서울특별시 중구 세종대로 99",
         "FAC_NAME_en": "National Museum of Modern and Contemporary Art, Deoksugung",
-        "FAC_NAME_ja": "国立現代美術館 徳寿宮"
+        "FAC_NAME_ja": "国立現代美術館 徳寿宮",
+        "FAC_NAME_zh": "国立现代美术馆 德寿宫"
       },
       {
         "X_COORD": "37.5612890978954",
@@ -247,7 +265,8 @@
         "PHNE": "02-777-0421",
         "address": "서울특별시 중구 퇴계로 지하 214 (충무로역 지하1층 개찰구 안) ",
         "FAC_NAME_en": "Chungmuro Media Center Oh! Jaemidong",
-        "FAC_NAME_ja": "忠武路映像センター オ!ジェミドン"
+        "FAC_NAME_ja": "忠武路映像センター オ!ジェミドン",
+        "FAC_NAME_zh": "忠武路影像中心 哦!财美洞"
       },
       {
         "X_COORD": "37.5673552",
@@ -260,7 +279,8 @@
         "PHNE": "02-2232-8833",
         "address": "서울 중구 마장로 87 (서울중앙시장 지하)",
         "FAC_NAME_en": "Sindang Creative Arcade",
-        "FAC_NAME_ja": "新堂創作アーケード"
+        "FAC_NAME_ja": "新堂創作アーケード",
+        "FAC_NAME_zh": "新堂创作拱廊"
       },
       {
         "X_COORD": "37.5685285762171",
@@ -273,7 +293,8 @@
         "PHNE": "02-6441-3951",
         "address": "서울특별시 중구 청계천로 40 CKL기업지원센터 지하 1층 (한국관광공사 건물)",
         "FAC_NAME_en": "CKL Stage",
-        "FAC_NAME_ja": "CKLステージ"
+        "FAC_NAME_ja": "CKLステージ",
+        "FAC_NAME_zh": "CKL舞台"
       },
       {
         "X_COORD": "37.567895444475",
@@ -286,7 +307,8 @@
         "PHNE": "02-724-6322",
         "address": "서울특별시 중구 세종대로21길 33",
         "FAC_NAME_en": "Chosun Ilbo Art Museum",
-        "FAC_NAME_ja": "朝鮮日報美術館"
+        "FAC_NAME_ja": "朝鮮日報美術館",
+        "FAC_NAME_zh": "朝鲜日报美术馆"
       },
       {
         "X_COORD": "37.5653936",
@@ -299,7 +321,8 @@
         "PHNE": "02-726-4428-9",
         "address": "서울  중구 소공동 1 )",
         "FAC_NAME_en": "Lotte Gallery (Main Branch)",
-        "FAC_NAME_ja": "ロッテ画廊（本店）"
+        "FAC_NAME_ja": "ロッテ画廊（本店）",
+        "FAC_NAME_zh": "乐天画廊（总店）"
       },
       {
         "X_COORD": "37.5581456932929",
@@ -312,7 +335,8 @@
         "PHNE": "02-753-4075",
         "address": "서울특별시 중구 퇴계로18길 66",
         "FAC_NAME_en": "Chojeon Textile Quilt Museum",
-        "FAC_NAME_ja": "草田繊維 キルト博物館"
+        "FAC_NAME_ja": "草田繊維 キルト博物館",
+        "FAC_NAME_zh": "草田纤维 拼布博物馆"
       },
       {
         "X_COORD": "37.5634690",
@@ -325,7 +349,8 @@
         "PHNE": "02-3789-9640",
         "address": "서울시 중구 삼일대로9길 12",
         "FAC_NAME_en": "Samil-ro Changgo Theater",
-        "FAC_NAME_ja": "三一路倉庫劇場"
+        "FAC_NAME_ja": "三一路倉庫劇場",
+        "FAC_NAME_zh": "三一路仓库剧场"
       },
       {
         "X_COORD": "37.5668837502225",
@@ -338,7 +363,8 @@
         "PHNE": "027368050",
         "address": "서울특별시 중구 세종대로 119",
         "FAC_NAME_en": "Seoul Urbanism & Architecture Exhibition Hall",
-        "FAC_NAME_ja": "ソウル都市建築展示館"
+        "FAC_NAME_ja": "ソウル都市建築展示館",
+        "FAC_NAME_zh": "首尔城市建筑展示馆"
       },
       {
         "X_COORD": "37.5550484830696",
@@ -351,7 +377,8 @@
         "PHNE": "02-3783-5995",
         "address": "서울 중구 회현동1가 산 1-44",
         "FAC_NAME_en": "Namsan Park Hohyeondang",
-        "FAC_NAME_ja": "南山公園 好賢堂"
+        "FAC_NAME_ja": "南山公園 好賢堂",
+        "FAC_NAME_zh": "南山公园 好贤堂"
       },
       {
         "X_COORD": "37.5659409687669",
@@ -364,7 +391,8 @@
         "PHNE": "02-2230-6601",
         "address": "서울특별시 중구 퇴계로 387",
         "FAC_NAME_en": "Chungmu Art Center",
-        "FAC_NAME_ja": "忠武アートセンター"
+        "FAC_NAME_ja": "忠武アートセンター",
+        "FAC_NAME_zh": "忠武艺术中心"
       },
       {
         "X_COORD": "37.56672958991572",
@@ -377,7 +405,8 @@
         "PHNE": "02-2133-5641",
         "address": "서울특별시 중구 세종대로 110",
         "FAC_NAME_en": "Seoul City Hall Sky Plaza Gallery",
-        "FAC_NAME_ja": "ソウル市庁 ハヌル広場 ギャラリー"
+        "FAC_NAME_ja": "ソウル市庁 ハヌル広場 ギャラリー",
+        "FAC_NAME_zh": "首尔市厅 天空广场 画廊"
       },
       {
         "X_COORD": "37.5519949082942",
@@ -390,7 +419,8 @@
         "PHNE": "02-2280-4114",
         "address": "서울특별시 중구 장충단로 59",
         "FAC_NAME_en": "National Theater of Korea",
-        "FAC_NAME_ja": "国立劇場"
+        "FAC_NAME_ja": "国立劇場",
+        "FAC_NAME_zh": "国立剧场"
       },
       {
         "X_COORD": "37.5668979260337",
@@ -403,7 +433,8 @@
         "PHNE": "홈페이지 참고",
         "address": "서울특별시 중구 을지로43길 13",
         "FAC_NAME_en": "YK Presents",
-        "FAC_NAME_ja": "YK Presents"
+        "FAC_NAME_ja": "YK Presents",
+        "FAC_NAME_zh": "YK Presents"
       },
       {
         "X_COORD": "37.5512817057142",
@@ -416,7 +447,8 @@
         "PHNE": "02-3298-0918",
         "address": "서울특별시 중구 다산로 75",
         "FAC_NAME_en": "Neutinamu Children's Library",
-        "FAC_NAME_ja": "ヌティナム児童図書館"
+        "FAC_NAME_ja": "ヌティナム児童図書館",
+        "FAC_NAME_zh": "榉树儿童图书馆"
       },
       {
         "X_COORD": "37.5665858405333",
@@ -429,7 +461,8 @@
         "PHNE": "070-7717-6623",
         "address": "서울특별시 중구 을지로 127",
         "FAC_NAME_en": "News Museum Euljiro Branch",
-        "FAC_NAME_ja": "ニュースミュージアム 乙支路店"
+        "FAC_NAME_ja": "ニュースミュージアム 乙支路店",
+        "FAC_NAME_zh": "新闻博物馆 乙支路店"
       },
       {
         "X_COORD": "37.5619920911407",
@@ -442,7 +475,8 @@
         "PHNE": "02-3789-2226",
         "address": "서울특별시 중구 남대문로 52-20",
         "FAC_NAME_en": "Myeongdong Art Breeze",
-        "FAC_NAME_ja": "明洞アートブリーズ"
+        "FAC_NAME_ja": "明洞アートブリーズ",
+        "FAC_NAME_zh": "明洞艺术微风"
       },
       {
         "X_COORD": "37.56781670060353",
@@ -455,7 +489,8 @@
         "PHNE": "02-2153-0201",
         "address": "서울특별시 중구 을지로 281",
         "FAC_NAME_en": "Dongdaemun Stadium Memorial Hall",
-        "FAC_NAME_ja": "東大門運動場記念館"
+        "FAC_NAME_ja": "東大門運動場記念館",
+        "FAC_NAME_zh": "东大门运动场纪念馆"
       },
       {
         "X_COORD": "37.5651113032546",
@@ -468,7 +503,8 @@
         "PHNE": "070-7767-6733",
         "address": "서울특별시 중구 퇴계로 408",
         "FAC_NAME_en": "Sindang Life Culture & Arts Space Ilsang",
-        "FAC_NAME_ja": "新堂生活文化芸術の場 日常"
+        "FAC_NAME_ja": "新堂生活文化芸術の場 日常",
+        "FAC_NAME_zh": "新堂生活文化艺术空间 日常"
       },
       {
         "X_COORD": "37.5659409687669",
@@ -481,7 +517,8 @@
         "PHNE": "02-2230-6600",
         "address": "서울 중구 퇴계로 387 충무아트센터",
         "FAC_NAME_en": "Gallery Sindang",
-        "FAC_NAME_ja": "ギャラリー新堂"
+        "FAC_NAME_ja": "ギャラリー新堂",
+        "FAC_NAME_zh": "新堂画廊"
       },
       {
         "X_COORD": "37.5679960866099",
@@ -494,7 +531,8 @@
         "PHNE": "02-722-1928",
         "address": "서울특별시 중구 덕수궁길 130",
         "FAC_NAME_en": "Jeongdong 1928 Art Center",
-        "FAC_NAME_ja": "貞洞1928 アートセンター"
+        "FAC_NAME_ja": "貞洞1928 アートセンター",
+        "FAC_NAME_zh": "贞洞1928 艺术中心"
       },
       {
         "X_COORD": "37.5578385325826",
@@ -507,7 +545,8 @@
         "PHNE": "02-317-6192",
         "address": "서울 중구 세종대로 14 GRAND CENTRAL A동 5F",
         "FAC_NAME_en": "One-Person Media Complex",
-        "FAC_NAME_ja": "1人メディアコンプレックス"
+        "FAC_NAME_ja": "1人メディアコンプレックス",
+        "FAC_NAME_zh": "1人媒体综合体"
       },
       {
         "X_COORD": "37.5661766361549",
@@ -520,7 +559,8 @@
         "PHNE": "02-2175-1964",
         "address": "서울특별시 중구 정동길 26",
         "FAC_NAME_en": "Ihwa Museum",
-        "FAC_NAME_ja": "梨花博物館"
+        "FAC_NAME_ja": "梨花博物館",
+        "FAC_NAME_zh": "梨花博物馆"
       },
       {
         "X_COORD": "37.5631948764436",
@@ -533,7 +573,8 @@
         "PHNE": "02-2230-6724",
         "address": "서울특별시 중구 퇴계로41길 30  인현문화마루 3층",
         "FAC_NAME_en": "Inhyeon I-eum",
-        "FAC_NAME_ja": "仁峴イウム"
+        "FAC_NAME_ja": "仁峴イウム",
+        "FAC_NAME_zh": "仁岘连接"
       },
       {
         "X_COORD": "37.5589366401553",
@@ -546,7 +587,8 @@
         "PHNE": "02-2260-8563",
         "address": "서울특별시 중구 필동로1길 30",
         "FAC_NAME_en": "Dongguk University Seoul Campus Lee Hae-rang Arts Theater",
-        "FAC_NAME_ja": "東国大学ソウルキャンパス 李海浪芸術劇場"
+        "FAC_NAME_ja": "東国大学ソウルキャンパス 李海浪芸術劇場",
+        "FAC_NAME_zh": "东国大学首尔校区 李海浪艺术剧场"
       },
       {
         "X_COORD": "37.55659103776328",
@@ -559,7 +601,8 @@
         "PHNE": "02-2133-1938",
         "address": "서울특별시 중구 만리재로 215",
         "FAC_NAME_en": "Seoullo Media Canvas",
-        "FAC_NAME_ja": "ソウルロメディアキャンバス"
+        "FAC_NAME_ja": "ソウルロメディアキャンバス",
+        "FAC_NAME_zh": "首尔路媒体画布"
       },
       {
         "X_COORD": "37.564007341132",
@@ -572,7 +615,8 @@
         "PHNE": "02-319-5578",
         "address": "서울특별시 중구 서소문로11길 19 배재학당역사박물관",
         "FAC_NAME_en": "Paichai Hakdang History Museum",
-        "FAC_NAME_ja": "培材学堂歴史博物館"
+        "FAC_NAME_ja": "培材学堂歴史博物館",
+        "FAC_NAME_zh": "培材学堂历史博物馆"
       },
       {
         "X_COORD": "37.561469121354",
@@ -585,7 +629,8 @@
         "PHNE": "02-2231-5143",
         "address": "서울특별시 중구 다산로36가길 25",
         "FAC_NAME_en": "Park Chung-hee House",
-        "FAC_NAME_ja": "朴正熙 家屋"
+        "FAC_NAME_ja": "朴正熙 家屋",
+        "FAC_NAME_zh": "朴正熙故居"
       },
       {
         "X_COORD": "37.5634574532023",
@@ -598,7 +643,8 @@
         "PHNE": "02-3789-2106",
         "address": "서울 중구 명동길 26 유네스코 회관 8층 801호",
         "FAC_NAME_en": "Liszt Institute Hungarian Cultural Center in Korea",
-        "FAC_NAME_ja": "駐韓リスト・ハンガリー文化院"
+        "FAC_NAME_ja": "駐韓リスト・ハンガリー文化院",
+        "FAC_NAME_zh": "驻韩李斯特匈牙利文化院"
       },
       {
         "X_COORD": "37.56682861183312",
@@ -611,7 +657,8 @@
         "PHNE": "02-739-9922",
         "address": "서울특별시 중구 세종대로 110 시민청 지하 1층",
         "FAC_NAME_en": "Gungisi Site Exhibition Hall",
-        "FAC_NAME_ja": "軍器寺遺跡展示室"
+        "FAC_NAME_ja": "軍器寺遺跡展示室",
+        "FAC_NAME_zh": "军器寺遗址展示室"
       },
       {
         "X_COORD": "37.5640414482615",
@@ -624,7 +671,8 @@
         "PHNE": "1644-2003",
         "address": "서울특별시 중구 명동길 35",
         "FAC_NAME_en": "National Theater Company Myeongdong Arts Theater",
-        "FAC_NAME_ja": "国立劇団 明洞芸術劇場"
+        "FAC_NAME_ja": "国立劇団 明洞芸術劇場",
+        "FAC_NAME_zh": "国立剧团 明洞艺术剧场"
       },
       {
         "X_COORD": "37.5602982972447",
@@ -637,7 +685,8 @@
         "PHNE": "02-2270-1131~2",
         "address": "서울특별시 중구 퇴계로36길 10",
         "FAC_NAME_en": "Korea House Folk Theater",
-        "FAC_NAME_ja": "韓国の家 民俗劇場"
+        "FAC_NAME_ja": "韓国の家 民俗劇場",
+        "FAC_NAME_zh": "韩国之家 民俗剧场"
       },
       {
         "X_COORD": "37.56244218046588",
@@ -650,7 +699,8 @@
         "PHNE": "02-3706-3255",
         "address": "서울특별시 중구 명동길 74-2",
         "FAC_NAME_en": "Sisters of St. Paul of Chartres History Museum",
-        "FAC_NAME_ja": "シャルトル聖パウロ修道女会 歴史博物館"
+        "FAC_NAME_ja": "シャルトル聖パウロ修道女会 歴史博物館",
+        "FAC_NAME_zh": "沙特尔圣保罗修女会 历史博物馆"
       },
       {
         "X_COORD": "37.5560581817344",
@@ -663,7 +713,8 @@
         "PHNE": "02-3407-3500",
         "address": "서울 중구 통일로 1 문화역서울284",
         "FAC_NAME_en": "Culture Station Seoul 284",
-        "FAC_NAME_ja": "文化駅ソウル284"
+        "FAC_NAME_ja": "文化駅ソウル284",
+        "FAC_NAME_zh": "文化站首尔284"
       },
       {
         "X_COORD": "37.5647056236712",
@@ -676,7 +727,8 @@
         "PHNE": "02-2274-2121",
         "address": "서울특별시 중구 마른내로 47",
         "FAC_NAME_en": "Myeongbo Art Hall",
-        "FAC_NAME_ja": "明宝アートホール"
+        "FAC_NAME_ja": "明宝アートホール",
+        "FAC_NAME_zh": "明宝艺术厅"
       },
       {
         "X_COORD": "37.56710262553757",
@@ -689,7 +741,8 @@
         "PHNE": "02-2153-0200",
         "address": "서울특별시 중구 을지로 281",
         "FAC_NAME_en": "Dongdaemun History Hall",
-        "FAC_NAME_ja": "東大門歴史館"
+        "FAC_NAME_ja": "東大門歴史館",
+        "FAC_NAME_zh": "东大门历史馆"
       },
       {
         "X_COORD": "37.5576096402862",
@@ -702,7 +755,8 @@
         "PHNE": "02-779-9877 ",
         "address": "서울특별시 중구 퇴계로26가길 82",
         "FAC_NAME_en": "Namsan XR Studio",
-        "FAC_NAME_ja": "南山XRスタジオ"
+        "FAC_NAME_ja": "南山XRスタジオ",
+        "FAC_NAME_zh": "南山XR工作室"
       },
       {
         "X_COORD": "37.5595492748546",
@@ -715,7 +769,8 @@
         "PHNE": "02-3444-7178",
         "address": "서울 중구 서애로 33 5F",
         "FAC_NAME_en": "MAF",
-        "FAC_NAME_ja": "マフMAF"
+        "FAC_NAME_ja": "マフMAF",
+        "FAC_NAME_zh": "玛夫MAF"
       },
       {
         "X_COORD": "37.5605678517575",
@@ -728,7 +783,8 @@
         "PHNE": "02-3147-2401",
         "address": "서울특별시 중구 칠패로 5",
         "FAC_NAME_en": "Seosomun Shrine History Museum",
-        "FAC_NAME_ja": "西小門聖地 歴史博物館"
+        "FAC_NAME_ja": "西小門聖地 歴史博物館",
+        "FAC_NAME_zh": "西小门圣地 历史博物馆"
       },
       {
         "X_COORD": "37.5661391831606",
@@ -741,7 +797,8 @@
         "PHNE": "02-2288-2864",
         "address": "서울특별시 중구 을지로 170 을지트윈타워 서관 3층",
         "FAC_NAME_en": "Prugio Art Hall",
-        "FAC_NAME_ja": "プルジオ アートホール"
+        "FAC_NAME_ja": "プルジオ アートホール",
+        "FAC_NAME_zh": "普吉奥艺术厅"
       },
       {
         "X_COORD": "37.5680445876689",
@@ -754,7 +811,8 @@
         "PHNE": "02-2153-0770",
         "address": "서울시 중구 을지로 281, DDP 지하2층 DDP마켓 BtheB",
         "FAC_NAME_en": "B the B",
-        "FAC_NAME_ja": "ビーザビー（B the B） "
+        "FAC_NAME_ja": "ビーザビー（B the B） ",
+        "FAC_NAME_zh": "B the B"
       },
       {
         "X_COORD": "37.5577104175282",
@@ -767,7 +825,8 @@
         "PHNE": "0507-1410-0246",
         "address": "서울특별시 중구 퇴계로18길 77",
         "FAC_NAME_en": "ALT SPACE",
-        "FAC_NAME_ja": "ALT SPACE"
+        "FAC_NAME_ja": "ALT SPACE",
+        "FAC_NAME_zh": "ALT SPACE"
       },
       {
         "X_COORD": "37.5687746427352",
@@ -780,7 +839,8 @@
         "PHNE": "02-2290-6803",
         "address": "서울 중구 남대문로1가 9",
         "FAC_NAME_en": "Cheonggyecheon Gwanggyo Gallery",
-        "FAC_NAME_ja": "清渓川 広橋ギャラリー"
+        "FAC_NAME_ja": "清渓川 広橋ギャラリー",
+        "FAC_NAME_zh": "清溪川 广桥画廊"
       },
       {
         "X_COORD": "37.55821033013079",
@@ -793,7 +853,8 @@
         "PHNE": "02-2260-3722~3",
         "address": "서울특별시 중구 필동로1길 30",
         "FAC_NAME_en": "Dongguk University Museum",
-        "FAC_NAME_ja": "東国大学 博物館"
+        "FAC_NAME_ja": "東国大学 博物館",
+        "FAC_NAME_zh": "东国大学 博物馆"
       },
       {
         "X_COORD": "37.561326262637",
@@ -806,7 +867,8 @@
         "PHNE": "02-739-9517",
         "address": "서울 중구 서애로1길 11 충무로 헤센스마트 상가201호",
         "FAC_NAME_en": "Space Chaebi",
-        "FAC_NAME_ja": "空間チェビ"
+        "FAC_NAME_ja": "空間チェビ",
+        "FAC_NAME_zh": "空间彩碑"
       },
       {
         "X_COORD": " 37.56787",
@@ -819,7 +881,8 @@
         "PHNE": "02-6956-3501",
         "address": "서울 중구 창경궁로5다길 18, 3층 ",
         "FAC_NAME_en": "PS Center",
-        "FAC_NAME_ja": "PS CENTER"
+        "FAC_NAME_ja": "PS CENTER",
+        "FAC_NAME_zh": "PS CENTER"
       },
       {
         "X_COORD": "37.5657793622516",
@@ -832,7 +895,8 @@
         "PHNE": "정보없음",
         "address": "서울특별시 중구 퇴계로 411 뮤지엄멋 m1, m2",
         "FAC_NAME_en": "Museum Mut",
-        "FAC_NAME_ja": "ミュージアムモッ（museum mut）"
+        "FAC_NAME_ja": "ミュージアムモッ（museum mut）",
+        "FAC_NAME_zh": "时尚博物馆（museum mut）"
       },
       {
         "X_COORD": "37.553904433191235",
@@ -845,7 +909,8 @@
         "PHNE": "02-779-9870",
         "address": "서울 중구 회현동1가 100-267",
         "FAC_NAME_en": "Hanyangdoseong Relics Exhibition Hall",
-        "FAC_NAME_ja": "漢陽都城 遺跡展示館"
+        "FAC_NAME_ja": "漢陽都城 遺跡展示館",
+        "FAC_NAME_zh": "汉阳都城 遗址展示馆"
       },
       {
         "X_COORD": "37.5598688323642",
@@ -858,7 +923,8 @@
         "PHNE": "02-360-4114",
         "address": "서울특별시 중구 청파로 463",
         "FAC_NAME_en": "Korea Economic Daily Building",
-        "FAC_NAME_ja": "韓国経済新聞ビル"
+        "FAC_NAME_ja": "韓国経済新聞ビル",
+        "FAC_NAME_zh": "韩国经济新闻大厦"
       },
       {
         "X_COORD": "37.5681732680976",
@@ -871,7 +937,8 @@
         "PHNE": "02-741-9782",
         "address": "서울특별시 중구 정동길 3 경향아트힐 2층",
         "FAC_NAME_en": "Seoul Art Cinema",
-        "FAC_NAME_ja": "ソウルアートシネマ"
+        "FAC_NAME_ja": "ソウルアートシネマ",
+        "FAC_NAME_zh": "首尔艺术电影院"
       },
       {
         "X_COORD": "37.5685159133492",
@@ -884,7 +951,8 @@
         "PHNE": "02-6250-5352",
         "address": "서울 중구 청계천로 24 케이스퀘어빌딩 지하 1층",
         "FAC_NAME_en": "The Cave Seoul",
-        "FAC_NAME_ja": "ザ・ケイブ ソウル"
+        "FAC_NAME_ja": "ザ・ケイブ ソウル",
+        "FAC_NAME_zh": "The Cave 首尔"
       },
       {
         "X_COORD": "37.5671088579851",
@@ -897,7 +965,8 @@
         "PHNE": "02-739-5422~4",
         "address": "서울특별시 중구 새문안로 22 문화일보홀",
         "FAC_NAME_en": "Cheongchun Theater",
-        "FAC_NAME_ja": "青春劇場"
+        "FAC_NAME_ja": "青春劇場",
+        "FAC_NAME_zh": "青春剧场"
       },
       {
         "X_COORD": "37.5668837502225",
@@ -910,7 +979,8 @@
         "PHNE": "0507-1371-0664",
         "address": "서울특별시 중구 세종대로 119",
         "FAC_NAME_en": "Regional Tourism Antenna Shop",
-        "FAC_NAME_ja": "地域観光 アンテナショップ"
+        "FAC_NAME_ja": "地域観光 アンテナショップ",
+        "FAC_NAME_zh": "地区观光 特产展示店"
       },
       {
         "X_COORD": "37.5560473866483",
@@ -923,7 +993,8 @@
         "PHNE": "02-2236-6247",
         "address": "서울 중구 다산로 138 B1",
         "FAC_NAME_en": "RNL Rose & Lime Gallery",
-        "FAC_NAME_ja": "RNL ローズアンドライム ギャラリー"
+        "FAC_NAME_ja": "RNL ローズアンドライム ギャラリー",
+        "FAC_NAME_zh": "RNL玫瑰青柠画廊"
       },
       {
         "X_COORD": "37.566234595888545",
@@ -936,7 +1007,8 @@
         "PHNE": "02-777-4258",
         "address": "서울특별시 중구 정동길 26",
         "FAC_NAME_en": "Ewha Girls' High School Centennial Memorial Hall",
-        "FAC_NAME_ja": "梨花女子高 100周年記念館"
+        "FAC_NAME_ja": "梨花女子高 100周年記念館",
+        "FAC_NAME_zh": "梨花女高 100周年纪念馆"
       },
       {
         "X_COORD": "37.5587419129145",
@@ -949,7 +1021,8 @@
         "PHNE": "02-790-1888",
         "address": "서울특별시 중구 소공로 36",
         "FAC_NAME_en": "Moriham",
-        "FAC_NAME_ja": "モリハム"
+        "FAC_NAME_ja": "モリハム",
+        "FAC_NAME_zh": "摩利函"
       },
       {
         "X_COORD": "37.566806928366",
@@ -962,7 +1035,8 @@
         "PHNE": "02-751-1500",
         "address": "서울특별시 중구 세종대로19길 16",
         "FAC_NAME_en": "National Jeongdong Theater Cecil",
-        "FAC_NAME_ja": "国立貞洞劇場 セシル"
+        "FAC_NAME_ja": "国立貞洞劇場 セシル",
+        "FAC_NAME_zh": "国立贞洞剧场 塞西尔"
       },
       {
         "X_COORD": "37.5664621449086",
@@ -975,7 +1049,8 @@
         "PHNE": "없음",
         "address": "서울특별시 중구 을지로3가 수표로 58-1 3F",
         "FAC_NAME_en": "Space Catalog",
-        "FAC_NAME_ja": "スペース カタログ"
+        "FAC_NAME_ja": "スペース カタログ",
+        "FAC_NAME_zh": "空间目录"
       }
     ]
   },
