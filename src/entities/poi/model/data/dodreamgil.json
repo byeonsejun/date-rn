@@ -16654,7 +16654,8 @@
         "DETAIL_COURSE": "시흥계곡 입구~산복약수터연못~생태통로~호암폭포~호압사",
         "COURSE_LEVEL": "3",
         "CPI_NAME_en": "Heundeulbawi (Rocking Rock) Viewpoint",
-        "CPI_NAME_ja": "揺れ岩展望台"
+        "CPI_NAME_ja": "揺れ岩展望台",
+        "CPI_NAME_zh": "摇岩观景台"
       },
       {
         "latitude": 37.446324192236695,
@@ -16668,7 +16669,8 @@
         "DETAIL_COURSE": "시흥계곡 입구~산복약수터연못~생태통로~호암폭포~호압사",
         "COURSE_LEVEL": "3",
         "CPI_NAME_en": "Hanumul (Grand Well)",
-        "CPI_NAME_ja": "ハヌムル"
+        "CPI_NAME_ja": "ハヌムル",
+        "CPI_NAME_zh": "大井"
       },
       {
         "latitude": 37.45038287050647,
@@ -16682,7 +16684,8 @@
         "DETAIL_COURSE": "시흥계곡 입구~산복약수터연못~생태통로~호암폭포~호압사",
         "COURSE_LEVEL": "3",
         "CPI_NAME_en": "Bus Stop (Beomil Bus Terminal)",
-        "CPI_NAME_ja": "バス停（汎一運輸終点）"
+        "CPI_NAME_ja": "バス停（汎一運輸終点）",
+        "CPI_NAME_zh": "公交站（汎一运输终点）"
       },
       {
         "latitude": 37.446661383995895,
@@ -16696,7 +16699,8 @@
         "DETAIL_COURSE": "시흥계곡 입구~산복약수터연못~생태통로~호암폭포~호압사",
         "COURSE_LEVEL": "3",
         "CPI_NAME_en": "Siheung Valley Entrance",
-        "CPI_NAME_ja": "始興渓谷入口"
+        "CPI_NAME_ja": "始興渓谷入口",
+        "CPI_NAME_zh": "始兴溪谷入口"
       },
       {
         "latitude": 37.45263196788443,
@@ -16710,7 +16714,8 @@
         "DETAIL_COURSE": "시흥계곡 입구~산복약수터연못~생태통로~호암폭포~호압사",
         "COURSE_LEVEL": "3",
         "CPI_NAME_en": "Bus Stop (Hoapsa Entrance)",
-        "CPI_NAME_ja": "バス停（虎壓寺入口）"
+        "CPI_NAME_ja": "バス停（虎壓寺入口）",
+        "CPI_NAME_zh": "公交站（虎压寺入口）"
       },
       {
         "latitude": 37.44429467427156,
@@ -16724,7 +16729,8 @@
         "DETAIL_COURSE": "시흥계곡 입구~산복약수터연못~생태통로~호암폭포~호압사",
         "COURSE_LEVEL": "3",
         "CPI_NAME_en": "Sanbok Spring Pond",
-        "CPI_NAME_ja": "山腹湧水地の池"
+        "CPI_NAME_ja": "山腹湧水地の池",
+        "CPI_NAME_zh": "山腹矿泉池塘"
       },
       {
         "latitude": 37.445614187299775,
@@ -16738,7 +16744,8 @@
         "DETAIL_COURSE": "시흥계곡 입구~산복약수터연못~생태통로~호암폭포~호압사",
         "COURSE_LEVEL": "3",
         "CPI_NAME_en": "Ecological Corridor",
-        "CPI_NAME_ja": "生態通路"
+        "CPI_NAME_ja": "生態通路",
+        "CPI_NAME_zh": "生态通道"
       },
       {
         "latitude": 37.445579901794176,
@@ -16752,7 +16759,8 @@
         "DETAIL_COURSE": "시흥계곡 입구~산복약수터연못~생태통로~호암폭포~호압사",
         "COURSE_LEVEL": "3",
         "CPI_NAME_en": "Hoam Waterfall",
-        "CPI_NAME_ja": "虎巌滝"
+        "CPI_NAME_ja": "虎巌滝",
+        "CPI_NAME_zh": "虎岩瀑布"
       },
       {
         "latitude": 37.443707346656154,
@@ -16766,7 +16774,8 @@
         "DETAIL_COURSE": "시흥계곡 입구~산복약수터연못~생태통로~호암폭포~호압사",
         "COURSE_LEVEL": "3",
         "CPI_NAME_en": "Kalbawi (Knife Rock) Viewpoint",
-        "CPI_NAME_ja": "刀岩展望台"
+        "CPI_NAME_ja": "刀岩展望台",
+        "CPI_NAME_zh": "刀岩观景台"
       },
       {
         "latitude": 37.44576468520211,
@@ -16780,7 +16789,8 @@
         "DETAIL_COURSE": "시흥계곡 입구~산복약수터연못~생태통로~호암폭포~호압사",
         "COURSE_LEVEL": "3",
         "CPI_NAME_en": "Buryeongam Hermitage",
-        "CPI_NAME_ja": "佛影庵"
+        "CPI_NAME_ja": "佛影庵",
+        "CPI_NAME_zh": "佛影庵"
       },
       {
         "latitude": 37.45287556430224,
@@ -16794,7 +16804,8 @@
         "DETAIL_COURSE": "시흥계곡 입구~산복약수터연못~생태통로~호암폭포~호압사",
         "COURSE_LEVEL": "3",
         "CPI_NAME_en": "Hoapsa Temple",
-        "CPI_NAME_ja": "虎壓寺"
+        "CPI_NAME_ja": "虎壓寺",
+        "CPI_NAME_zh": "虎压寺"
       },
       {
         "latitude": 37.47240964262705,
@@ -16808,7 +16819,8 @@
         "DETAIL_COURSE": "청룡산 공원~누수식 생태연못~청룡상 산림욕장",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Gwanak English Village",
-        "CPI_NAME_ja": "冠岳英語村"
+        "CPI_NAME_ja": "冠岳英語村",
+        "CPI_NAME_zh": "冠岳英语村"
       },
       {
         "latitude": 37.48122841660816,
@@ -16822,7 +16834,8 @@
         "DETAIL_COURSE": "청룡산 공원~누수식 생태연못~청룡상 산림욕장",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Seoul National University Station Exit 3",
-        "CPI_NAME_ja": "ソウル大入口駅3番出入口"
+        "CPI_NAME_ja": "ソウル大入口駅3番出入口",
+        "CPI_NAME_zh": "首尔大入口站3号出入口"
       },
       {
         "latitude": 37.47118133195813,
@@ -16836,7 +16849,8 @@
         "DETAIL_COURSE": "청룡산 공원~누수식 생태연못~청룡상 산림욕장",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Cheongnyongsan Forest Bathing Area",
-        "CPI_NAME_ja": "青龍山森林浴場"
+        "CPI_NAME_ja": "青龍山森林浴場",
+        "CPI_NAME_zh": "青龙山森林浴场"
       },
       {
         "latitude": 37.47416367545746,
@@ -16850,7 +16864,8 @@
         "DETAIL_COURSE": "청룡산 공원~누수식 생태연못~청룡상 산림욕장",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Cheongnyongsan Seepage-type Ecological Pond",
-        "CPI_NAME_ja": "青龍山漏水式生態池"
+        "CPI_NAME_ja": "青龍山漏水式生態池",
+        "CPI_NAME_zh": "青龙山漏水式生态池"
       },
       {
         "latitude": 37.47583260983123,
@@ -16864,7 +16879,8 @@
         "DETAIL_COURSE": "청룡산 공원~누수식 생태연못~청룡상 산림욕장",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Cheongnyongsan Ecological Pond",
-        "CPI_NAME_ja": "青龍山生態池"
+        "CPI_NAME_ja": "青龍山生態池",
+        "CPI_NAME_zh": "青龙山生态池"
       },
       {
         "latitude": 37.47628087751954,
@@ -16878,7 +16894,8 @@
         "DETAIL_COURSE": "청룡산 공원~누수식 생태연못~청룡상 산림욕장",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Cheongnyongsan Park",
-        "CPI_NAME_ja": "青龍山公園"
+        "CPI_NAME_ja": "青龍山公園",
+        "CPI_NAME_zh": "青龙山公园"
       },
       {
         "latitude": 37.476761568367785,
@@ -16892,7 +16909,8 @@
         "DETAIL_COURSE": "청룡산 공원~누수식 생태연못~청룡상 산림욕장",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Forest Trail Entrance",
-        "CPI_NAME_ja": "森の道入口"
+        "CPI_NAME_ja": "森の道入口",
+        "CPI_NAME_zh": "林间步道入口"
       },
       {
         "latitude": 37.47065065766139,
@@ -16906,7 +16924,8 @@
         "DETAIL_COURSE": "감로천생태공원~금천전망대~산림감시초소~호압사입구 사거리",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Bus Stop (Community Culture & Sports Center)",
-        "CPI_NAME_ja": "バス停（区民文化体育センター）"
+        "CPI_NAME_ja": "バス停（区民文化体育センター）",
+        "CPI_NAME_zh": "公交站（区民文化体育中心）"
       },
       {
         "latitude": 37.46909970535705,
@@ -16920,7 +16939,8 @@
         "DETAIL_COURSE": "감로천생태공원~금천전망대~산림감시초소~호압사입구 사거리",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Gamnocheon Ecology Park",
-        "CPI_NAME_ja": "甘露川生態公園"
+        "CPI_NAME_ja": "甘露川生態公園",
+        "CPI_NAME_zh": "甘露川生态公园"
       },
       {
         "latitude": 37.46886504027851,
@@ -16934,7 +16954,8 @@
         "DETAIL_COURSE": "감로천생태공원~금천전망대~산림감시초소~호압사입구 사거리",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Geumcheon Viewpoint",
-        "CPI_NAME_ja": "衿川展望台"
+        "CPI_NAME_ja": "衿川展望台",
+        "CPI_NAME_zh": "衿川观景台"
       },
       {
         "latitude": 37.468310133560884,
@@ -16948,7 +16969,8 @@
         "DETAIL_COURSE": "감로천생태공원~금천전망대~산림감시초소~호압사입구 사거리",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Sanullim Bridge",
-        "CPI_NAME_ja": "サンウリム橋"
+        "CPI_NAME_ja": "サンウリム橋",
+        "CPI_NAME_zh": "山鸣桥"
       },
       {
         "latitude": 37.46724611251364,
@@ -16962,7 +16984,8 @@
         "DETAIL_COURSE": "감로천생태공원~금천전망대~산림감시초소~호압사입구 사거리",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Wildflower Garden",
-        "CPI_NAME_ja": "野生草花園"
+        "CPI_NAME_ja": "野生草花園",
+        "CPI_NAME_zh": "野生草花园"
       },
       {
         "latitude": 37.45722202528777,
@@ -16976,7 +16999,8 @@
         "DETAIL_COURSE": "감로천생태공원~금천전망대~산림감시초소~호압사입구 사거리",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Forest Watch Post",
-        "CPI_NAME_ja": "森林監視哨所"
+        "CPI_NAME_ja": "森林監視哨所",
+        "CPI_NAME_zh": "森林监视哨所"
       },
       {
         "latitude": 37.452970499313246,
@@ -16990,7 +17014,8 @@
         "DETAIL_COURSE": "감로천생태공원~금천전망대~산림감시초소~호압사입구 사거리",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Hoapsa Entrance Intersection",
-        "CPI_NAME_ja": "虎壓寺入口交差点"
+        "CPI_NAME_ja": "虎壓寺入口交差点",
+        "CPI_NAME_zh": "虎压寺入口十字路口"
       },
       {
         "latitude": 37.47706583776497,
@@ -17004,7 +17029,8 @@
         "DETAIL_COURSE": "감로천생태공원~금천전망대~산림감시초소~호압사입구 사거리",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Bus Stop (Doksan High School)",
-        "CPI_NAME_ja": "バス停（禿山高等学校）"
+        "CPI_NAME_ja": "バス停（禿山高等学校）",
+        "CPI_NAME_zh": "公交站（秃山高中）"
       },
       {
         "latitude": 37.47208097367369,
@@ -17018,7 +17044,8 @@
         "DETAIL_COURSE": "감로천생태공원~금천전망대~산림감시초소~호압사입구 사거리",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Bus Stop (New Seoul Apartment)",
-        "CPI_NAME_ja": "バス停（ニューソウルアパート）"
+        "CPI_NAME_ja": "バス停（ニューソウルアパート）",
+        "CPI_NAME_zh": "公交站（新首尔公寓）"
       },
       {
         "latitude": 37.462588371909675,
@@ -17032,7 +17059,8 @@
         "DETAIL_COURSE": "감로천생태공원~금천전망대~산림감시초소~호압사입구 사거리",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Bus Stop (Heungil Elementary School), Sangisuk Park",
-        "CPI_NAME_ja": "バス停（興一小学校）・山裾公園"
+        "CPI_NAME_ja": "バス停（興一小学校）・山裾公園",
+        "CPI_NAME_zh": "公交站（兴一小学）、山脚公园"
       },
       {
         "latitude": 37.47329379825278,
@@ -17046,7 +17074,8 @@
         "DETAIL_COURSE": "감로천생태공원~금천전망대~산림감시초소~호압사입구 사거리",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Chowon Apartment",
-        "CPI_NAME_ja": "草原アパート"
+        "CPI_NAME_ja": "草原アパート",
+        "CPI_NAME_zh": "草原公寓"
       },
       {
         "latitude": 37.47123866727099,
@@ -17060,7 +17089,8 @@
         "DETAIL_COURSE": "감로천생태공원~금천전망대~산림감시초소~호압사입구 사거리",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Bus Stop (Urim Market, Nangok Health Center)",
-        "CPI_NAME_ja": "バス停（雨林市場・蘭谷保健分所）"
+        "CPI_NAME_ja": "バス停（雨林市場・蘭谷保健分所）",
+        "CPI_NAME_zh": "公交站（雨林市场、兰谷保健分所）"
       },
       {
         "latitude": 37.463655687609645,
@@ -17074,7 +17104,8 @@
         "DETAIL_COURSE": "감로천생태공원~금천전망대~산림감시초소~호압사입구 사거리",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Nanhyang 15-gil",
-        "CPI_NAME_ja": "蘭香15ギル"
+        "CPI_NAME_ja": "蘭香15ギル",
+        "CPI_NAME_zh": "兰香15街"
       },
       {
         "latitude": 37.46144735875355,
@@ -17088,7 +17119,8 @@
         "DETAIL_COURSE": "감로천생태공원~금천전망대~산림감시초소~호압사입구 사거리",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Nanhyang 9-gil",
-        "CPI_NAME_ja": "蘭香9ギル"
+        "CPI_NAME_ja": "蘭香9ギル",
+        "CPI_NAME_zh": "兰香9街"
       },
       {
         "latitude": 37.46156594537248,
@@ -17102,7 +17134,8 @@
         "DETAIL_COURSE": "감로천생태공원~금천전망대~산림감시초소~호압사입구 사거리",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Hana Eoullim Apartment",
-        "CPI_NAME_ja": "ハナオウリムアパート"
+        "CPI_NAME_ja": "ハナオウリムアパート",
+        "CPI_NAME_zh": "哈娜和谐公寓"
       },
       {
         "latitude": 37.47047073116887,
@@ -17116,7 +17149,8 @@
         "DETAIL_COURSE": "감로천생태공원~금천전망대~산림감시초소~호압사입구 사거리",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Geumcheon Community Culture & Sports Center",
-        "CPI_NAME_ja": "衿川区民文化体育センター"
+        "CPI_NAME_ja": "衿川区民文化体育センター",
+        "CPI_NAME_zh": "衿川区民文化体育中心"
       },
       {
         "latitude": 37.467566753505906,
@@ -17130,7 +17164,8 @@
         "DETAIL_COURSE": "감로천생태공원~금천전망대~산림감시초소~호압사입구 사거리",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Geumcheon Information Library",
-        "CPI_NAME_ja": "衿川区立情報図書館"
+        "CPI_NAME_ja": "衿川区立情報図書館",
+        "CPI_NAME_zh": "衿川区立信息图书馆"
       },
       {
         "latitude": 37.46952575805627,
@@ -17144,7 +17179,8 @@
         "DETAIL_COURSE": " 안국사~낙성대공원",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Nakseongdae Observatory",
-        "CPI_NAME_ja": "落星台天文台"
+        "CPI_NAME_ja": "落星台天文台",
+        "CPI_NAME_zh": "落星台天文台"
       },
       {
         "latitude": 37.47224939347587,
@@ -17158,7 +17194,8 @@
         "DETAIL_COURSE": " 안국사~낙성대공원",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Bus Stop (Nakseongdae Park, English Village)",
-        "CPI_NAME_ja": "落星台公園・英語村バス停"
+        "CPI_NAME_ja": "落星台公園・英語村バス停",
+        "CPI_NAME_zh": "落星台公园、英语村公交站"
       },
       {
         "latitude": 37.47158768467377,
@@ -17172,7 +17209,8 @@
         "DETAIL_COURSE": " 안국사~낙성대공원",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Nakseongdae Park",
-        "CPI_NAME_ja": "落星台公園"
+        "CPI_NAME_ja": "落星台公園",
+        "CPI_NAME_zh": "落星台公园"
       },
       {
         "latitude": 37.47068578551463,
@@ -17186,7 +17224,8 @@
         "DETAIL_COURSE": " 안국사~낙성대공원",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Angguksa Temple",
-        "CPI_NAME_ja": "安国寺"
+        "CPI_NAME_ja": "安国寺",
+        "CPI_NAME_zh": "安国寺"
       },
       {
         "latitude": 37.467354742454376,
@@ -17200,7 +17239,8 @@
         "DETAIL_COURSE": " 관음사~상록약수터",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Gwaneumsa Temple",
-        "CPI_NAME_ja": "観音寺"
+        "CPI_NAME_ja": "観音寺",
+        "CPI_NAME_zh": "观音寺"
       },
       {
         "latitude": 37.46693897783585,
@@ -17214,7 +17254,8 @@
         "DETAIL_COURSE": " 관음사~상록약수터",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Sangnok Spring",
-        "CPI_NAME_ja": "常緑湧水地"
+        "CPI_NAME_ja": "常緑湧水地",
+        "CPI_NAME_zh": "常绿矿泉处"
       },
       {
         "latitude": 37.47593956477776,
@@ -17228,7 +17269,8 @@
         "DETAIL_COURSE": " 관음사~상록약수터",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Sadang Station Exit 4 (Subway Lines 2, 4)",
-        "CPI_NAME_ja": "地下鉄2・4号線 舎堂駅4番出入口"
+        "CPI_NAME_ja": "地下鉄2・4号線 舎堂駅4番出入口",
+        "CPI_NAME_zh": "地铁2、4号线 舍堂站4号出入口"
       },
       {
         "latitude": 37.46252030063447,
@@ -17242,7 +17284,8 @@
         "DETAIL_COURSE": " 샘말공원~맨발공원~약수암~신우초등학교",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Sinwoo Elementary School",
-        "CPI_NAME_ja": "信友小学校"
+        "CPI_NAME_ja": "信友小学校",
+        "CPI_NAME_zh": "信友小学"
       },
       {
         "latitude": 37.45922642829873,
@@ -17256,7 +17299,8 @@
         "DETAIL_COURSE": " 샘말공원~맨발공원~약수암~신우초등학교",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Yaksuam Children's Park",
-        "CPI_NAME_ja": "薬水庵児童公園"
+        "CPI_NAME_ja": "薬水庵児童公園",
+        "CPI_NAME_zh": "药水庵儿童公园"
       },
       {
         "latitude": 37.460317027864534,
@@ -17270,7 +17314,8 @@
         "DETAIL_COURSE": " 샘말공원~맨발공원~약수암~신우초등학교",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Helipad",
-        "CPI_NAME_ja": "ヘリポート"
+        "CPI_NAME_ja": "ヘリポート",
+        "CPI_NAME_zh": "直升机坪"
       },
       {
         "latitude": 37.460427747943015,
@@ -17284,7 +17329,8 @@
         "DETAIL_COURSE": " 샘말공원~맨발공원~약수암~신우초등학교",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Seongjuam Fork",
-        "CPI_NAME_ja": "聖住庵の分かれ道"
+        "CPI_NAME_ja": "聖住庵の分かれ道",
+        "CPI_NAME_zh": "圣住庵岔路"
       },
       {
         "latitude": 37.46142655744112,
@@ -17298,7 +17344,8 @@
         "DETAIL_COURSE": " 샘말공원~맨발공원~약수암~신우초등학교",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Yaksuam Hermitage",
-        "CPI_NAME_ja": "薬水庵"
+        "CPI_NAME_ja": "薬水庵",
+        "CPI_NAME_zh": "药水庵"
       },
       {
         "latitude": 37.468612335991544,
@@ -17312,7 +17359,8 @@
         "DETAIL_COURSE": " 샘말공원~맨발공원~약수암~신우초등학교",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Gwanaksan Park",
-        "CPI_NAME_ja": "冠岳山公園"
+        "CPI_NAME_ja": "冠岳山公園",
+        "CPI_NAME_zh": "冠岳山公园"
       },
       {
         "latitude": 37.46671901261006,
@@ -17326,7 +17374,8 @@
         "DETAIL_COURSE": " 샘말공원~맨발공원~약수암~신우초등학교",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Barefoot Park",
-        "CPI_NAME_ja": "裸足公園"
+        "CPI_NAME_ja": "裸足公園",
+        "CPI_NAME_zh": "赤脚公园"
       },
       {
         "latitude": 37.46408756654729,
@@ -17340,7 +17389,8 @@
         "DETAIL_COURSE": " 샘말공원~맨발공원~약수암~신우초등학교",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Saemmal Park",
-        "CPI_NAME_ja": "セムマル公園"
+        "CPI_NAME_ja": "セムマル公園",
+        "CPI_NAME_zh": "泉村公园"
       },
       {
         "latitude": 37.465315553937735,
@@ -17354,7 +17404,8 @@
         "DETAIL_COURSE": " 샘말공원~맨발공원~약수암~신우초등학교",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Bus Stop (Shindonga Apartment)",
-        "CPI_NAME_ja": "バス停（新東亜アパート）"
+        "CPI_NAME_ja": "バス停（新東亜アパート）",
+        "CPI_NAME_zh": "公交站（新东亚公寓）"
       },
       {
         "latitude": 37.46044326974018,
@@ -17368,7 +17419,8 @@
         "DETAIL_COURSE": " 샘말공원~맨발공원~약수암~신우초등학교",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Bus Stop (Sanjang Apartment)",
-        "CPI_NAME_ja": "バス停（山荘アパート）"
+        "CPI_NAME_ja": "バス停（山荘アパート）",
+        "CPI_NAME_zh": "公交站（山庄公寓）"
       },
       {
         "latitude": 37.45522874648625,
@@ -17382,7 +17434,8 @@
         "DETAIL_COURSE": " 샘말공원~맨발공원~약수암~신우초등학교",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Sanjang Spring",
-        "CPI_NAME_ja": "山荘湧水地"
+        "CPI_NAME_ja": "山荘湧水地",
+        "CPI_NAME_zh": "山庄矿泉处"
       },
       {
         "latitude": 37.45772432484125,
@@ -17396,7 +17449,8 @@
         "DETAIL_COURSE": " 샘말공원~맨발공원~약수암~신우초등학교",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Seongjuam Hermitage",
-        "CPI_NAME_ja": "聖住庵"
+        "CPI_NAME_ja": "聖住庵",
+        "CPI_NAME_zh": "圣住庵"
       },
       {
         "latitude": 37.45873190828122,
@@ -17410,7 +17464,8 @@
         "DETAIL_COURSE": " 샘말공원~맨발공원~약수암~신우초등학교",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Bus Stop (Samseongsan Holy Site)",
-        "CPI_NAME_ja": "バス停（三聖山聖地）"
+        "CPI_NAME_ja": "バス停（三聖山聖地）",
+        "CPI_NAME_zh": "公交站（三圣山圣地）"
       },
       {
         "latitude": 37.45846794326928,
@@ -17424,7 +17479,8 @@
         "DETAIL_COURSE": " 샘말공원~맨발공원~약수암~신우초등학교",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Gwanakjeong Pavilion",
-        "CPI_NAME_ja": "冠岳亭"
+        "CPI_NAME_ja": "冠岳亭",
+        "CPI_NAME_zh": "冠岳亭"
       },
       {
         "latitude": 37.45900943031892,
@@ -17438,7 +17494,8 @@
         "DETAIL_COURSE": " 샘말공원~맨발공원~약수암~신우초등학교",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Yaksusa Temple",
-        "CPI_NAME_ja": "薬水寺"
+        "CPI_NAME_ja": "薬水寺",
+        "CPI_NAME_zh": "药水寺"
       },
       {
         "latitude": 37.461276006461496,
@@ -17452,7 +17509,8 @@
         "DETAIL_COURSE": " 관악산호수공원~용천수~관악산야외식물원",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Gwanaksan Outdoor Botanical Garden",
-        "CPI_NAME_ja": "冠岳山野外植物園"
+        "CPI_NAME_ja": "冠岳山野外植物園",
+        "CPI_NAME_zh": "冠岳山户外植物园"
       },
       {
         "latitude": 37.44056053273445,
@@ -17466,7 +17524,8 @@
         "DETAIL_COURSE": " 관악산호수공원~용천수~관악산야외식물원",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Rest Area Hub",
-        "CPI_NAME_ja": "休憩所拠点"
+        "CPI_NAME_ja": "休憩所拠点",
+        "CPI_NAME_zh": "休息处据点"
       },
       {
         "latitude": 37.44712533722971,
@@ -17480,7 +17539,8 @@
         "DETAIL_COURSE": " 관악산호수공원~용천수~관악산야외식물원",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Campsite 4 Starting Point",
-        "CPI_NAME_ja": "第4野営場起点"
+        "CPI_NAME_ja": "第4野営場起点",
+        "CPI_NAME_zh": "第4露营场起点"
       },
       {
         "latitude": 37.45835206338055,
@@ -17494,7 +17554,8 @@
         "DETAIL_COURSE": " 관악산호수공원~용천수~관악산야외식물원",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Gwanaksan Lake Park",
-        "CPI_NAME_ja": "冠岳山湖水公園"
+        "CPI_NAME_ja": "冠岳山湖水公園",
+        "CPI_NAME_zh": "冠岳山湖水公园"
       },
       {
         "latitude": 37.46348923963908,
@@ -17508,7 +17569,8 @@
         "DETAIL_COURSE": " 관악산호수공원~용천수~관악산야외식물원",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Bus Stop (Law School Entrance)",
-        "CPI_NAME_ja": "バス停（法学部入口）"
+        "CPI_NAME_ja": "バス停（法学部入口）",
+        "CPI_NAME_zh": "公交站（法学院入口）"
       },
       {
         "latitude": 37.44297130662997,
@@ -17522,7 +17584,8 @@
         "DETAIL_COURSE": " 관악산호수공원~용천수~관악산야외식물원",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Yongcheonsu Spring",
-        "CPI_NAME_ja": "湧泉水"
+        "CPI_NAME_ja": "湧泉水",
+        "CPI_NAME_zh": "涌泉水"
       },
       {
         "latitude": 37.433909687910955,
@@ -17536,7 +17599,8 @@
         "DETAIL_COURSE": "사당역~관악산~삼성산~석수역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Gwanaksan End Point",
-        "CPI_NAME_ja": "冠岳山終点部"
+        "CPI_NAME_ja": "冠岳山終点部",
+        "CPI_NAME_zh": "冠岳山终点部"
       },
       {
         "latitude": 37.469307736911304,
@@ -17550,7 +17614,8 @@
         "DETAIL_COURSE": "사당역~관악산~삼성산~석수역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Gwaneumsa Temple Entrance",
-        "CPI_NAME_ja": "観音寺入口"
+        "CPI_NAME_ja": "観音寺入口",
+        "CPI_NAME_zh": "观音寺入口"
       },
       {
         "latitude": 37.43418981893543,
@@ -17564,7 +17629,8 @@
         "DETAIL_COURSE": "사당역~관악산~삼성산~석수역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Seoksu Station (Subway Line 1)",
-        "CPI_NAME_ja": "地下鉄1号線 石水駅"
+        "CPI_NAME_ja": "地下鉄1号線 石水駅",
+        "CPI_NAME_zh": "地铁1号线 石水站"
       },
       {
         "latitude": 37.44608430623391,
@@ -17578,7 +17644,8 @@
         "DETAIL_COURSE": "사당역~관악산~삼성산~석수역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Hanumul (Grand Well)",
-        "CPI_NAME_ja": "ハヌムル"
+        "CPI_NAME_ja": "ハヌムル",
+        "CPI_NAME_zh": "大井"
       },
       {
         "latitude": 37.45241942285481,
@@ -17592,7 +17659,8 @@
         "DETAIL_COURSE": "사당역~관악산~삼성산~석수역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Hoapsa Temple",
-        "CPI_NAME_ja": "虎壓寺"
+        "CPI_NAME_ja": "虎壓寺",
+        "CPI_NAME_zh": "虎压寺"
       },
       {
         "latitude": 37.476429181332556,
@@ -17606,7 +17674,8 @@
         "DETAIL_COURSE": "사당역~관악산~삼성산~석수역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Sadang Station (Subway Lines 2, 4)",
-        "CPI_NAME_ja": "地下鉄2・4号線 舎堂駅"
+        "CPI_NAME_ja": "地下鉄2・4号線 舎堂駅",
+        "CPI_NAME_zh": "地铁2、4号线 舍堂站"
       },
       {
         "latitude": 37.467293797764015,
@@ -17620,7 +17689,8 @@
         "DETAIL_COURSE": "사당역~관악산~삼성산~석수역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Gwaneumsa Temple",
-        "CPI_NAME_ja": "観音寺"
+        "CPI_NAME_ja": "観音寺",
+        "CPI_NAME_zh": "观音寺"
       },
       {
         "latitude": 37.47119764960104,
@@ -17634,7 +17704,8 @@
         "DETAIL_COURSE": "사당역~관악산~삼성산~석수역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Nakseongdae Park",
-        "CPI_NAME_ja": "落星台公園"
+        "CPI_NAME_ja": "落星台公園",
+        "CPI_NAME_zh": "落星台公园"
       },
       {
         "latitude": 37.46657575675515,
@@ -17648,7 +17719,8 @@
         "DETAIL_COURSE": "사당역~관악산~삼성산~석수역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Seoul National University",
-        "CPI_NAME_ja": "ソウル大学"
+        "CPI_NAME_ja": "ソウル大学",
+        "CPI_NAME_zh": "首尔大学"
       },
       {
         "latitude": 37.46128687810609,
@@ -17662,7 +17734,8 @@
         "DETAIL_COURSE": "사당역~관악산~삼성산~석수역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Yaksuam Hermitage",
-        "CPI_NAME_ja": "薬水庵"
+        "CPI_NAME_ja": "薬水庵",
+        "CPI_NAME_zh": "药水庵"
       },
       {
         "latitude": 37.45694265344619,
@@ -17676,7 +17749,8 @@
         "DETAIL_COURSE": "사당역~관악산~삼성산~석수역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Catholic Samseongsan Holy Site",
-        "CPI_NAME_ja": "カトリック三聖山聖地"
+        "CPI_NAME_ja": "カトリック三聖山聖地",
+        "CPI_NAME_zh": "天主教三圣山圣地"
       },
       {
         "latitude": 37.46757525891128,
@@ -17690,7 +17764,8 @@
         "DETAIL_COURSE": "사당역~관악산~삼성산~석수역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "In Front of Gwanaksan Information Center",
-        "CPI_NAME_ja": "冠岳山案内所前"
+        "CPI_NAME_ja": "冠岳山案内所前",
+        "CPI_NAME_zh": "冠岳山导览处前"
       }
     ]
   },
@@ -17709,7 +17784,8 @@
         "DETAIL_COURSE": "동작역 인근~구반포역 인근~반포주공아파트 인근~반포종합운동장 인근~고속터미널역 인근",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Near Express Bus Terminal Station",
-        "CPI_NAME_ja": "高速ターミナル駅付近"
+        "CPI_NAME_ja": "高速ターミナル駅付近",
+        "CPI_NAME_zh": "高速客运站 附近"
       },
       {
         "latitude": 37.50128881391152,
@@ -17723,7 +17799,8 @@
         "DETAIL_COURSE": "동작역 인근~구반포역 인근~반포주공아파트 인근~반포종합운동장 인근~고속터미널역 인근",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Gubanpo Station (Subway Line 9)",
-        "CPI_NAME_ja": "旧盤浦駅 地下鉄9号線"
+        "CPI_NAME_ja": "旧盤浦駅 地下鉄9号線",
+        "CPI_NAME_zh": "旧盘浦站 地铁9号线"
       },
       {
         "latitude": 37.50010047391151,
@@ -17737,7 +17814,8 @@
         "DETAIL_COURSE": "동작역 인근~구반포역 인근~반포주공아파트 인근~반포종합운동장 인근~고속터미널역 인근",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Near Gubanpo Station",
-        "CPI_NAME_ja": "旧盤浦駅付近"
+        "CPI_NAME_ja": "旧盤浦駅付近",
+        "CPI_NAME_zh": "旧盘浦站 附近"
       },
       {
         "latitude": 37.49955061691157,
@@ -17751,7 +17829,8 @@
         "DETAIL_COURSE": "동작역 인근~구반포역 인근~반포주공아파트 인근~반포종합운동장 인근~고속터미널역 인근",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Near Banpo Jugong Apartment",
-        "CPI_NAME_ja": "盤浦住公アパート付近"
+        "CPI_NAME_ja": "盤浦住公アパート付近",
+        "CPI_NAME_zh": "盘浦住公公寓 附近"
       },
       {
         "latitude": 37.4994348379115,
@@ -17765,7 +17844,8 @@
         "DETAIL_COURSE": "동작역 인근~구반포역 인근~반포주공아파트 인근~반포종합운동장 인근~고속터미널역 인근",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Near Banpo Sports Complex",
-        "CPI_NAME_ja": "盤浦総合運動場付近"
+        "CPI_NAME_ja": "盤浦総合運動場付近",
+        "CPI_NAME_zh": "盘浦综合运动场 附近"
       },
       {
         "latitude": 37.49802464491152,
@@ -17779,7 +17859,8 @@
         "DETAIL_COURSE": "동작역 인근~구반포역 인근~반포주공아파트 인근~반포종합운동장 인근~고속터미널역 인근",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "National Library of Korea",
-        "CPI_NAME_ja": "ソウル国立中央図書館"
+        "CPI_NAME_ja": "ソウル国立中央図書館",
+        "CPI_NAME_zh": "首尔国立中央图书馆"
       },
       {
         "latitude": 37.5032724489116,
@@ -17793,7 +17874,8 @@
         "DETAIL_COURSE": "동작역 인근~구반포역 인근~반포주공아파트 인근~반포종합운동장 인근~고속터미널역 인근",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Express Bus Terminal Station (Subway Lines 3, 7)",
-        "CPI_NAME_ja": "高速ターミナル駅 地下鉄3・7号線"
+        "CPI_NAME_ja": "高速ターミナル駅 地下鉄3・7号線",
+        "CPI_NAME_zh": "高速客运站 地铁3、7号线"
       },
       {
         "latitude": 37.50327834391155,
@@ -17807,7 +17889,8 @@
         "DETAIL_COURSE": "동작역 인근~구반포역 인근~반포주공아파트 인근~반포종합운동장 인근~고속터미널역 인근",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Dongjak Station (Subway Lines 4, 9)",
-        "CPI_NAME_ja": "銅雀駅 地下鉄4・9号線"
+        "CPI_NAME_ja": "銅雀駅 地下鉄4・9号線",
+        "CPI_NAME_zh": "铜雀站 地铁4、9号线"
       },
       {
         "latitude": 37.503409217911575,
@@ -17821,7 +17904,8 @@
         "DETAIL_COURSE": "동작역 인근~구반포역 인근~반포주공아파트 인근~반포종합운동장 인근~고속터미널역 인근",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Near Dongjak Station",
-        "CPI_NAME_ja": "銅雀駅付近"
+        "CPI_NAME_ja": "銅雀駅付近",
+        "CPI_NAME_zh": "铜雀站 附近"
       },
       {
         "latitude": 37.470644266911314,
@@ -17835,7 +17919,8 @@
         "DETAIL_COURSE": "양재시민의숲 인근~세원마을 인근~청룡경로당회관 인근~넘말골 인근",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Yangjae Citizens' Forest Station (Sinbundang Line)",
-        "CPI_NAME_ja": "良才市民の森駅 地下鉄新盆唐線"
+        "CPI_NAME_ja": "良才市民の森駅 地下鉄新盆唐線",
+        "CPI_NAME_zh": "良才市民之林站 地铁新盆唐线"
       },
       {
         "latitude": 37.47174107391127,
@@ -17849,7 +17934,8 @@
         "DETAIL_COURSE": "양재시민의숲 인근~세원마을 인근~청룡경로당회관 인근~넘말골 인근",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Near Yangjae Citizens' Forest",
-        "CPI_NAME_ja": "良才市民の森付近"
+        "CPI_NAME_ja": "良才市民の森付近",
+        "CPI_NAME_zh": "良才市民之林 附近"
       },
       {
         "latitude": 37.45450098091113,
@@ -17863,7 +17949,8 @@
         "DETAIL_COURSE": "양재시민의숲 인근~세원마을 인근~청룡경로당회관 인근~넘말골 인근",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Near Sewon Village",
-        "CPI_NAME_ja": "セウォン村付近"
+        "CPI_NAME_ja": "セウォン村付近",
+        "CPI_NAME_zh": "世元村 附近"
       },
       {
         "latitude": 37.44566403291105,
@@ -17877,7 +17964,8 @@
         "DETAIL_COURSE": "양재시민의숲 인근~세원마을 인근~청룡경로당회관 인근~넘말골 인근",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Near Cheongnyong Senior Center",
-        "CPI_NAME_ja": "青龍敬老堂会館付近"
+        "CPI_NAME_ja": "青龍敬老堂会館付近",
+        "CPI_NAME_zh": "青龙敬老堂会馆 附近"
       },
       {
         "latitude": 37.43453626791098,
@@ -17891,7 +17979,8 @@
         "DETAIL_COURSE": "양재시민의숲 인근~세원마을 인근~청룡경로당회관 인근~넘말골 인근",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Near Neommalgol",
-        "CPI_NAME_ja": "ノンマルゴル付近"
+        "CPI_NAME_ja": "ノンマルゴル付近",
+        "CPI_NAME_zh": "农末谷 附近"
       },
       {
         "latitude": 37.469582607911285,
@@ -17905,7 +17994,8 @@
         "DETAIL_COURSE": "양재시민의숲 인근~세원마을 인근~청룡경로당회관 인근~넘말골 인근",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Yangjae 2-dong Community Service Center / Yangjae Flower Market",
-        "CPI_NAME_ja": "良才2洞住民センター・良才花市場"
+        "CPI_NAME_ja": "良才2洞住民センター・良才花市場",
+        "CPI_NAME_zh": "良才2洞居民中心·良才花市场"
       },
       {
         "latitude": 37.4933844524246,
@@ -17919,7 +18009,8 @@
         "DETAIL_COURSE": " 서리골공원~몽마르뜨공원~서리풀공원",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Seoripul Park Entrance",
-        "CPI_NAME_ja": "ソリプル公園入口"
+        "CPI_NAME_ja": "ソリプル公園入口",
+        "CPI_NAME_zh": "瑞里普公园入口"
       },
       {
         "latitude": 37.50235432073613,
@@ -17933,7 +18024,8 @@
         "DETAIL_COURSE": " 서리골공원~몽마르뜨공원~서리풀공원",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Express Bus Terminal Station Exit 5",
-        "CPI_NAME_ja": "高速ターミナル駅5番出入口"
+        "CPI_NAME_ja": "高速ターミナル駅5番出入口",
+        "CPI_NAME_zh": "高速客运站5号出入口"
       },
       {
         "latitude": 37.498693446068,
@@ -17947,7 +18039,8 @@
         "DETAIL_COURSE": " 서리골공원~몽마르뜨공원~서리풀공원",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "In Front of Greenpia",
-        "CPI_NAME_ja": "グリーンピア前"
+        "CPI_NAME_ja": "グリーンピア前",
+        "CPI_NAME_zh": "绿地亚前路"
       },
       {
         "latitude": 37.49979176760691,
@@ -17961,7 +18054,8 @@
         "DETAIL_COURSE": " 서리골공원~몽마르뜨공원~서리풀공원",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Seongui Hall",
-        "CPI_NAME_ja": "誠意会館"
+        "CPI_NAME_ja": "誠意会館",
+        "CPI_NAME_zh": "诚意会馆"
       },
       {
         "latitude": 37.49422360068978,
@@ -17975,7 +18069,8 @@
         "DETAIL_COURSE": " 서리골공원~몽마르뜨공원~서리풀공원",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Cheonga Villa",
-        "CPI_NAME_ja": "清雅ヴィラ"
+        "CPI_NAME_ja": "清雅ヴィラ",
+        "CPI_NAME_zh": "清雅别墅"
       },
       {
         "latitude": 37.493251724872124,
@@ -17989,7 +18084,8 @@
         "DETAIL_COURSE": " 서리골공원~몽마르뜨공원~서리풀공원",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Castlex",
-        "CPI_NAME_ja": "キャッスレックス"
+        "CPI_NAME_ja": "キャッスレックス",
+        "CPI_NAME_zh": "卡斯莱克斯"
       },
       {
         "latitude": 37.48953745867347,
@@ -18003,7 +18099,8 @@
         "DETAIL_COURSE": " 서리골공원~몽마르뜨공원~서리풀공원",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Bangbae 2nd e-Pyeonhansesang Apartment",
-        "CPI_NAME_ja": "方背2次 e-ピョナンセサン アパート"
+        "CPI_NAME_ja": "方背2次 e-ピョナンセサン アパート",
+        "CPI_NAME_zh": "方背2期 e便安世上公寓"
       },
       {
         "latitude": 37.48741074996166,
@@ -18017,7 +18114,8 @@
         "DETAIL_COURSE": " 서리골공원~몽마르뜨공원~서리풀공원",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Bangbae LG Xi Apartment",
-        "CPI_NAME_ja": "方背LGザイアパート"
+        "CPI_NAME_ja": "方背LGザイアパート",
+        "CPI_NAME_zh": "方背LG自以公寓"
       },
       {
         "latitude": 37.48471427456652,
@@ -18031,7 +18129,8 @@
         "DETAIL_COURSE": " 서리골공원~몽마르뜨공원~서리풀공원",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Hyundai Villat",
-        "CPI_NAME_ja": "現代ヴィラット"
+        "CPI_NAME_ja": "現代ヴィラット",
+        "CPI_NAME_zh": "现代维拉特"
       },
       {
         "latitude": 37.48590928091351,
@@ -18045,7 +18144,8 @@
         "DETAIL_COURSE": " 서리골공원~몽마르뜨공원~서리풀공원",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Bangil Elementary School",
-        "CPI_NAME_ja": "方逸小学校"
+        "CPI_NAME_ja": "方逸小学校",
+        "CPI_NAME_zh": "方逸小学"
       },
       {
         "latitude": 37.48191539303568,
@@ -18059,7 +18159,8 @@
         "DETAIL_COURSE": " 서리골공원~몽마르뜨공원~서리풀공원",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Bangbae Station Exit 4",
-        "CPI_NAME_ja": "方背駅4番出入口"
+        "CPI_NAME_ja": "方背駅4番出入口",
+        "CPI_NAME_zh": "方背站4号出入口"
       },
       {
         "latitude": 37.49823013425073,
@@ -18073,7 +18174,8 @@
         "DETAIL_COURSE": " 서리골공원~몽마르뜨공원~서리풀공원",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "National Library of Korea",
-        "CPI_NAME_ja": "ソウル国立中央図書館"
+        "CPI_NAME_ja": "ソウル国立中央図書館",
+        "CPI_NAME_zh": "首尔国立中央图书馆"
       },
       {
         "latitude": 37.48250489065915,
@@ -18087,7 +18189,8 @@
         "DETAIL_COURSE": " 서리골공원~몽마르뜨공원~서리풀공원",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Prince Hyoryeong Yi Bo Tomb Site",
-        "CPI_NAME_ja": "孝寧大君李補墓域"
+        "CPI_NAME_ja": "孝寧大君李補墓域",
+        "CPI_NAME_zh": "孝宁大君李补墓域"
       },
       {
         "latitude": 37.50296639825724,
@@ -18101,7 +18204,8 @@
         "DETAIL_COURSE": " 서리골공원~몽마르뜨공원~서리풀공원",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Seorae Park, Seorigol Park Entrance",
-        "CPI_NAME_ja": "ソレ公園・ソリゴル公園入口"
+        "CPI_NAME_ja": "ソレ公園・ソリゴル公園入口",
+        "CPI_NAME_zh": "瑞来公园、瑞里谷公园入口"
       },
       {
         "latitude": 37.49776306348152,
@@ -18115,7 +18219,8 @@
         "DETAIL_COURSE": " 서리골공원~몽마르뜨공원~서리풀공원",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Seorigol Park",
-        "CPI_NAME_ja": "ソリゴル公園"
+        "CPI_NAME_ja": "ソリゴル公園",
+        "CPI_NAME_zh": "瑞里谷公园"
       },
       {
         "latitude": 37.496761115570315,
@@ -18129,7 +18234,8 @@
         "DETAIL_COURSE": " 서리골공원~몽마르뜨공원~서리풀공원",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Nue Bridge",
-        "CPI_NAME_ja": "蚕橋"
+        "CPI_NAME_ja": "蚕橋",
+        "CPI_NAME_zh": "蚕桥"
       },
       {
         "latitude": 37.49640908424464,
@@ -18143,7 +18249,8 @@
         "DETAIL_COURSE": " 서리골공원~몽마르뜨공원~서리풀공원",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Montmartre Park Entrance",
-        "CPI_NAME_ja": "モンマルトル公園入口"
+        "CPI_NAME_ja": "モンマルトル公園入口",
+        "CPI_NAME_zh": "蒙马特公园入口"
       },
       {
         "latitude": 37.495142951462896,
@@ -18157,7 +18264,8 @@
         "DETAIL_COURSE": " 서리골공원~몽마르뜨공원~서리풀공원",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Montmartre Park",
-        "CPI_NAME_ja": "モンマルトル公園"
+        "CPI_NAME_ja": "モンマルトル公園",
+        "CPI_NAME_zh": "蒙马特公园"
       },
       {
         "latitude": 37.49001087050089,
@@ -18171,7 +18279,8 @@
         "DETAIL_COURSE": " 서리골공원~몽마르뜨공원~서리풀공원",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Seoripul Park",
-        "CPI_NAME_ja": "ソリプル公園"
+        "CPI_NAME_ja": "ソリプル公園",
+        "CPI_NAME_zh": "瑞里普公园"
       },
       {
         "latitude": 37.47888203942907,
@@ -18185,7 +18294,8 @@
         "DETAIL_COURSE": " 남부터미널역~소망탑 전망대",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Seoul Arts Center",
-        "CPI_NAME_ja": "芸術の殿堂"
+        "CPI_NAME_ja": "芸術の殿堂",
+        "CPI_NAME_zh": "艺术殿堂"
       },
       {
         "latitude": 37.472658748167945,
@@ -18199,7 +18309,8 @@
         "DETAIL_COURSE": " 남부터미널역~소망탑 전망대",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Somang Tower Viewpoint",
-        "CPI_NAME_ja": "ソマン塔展望台"
+        "CPI_NAME_ja": "ソマン塔展望台",
+        "CPI_NAME_zh": "愿望塔观景台"
       },
       {
         "latitude": 37.48470744354861,
@@ -18213,7 +18324,8 @@
         "DETAIL_COURSE": " 남부터미널역~소망탑 전망대",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Nambu Bus Terminal Station Exit 4",
-        "CPI_NAME_ja": "南部ターミナル駅4番出入口"
+        "CPI_NAME_ja": "南部ターミナル駅4番出入口",
+        "CPI_NAME_zh": "南部客运站4号出入口"
       }
     ]
   },
