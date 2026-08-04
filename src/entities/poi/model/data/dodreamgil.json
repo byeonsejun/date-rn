@@ -20484,7 +20484,8 @@
         "DETAIL_COURSE": " 은평뉴타운~선림사~북한산생태공원~탕춘대성암문~불심원~연화정사~성북생태체험관~빨래골지킴터~이준열사묘소~419국립묘지~봉황각~우이령길입구~연산군묘~정의공주묘~무수골~도봉탐방지원센터~도봉산역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Next to Dobong Trail Support Center",
-        "CPI_NAME_ja": "道峰探訪支援センター横"
+        "CPI_NAME_ja": "道峰探訪支援センター横",
+        "CPI_NAME_zh": "道峰探访支援中心旁"
       },
       {
         "latitude": 37.6608965982715,
@@ -20498,7 +20499,8 @@
         "DETAIL_COURSE": " 은평뉴타운~선림사~북한산생태공원~탕춘대성암문~불심원~연화정사~성북생태체험관~빨래골지킴터~이준열사묘소~419국립묘지~봉황각~우이령길입구~연산군묘~정의공주묘~무수골~도봉탐방지원센터~도봉산역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Bonghwanggak",
-        "CPI_NAME_ja": "鳳凰閣"
+        "CPI_NAME_ja": "鳳凰閣",
+        "CPI_NAME_zh": "凤凰阁"
       },
       {
         "latitude": 37.6494422992505,
@@ -20512,7 +20514,8 @@
         "DETAIL_COURSE": " 은평뉴타운~선림사~북한산생태공원~탕춘대성암문~불심원~연화정사~성북생태체험관~빨래골지킴터~이준열사묘소~419국립묘지~봉황각~우이령길입구~연산군묘~정의공주묘~무수골~도봉탐방지원센터~도봉산역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "April 19 National Cemetery",
-        "CPI_NAME_ja": "4.19国立墓地"
+        "CPI_NAME_ja": "4.19国立墓地",
+        "CPI_NAME_zh": "4.19国立墓地"
       },
       {
         "latitude": 37.6423577930052,
@@ -20526,7 +20529,8 @@
         "DETAIL_COURSE": " 은평뉴타운~선림사~북한산생태공원~탕춘대성암문~불심원~연화정사~성북생태체험관~빨래골지킴터~이준열사묘소~419국립묘지~봉황각~우이령길입구~연산군묘~정의공주묘~무수골~도봉탐방지원센터~도봉산역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Tomb of Patriot Yi Jun",
-        "CPI_NAME_ja": "李儁烈士墓所"
+        "CPI_NAME_ja": "李儁烈士墓所",
+        "CPI_NAME_zh": "李儁烈士墓"
       },
       {
         "latitude": 37.62734674473348,
@@ -20540,7 +20544,8 @@
         "DETAIL_COURSE": " 은평뉴타운~선림사~북한산생태공원~탕춘대성암문~불심원~연화정사~성북생태체험관~빨래골지킴터~이준열사묘소~419국립묘지~봉황각~우이령길입구~연산군묘~정의공주묘~무수골~도봉탐방지원센터~도봉산역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Ppallaegol Guard Post",
-        "CPI_NAME_ja": "パルレゴル守り処"
+        "CPI_NAME_ja": "パルレゴル守り処",
+        "CPI_NAME_zh": "洗衣谷守护处"
       },
       {
         "latitude": 37.62098024073754,
@@ -20554,7 +20559,8 @@
         "DETAIL_COURSE": " 은평뉴타운~선림사~북한산생태공원~탕춘대성암문~불심원~연화정사~성북생태체험관~빨래골지킴터~이준열사묘소~419국립묘지~봉황각~우이령길입구~연산군묘~정의공주묘~무수골~도봉탐방지원센터~도봉산역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Seongbuk Ecology Experience Center",
-        "CPI_NAME_ja": "城北生態体験館"
+        "CPI_NAME_ja": "城北生態体験館",
+        "CPI_NAME_zh": "城北生态体验馆"
       },
       {
         "latitude": 37.68893997561639,
@@ -20568,7 +20574,8 @@
         "DETAIL_COURSE": " 은평뉴타운~선림사~북한산생태공원~탕춘대성암문~불심원~연화정사~성북생태체험관~빨래골지킴터~이준열사묘소~419국립묘지~봉황각~우이령길입구~연산군묘~정의공주묘~무수골~도봉탐방지원센터~도봉산역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Dobongsan Station (Subway Lines 1, 7)",
-        "CPI_NAME_ja": "地下鉄1・7号線 道峰山駅"
+        "CPI_NAME_ja": "地下鉄1・7号線 道峰山駅",
+        "CPI_NAME_zh": "地铁1、7号线 道峰山站"
       },
       {
         "latitude": 37.627435974968535,
@@ -20582,7 +20589,8 @@
         "DETAIL_COURSE": " 은평뉴타운~선림사~북한산생태공원~탕춘대성암문~불심원~연화정사~성북생태체험관~빨래골지킴터~이준열사묘소~419국립묘지~봉황각~우이령길입구~연산군묘~정의공주묘~무수골~도봉탐방지원센터~도봉산역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Seollimsa Temple",
-        "CPI_NAME_ja": "禅林寺"
+        "CPI_NAME_ja": "禅林寺",
+        "CPI_NAME_zh": "禅林寺"
       },
       {
         "latitude": 37.60817228605382,
@@ -20596,7 +20604,8 @@
         "DETAIL_COURSE": " 은평뉴타운~선림사~북한산생태공원~탕춘대성암문~불심원~연화정사~성북생태체험관~빨래골지킴터~이준열사묘소~419국립묘지~봉황각~우이령길입구~연산군묘~정의공주묘~무수골~도봉탐방지원센터~도봉산역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Tangchundaeseong Amnun (Concealed Gate)",
-        "CPI_NAME_ja": "蕩春台城暗門"
+        "CPI_NAME_ja": "蕩春台城暗門",
+        "CPI_NAME_zh": "荡春台城暗门"
       },
       {
         "latitude": 37.614274426473344,
@@ -20610,7 +20619,8 @@
         "DETAIL_COURSE": " 은평뉴타운~선림사~북한산생태공원~탕춘대성암문~불심원~연화정사~성북생태체험관~빨래골지킴터~이준열사묘소~419국립묘지~봉황각~우이령길입구~연산군묘~정의공주묘~무수골~도봉탐방지원센터~도봉산역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Yeonhwajeongsa Temple",
-        "CPI_NAME_ja": "蓮花精舎"
+        "CPI_NAME_ja": "蓮花精舎",
+        "CPI_NAME_zh": "莲花精舍"
       },
       {
         "latitude": 37.60911518884058,
@@ -20624,7 +20634,8 @@
         "DETAIL_COURSE": " 은평뉴타운~선림사~북한산생태공원~탕춘대성암문~불심원~연화정사~성북생태체험관~빨래골지킴터~이준열사묘소~419국립묘지~봉황각~우이령길입구~연산군묘~정의공주묘~무수골~도봉탐방지원센터~도봉산역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Bulsimwon",
-        "CPI_NAME_ja": "佛心院"
+        "CPI_NAME_ja": "佛心院",
+        "CPI_NAME_zh": "佛心院"
       },
       {
         "latitude": 37.611026231504844,
@@ -20638,7 +20649,8 @@
         "DETAIL_COURSE": " 은평뉴타운~선림사~북한산생태공원~탕춘대성암문~불심원~연화정사~성북생태체험관~빨래골지킴터~이준열사묘소~419국립묘지~봉황각~우이령길입구~연산군묘~정의공주묘~무수골~도봉탐방지원센터~도봉산역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Bukhansan Ecology Park",
-        "CPI_NAME_ja": "北漢山生態公園"
+        "CPI_NAME_ja": "北漢山生態公園",
+        "CPI_NAME_zh": "北汉山生态公园"
       },
       {
         "latitude": 37.627832984912615,
@@ -20652,7 +20664,8 @@
         "DETAIL_COURSE": " 은평뉴타운~선림사~북한산생태공원~탕춘대성암문~불심원~연화정사~성북생태체험관~빨래골지킴터~이준열사묘소~419국립묘지~봉황각~우이령길입구~연산군묘~정의공주묘~무수골~도봉탐방지원센터~도봉산역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Next to Seollimsa Temple",
-        "CPI_NAME_ja": "禅林寺横"
+        "CPI_NAME_ja": "禅林寺横",
+        "CPI_NAME_zh": "禅林寺旁"
       },
       {
         "latitude": 37.6126637309125,
@@ -20666,7 +20679,8 @@
         "DETAIL_COURSE": " 은평뉴타운~선림사~북한산생태공원~탕춘대성암문~불심원~연화정사~성북생태체험관~빨래골지킴터~이준열사묘소~419국립묘지~봉황각~우이령길입구~연산군묘~정의공주묘~무수골~도봉탐방지원센터~도봉산역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Old Fortress Trail Start",
-        "CPI_NAME_ja": "古城の道 起点"
+        "CPI_NAME_ja": "古城の道 起点",
+        "CPI_NAME_zh": "古城步道 起点"
       },
       {
         "latitude": 37.6359782781163,
@@ -20680,7 +20694,8 @@
         "DETAIL_COURSE": " 은평뉴타운~선림사~북한산생태공원~탕춘대성암문~불심원~연화정사~성북생태체험관~빨래골지킴터~이준열사묘소~419국립묘지~봉황각~우이령길입구~연산군묘~정의공주묘~무수골~도봉탐방지원센터~도봉산역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Gupabal Station (Subway Line 3)",
-        "CPI_NAME_ja": "地下鉄3号線 旧把撥駅"
+        "CPI_NAME_ja": "地下鉄3号線 旧把撥駅",
+        "CPI_NAME_zh": "地铁3号线 旧把拨站"
       },
       {
         "latitude": 37.61294186491248,
@@ -20694,7 +20709,8 @@
         "DETAIL_COURSE": " 은평뉴타운~선림사~북한산생태공원~탕춘대성암문~불심원~연화정사~성북생태체험관~빨래골지킴터~이준열사묘소~419국립묘지~봉황각~우이령길입구~연산군묘~정의공주묘~무수골~도봉탐방지원센터~도봉산역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Meditation Trail Start",
-        "CPI_NAME_ja": "瞑想の道 起点"
+        "CPI_NAME_ja": "瞑想の道 起点",
+        "CPI_NAME_zh": "冥想步道 起点"
       },
       {
         "latitude": 37.6230522446741,
@@ -20708,7 +20724,8 @@
         "DETAIL_COURSE": " 은평뉴타운~선림사~북한산생태공원~탕춘대성암문~불심원~연화정사~성북생태체험관~빨래골지킴터~이준열사묘소~419국립묘지~봉황각~우이령길입구~연산군묘~정의공주묘~무수골~도봉탐방지원센터~도봉산역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "White Cloud Trail Start",
-        "CPI_NAME_ja": "白雲の道 起点"
+        "CPI_NAME_ja": "白雲の道 起点",
+        "CPI_NAME_zh": "白云步道 起点"
       },
       {
         "latitude": 37.66167225991289,
@@ -20722,7 +20739,8 @@
         "DETAIL_COURSE": " 은평뉴타운~선림사~북한산생태공원~탕춘대성암문~불심원~연화정사~성북생태체험관~빨래골지킴터~이준열사묘소~419국립묘지~봉황각~우이령길입구~연산군묘~정의공주묘~무수골~도봉탐방지원센터~도봉산역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Royal Tomb Area Start",
-        "CPI_NAME_ja": "王室墓域 起点"
+        "CPI_NAME_ja": "王室墓域 起点",
+        "CPI_NAME_zh": "王室墓域 起点"
       }
     ]
   },
@@ -20741,7 +20759,8 @@
         "DETAIL_COURSE": "가양역~노을공원~하늘공원~월드컵경기장~봉산~앵봉산~구파발역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "World Cup Stadium Station (Subway Line 6)",
-        "CPI_NAME_ja": "地下鉄6号線 ワールドカップ競技場駅"
+        "CPI_NAME_ja": "地下鉄6号線 ワールドカップ競技場駅",
+        "CPI_NAME_zh": "地铁6号线 世界杯体育场站"
       },
       {
         "latitude": 37.56042736905203,
@@ -20755,7 +20774,8 @@
         "DETAIL_COURSE": "가양역~노을공원~하늘공원~월드컵경기장~봉산~앵봉산~구파발역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Gayang Station (Subway Line 9)",
-        "CPI_NAME_ja": "地下鉄9号線 加陽駅"
+        "CPI_NAME_ja": "地下鉄9号線 加陽駅",
+        "CPI_NAME_zh": "地铁9号线 加阳站"
       },
       {
         "latitude": 37.57563557900797,
@@ -20769,7 +20789,8 @@
         "DETAIL_COURSE": "가양역~노을공원~하늘공원~월드컵경기장~봉산~앵봉산~구파발역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Noeul (Sunset) Park",
-        "CPI_NAME_ja": "ノウル公園"
+        "CPI_NAME_ja": "ノウル公園",
+        "CPI_NAME_zh": "晚霞公园"
       },
       {
         "latitude": 37.57302071505094,
@@ -20783,7 +20804,8 @@
         "DETAIL_COURSE": "가양역~노을공원~하늘공원~월드컵경기장~봉산~앵봉산~구파발역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Nanjicheon Park",
-        "CPI_NAME_ja": "蘭芝川公園"
+        "CPI_NAME_ja": "蘭芝川公園",
+        "CPI_NAME_zh": "兰芝川公园"
       },
       {
         "latitude": 37.56782959714554,
@@ -20797,7 +20819,8 @@
         "DETAIL_COURSE": "가양역~노을공원~하늘공원~월드컵경기장~봉산~앵봉산~구파발역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Haneul (Sky) Park",
-        "CPI_NAME_ja": "ハヌル公園"
+        "CPI_NAME_ja": "ハヌル公園",
+        "CPI_NAME_zh": "天空公园"
       },
       {
         "latitude": 37.57002036940493,
@@ -20811,7 +20834,8 @@
         "DETAIL_COURSE": "가양역~노을공원~하늘공원~월드컵경기장~봉산~앵봉산~구파발역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Seoul World Cup Stadium",
-        "CPI_NAME_ja": "ソウルワールドカップ競技場"
+        "CPI_NAME_ja": "ソウルワールドカップ競技場",
+        "CPI_NAME_zh": "首尔世界杯体育场"
       },
       {
         "latitude": 37.57710657774221,
@@ -20825,7 +20849,8 @@
         "DETAIL_COURSE": "가양역~노을공원~하늘공원~월드컵경기장~봉산~앵봉산~구파발역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Hongjecheon Stream",
-        "CPI_NAME_ja": "弘済川"
+        "CPI_NAME_ja": "弘済川",
+        "CPI_NAME_zh": "弘济川"
       },
       {
         "latitude": 37.61589683234569,
@@ -20839,7 +20864,8 @@
         "DETAIL_COURSE": "가양역~노을공원~하늘공원~월드컵경기장~봉산~앵봉산~구파발역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Suguksa Temple",
-        "CPI_NAME_ja": "守国寺"
+        "CPI_NAME_ja": "守国寺",
+        "CPI_NAME_zh": "守国寺"
       },
       {
         "latitude": 37.634260449002426,
@@ -20853,7 +20879,8 @@
         "DETAIL_COURSE": "가양역~노을공원~하늘공원~월드컵경기장~봉산~앵봉산~구파발역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Eunpyeong New Town",
-        "CPI_NAME_ja": "恩平ニュータウン"
+        "CPI_NAME_ja": "恩平ニュータウン",
+        "CPI_NAME_zh": "恩平新城"
       },
       {
         "latitude": 37.6359782781163,
@@ -20867,7 +20894,8 @@
         "DETAIL_COURSE": "가양역~노을공원~하늘공원~월드컵경기장~봉산~앵봉산~구파발역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Gupabal Station (Subway Line 3)",
-        "CPI_NAME_ja": "地下鉄3号線 旧把撥駅"
+        "CPI_NAME_ja": "地下鉄3号線 旧把撥駅",
+        "CPI_NAME_zh": "地铁3号线 旧把拨站"
       },
       {
         "latitude": 37.63028123907204,
@@ -20881,7 +20909,8 @@
         "DETAIL_COURSE": "가양역~노을공원~하늘공원~월드컵경기장~봉산~앵봉산~구파발역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Seooreung Royal Tombs",
-        "CPI_NAME_ja": "西五陵"
+        "CPI_NAME_ja": "西五陵",
+        "CPI_NAME_zh": "西五陵"
       },
       {
         "latitude": 37.57651108125794,
@@ -20895,7 +20924,8 @@
         "DETAIL_COURSE": "가양역~노을공원~하늘공원~월드컵경기장~봉산~앵봉산~구파발역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Digital Media City Station (Gyeongui Line, Airport Railroad, Subway Line 6)",
-        "CPI_NAME_ja": "地下鉄京義線・空港鉄道・6号線 デジタルメディアシティ駅"
+        "CPI_NAME_ja": "地下鉄京義線・空港鉄道・6号線 デジタルメディアシティ駅",
+        "CPI_NAME_zh": "地铁京义线、机场铁道、6号线 数字媒体城站"
       },
       {
         "latitude": 37.56377410791206,
@@ -20909,7 +20939,8 @@
         "DETAIL_COURSE": "가양역~노을공원~하늘공원~월드컵경기장~봉산~앵봉산~구파발역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Gayang Bridge Start",
-        "CPI_NAME_ja": "加陽大橋 起点"
+        "CPI_NAME_ja": "加陽大橋 起点",
+        "CPI_NAME_zh": "加阳大桥 起点"
       },
       {
         "latitude": 37.58518873791227,
@@ -20923,7 +20954,8 @@
         "DETAIL_COURSE": "가양역~노을공원~하늘공원~월드컵경기장~봉산~앵봉산~구파발역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "In Front of Jeungsan Sports Park Restroom",
-        "CPI_NAME_ja": "甑山体育公園トイレ前"
+        "CPI_NAME_ja": "甑山体育公園トイレ前",
+        "CPI_NAME_zh": "甑山体育公园卫生间前"
       },
       {
         "latitude": 37.6357205579127,
@@ -20937,7 +20969,8 @@
         "DETAIL_COURSE": "가양역~노을공원~하늘공원~월드컵경기장~봉산~앵봉산~구파발역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Aebongsan End Point",
-        "CPI_NAME_ja": "愛峰山終点部"
+        "CPI_NAME_ja": "愛峰山終点部",
+        "CPI_NAME_zh": "爱峰山终点部"
       }
     ]
   },
@@ -20956,7 +20989,8 @@
         "DETAIL_COURSE": "석수역~안양천~한강~가양역",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Yanghwagyo Waterfall",
-        "CPI_NAME_ja": "楊花橋滝"
+        "CPI_NAME_ja": "楊花橋滝",
+        "CPI_NAME_zh": "杨花桥瀑布"
       },
       {
         "latitude": 37.530597039744855,
@@ -20970,7 +21004,8 @@
         "DETAIL_COURSE": "석수역~안양천~한강~가양역",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Mokdong Sports Complex",
-        "CPI_NAME_ja": "木洞総合運動場"
+        "CPI_NAME_ja": "木洞総合運動場",
+        "CPI_NAME_zh": "木洞综合运动场"
       },
       {
         "latitude": 37.514606521572674,
@@ -20984,7 +21019,8 @@
         "DETAIL_COURSE": "석수역~안양천~한강~가양역",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Dorimcheon Station (Subway Line 2)",
-        "CPI_NAME_ja": "地下鉄2号線 道林川駅"
+        "CPI_NAME_ja": "地下鉄2号線 道林川駅",
+        "CPI_NAME_zh": "地铁2号线 道林川站"
       },
       {
         "latitude": 37.49675437606008,
@@ -20998,7 +21034,8 @@
         "DETAIL_COURSE": "석수역~안양천~한강~가양역",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Guil Station (Subway Line 1)",
-        "CPI_NAME_ja": "地下鉄1号線 九一駅"
+        "CPI_NAME_ja": "地下鉄1号線 九一駅",
+        "CPI_NAME_zh": "地铁1号线 九一站"
       },
       {
         "latitude": 37.56234866609821,
@@ -21012,7 +21049,8 @@
         "DETAIL_COURSE": "석수역~안양천~한강~가양역",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Hwanggeumnae Neighborhood Park",
-        "CPI_NAME_ja": "ファングムネ近隣公園"
+        "CPI_NAME_ja": "ファングムネ近隣公園",
+        "CPI_NAME_zh": "黄金川近邻公园"
       },
       {
         "latitude": 37.56141614375988,
@@ -21026,7 +21064,8 @@
         "DETAIL_COURSE": "석수역~안양천~한강~가양역",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Gayang Station (Subway Line 9)",
-        "CPI_NAME_ja": "地下鉄9号線 加陽駅"
+        "CPI_NAME_ja": "地下鉄9号線 加陽駅",
+        "CPI_NAME_zh": "地铁9号线 加阳站"
       },
       {
         "latitude": 37.43428203791099,
@@ -21040,7 +21079,8 @@
         "DETAIL_COURSE": "석수역~안양천~한강~가양역",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "In Front of Seoksu Station",
-        "CPI_NAME_ja": "石水駅前"
+        "CPI_NAME_ja": "石水駅前",
+        "CPI_NAME_zh": "石水站前"
       },
       {
         "latitude": 37.49590779491152,
@@ -21054,7 +21094,8 @@
         "DETAIL_COURSE": "석수역~안양천~한강~가양역",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "In Front of Guil Station",
-        "CPI_NAME_ja": "九一駅前"
+        "CPI_NAME_ja": "九一駅前",
+        "CPI_NAME_zh": "九一站前"
       },
       {
         "latitude": 37.47788979216992,
@@ -21068,7 +21109,8 @@
         "DETAIL_COURSE": "석수역~안양천~한강~가양역",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Anyangcheon Stream",
-        "CPI_NAME_ja": "安養川"
+        "CPI_NAME_ja": "安養川",
+        "CPI_NAME_zh": "安养川"
       },
       {
         "latitude": 37.45573881396371,
@@ -21082,7 +21124,8 @@
         "DETAIL_COURSE": "석수역~안양천~한강~가양역",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Geumcheon District Office Station (Subway Line 1)",
-        "CPI_NAME_ja": "地下鉄1号線 衿川区庁駅"
+        "CPI_NAME_ja": "地下鉄1号線 衿川区庁駅",
+        "CPI_NAME_zh": "地铁1号线 衿川区厅站"
       },
       {
         "latitude": 37.43433599673243,
@@ -21096,7 +21139,8 @@
         "DETAIL_COURSE": "석수역~안양천~한강~가양역",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Seoksu Station (Subway Line 1)",
-        "CPI_NAME_ja": "地下鉄1号線 石水駅"
+        "CPI_NAME_ja": "地下鉄1号線 石水駅",
+        "CPI_NAME_zh": "地铁1号线 石水站"
       },
       {
         "latitude": 37.56194186991209,
@@ -21110,7 +21154,8 @@
         "DETAIL_COURSE": "석수역~안양천~한강~가양역",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "In Front of Hwanggeumnae Neighborhood Park Restroom",
-        "CPI_NAME_ja": "ファングムネ近隣公園トイレ前"
+        "CPI_NAME_ja": "ファングムネ近隣公園トイレ前",
+        "CPI_NAME_zh": "黄金川近邻公园卫生间前"
       }
     ]
   },
@@ -21129,7 +21174,8 @@
         "DETAIL_COURSE": " 수서역~대모산~구룡산~여의천~양재천~우면산~사당역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Yangjae Citizens' Forest",
-        "CPI_NAME_ja": "良才市民の森"
+        "CPI_NAME_ja": "良才市民の森",
+        "CPI_NAME_zh": "良才市民之林"
       },
       {
         "latitude": 37.47498722579235,
@@ -21143,7 +21189,8 @@
         "DETAIL_COURSE": " 수서역~대모산~구룡산~여의천~양재천~우면산~사당역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Sadang Station (Subway Lines 2, 4)",
-        "CPI_NAME_ja": "地下鉄2・4号線 舎堂駅"
+        "CPI_NAME_ja": "地下鉄2・4号線 舎堂駅",
+        "CPI_NAME_zh": "地铁2、4号线 舍堂站"
       },
       {
         "latitude": 37.4689997094946,
@@ -21157,7 +21204,8 @@
         "DETAIL_COURSE": " 수서역~대모산~구룡산~여의천~양재천~우면산~사당역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Alice Park",
-        "CPI_NAME_ja": "アリスパーク"
+        "CPI_NAME_ja": "アリスパーク",
+        "CPI_NAME_zh": "爱丽丝公园"
       },
       {
         "latitude": 37.467093857042116,
@@ -21171,7 +21219,8 @@
         "DETAIL_COURSE": " 수서역~대모산~구룡산~여의천~양재천~우면산~사당역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Heoninneung Royal Tomb",
-        "CPI_NAME_ja": "献仁陵"
+        "CPI_NAME_ja": "献仁陵",
+        "CPI_NAME_zh": "献仁陵"
       },
       {
         "latitude": 37.467425179437164,
@@ -21185,7 +21234,8 @@
         "DETAIL_COURSE": " 수서역~대모산~구룡산~여의천~양재천~우면산~사당역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Seoul Human Resource Development Center",
-        "CPI_NAME_ja": "ソウル特別市人材開発院"
+        "CPI_NAME_ja": "ソウル特別市人材開発院",
+        "CPI_NAME_zh": "首尔特别市人才开发院"
       },
       {
         "latitude": 37.47354201791133,
@@ -21199,7 +21249,8 @@
         "DETAIL_COURSE": " 수서역~대모산~구룡산~여의천~양재천~우면산~사당역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Umyeonsan End Point",
-        "CPI_NAME_ja": "牛眠山終点部"
+        "CPI_NAME_ja": "牛眠山終点部",
+        "CPI_NAME_zh": "牛眠山终点部"
       },
       {
         "latitude": 37.46920561591129,
@@ -21213,7 +21264,8 @@
         "DETAIL_COURSE": " 수서역~대모산~구룡산~여의천~양재천~우면산~사당역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Next to Yangjae Citizens' Forest Information Center",
-        "CPI_NAME_ja": "良才市民の森案内所横"
+        "CPI_NAME_ja": "良才市民の森案内所横",
+        "CPI_NAME_zh": "良才市民之林导览处旁"
       },
       {
         "latitude": 37.48663480691139,
@@ -21227,7 +21279,8 @@
         "DETAIL_COURSE": " 수서역~대모산~구룡산~여의천~양재천~우면산~사당역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Daemosan Entrance",
-        "CPI_NAME_ja": "大母山入口"
+        "CPI_NAME_ja": "大母山入口",
+        "CPI_NAME_zh": "大母山入口"
       },
       {
         "latitude": 37.48005559841703,
@@ -21241,7 +21294,8 @@
         "DETAIL_COURSE": " 수서역~대모산~구룡산~여의천~양재천~우면산~사당역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Umyeonsan Nature Ecology Park",
-        "CPI_NAME_ja": "牛眠山自然生態公園"
+        "CPI_NAME_ja": "牛眠山自然生態公園",
+        "CPI_NAME_zh": "牛眠山自然生态公园"
       },
       {
         "latitude": 37.468076452007786,
@@ -21255,7 +21309,8 @@
         "DETAIL_COURSE": " 수서역~대모산~구룡산~여의천~양재천~우면산~사당역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Culture & Arts Park",
-        "CPI_NAME_ja": "文化芸術公園"
+        "CPI_NAME_ja": "文化芸術公園",
+        "CPI_NAME_zh": "文化艺术公园"
       },
       {
         "latitude": 37.46978940438317,
@@ -21269,7 +21324,8 @@
         "DETAIL_COURSE": " 수서역~대모산~구룡산~여의천~양재천~우면산~사당역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Maeheon Yun Bong-gil Memorial Hall",
-        "CPI_NAME_ja": "梅軒尹奉吉義士記念館"
+        "CPI_NAME_ja": "梅軒尹奉吉義士記念館",
+        "CPI_NAME_zh": "梅轩尹奉吉义士纪念馆"
       },
       {
         "latitude": 37.46969092614493,
@@ -21283,7 +21339,8 @@
         "DETAIL_COURSE": " 수서역~대모산~구룡산~여의천~양재천~우면산~사당역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Yangjae Citizens' Forest Station (Sinbundang Line)",
-        "CPI_NAME_ja": "地下鉄新盆唐線 良才市民の森駅"
+        "CPI_NAME_ja": "地下鉄新盆唐線 良才市民の森駅",
+        "CPI_NAME_zh": "地铁新盆唐线 良才市民之林站"
       },
       {
         "latitude": 37.47289809595634,
@@ -21297,7 +21354,8 @@
         "DETAIL_COURSE": " 수서역~대모산~구룡산~여의천~양재천~우면산~사당역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Daewonsa Temple",
-        "CPI_NAME_ja": "大源寺"
+        "CPI_NAME_ja": "大源寺",
+        "CPI_NAME_zh": "大源寺"
       },
       {
         "latitude": 37.487141082069144,
@@ -21311,7 +21369,8 @@
         "DETAIL_COURSE": " 수서역~대모산~구룡산~여의천~양재천~우면산~사당역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Suseo Station (Subway Line 3, Bundang Line)",
-        "CPI_NAME_ja": "地下鉄3号線・盆唐線 水西駅"
+        "CPI_NAME_ja": "地下鉄3号線・盆唐線 水西駅",
+        "CPI_NAME_zh": "地铁3号线、盆唐线 水西站"
       }
     ]
   },
@@ -21330,7 +21389,8 @@
         "DETAIL_COURSE": "광나루역~고덕산~일자산~성내천~탄천~수서역",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Gil-dong Nature Ecology Park",
-        "CPI_NAME_ja": "吉洞自然生態公園"
+        "CPI_NAME_ja": "吉洞自然生態公園",
+        "CPI_NAME_zh": "吉洞自然生态公园"
       },
       {
         "latitude": 37.488294303911424,
@@ -21344,7 +21404,8 @@
         "DETAIL_COURSE": "광나루역~고덕산~일자산~성내천~탄천~수서역",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Tancheon Stream End Point",
-        "CPI_NAME_ja": "炭川終点部"
+        "CPI_NAME_ja": "炭川終点部",
+        "CPI_NAME_zh": "炭川终点部"
       },
       {
         "latitude": 37.512393535911635,
@@ -21358,7 +21419,8 @@
         "DETAIL_COURSE": "광나루역~고덕산~일자산~성내천~탄천~수서역",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "In Front of Bangi-dong Ecological & Landscape Conservation Area Office",
-        "CPI_NAME_ja": "芳荑洞生態景観保全地域事務所前"
+        "CPI_NAME_ja": "芳荑洞生態景観保全地域事務所前",
+        "CPI_NAME_zh": "芳荑洞生态景观保护区事务所前"
       },
       {
         "latitude": 37.553860991188074,
@@ -21372,7 +21434,8 @@
         "DETAIL_COURSE": "광나루역~고덕산~일자산~성내천~탄천~수서역",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Myeongil Park",
-        "CPI_NAME_ja": "明逸公園"
+        "CPI_NAME_ja": "明逸公園",
+        "CPI_NAME_zh": "明逸公园"
       },
       {
         "latitude": 37.56056318664202,
@@ -21386,7 +21449,8 @@
         "DETAIL_COURSE": "광나루역~고덕산~일자산~성내천~탄천~수서역",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Amsa-dong Prehistoric Settlement Site",
-        "CPI_NAME_ja": "岩寺洞先史住居址"
+        "CPI_NAME_ja": "岩寺洞先史住居址",
+        "CPI_NAME_zh": "岩寺洞先史居住址"
       },
       {
         "latitude": 37.55530599891201,
@@ -21400,7 +21464,8 @@
         "DETAIL_COURSE": "광나루역~고덕산~일자산~성내천~탄천~수서역",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Iljasan Entrance (260m from Godeok Station Exit 4)",
-        "CPI_NAME_ja": "一字山入口（高徳駅4番出口260m手前）"
+        "CPI_NAME_ja": "一字山入口（高徳駅4番出口260m手前）",
+        "CPI_NAME_zh": "一字山入口（高德站4号出口260m前）"
       },
       {
         "latitude": 37.56194421353019,
@@ -21414,7 +21479,8 @@
         "DETAIL_COURSE": "광나루역~고덕산~일자산~성내천~탄천~수서역",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Saemteo Park",
-        "CPI_NAME_ja": "セムト公園"
+        "CPI_NAME_ja": "セムト公園",
+        "CPI_NAME_zh": "泉边公园"
       },
       {
         "latitude": 37.54535791545905,
@@ -21428,7 +21494,8 @@
         "DETAIL_COURSE": "광나루역~고덕산~일자산~성내천~탄천~수서역",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Gwangnaru Station (Subway Line 5)",
-        "CPI_NAME_ja": "地下鉄5号線 広ナル駅"
+        "CPI_NAME_ja": "地下鉄5号線 広ナル駅",
+        "CPI_NAME_zh": "地铁5号线 广渡口站"
       },
       {
         "latitude": 37.54598610191191,
@@ -21442,7 +21509,8 @@
         "DETAIL_COURSE": "광나루역~고덕산~일자산~성내천~탄천~수서역",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Gwangjingyo Bridge Entrance",
-        "CPI_NAME_ja": "広津橋入口"
+        "CPI_NAME_ja": "広津橋入口",
+        "CPI_NAME_zh": "广津桥入口"
       },
       {
         "latitude": 37.55520938091202,
@@ -21456,7 +21524,8 @@
         "DETAIL_COURSE": "광나루역~고덕산~일자산~성내천~탄천~수서역",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Godeok Station (Subway Line 5)",
-        "CPI_NAME_ja": "地下鉄5号線 高徳駅"
+        "CPI_NAME_ja": "地下鉄5号線 高徳駅",
+        "CPI_NAME_zh": "地铁5号线 高德站"
       },
       {
         "latitude": 37.48723672091142,
@@ -21470,7 +21539,8 @@
         "DETAIL_COURSE": "광나루역~고덕산~일자산~성내천~탄천~수서역",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Suseo Station (Subway Line 3, Bundang Line)",
-        "CPI_NAME_ja": "地下鉄3号線・盆唐線 水西駅"
+        "CPI_NAME_ja": "地下鉄3号線・盆唐線 水西駅",
+        "CPI_NAME_zh": "地铁3号线、盆唐线 水西站"
       },
       {
         "latitude": 37.47762512632909,
@@ -21484,7 +21554,8 @@
         "DETAIL_COURSE": "광나루역~고덕산~일자산~성내천~탄천~수서역",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Garden Five",
-        "CPI_NAME_ja": "ガーデンファイブ"
+        "CPI_NAME_ja": "ガーデンファイブ",
+        "CPI_NAME_zh": "花园五"
       },
       {
         "latitude": 37.489448407148984,
@@ -21498,7 +21569,8 @@
         "DETAIL_COURSE": "광나루역~고덕산~일자산~성내천~탄천~수서역",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Munjeong Neighborhood Park",
-        "CPI_NAME_ja": "文井近隣公園"
+        "CPI_NAME_ja": "文井近隣公園",
+        "CPI_NAME_zh": "文井近邻公园"
       },
       {
         "latitude": 37.511904374737995,
@@ -21512,7 +21584,8 @@
         "DETAIL_COURSE": "광나루역~고덕산~일자산~성내천~탄천~수서역",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Bangi-dong Ecological & Landscape Conservation Area",
-        "CPI_NAME_ja": "芳荑洞生態景観保全地域"
+        "CPI_NAME_ja": "芳荑洞生態景観保全地域",
+        "CPI_NAME_zh": "芳荑洞生态景观保护区"
       },
       {
         "latitude": 37.55119402953809,
@@ -21526,7 +21599,8 @@
         "DETAIL_COURSE": "광나루역~고덕산~일자산~성내천~탄천~수서역",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Hangang Park Gwangnaru District",
-        "CPI_NAME_ja": "漢江公園広ナル地区"
+        "CPI_NAME_ja": "漢江公園広ナル地区",
+        "CPI_NAME_zh": "汉江公园广渡口地区"
       },
       {
         "latitude": 37.51801653375186,
@@ -21540,7 +21614,8 @@
         "DETAIL_COURSE": "광나루역~고덕산~일자산~성내천~탄천~수서역",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Olympic Park",
-        "CPI_NAME_ja": "オリンピック公園"
+        "CPI_NAME_ja": "オリンピック公園",
+        "CPI_NAME_zh": "奥林匹克公园"
       },
       {
         "latitude": 37.53724600307516,
@@ -21554,7 +21629,8 @@
         "DETAIL_COURSE": "광나루역~고덕산~일자산~성내천~탄천~수서역",
         "COURSE_LEVEL": "1",
         "CPI_NAME_en": "Iljasan Herb & Astronomy Park, Iljasan Family Campground",
-        "CPI_NAME_ja": "一字山ハーブ天文公園・一字山家族キャンプ場"
+        "CPI_NAME_ja": "一字山ハーブ天文公園・一字山家族キャンプ場",
+        "CPI_NAME_zh": "一字山香草天文公园、一字山家庭露营场"
       }
     ]
   },
@@ -21573,7 +21649,8 @@
         "DETAIL_COURSE": "화랑대역~묵동천~중랑캠핑숲~망우산~용마산~아차산~광나루역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Yongmasan Kkaldak Pass Rest Area",
-        "CPI_NAME_ja": "龍馬山カルタク峠休憩所"
+        "CPI_NAME_ja": "龍馬山カルタク峠休憩所",
+        "CPI_NAME_zh": "龙马山卡塔克岭休息处"
       },
       {
         "latitude": 37.619491126398756,
@@ -21587,7 +21664,8 @@
         "DETAIL_COURSE": "화랑대역~묵동천~중랑캠핑숲~망우산~용마산~아차산~광나루역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Hwarangdae Station (Subway Line 6)",
-        "CPI_NAME_ja": "地下鉄6号線 花郎台駅"
+        "CPI_NAME_ja": "地下鉄6号線 花郎台駅",
+        "CPI_NAME_zh": "地铁6号线 花郎台站"
       },
       {
         "latitude": 37.60459016406512,
@@ -21601,7 +21679,8 @@
         "DETAIL_COURSE": "화랑대역~묵동천~중랑캠핑숲~망우산~용마산~아차산~광나루역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Jungnang Camping Forest",
-        "CPI_NAME_ja": "中浪キャンプの森"
+        "CPI_NAME_ja": "中浪キャンプの森",
+        "CPI_NAME_zh": "中浪露营林"
       },
       {
         "latitude": 37.59870159649489,
@@ -21615,7 +21694,8 @@
         "DETAIL_COURSE": "화랑대역~묵동천~중랑캠핑숲~망우산~용마산~아차산~광나루역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Mangu Cemetery Park",
-        "CPI_NAME_ja": "忘憂墓地公園"
+        "CPI_NAME_ja": "忘憂墓地公園",
+        "CPI_NAME_zh": "忘忧墓地公园"
       },
       {
         "latitude": 37.560012168461064,
@@ -21629,7 +21709,8 @@
         "DETAIL_COURSE": "화랑대역~묵동천~중랑캠핑숲~망우산~용마산~아차산~광나루역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Haemaji (Sunrise) Plaza",
-        "CPI_NAME_ja": "日の出広場"
+        "CPI_NAME_ja": "日の出広場",
+        "CPI_NAME_zh": "日出广场"
       },
       {
         "latitude": 37.55176356775786,
@@ -21643,7 +21724,8 @@
         "DETAIL_COURSE": "화랑대역~묵동천~중랑캠핑숲~망우산~용마산~아차산~광나루역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Achasan Ecology Park, Achasan History & Culture Center",
-        "CPI_NAME_ja": "峨嵯山生態公園・峨嵯山歴史文化広報館"
+        "CPI_NAME_ja": "峨嵯山生態公園・峨嵯山歴史文化広報館",
+        "CPI_NAME_zh": "峨嵯山生态公园、峨嵯山历史文化宣传馆"
       },
       {
         "latitude": 37.57266036776403,
@@ -21657,7 +21739,8 @@
         "DETAIL_COURSE": "화랑대역~묵동천~중랑캠핑숲~망우산~용마산~아차산~광나루역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Achasan Fortress Site No. 4",
-        "CPI_NAME_ja": "峨嵯山第4堡塁城址"
+        "CPI_NAME_ja": "峨嵯山第4堡塁城址",
+        "CPI_NAME_zh": "峨嵯山第4堡垒城址"
       },
       {
         "latitude": 37.55323019410244,
@@ -21671,7 +21754,8 @@
         "DETAIL_COURSE": "화랑대역~묵동천~중랑캠핑숲~망우산~용마산~아차산~광나루역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Achasanseong Fortress",
-        "CPI_NAME_ja": "峨嵯山城"
+        "CPI_NAME_ja": "峨嵯山城",
+        "CPI_NAME_zh": "峨嵯山城"
       },
       {
         "latitude": 37.545324658911895,
@@ -21685,7 +21769,8 @@
         "DETAIL_COURSE": "화랑대역~묵동천~중랑캠핑숲~망우산~용마산~아차산~광나루역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Gwangnaru Station (Subway Line 5)",
-        "CPI_NAME_ja": "地下鉄5号線 広ナル駅"
+        "CPI_NAME_ja": "地下鉄5号線 広ナル駅",
+        "CPI_NAME_zh": "地铁5号线 广渡口站"
       },
       {
         "latitude": 37.60652043691242,
@@ -21699,7 +21784,8 @@
         "DETAIL_COURSE": "화랑대역~묵동천~중랑캠핑숲~망우산~용마산~아차산~광나루역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Yangwon Station (Jungang Line)",
-        "CPI_NAME_ja": "地下鉄中央線 養源駅"
+        "CPI_NAME_ja": "地下鉄中央線 養源駅",
+        "CPI_NAME_zh": "地铁中央线 养源站"
       },
       {
         "latitude": 37.620462853912535,
@@ -21713,7 +21799,8 @@
         "DETAIL_COURSE": "화랑대역~묵동천~중랑캠핑숲~망우산~용마산~아차산~광나루역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "Park in Front of Hwarangdae Station Exit 4",
-        "CPI_NAME_ja": "花郎台駅4番出口前公園"
+        "CPI_NAME_ja": "花郎台駅4番出口前公園",
+        "CPI_NAME_zh": "花郎台站4号出口前公园"
       },
       {
         "latitude": 37.552431282911975,
@@ -21727,7 +21814,8 @@
         "DETAIL_COURSE": "화랑대역~묵동천~중랑캠핑숲~망우산~용마산~아차산~광나루역",
         "COURSE_LEVEL": "2",
         "CPI_NAME_en": "In Front of Achasan Management Office",
-        "CPI_NAME_ja": "峨嵯山管理事務所前"
+        "CPI_NAME_ja": "峨嵯山管理事務所前",
+        "CPI_NAME_zh": "峨嵯山管理事务所前"
       }
     ]
   }
