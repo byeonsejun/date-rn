@@ -4,7 +4,7 @@
   <img src="assets/images/icon.png" width="96" alt="서울, 너와 함께 앱 아이콘" />
 </p>
 
-서울 자치구 기반 데이트 장소·날씨·맛집 추천 서비스의 **네이티브 앱 구현체**입니다. 앱 표시 이름은 **“서울, 너와 함께”**입니다.
+서울 자치구 기반 데이트 장소·날씨·맛집 추천 서비스의 **네이티브 앱 구현체**입니다. 앱 표시 이름은 **“서울, 너와 함께”**입니다. UI 문구부터 서울 전역 POI 이름까지 **한국어·영어·일본어·중국어(간체) 4개 언어**를 지원합니다(아래 [다국어](#다국어-i18n) 참고).
 
 > 이 저장소는 웹(Next.js) 버전의 **네이티브 앱 버전**입니다.
 > 서비스 전체 설명과 라이브 데모는 메인(웹) 저장소를 참고하세요.
@@ -40,6 +40,8 @@
 | 위치 | expo-location `~19.0.8` |
 | 스타일 | NativeWind `^4.2.1` (Tailwind) |
 | 애니메이션 | react-native-reanimated `~4.1.1` |
+| 다국어(i18n) | i18next `^26.3.6` + react-i18next `^17.0.9` |
+| 기기 언어 감지 | expo-localization `~17.0.9` |
 
 ## 아키텍처
 
@@ -57,6 +59,17 @@ src/
 - 라우트 진입점은 저장소 루트의 `app/`(expo-router)이며, 화면 조립/로직은 `widgets` 이하 레이어에 둡니다.
 - 도메인 상태(Zustand store)는 각 entity의 `model/store.ts`에 위치합니다.
 - `widgets/statistics`(통계 화면) 코드는 보존되어 있으나 **현재 비활성**입니다: 데모 데이터라 입구(헤더 탭)를 제거했고, `/statistics`로 진입하면 `app/statistics.tsx`가 홈으로 redirect합니다.
+
+## 다국어 (i18n)
+
+UI 문구와 **서울 전역 POI 이름까지** 한국어·영어·일본어·중국어(간체) **4개 언어**를 지원합니다. 다국어는 이 앱의 핵심 차별점이며, 웹·RN이 번역 자산을 공유하되 **이 앱 레포가 번역 단일 소스**입니다.
+
+- **지원 언어 단일 소스** — `src/shared/i18n/index.ts`의 `LANGUAGES` 배열 한 곳에 언어를 추가하면 지원 목록·`SupportedLanguage` 타입·헤더 토글이 자동 반영됩니다. UI 문구는 `src/shared/i18n/locales/{ko,en,ja,zh}.json`(언어당 53개 키).
+- **기기 언어 자동 감지** — `expo-localization`으로 기기 언어를 감지해 초기 언어를 정하고(미지원 언어는 한국어로 폴백), 사용자의 명시적 선택은 Zustand persist(AsyncStorage)로 유지합니다.
+- **값–라벨 분리(도메인 로직 무손상)** — POI·자치구 데이터는 **한국어를 정본 값으로 저장**하고 `_en/_ja/_zh` 필드를 병기합니다. 필터·비교 등 로직은 한국어 정본을 그대로 사용하고, 표시 시점에만 `getPoiDisplayTitle`·`getDistrictLabel`·`getCategoryLabel`(`entities/*/lib/label.ts`)이 현재 언어로 해석합니다(예: 일본어 = `titleJa ?? titleEn ?? 한국어`). 언어를 늘려도 지도·필터·상태 로직은 바뀌지 않습니다.
+- **POI 번역 규모** — 공원 132 · 문화공간 1,033 · 두드림길(무장애 자락길) 1,443 = **언어당 2,608건**을 일본어·중국어까지 채웠습니다.
+- **언어별 외부 데이터** — 날씨·맛집 호출은 웹 BFF(`/api/*`)에 `lang`(ko/en/ja/zh)을 전달해 언어별 응답을 받습니다. OpenWeather(`ko→kr`, `zh→zh_cn`)·Google Places(`zh→zh-CN`) 예외 매핑은 웹 서버에서 처리합니다.
+- **CJK 표기 기준** — 한자권 지명 표기 원칙(일본어는 표음문자가 있어 음차 우선, 중국어는 표음문자가 없어 의역 우선 등)과 케이스 로그는 [`docs/i18n-cjk-naming.md`](docs/i18n-cjk-naming.md)에 정리되어 있습니다.
 
 ## 외부 API · 키 처리
 
