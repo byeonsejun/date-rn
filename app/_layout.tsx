@@ -9,6 +9,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { AppProvider } from '@core/providers/AppProvider';
 
+import { AppFooter } from '@widgets/layout/ui/AppFooter';
 import { RootOverlays } from '@widgets/layout/ui/RootOverlays';
 
 /**
@@ -25,6 +26,7 @@ import { RootOverlays } from '@widgets/layout/ui/RootOverlays';
  *    - `AppHeader`는 각 화면의 스크롤 영역 안에 두어(홈: `HomeSidebar`, 통계: `StatisticsView`)
  *      헤더가 콘텐츠와 함께 스크롤되도록 한다 — 여기서는 렌더하지 않는다.
  *    - `Stack`은 `headerShown: false`로 두고, 라우트 콘텐츠(`app/index.tsx` 등)에는 로직을 두지 않는다.
+ *    - `AppFooter`(저작권 표기)는 모든 화면 아래에 고정한다 — 웹의 `Footer`와 같은 자리.
  */
 const RootLayout = () => {
   useEffect(() => {
@@ -42,6 +44,7 @@ const RootLayout = () => {
             <View className="flex-1">
               <Stack screenOptions={{ headerShown: false }} />
             </View>
+            <AppFooter />
             <RootOverlays />
           </View>
         </SafeAreaView>
